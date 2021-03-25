@@ -1,7 +1,7 @@
 //IMAGE-100%
 %border-def {
     @include border ($size-01, solid, $color-02);
-    box-shadow: $size-01 0 $size-05 0 $color-03;
+    box-shadow: 0 0 $size-02 0 $color-03;
 }
 
 %head-size {
@@ -11,7 +11,7 @@
     position: fixed;
 }
 %nav-box-size {
-    max-width: $size-01080;
+    max-width: $size-01240;
     width: $size-0;
     margin: 0 auto;
     padding: $size-05 0 $size-05;

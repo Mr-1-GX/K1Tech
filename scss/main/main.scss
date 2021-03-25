@@ -16,18 +16,20 @@
             }
         }
         .navi {
-            max-width: $size-0900;
+            max-width: $size-01080;
             width: $size-0;
             @include d-flex (flex,space-between,center);
             .nav-ul {
                 max-width: $size-0600;
                 width: $size-0;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
+                @include d-flex (flex,space-between,center);
                 .nav-li {
                     .nav-a {
-                        color: black;
+                        font-size: $size-020;
+                        color: $color-02;
+                        font-family: 'archy-B';
+                        letter-spacing: $size-02;
+                        text-shadow: $size-01 $size--01 $size-01 $color-03;
                     }
                 }
             }
@@ -35,6 +37,9 @@
                 width: 200px;
                 .soc-li {
                     padding: 3px 0;
+                    .fa {
+                        color: $color-02;
+                    }
                 }
                 .contact-ul {
                     display: flex;
@@ -43,8 +48,9 @@
                         .soc-a {
                             display: flex;
                             justify-content: space-between;
-                            .fa {
-                                color: $color-06;
+                            .soc-h4 {
+                                font-size: 5px;
+                                color: $color-03;
                             }
                         }
                     }
