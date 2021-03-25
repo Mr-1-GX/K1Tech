@@ -1,0 +1,61 @@
+//Body
+
+//HEADER
+.head-cont {
+    @extend %head-size;
+    @extend %border-def;
+    .nav-box {
+        @extend %nav-box-size;
+        @include d-flex (flex,space-between,center);
+        .nav-logo {
+            max-width: $size-040;
+            height: $size-045;
+            @extend %border-def;
+            .img-100 {
+                width: $size-0;
+            }
+        }
+        .navi {
+            max-width: $size-0900;
+            width: $size-0;
+            @include d-flex (flex,space-between,center);
+            .nav-ul {
+                max-width: $size-0600;
+                width: $size-0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .nav-li {
+                    .nav-a {
+                        color: black;
+                    }
+                }
+            }
+            .soc-ul {
+                width: 200px;
+                .soc-li {
+                    padding: 3px 0;
+                }
+                .contact-ul {
+                    display: flex;
+                    justify-content: space-between;
+                    .soc-li {
+                        .soc-a {
+                            display: flex;
+                            justify-content: space-between;
+                            .fa {
+                                color: $color-06;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .burger-icon {
+            display: none;
+        }
+    }
+}
+.sect-1 {
+    margin: $size-0170 0 $size-025 0;
+}
