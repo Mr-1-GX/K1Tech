@@ -1,5 +1,8 @@
 //Body
-
+.body-bg {
+    @include bg-img (url(../img/k1.PNG),$color-01);
+    @include background (repeat,right -20% bottom 0px top left,auto $size-05);
+}
 //HEADER
 .head-cont {
     @extend %head-size;
@@ -11,6 +14,7 @@
             max-width: $size-040;
             height: $size-045;
             @extend %border-def;
+            @extend %hover-def;
             .img-100 {
                 width: $size-0;
             }
@@ -24,6 +28,8 @@
                 width: $size-0;
                 @include d-flex (flex,space-between,center);
                 .nav-li {
+                    border-radius: $size-05;
+                    @extend %hover-def;
                     .nav-a {
                         font-size: $size-020;
                         color: $color-02;
@@ -34,26 +40,30 @@
                 }
             }
             .soc-ul {
-                width: 200px;
+                max-width: $size-0230;
+                width: $size-0;
+                display: flex;
                 .soc-li {
-                    padding: 3px 0;
+                    padding: $size-05 0;
                     .fa {
+                        font-size: $size-015;
                         color: $color-02;
+                        letter-spacing: $size-02;
+                        text-shadow: $size-01 $size--01 $size-01 $color-03;
+                        padding-right: $size-010;
+                    }
+                    .soc-a {
+                        font-size: $size-015;
+                        color: $color-03;
+                        font-family: 'archy-B';
+                        letter-spacing: $size-02;
+                        text-shadow: $size-01 $size--01 $size-01 $color-02;
+                        border-radius: $size-05;
+                        @extend %hover-def;
                     }
                 }
                 .contact-ul {
-                    display: flex;
-                    justify-content: space-between;
-                    .soc-li {
-                        .soc-a {
-                            display: flex;
-                            justify-content: space-between;
-                            .soc-h4 {
-                                font-size: 5px;
-                                color: $color-03;
-                            }
-                        }
-                    }
+                    padding: 0 $size-05;
                 }
             }
         }
@@ -64,4 +74,12 @@
 }
 .sect-1 {
     margin: $size-0170 0 $size-025 0;
+}
+//Futer
+.foot-bg {
+    background-color: $color-01;
+    @include d-flex (flex,space-around,center);
+    flex-direction: column;
+    margin-top: 40px;
+    @extend %border-def;
 }

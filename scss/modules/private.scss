@@ -1,7 +1,15 @@
 //IMAGE-100%
 %border-def {
+    border-radius: $size-05;
     @include border ($size-01, solid, $color-02);
     box-shadow: 0 0 $size-02 0 $color-03;
+}
+%hover-def {
+    &:hover {
+        background-color: $color-08;
+        box-shadow: 0 0 $size-010 $color-02;
+        @include transition-hover (all,0.3s,linear,0.2s)
+    }
 }
 
 %head-size {
