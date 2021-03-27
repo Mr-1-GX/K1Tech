@@ -1,18 +1,18 @@
 //Body
 .body-bg {
-    @include bg-img (url(../img/k1.PNG),$color-01);
-    @include background (repeat,right -20% bottom 0px top left,auto $size-05);
+    @extend %bg-def;
 }
 //HEADER
 .head-cont {
+    background-color: $color-01;
     @extend %head-size;
     @extend %border-def;
     .nav-box {
         @extend %nav-box-size;
         @include d-flex (flex,space-between,center);
+        @extend %desk-med;
         .nav-logo {
-            max-width: $size-040;
-            height: $size-045;
+            @extend %nav-logo-size;
             @extend %border-def;
             @extend %hover-def;
             .img-100 {
@@ -20,50 +20,42 @@
             }
         }
         .navi {
-            max-width: $size-01080;
-            width: $size-0;
+            @extend %navi-size;
             @include d-flex (flex,space-between,center);
+            @extend %desk-med;
             .nav-ul {
-                max-width: $size-0600;
-                width: $size-0;
+                @extend %nav-ul-size;
                 @include d-flex (flex,space-between,center);
+                @extend %desk-nav-ul-med-size;
                 .nav-li {
                     border-radius: $size-05;
                     @extend %hover-def;
                     .nav-a {
-                        font-size: $size-020;
-                        color: $color-02;
-                        font-family: 'archy-B';
-                        letter-spacing: $size-02;
-                        text-shadow: $size-01 $size--01 $size-01 $color-03;
+                        @extend %font-h1-def;
+                        @extend %tab-med;
                     }
                 }
             }
             .soc-ul {
-                max-width: $size-0230;
-                width: $size-0;
+                @extend %soc-ul-size;
                 display: flex;
                 .soc-li {
                     padding: $size-05 0;
                     .fa {
-                        font-size: $size-015;
-                        color: $color-02;
-                        letter-spacing: $size-02;
-                        text-shadow: $size-01 $size--01 $size-01 $color-03;
-                        padding-right: $size-010;
+                        @extend %font-fa-def;
                     }
                     .soc-a {
-                        font-size: $size-015;
-                        color: $color-03;
-                        font-family: 'archy-B';
-                        letter-spacing: $size-02;
-                        text-shadow: $size-01 $size--01 $size-01 $color-02;
-                        border-radius: $size-05;
+                        @extend %font-bol-def;
                         @extend %hover-def;
                     }
                 }
                 .contact-ul {
-                    padding: 0 $size-05;
+                    padding: 0 $size-010;
+                    @extend %tab-med;
+                }
+                .contact-box {
+                    @include d-flex (flex,space-between,center);
+                    flex-direction: column;
                 }
             }
         }
@@ -82,4 +74,88 @@
     flex-direction: column;
     margin-top: 40px;
     @extend %border-def;
+    .foot-cont {
+        @extend %foot-cont-size;
+        padding-top: $size-030;
+        @include d-flex (flex,space-between,center);
+        @extend %desk-med;
+        .foot-box {
+            @extend %foot-box-size;
+            @include d-flex (flex,space-evenly,center);
+            flex-direction: column;
+            text-align: center;
+            @extend %bg-def;
+            @extend %border-def;
+            .foot-h2 {
+                @extend %font-h2-def;
+            }
+            .foot-p {
+                @extend %foot-p-size;
+                @extend %font-p-def;
+            }
+            .foot-ul {
+                @extend %foot-ul-size;
+                @include d-flex (flex,space-around,center);
+                .foot-li {
+                    .fa {
+                        @extend %font-fa-def;
+                    }
+                }
+            }
+            .cont-p {
+                @include d-flex (flex,space-between,center);
+                flex-direction: column;
+                .li-box {
+                    padding: $size-05 0;
+                    .fa {
+                        @extend %font-fa-def;
+                    }
+                    .contact {
+                        @extend %font-bol-def;
+                        @extend %hover-def;
+                    }
+                }
+            }
+        }
+    }
+    .xazi {
+        @extend %xazi;
+        @extend %desk-med;
+    }
+    .foot-cont-2 {
+        @extend %foot-cont-2-size;
+        @include d-flex (flex,space-around,baseline);
+        .foot-2-box {
+            height: $size-0200;
+            @include d-flex (flex,space-evenly,center);
+            flex-direction: column;
+            .foot-2-h2 {
+                @extend %font-h2-def;
+            }
+            .foot-2-ul {
+                height: $size-0130;
+                @include d-flex (flex,space-around,center);
+                flex-direction: column;
+                .foot-2-li {
+                    @extend %font-p-def;
+                }
+            }
+        }
+    }
+    .avtori {
+        @extend %avtori-size;
+        padding-bottom: $size-020;
+        @include d-flex (flex,space-between,center);
+        @extend %desk-med;
+        .avtori-p {
+            @extend %font-p-def; 
+        }
+        .avtori-a {
+            @extend %font-h2-def;
+        }
+    }
 }
+
+
+
+

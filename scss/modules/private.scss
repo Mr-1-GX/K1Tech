@@ -1,4 +1,54 @@
 //IMAGE-100%
+%bg-def {
+    @include bg-img (url(../img/k1.PNG),$color-01);
+    @include background (repeat,top left,auto $size-03,);
+}
+//Font
+%font-h1-def {
+    font-size: $size-020;
+    color: $color-02;
+    font-family: 'archy-B';
+    letter-spacing: $size-02;
+    text-shadow: $size-01 $size--01 $size-01 $color-03;
+}
+%font-h2-def {
+    font-size: $size-020;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: $size-02;
+    text-shadow: $size-01 $size--01 $size-01 $color-02;
+}
+%font-bol-def {
+    font-size: $size-015;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: $size-02;
+    text-shadow: $size-01 $size--01 $size-01 $color-02;
+    border-radius: $size-05;
+}
+%font-fa-def {
+    font-size: $size-015;
+    color: $color-03;
+    letter-spacing: $size-02;
+    text-shadow: $size-01 $size--01 $size-01 $color-02;
+    border-radius: $size-05;
+}
+%font-p-def {
+    color: $color-03;
+    font-family: 'BPG-A';
+    text-shadow: $size-01 $size-01 $color-06;
+}
+//Xazi
+%xazi {
+    max-width: $size-01750;
+    width: $size-0;
+    margin:$size-025 0 $size-025 0;
+    content: ' ';
+    color: $color-06;
+    @include border (0.1px, solid, $color-08);
+    box-shadow: 0 0 $size-015 $color-02;
+}
+//Border
 %border-def {
     border-radius: $size-05;
     @include border ($size-01, solid, $color-02);
@@ -12,6 +62,7 @@
     }
 }
 
+//HEADER
 %head-size {
     width: $size-0;
     top: 0;
@@ -19,12 +70,54 @@
     position: fixed;
 }
 %nav-box-size {
-    max-width: $size-01240;
+    max-width: $size-01750;
     width: $size-0;
     margin: 0 auto;
     padding: $size-05 0 $size-05;
 }
+%nav-logo-size {
+    max-width: $size-040;
+    height: $size-045;
+}
+%navi-size {
+    max-width: $size-01080;
+    width: $size-0;
+}
+%nav-ul-size {
+    max-width: $size-0600;
+    width: $size-0;
+}
+%soc-ul-size {
+    max-width: $size-0230;
+    width: $size-0;
+}
 
+//Footer
+%foot-cont-size {
+    max-width: $size-01240;
+    width: $size-0;
+}
+%foot-box-size {
+    max-width: $size-0320;
+    width: $size-0;
+    height: $size-0160;
+}
+%foot-p-size {
+    max-width: $size-0270;
+    width: $size-0;
+}
+%foot-ul-size {
+    max-width: $size-0170;
+    width: $size-0;
+}
+%foot-cont-2-size {
+    max-width: $size-01750;
+    width: $size-0;
+} 
+%avtori-size {
+    max-width: $size-01750;
+    width: $size-0;
+}
 
 
 

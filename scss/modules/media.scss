@@ -1,0 +1,59 @@
+//Navigation
+%desk-nav-ul-med-size {
+    @media (max-width: $size-01024) {
+        max-width: $size-0550;
+    }
+}
+//Contact
+%tab-contact-ul-med {
+    padding-left: 10px;
+}
+//Desktop
+%desk-med {
+    @media (max-width: $size-01750) {
+        max-width: $size-95;
+    }
+    @media (max-width: $size-01536) {
+        max-width: $size-90;
+    }
+    @media (max-width: $size-01440) {
+        max-width: $size-90;
+    }
+    @media (max-width: $size-01366) {
+        max-width: $size-90;
+    }
+    @media (max-width: $size-01024) {
+        max-width: $size-90;
+    }
+}
+
+//Tablet
+%tab-med {
+    @media (max-width: $size-01280) {
+        max-width: $size-95;
+    }
+    @media (max-width: $size-0962) {
+        max-width: $size-90;
+    }
+    @media (max-width: $size-0800) {
+        font-size: $size-015;
+    }
+    @media (max-width: $size-0768) {
+        max-width: $size-90;
+    }
+    @media (max-width: $size-0600) {
+        max-width: $size-90;
+    }
+}
+//Mobile
+%mob-med {
+    @media (max-width: $size-0414) {
+        max-width: $size-95;
+    }
+    @media (max-width: $size-0375) {
+        max-width: $size-90;
+    }
+    @media (max-width: $size-0360) {
+        max-width: $size-90;
+    }
+}
