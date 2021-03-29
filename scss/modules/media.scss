@@ -1,13 +1,123 @@
-//Navigation
-%desk-nav-ul-med-size {
-    @media (max-width: $size-01024) {
-        max-width: $size-0550;
+//HEADER
+%tab-head-cont {
+    @media (max-width: $size-0600){
+        display: block;
+        text-align: center;
     }
 }
-//Contact
-%tab-contact-ul-med {
-    padding-left: 10px;
+%tab-nav-logo {
+    @media (max-width: $size-0600) {
+        margin: 0 auto;
+    }
 }
+%desk-navi {
+    @media (max-width: $size-01680) {
+        width: $size-75;
+    }
+    @media (max-width: $size-01366) {
+        width: $size-80;
+    }
+    @media (max-width: $size-01024) {
+        width: $size-87;
+    }
+    @media (max-width: $size-0600) {
+        flex-direction: column;
+    }
+}
+%desk-nav-box {
+    @media (max-width: $size-01680) {
+        width: $size-90;
+    }
+    @media (max-width: $size-0600) {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
+%nav-ul-open {
+    @media (max-width: $size-0600) {
+        .open-menu {
+            display: block;
+            text-align: center;
+            padding: $size-020 0;
+        }
+    }
+}
+%desk-nav-ul {
+    @media (max-width: $size-01024) {
+        max-width: $size-0450;
+    }
+    @media (max-width: $size-0800) {
+        max-width: $size-0375;
+    }
+    @media (max-width: $size-0600) {
+        display: none;
+        margin: 0 auto;
+        width: $size-0;
+    }
+}
+%tab-nav-li {
+    @media (max-width: $size-0600) {
+        padding-bottom: $size-010;
+    }
+}
+%tab-nav-a {
+    @media (max-width: $size-01024) {
+        font-size: $size-015;
+    }
+    @media (max-width: $size-0800) {
+        font-size: $size-013;
+    }
+    @media (max-width: $size-0600) {
+        display: block;
+    }
+}
+%tab-soc-ul {
+    @media (max-width: $size-0800) {
+        max-width: $size-0200;
+    }
+}
+%tab-soc-a {
+    @media (max-width: $size-0800) {
+        font-size: $size-013;
+    }
+}
+%tab-burger-icon {
+    @media (max-width: $size-0600) {
+        color: $color-02;
+        display: block;
+        font-size: $size-030;
+        position: absolute;
+        top: $size-040;
+        right: $size-030;
+        cursor:pointer;
+    }
+}
+//FOOTER
+//Desktop
+%desk-xazi {
+    @media (max-width: $size-01680) {
+        width: $size-95;
+    }
+}
+%desk-avtori {
+    @media (max-width: $size-01680) {
+        width: $size-90;
+    }
+}
+//Tablet
+%tab-foot-cont {
+    @media (max-width: $size-01024) {
+        width: $size-80;
+    }
+}
+%tab-avtori-a {
+    @media (max-width: $size-01024) {
+        font-size: $size-010;
+    }
+}
+
+
+
 //Desktop
 %desk-med {
     @media (max-width: $size-01750) {

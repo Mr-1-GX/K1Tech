@@ -16,3 +16,12 @@
          url('../fonts/BPG-A/bpg-arial-caps-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/BPG-A/bpg-arial-caps-webfont.svg#bpg_arial_capsregular') format('svg'); /* Legacy iOS */
 }
+@font-face {
+    font-family: 'alk-s';
+    src: url('../fonts/alk-s/alk-sanet-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/alk-s/alk-sanet-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/alk-s/alk-sanet-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/alk-s/alk-sanet-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/alk-salk-sanet-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/alk-salk-sanet-webfont.svg#alk_sanetregular') format('svg'); /* Legacy iOS */
+}

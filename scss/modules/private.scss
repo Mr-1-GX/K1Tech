@@ -12,7 +12,7 @@
     text-shadow: $size-01 $size--01 $size-01 $color-03;
 }
 %font-h2-def {
-    font-size: $size-020;
+    font-size: $size-015;
     color: $color-03;
     font-family: 'archy-B';
     letter-spacing: $size-02;
@@ -28,15 +28,15 @@
 }
 %font-fa-def {
     font-size: $size-015;
-    color: $color-03;
+    color: $color-02;
     letter-spacing: $size-02;
-    text-shadow: $size-01 $size--01 $size-01 $color-02;
+    text-shadow: $size-01 $size--01 $size-01 $color-03;
     border-radius: $size-05;
 }
 %font-p-def {
     color: $color-03;
-    font-family: 'BPG-A';
-    text-shadow: $size-01 $size-01 $color-06;
+    font-family: 'alk-s';
+    text-shadow: $size-01 0 $color-06;
 }
 //Xazi
 %xazi {
@@ -80,7 +80,7 @@
     height: $size-045;
 }
 %navi-size {
-    max-width: $size-01080;
+    max-width: $size-01280;
     width: $size-0;
 }
 %nav-ul-size {

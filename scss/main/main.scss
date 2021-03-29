@@ -7,14 +7,16 @@
     background-color: $color-01;
     @extend %head-size;
     @extend %border-def;
+    @extend %tab-head-cont;
     .nav-box {
         @extend %nav-box-size;
         @include d-flex (flex,space-between,center);
-        @extend %desk-med;
+        @extend %desk-nav-box;
         .nav-logo {
             @extend %nav-logo-size;
             @extend %border-def;
             @extend %hover-def;
+            @extend %tab-nav-logo;
             .img-100 {
                 width: $size-0;
             }
@@ -22,23 +24,26 @@
         .navi {
             @extend %navi-size;
             @include d-flex (flex,space-between,center);
-            @extend %desk-med;
+            @extend %desk-navi;
+            @extend %nav-ul-open;
             .nav-ul {
                 @extend %nav-ul-size;
                 @include d-flex (flex,space-between,center);
-                @extend %desk-nav-ul-med-size;
+                @extend %desk-nav-ul;
                 .nav-li {
                     border-radius: $size-05;
                     @extend %hover-def;
+                    @extend %tab-nav-li;
                     .nav-a {
                         @extend %font-h1-def;
-                        @extend %tab-med;
+                        @extend %tab-nav-a;
                     }
                 }
             }
             .soc-ul {
                 @extend %soc-ul-size;
                 display: flex;
+                @extend %tab-soc-ul;
                 .soc-li {
                     padding: $size-05 0;
                     .fa {
@@ -47,11 +52,11 @@
                     .soc-a {
                         @extend %font-bol-def;
                         @extend %hover-def;
+                        @extend %tab-soc-a;
                     }
                 }
                 .contact-ul {
                     padding: 0 $size-010;
-                    @extend %tab-med;
                 }
                 .contact-box {
                     @include d-flex (flex,space-between,center);
@@ -78,14 +83,12 @@
         @extend %foot-cont-size;
         padding-top: $size-030;
         @include d-flex (flex,space-between,center);
-        @extend %desk-med;
+        @extend %tab-foot-cont;
         .foot-box {
             @extend %foot-box-size;
             @include d-flex (flex,space-evenly,center);
             flex-direction: column;
             text-align: center;
-            @extend %bg-def;
-            @extend %border-def;
             .foot-h2 {
                 @extend %font-h2-def;
             }
@@ -120,7 +123,7 @@
     }
     .xazi {
         @extend %xazi;
-        @extend %desk-med;
+        @extend %desk-xazi;
     }
     .foot-cont-2 {
         @extend %foot-cont-2-size;
@@ -137,6 +140,7 @@
                 @include d-flex (flex,space-around,center);
                 flex-direction: column;
                 .foot-2-li {
+                    font-size: $size-015;
                     @extend %font-p-def;
                 }
             }
@@ -146,12 +150,14 @@
         @extend %avtori-size;
         padding-bottom: $size-020;
         @include d-flex (flex,space-between,center);
-        @extend %desk-med;
+        @extend %desk-avtori;
         .avtori-p {
+            font-size: $size-010;
             @extend %font-p-def; 
         }
         .avtori-a {
             @extend %font-h2-def;
+            @extend %tab-avtori-a;
         }
     }
 }
