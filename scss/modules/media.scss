@@ -1,10 +1,4 @@
 //HEADER
-%tab-head-cont {
-    @media (max-width: $size-0600){
-        display: block;
-        text-align: center;
-    }
-}
 %tab-nav-logo {
     @media (max-width: $size-0600) {
         margin: 0 auto;
@@ -30,16 +24,6 @@
     }
     @media (max-width: $size-0600) {
         flex-direction: column;
-        margin: 0 auto;
-    }
-}
-%nav-ul-open {
-    @media (max-width: $size-0600) {
-        .open-menu {
-            display: block;
-            text-align: center;
-            padding: $size-020 0;
-        }
     }
 }
 %desk-nav-ul {
@@ -50,14 +34,13 @@
         max-width: $size-0375;
     }
     @media (max-width: $size-0600) {
-        display: none;
-        margin: 0 auto;
-        width: $size-0;
+        flex-direction: column;
+        padding: $size-015;
     }
 }
-%tab-nav-li {
+%desk-nav-li {
     @media (max-width: $size-0600) {
-        padding-bottom: $size-010;
+        padding: $size-05 0;
     }
 }
 %tab-nav-a {
@@ -67,13 +50,13 @@
     @media (max-width: $size-0800) {
         font-size: $size-013;
     }
-    @media (max-width: $size-0600) {
-        display: block;
-    }
 }
 %tab-soc-ul {
     @media (max-width: $size-0800) {
         max-width: $size-0200;
+    }
+    @media (max-width: $size-0600) {
+        display: none;
     }
 }
 %tab-soc-a {
@@ -83,11 +66,11 @@
 }
 %tab-burger-icon {
     @media (max-width: $size-0600) {
-        color: $color-02;
         display: block;
+        color: $color-02;
         font-size: $size-030;
         position: absolute;
-        top: $size-040;
+        top: $size-010;
         right: $size-030;
         cursor:pointer;
     }
@@ -115,8 +98,23 @@
         font-size: $size-010;
     }
 }
-
-
+//BURGER
+%open-soci {
+    @media (max-width: $size-0600) {
+        .open-socicon {
+            display: flex;
+        }
+    }
+}
+%nav-ul-open {
+    @media (max-width: $size-0600) {
+        .open-menu {
+            display: block;
+            flex-direction: column;
+            padding: $size-015 0;
+        }
+    }
+}
 
 //Desktop
 %desk-med {

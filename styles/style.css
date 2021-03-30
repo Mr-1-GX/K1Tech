@@ -186,11 +186,6 @@ a {
   width: 100%; }
 
 @media (max-width: 600px) {
-  .head-cont {
-    display: block;
-    text-align: center; } }
-
-@media (max-width: 600px) {
   .head-cont .nav-box .nav-logo {
     margin: 0 auto; } }
 
@@ -216,14 +211,7 @@ a {
 
 @media (max-width: 600px) {
   .head-cont .nav-box {
-    flex-direction: column;
-    margin: 0 auto; } }
-
-@media (max-width: 600px) {
-  .head-cont .nav-box .navi .open-menu {
-    display: block;
-    text-align: center;
-    padding: 20px 0; } }
+    flex-direction: column; } }
 
 @media (max-width: 1024px) {
   .head-cont .nav-box .navi .nav-ul {
@@ -235,13 +223,12 @@ a {
 
 @media (max-width: 600px) {
   .head-cont .nav-box .navi .nav-ul {
-    display: none;
-    margin: 0 auto;
-    width: 100%; } }
+    flex-direction: column;
+    padding: 15px; } }
 
 @media (max-width: 600px) {
   .head-cont .nav-box .navi .nav-ul .nav-li {
-    padding-bottom: 10px; } }
+    padding: 5px 0; } }
 
 @media (max-width: 1024px) {
   .head-cont .nav-box .navi .nav-ul .nav-li .nav-a {
@@ -251,17 +238,27 @@ a {
   .head-cont .nav-box .navi .nav-ul .nav-li .nav-a {
     font-size: 13px; } }
 
-@media (max-width: 600px) {
-  .head-cont .nav-box .navi .nav-ul .nav-li .nav-a {
-    display: block; } }
-
 @media (max-width: 800px) {
   .head-cont .nav-box .navi .soc-ul {
     max-width: 200px; } }
 
+@media (max-width: 600px) {
+  .head-cont .nav-box .navi .soc-ul {
+    display: none; } }
+
 @media (max-width: 800px) {
   .head-cont .nav-box .navi .soc-ul .soc-li .soc-a {
     font-size: 13px; } }
+
+@media (max-width: 600px) {
+  .head-cont .nav-box .burger-icon {
+    display: block;
+    color: #00A1C2;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    cursor: pointer; } }
 
 @media (max-width: 1680px) {
   .foot-bg .xazi {
@@ -278,6 +275,16 @@ a {
 @media (max-width: 1024px) {
   .foot-bg .avtori .avtori-a {
     font-size: 10px; } }
+
+@media (max-width: 600px) {
+  .head-cont .nav-box .navi .soc-ul .open-socicon {
+    display: flex; } }
+
+@media (max-width: 600px) {
+  .head-cont .nav-box .navi .nav-ul .open-menu {
+    display: block;
+    flex-direction: column;
+    padding: 15px 0; } }
 
 .head-cont {
   background-color: #F4F6F6; }

@@ -7,7 +7,6 @@
     background-color: $color-01;
     @extend %head-size;
     @extend %border-def;
-    @extend %tab-head-cont;
     .nav-box {
         @extend %nav-box-size;
         @include d-flex (flex,space-between,center);
@@ -25,15 +24,15 @@
             @extend %navi-size;
             @include d-flex (flex,space-between,center);
             @extend %desk-navi;
-            @extend %nav-ul-open;
             .nav-ul {
                 @extend %nav-ul-size;
                 @include d-flex (flex,space-between,center);
                 @extend %desk-nav-ul;
+                @extend %nav-ul-open;
                 .nav-li {
                     border-radius: $size-05;
                     @extend %hover-def;
-                    @extend %tab-nav-li;
+                    @extend %desk-nav-li;
                     .nav-a {
                         @extend %font-h1-def;
                         @extend %tab-nav-a;
@@ -41,9 +40,10 @@
                 }
             }
             .soc-ul {
-                @extend %soc-ul-size;
                 display: flex;
+                @extend %soc-ul-size;
                 @extend %tab-soc-ul;
+                @extend %open-soci;
                 .soc-li {
                     padding: $size-05 0;
                     .fa {
@@ -66,6 +66,7 @@
         }
         .burger-icon {
             display: none;
+            @extend %tab-burger-icon;
         }
     }
 }
