@@ -1,10 +1,10 @@
 //HEADER
-%tab-nav-logo {
+%nav-logo-med {
     @media (max-width: $size-0600) {
         margin: 0 auto;
     }
 }
-%desk-navi {
+%navi-med {
     @media (max-width: $size-01680) {
         width: $size-75;
     }
@@ -18,7 +18,7 @@
         flex-direction: column;
     }
 }
-%desk-nav-box {
+%nav-box-med {
     @media (max-width: $size-01680) {
         width: $size-90;
     }
@@ -26,7 +26,16 @@
         flex-direction: column;
     }
 }
-%desk-nav-ul {
+%nav-ul-open-med {
+    @media (max-width: $size-0600) {
+        .open-menu {
+            display: block;
+            text-align: center;
+            padding: $size-020 0;
+        }
+    }
+}
+%nav-ul-med {
     @media (max-width: $size-01024) {
         max-width: $size-0450;
     }
@@ -34,16 +43,17 @@
         max-width: $size-0375;
     }
     @media (max-width: $size-0600) {
-        flex-direction: column;
-        padding: $size-015;
+        display: none;
     }
 }
-%desk-nav-li {
+%nav-li-med {
     @media (max-width: $size-0600) {
+        max-width: $size-0110;
+        margin: 0 auto;
         padding: $size-05 0;
     }
 }
-%tab-nav-a {
+%nav-a-med {
     @media (max-width: $size-01024) {
         font-size: $size-015;
     }
@@ -51,7 +61,7 @@
         font-size: $size-013;
     }
 }
-%tab-soc-ul {
+%soc-ul-med {
     @media (max-width: $size-0800) {
         max-width: $size-0200;
     }
@@ -59,54 +69,69 @@
         display: none;
     }
 }
-%tab-soc-a {
-    @media (max-width: $size-0800) {
-        font-size: $size-013;
-    }
-}
-%tab-burger-icon {
-    @media (max-width: $size-0600) {
-        display: block;
-        color: $color-02;
-        font-size: $size-030;
-        position: absolute;
-        top: $size-010;
-        right: $size-030;
-        cursor:pointer;
-    }
-}
-//FOOTER
-//Desktop
-%desk-xazi {
-    @media (max-width: $size-01680) {
-        width: $size-95;
-    }
-}
-%desk-avtori {
-    @media (max-width: $size-01680) {
-        width: $size-90;
-    }
-}
-//Tablet
-%tab-foot-cont {
-    @media (max-width: $size-01024) {
-        width: $size-80;
-    }
-}
-%tab-avtori-a {
-    @media (max-width: $size-01024) {
-        font-size: $size-010;
-    }
-}
-//BURGER
-%open-soci {
+%open-soci-med {
     @media (max-width: $size-0600) {
         .open-socicon {
             display: flex;
         }
     }
 }
-%nav-ul-open {
+%soc-a-med {
+    @media (max-width: $size-0800) {
+        font-size: $size-013;
+    }
+}
+%burger-icon-med {
+    @media (max-width: $size-0600) {
+        display: block;
+        color: $color-02;
+        font-size: $size-030;
+        position: absolute;
+        top: $size-013;
+        right: $size-050;
+        cursor:pointer;
+    }
+}
+
+//FOOTER
+%xazi-med {
+    @media (max-width: $size-01680) {
+        width: $size-95;
+    }
+}
+%foot-cont-2-med {
+    @media (max-width: $size-0600) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+%avtori-med {
+    @media (max-width: $size-01680) {
+        width: $size-90;
+    }
+}
+%foot-cont-med {
+    @media (max-width: $size-01024) {
+        width: $size-80;
+    }
+    @media (max-width: $size-0414) {
+        flex-direction: column-reverse;
+    }
+}
+%avtori-a-med {
+    @media (max-width: $size-01024) {
+        font-size: $size-010;
+    }
+}
+//BURGER
+%open-soci-med {
+    @media (max-width: $size-0600) {
+        .open-socicon {
+            display: flex;
+        }
+    }
+}
+%nav-ul-open-med {
     @media (max-width: $size-0600) {
         .open-menu {
             display: block;

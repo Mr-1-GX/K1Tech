@@ -10,12 +10,12 @@
     .nav-box {
         @extend %nav-box-size;
         @include d-flex (flex,space-between,center);
-        @extend %desk-nav-box;
+        @extend %nav-box-med;
         .nav-logo {
             @extend %nav-logo-size;
             @extend %border-def;
             @extend %hover-def;
-            @extend %tab-nav-logo;
+            @extend %nav-logo-med;
             .img-100 {
                 width: $size-0;
             }
@@ -23,27 +23,27 @@
         .navi {
             @extend %navi-size;
             @include d-flex (flex,space-between,center);
-            @extend %desk-navi;
+            @extend %navi-med;
+            @extend %nav-ul-open-med;
+            @extend %open-soci-med;
             .nav-ul {
                 @extend %nav-ul-size;
                 @include d-flex (flex,space-between,center);
-                @extend %desk-nav-ul;
-                @extend %nav-ul-open;
+                @extend %nav-ul-med;
                 .nav-li {
                     border-radius: $size-05;
                     @extend %hover-def;
-                    @extend %desk-nav-li;
+                    @extend %nav-li-med;
                     .nav-a {
                         @extend %font-h1-def;
-                        @extend %tab-nav-a;
+                        @extend %nav-a-med;
                     }
                 }
             }
             .soc-ul {
                 display: flex;
                 @extend %soc-ul-size;
-                @extend %tab-soc-ul;
-                @extend %open-soci;
+                @extend %soc-ul-med;
                 .soc-li {
                     padding: $size-05 0;
                     .fa {
@@ -52,7 +52,7 @@
                     .soc-a {
                         @extend %font-bol-def;
                         @extend %hover-def;
-                        @extend %tab-soc-a;
+                        @extend %soc-a-med;
                     }
                 }
                 .contact-ul {
@@ -66,12 +66,12 @@
         }
         .burger-icon {
             display: none;
-            @extend %tab-burger-icon;
+            @extend %burger-icon-med;
         }
     }
 }
 .sect-1 {
-    margin: $size-0170 0 $size-025 0;
+    margin: $size-100 0 $size-025 0;
 }
 //Futer
 .foot-bg {
@@ -82,9 +82,8 @@
     @extend %border-def;
     .foot-cont {
         @extend %foot-cont-size;
-        padding-top: $size-030;
         @include d-flex (flex,space-between,center);
-        @extend %tab-foot-cont;
+        @extend %foot-cont-med;
         .foot-box {
             @extend %foot-box-size;
             @include d-flex (flex,space-evenly,center);
@@ -124,11 +123,12 @@
     }
     .xazi {
         @extend %xazi;
-        @extend %desk-xazi;
+        @extend %xazi-med;
     }
     .foot-cont-2 {
         @extend %foot-cont-2-size;
         @include d-flex (flex,space-around,baseline);
+        @extend %foot-cont-2-med;
         .foot-2-box {
             height: $size-0200;
             @include d-flex (flex,space-evenly,center);
@@ -151,14 +151,14 @@
         @extend %avtori-size;
         padding-bottom: $size-020;
         @include d-flex (flex,space-between,center);
-        @extend %desk-avtori;
+        @extend %avtori-med;
         .avtori-p {
             font-size: $size-010;
             @extend %font-p-def; 
         }
         .avtori-a {
             @extend %font-h2-def;
-            @extend %tab-avtori-a;
+            @extend %avtori-a-med;
         }
     }
 }
