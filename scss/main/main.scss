@@ -70,8 +70,85 @@
         }
     }
 }
+//Sections
 .sect-1 {
     margin: $size-100 0 $size-025 0;
+    @extend %sect-1-med;
+    .slide-cont {
+        margin: 0 $size-030;
+    }
+}
+.sect-2 {
+    @extend %sect-2-size;
+    @include d-flex (flex,space-evenly,center);
+    flex-direction: column;
+    margin-top: $size-070;
+    @extend %border-def;
+    background-color: $color-01;
+    .cont-1 {
+        @extend %cont-1-size;
+        @include d-flex (flex,space-around,center);
+        .cont-1-box {
+            @extend %cont-1-box-size;
+            @extend %bg-def;
+            @extend %border-def;
+            @include d-flex (flex,flex-end,center);
+            flex-direction: column;
+            .cont-1-img {
+                max-width: $size-0200;
+                .cont-1-img-box {
+                    width: $size-0;
+                }
+            }
+            .cont-1-h3 {
+                @extend %cont-1-h3-size;
+                @extend %font-h3-def;
+            }
+        }
+    }
+}
+.sect-3 {
+    @extend %border-def;
+    text-align: center;
+    margin-top: $size-070;
+    background-color: $color-01;
+    .sect-3-h2 {
+        @extend %font-h2-def;
+    }
+    .sect-3-slide {
+        @include d-flex (flex,space-around,center);
+        width: $size-80;
+        margin: $size-040 auto;
+        position: initial;
+        .cont-2-box {
+            @extend %cont-2-box-size;
+            @extend %border-def;
+            margin: 0 $size-010;
+            .cont-2-text {
+                @extend %cont-2-text-size;
+                @include d-flex (flex,space-around,baseline);
+                flex-direction: column;
+                .cont-2-sale {
+                    .cont-2-box-h2 {
+                        @extend %font-h2-def;
+                    }
+                }
+                .cont-2-img-box {
+                    .cont-2-text-img {
+                        width: $size-0;
+                    }
+                }
+                .cont-2-p {
+                    @extend %font-p-def;
+                }
+                .cont-2-cost {
+                    .cont-2-h4 {
+                        @extend %font-h3-def;
+                    }
+                }
+            }
+        }
+    }
 }
 //Futer
 .foot-bg {

@@ -18,6 +18,13 @@
     letter-spacing: $size-02;
     text-shadow: $size-01 $size--01 $size-01 $color-02;
 }
+%font-h3-def {
+    font-size: $size-020;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: $size-02;
+    text-shadow: $size-01 $size--01 $size-01 $color-02;
+}
 %font-bol-def {
     font-size: $size-015;
     color: $color-03;
@@ -90,6 +97,34 @@
 %soc-ul-size {
     max-width: $size-0230;
     width: $size-0;
+}
+//Sections
+%sect-2-size {
+    max-width: $size-01920;
+    width: $size-0;
+    height: $size-0800;
+}
+%cont-1-size {
+    max-width: $size-01240;
+    width: $size-0;
+}
+%cont-1-box-size {
+    max-width: $size-0270;
+    width: $size-0;
+    height: $size-0270;
+}
+%cont-1-h3-size {
+    margin: $size-025 auto;
+}
+%cont-2-text-size {
+    max-width: $size-0270;
+    width: $size-0;
+    height: $size-0270;
+}
+%cont-2-box-size {
+    max-width: $size-0230;
+    width: $size-0;
+    height: $size-0270;
 }
 
 //Footer

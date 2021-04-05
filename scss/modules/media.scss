@@ -1,5 +1,10 @@
 //HEADER
 %nav-logo-med {
+    // @media (max-width: $size-0670) {
+    //     position: fixed;
+    //     top: $size-05;
+    //     left: $size-0110;
+    // }
     @media (max-width: $size-0600) {
         margin: 0 auto;
     }
@@ -14,6 +19,11 @@
     @media (max-width: $size-01024) {
         width: $size-87;
     }
+    // @media (max-width: $size-0670) {
+    //     width: $size-90;
+    //     align-items: flex-end;
+    //     flex-direction: column-reverse;
+    // }
     @media (max-width: $size-0600) {
         flex-direction: column;
     }
@@ -42,6 +52,10 @@
     @media (max-width: $size-0800) {
         max-width: $size-0375;
     }
+    // @media (max-width: $size-0670) {
+    //     padding: $size-010 0;
+    //     max-width: $size-0500;
+    // }
     @media (max-width: $size-0600) {
         display: none;
     }
@@ -60,11 +74,19 @@
     @media (max-width: $size-0800) {
         font-size: $size-013;
     }
+    // @media (max-width: $size-0670) {
+    //     font-size: $size-015;
+    // }
 }
 %soc-ul-med {
     @media (max-width: $size-0800) {
         max-width: $size-0200;
     }
+    // @media (max-width: $size-0670) {
+    //     padding-right: $size-030;
+    //     justify-content: flex-end;
+    //     max-width: $size-0360;
+    // }
     @media (max-width: $size-0600) {
         display: none;
     }
@@ -91,6 +113,10 @@
         right: $size-050;
         cursor:pointer;
     }
+}
+//Section-1
+%sect-1-med {
+    margin: $size-0130 0 0 0;
 }
 
 //FOOTER
@@ -171,9 +197,9 @@
     @media (max-width: $size-0800) {
         font-size: $size-015;
     }
-    @media (max-width: $size-0768) {
-        max-width: $size-90;
-    }
+    // @media (max-width: $size-0768) {
+    //     max-width: $size-90;
+    // }
     @media (max-width: $size-0600) {
         max-width: $size-90;
     }
