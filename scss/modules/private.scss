@@ -82,6 +82,17 @@
         @include transition-hover (all,0.3s,linear,0.2s)
     }
 }
+%hover-sale {
+    &:hover {
+        max-width: $size-0170;
+        width: $size-0;
+        height: $size-025;
+        border-bottom-right-radius: $size-050 $size-035;
+        background-color: $color-07;
+        @include d-flex (flex,space-around,center);
+        @include transition-hover (all,0.3s,linear,0.2s);
+    }
+}
 
 //HEADER
 %head-size {

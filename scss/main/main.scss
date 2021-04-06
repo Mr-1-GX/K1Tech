@@ -32,7 +32,6 @@
                 @extend %nav-ul-med;
                 .nav-li {
                     border-radius: $size-05;
-                    @extend %hover-def;
                     @extend %nav-li-med;
                     .nav-a {
                         @extend %font-h1-def;
@@ -134,7 +133,13 @@
                 @include d-flex (flex,space-around,baseline);
                 flex-direction: column;
                 .cont-2-sale {
-                    margin: $size-010;
+                    max-width: $size-0170;
+                    width: $size-0;
+                    height: $size-025;
+                    border-bottom-right-radius: $size-050 $size-035;
+                    background-color: $color-07;
+                    @include d-flex (flex,space-around,center);
+                    @include transition-hover (all,0.3s,linear,0.2s);
                     .cont-2-box-h2 {
                         @extend %font-h2-def;
                     }
