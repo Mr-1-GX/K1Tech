@@ -73,28 +73,28 @@ a {
   src: url("../fonts/alk-s/alk-sanet-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/alk-s/alk-sanet-webfont.woff2") format("woff2"), url("../fonts/alk-s/alk-sanet-webfont.woff") format("woff"), url("../fonts/alk-salk-sanet-webfont.ttf") format("truetype"), url("../fonts/alk-salk-sanet-webfont.svg#alk_sanetregular") format("svg");
   /* Legacy iOS */ }
 
-.body-bg, .sect-2 .cont-1 .cont-1-box {
+.body-bg, .sect-2 .cont-1 .cont-1-box, .sect-3 .sect-3-slide .cont-2-box .cont-2-text, .sect-4 .sect-4-cont .sect-4-box {
   background-image: url(../img/k1.PNG);
   background-color: #F4F6F6;
   background-repeat: repeat;
   background-position: top left;
   background-size: auto 3px; }
 
-.head-cont .nav-box .navi .nav-ul .nav-li .nav-a {
+.head-cont .nav-box .navi .nav-ul .nav-li .nav-a, .sect-3 .sect-3-h1, .sect-4 .sect-4-h1, .foot-bg .foot-cont .foot-box .foot-h1, .foot-bg .foot-cont-2 .foot-2-box .foot-2-h1 {
   font-size: 20px;
   color: #00A1C2;
   font-family: 'archy-B';
   letter-spacing: 2px;
   text-shadow: 1px -1px 1px #565555; }
 
-.sect-3 .sect-3-h2, .sect-3 .sect-3-slide .cont-2-box .cont-2-text .cont-2-sale .cont-2-box-h2, .foot-bg .foot-cont .foot-box .foot-h2, .foot-bg .foot-cont-2 .foot-2-box .foot-2-h2, .foot-bg .avtori .avtori-a {
+.sect-3 .sect-3-slide .cont-2-box .cont-2-text .cont-2-sale .cont-2-box-h2, .foot-bg .avtori .avtori-a {
   font-size: 15px;
   color: #565555;
   font-family: 'archy-B';
   letter-spacing: 2px;
   text-shadow: 1px -1px 1px #00A1C2; }
 
-.sect-2 .cont-1 .cont-1-box .cont-1-h3, .sect-3 .sect-3-slide .cont-2-box .cont-2-text .cont-2-cost .cont-2-h4 {
+.sect-2 .cont-1 .cont-1-box .cont-1-h3, .sect-3 .sect-3-slide .cont-2-box .cont-2-text .cont-2-cost .cont-2-h4, .sect-4 .sect-4-cont .sect-4-box .sect-4-text .sect-4-h3 {
   font-size: 20px;
   color: #565555;
   font-family: 'archy-B';
@@ -116,12 +116,26 @@ a {
   text-shadow: 1px -1px 1px #565555;
   border-radius: 5px; }
 
-.sect-3 .sect-3-slide .cont-2-box .cont-2-text .cont-2-p, .foot-bg .foot-cont .foot-box .foot-p, .foot-bg .foot-cont-2 .foot-2-box .foot-2-ul .foot-2-li, .foot-bg .avtori .avtori-p {
+.sect-3 .sect-3-slide .cont-2-box .cont-2-text .cont-2-p, .sect-4 .sect-4-cont .sect-4-box .sect-4-text .sect-4-p, .foot-bg .foot-cont .foot-box .foot-p, .foot-bg .foot-cont-2 .foot-2-box .foot-2-ul .foot-2-li, .foot-bg .avtori .avtori-p {
   color: #565555;
   font-family: 'alk-s';
   text-shadow: 1px 0 #062D2D; }
 
-.foot-bg .xazi {
+.sect-baner .sect-baner-text .sect-baner-h1 {
+  font-size: 35px;
+  color: #F4F6F6;
+  font-family: 'archy-B';
+  letter-spacing: 1px;
+  text-shadow: 1px 0 #062D2D; }
+
+.sect-baner .sect-baner-text .sect-baner-p, .sect-baner .sect-baner-text .sect-baner-shop .sect-baner-h4 {
+  font-size: 15px;
+  color: #F4F6F6;
+  font-family: 'alk-s';
+  letter-spacing: 1px;
+  text-shadow: 1px 0 #062D2D; }
+
+.sect-3 .xazi, .sect-4 .xazi, .foot-bg .xazi {
   max-width: 1750px;
   width: 100%;
   margin: 25px 0 25px 0;
@@ -130,10 +144,10 @@ a {
   border: 0.1px solid #A9CCE3;
   box-shadow: 0 0 15px #00A1C2; }
 
-.head-cont, .head-cont .nav-box .nav-logo, .sect-2, .sect-2 .cont-1 .cont-1-box, .sect-3, .sect-3 .sect-3-slide .cont-2-box, .foot-bg {
-  border-radius: 5px;
+.head-cont, .head-cont .nav-box .nav-logo, .sect-2, .sect-2 .cont-1 .cont-1-box, .sect-3, .sect-3 .sect-3-slide .cont-2-box, .sect-4, .sect-4 .sect-4-cont .sect-4-box, .sect-baner, .foot-bg {
+  border-radius: 3px;
   border: 1px solid #00A1C2;
-  box-shadow: 0 0 2px 0 #565555; }
+  box-shadow: 0 0 3px 1px #565555; }
 
 .head-cont .nav-box .nav-logo:hover, .head-cont .nav-box .navi .nav-ul .nav-li:hover, .head-cont .nav-box .navi .soc-ul .soc-li .soc-a:hover, .foot-bg .foot-cont .foot-box .cont-p .li-box .contact:hover {
   background-color: #A9CCE3;
@@ -194,6 +208,16 @@ a {
   max-width: 230px;
   width: 100%;
   height: 270px; }
+
+.sect-baner {
+  max-width: 1920px;
+  width: 100%;
+  height: 320px; }
+
+.sect-baner .sect-baner-text {
+  max-width: 320px;
+  width: 100%;
+  height: 230px; }
 
 .foot-bg .foot-cont {
   max-width: 962px;
@@ -280,8 +304,10 @@ a {
 
 .sect-3 {
   text-align: center;
-  margin-top: 70px;
+  margin: 70px 0 40px;
   background-color: #F4F6F6; }
+  .sect-3 .sect-3-h1 {
+    margin-top: 30px; }
   .sect-3 .sect-3-slide {
     display: flex;
     justify-content: space-around;
@@ -296,8 +322,63 @@ a {
         justify-content: space-around;
         align-items: baseline;
         flex-direction: column; }
+        .sect-3 .sect-3-slide .cont-2-box .cont-2-text .cont-2-sale {
+          margin: 10px; }
         .sect-3 .sect-3-slide .cont-2-box .cont-2-text .cont-2-img-box .cont-2-text-img {
+          width: 87%; }
+        .sect-3 .sect-3-slide .cont-2-box .cont-2-text .cont-2-p {
+          max-width: 200px; }
+        .sect-3 .sect-3-slide .cont-2-box .cont-2-text .cont-2-cost {
+          margin: 10px; }
+
+.sect-4 {
+  height: 270px;
+  margin: 35px 0;
+  background-color: #F4F6F6;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .sect-4 .sect-4-h1 {
+    margin-top: 20px; }
+  .sect-4 .sect-4-cont {
+    max-width: 1060px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 35px; }
+    .sect-4 .sect-4-cont .sect-4-box {
+      max-width: 320px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      .sect-4 .sect-4-cont .sect-4-box .sect-4-img {
+        max-width: 150px; }
+        .sect-4 .sect-4-cont .sect-4-box .sect-4-img .sect-4-img-box {
           width: 100%; }
+      .sect-4 .sect-4-cont .sect-4-box .sect-4-text .sect-4-h3 {
+        margin: 10px; }
+      .sect-4 .sect-4-cont .sect-4-box .sect-4-text .sect-4-p {
+        margin: 10px; }
+
+.sect-baner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #00A1C2;
+  margin: 20px 0 20px; }
+  .sect-baner .sect-baner-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-direction: column; }
+  .sect-baner .sect-baner-img {
+    max-width: 320px;
+    margin-bottom: 13px; }
+    .sect-baner .sect-baner-img .sect-baner-img-box {
+      width: 100%; }
 
 .foot-bg {
   background-color: #F4F6F6;

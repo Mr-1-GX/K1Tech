@@ -110,10 +110,14 @@
 .sect-3 {
     @extend %border-def;
     text-align: center;
-    margin-top: $size-070;
+    margin: $size-070 0 $size-040;
     background-color: $color-01;
-    .sect-3-h2 {
-        @extend %font-h2-def;
+    .sect-3-h1 {
+        @extend %font-h1-def;
+        margin-top: $size-030;
+    }
+    .xazi {
+        @extend %xazi;
     }
     .sect-3-slide {
         @include d-flex (flex,space-around,center);
@@ -125,28 +129,106 @@
             @extend %border-def;
             margin: 0 $size-010;
             .cont-2-text {
+                @extend %bg-def;
                 @extend %cont-2-text-size;
                 @include d-flex (flex,space-around,baseline);
                 flex-direction: column;
                 .cont-2-sale {
+                    margin: $size-010;
                     .cont-2-box-h2 {
                         @extend %font-h2-def;
                     }
                 }
                 .cont-2-img-box {
                     .cont-2-text-img {
-                        width: $size-0;
+                        width: $size-87;
                     }
                 }
                 .cont-2-p {
+                    max-width: $size-0200;
                     @extend %font-p-def;
                 }
                 .cont-2-cost {
+                    margin: $size-010;
                     .cont-2-h4 {
                         @extend %font-h3-def;
                     }
                 }
             }
+        }
+    }
+}
+.sect-4 {
+    height: $size-0270;
+    margin: $size-035 0;
+    background-color: $color-01;
+    flex-direction: column;
+    @include d-flex (flex,space-around,center);
+    @extend %border-def;
+    .sect-4-h1 {
+        margin-top: $size-020;
+        @extend %font-h1-def;
+    }
+    .xazi {
+        @extend %xazi;
+    }
+    .sect-4-cont {
+        max-width: $size-01060;
+        width: $size-0;
+        @include d-flex (flex,space-around,center);
+        margin-bottom: $size-035;
+        .sect-4-box {
+            max-width: $size-0320;
+            width: $size-0;
+            @extend %bg-def;
+            @include d-flex (flex,space-around,center);
+            @extend %border-def;
+            .sect-4-img {
+                max-width: 150px;
+                .sect-4-img-box {
+                    width: $size-0;
+                }
+            }
+            .sect-4-text {
+                .sect-4-h3 {
+                    margin: $size-010;
+                    @extend %font-h3-def;
+                }
+                .sect-4-p {
+                    margin: $size-010;
+                    @extend %font-p-def;
+                }
+            }
+        }
+    }
+}
+.sect-baner {
+    @extend %sect-baner-size;
+    @include d-flex (flex,space-evenly,center);
+    @extend %border-def;
+    background-color: $color-02;
+    margin: $size-020 0 $size-020;
+    .sect-baner-text {
+        @extend %sect-baner-text-size;
+        @include d-flex (flex,space-around,baseline);
+        flex-direction: column;
+        .sect-baner-h1 {
+            @extend %font-h1-baner;
+        }
+        .sect-baner-p {
+            @extend %font-p-baner;
+        }
+        .sect-baner-shop {
+            .sect-baner-h4 {
+                @extend %font-p-baner;
+            }
+        }
+    }
+    .sect-baner-img {
+        max-width: $size-0320;
+        margin-bottom: $size-013;
+        .sect-baner-img-box {
+            width: $size-0;
         }
     }
 }
@@ -166,8 +248,8 @@
             @include d-flex (flex,space-evenly,center);
             flex-direction: column;
             text-align: center;
-            .foot-h2 {
-                @extend %font-h2-def;
+            .foot-h1 {
+                @extend %font-h1-def;
             }
             .foot-p {
                 @extend %foot-p-size;
@@ -210,8 +292,8 @@
             height: $size-0200;
             @include d-flex (flex,space-evenly,center);
             flex-direction: column;
-            .foot-2-h2 {
-                @extend %font-h2-def;
+            .foot-2-h1 {
+                @extend %font-h1-def;
             }
             .foot-2-ul {
                 height: $size-0130;

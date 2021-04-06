@@ -45,6 +45,20 @@
     font-family: 'alk-s';
     text-shadow: $size-01 0 $color-06;
 }
+%font-h1-baner {
+    font-size: $size-035;
+    color: $color-01;
+    font-family: 'archy-B';
+    letter-spacing: $size-01;
+    text-shadow: $size-01 0 $color-06;
+}
+%font-p-baner {
+    font-size: $size-015;
+    color: $color-01;
+    font-family: 'alk-s';
+    letter-spacing: $size-01;
+    text-shadow: $size-01 0 $color-06;
+}
 //Xazi
 %xazi {
     max-width: $size-01750;
@@ -57,9 +71,9 @@
 }
 //Border
 %border-def {
-    border-radius: $size-05;
+    border-radius: $size-03;
     @include border ($size-01, solid, $color-02);
-    box-shadow: 0 0 $size-02 0 $color-03;
+    box-shadow: 0 0 $size-03 $size-01 $color-03;
 }
 %hover-def {
     &:hover {
@@ -99,6 +113,7 @@
     width: $size-0;
 }
 //Sections
+//Section-2
 %sect-2-size {
     max-width: $size-01920;
     width: $size-0;
@@ -116,6 +131,7 @@
 %cont-1-h3-size {
     margin: $size-025 auto;
 }
+//Section-3
 %cont-2-text-size {
     max-width: $size-0270;
     width: $size-0;
@@ -125,6 +141,17 @@
     max-width: $size-0230;
     width: $size-0;
     height: $size-0270;
+}
+//Section-Banner
+%sect-baner-size {
+    max-width: $size-01920;
+    width: $size-0;
+    height: $size-0320;
+}
+%sect-baner-text-size {
+    max-width: $size-0320;
+    width: $size-0;
+    height: $size-0230;
 }
 
 //Footer
