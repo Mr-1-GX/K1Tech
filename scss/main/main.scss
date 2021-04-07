@@ -69,14 +69,20 @@
         }
     }
 }
-//Sections
+//Section-1
 .sect-1 {
     margin: $size-100 0 $size-025 0;
     @extend %sect-1-med;
-    .slide-cont {
+    .sect-1-cont {
         margin: 0 $size-030;
+        .sect-1-box {
+            .sect-1-img {
+                width: $size-0;
+            }
+        }
     }
 }
+//Section-2
 .sect-2 {
     @extend %sect-2-size;
     @include d-flex (flex,space-evenly,center);
@@ -106,6 +112,7 @@
         }
     }
 }
+//Section-3
 .sect-3 {
     @extend %border-def;
     text-align: center;
@@ -163,6 +170,7 @@
         }
     }
 }
+//Section-4
 .sect-4 {
     height: $size-0270;
     margin: $size-035 0;
@@ -181,7 +189,6 @@
         max-width: $size-01060;
         width: $size-0;
         @include d-flex (flex,space-around,center);
-        margin-bottom: $size-035;
         .sect-4-box {
             max-width: $size-0320;
             width: $size-0;
@@ -207,6 +214,7 @@
         }
     }
 }
+//Section-Banner
 .sect-baner {
     @extend %sect-baner-size;
     @include d-flex (flex,space-evenly,center);

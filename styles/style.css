@@ -278,8 +278,10 @@ a {
 
 .sect-1 {
   margin: 100px 0 25px 0; }
-  .sect-1 .slide-cont {
+  .sect-1 .sect-1-cont {
     margin: 0 30px; }
+    .sect-1 .sect-1-cont .sect-1-box .sect-1-img {
+      width: 100%; }
 
 .sect-2 {
   display: flex;
@@ -354,8 +356,7 @@ a {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin-bottom: 35px; }
+    align-items: center; }
     .sect-4 .sect-4-cont .sect-4-box {
       max-width: 320px;
       width: 100%;
