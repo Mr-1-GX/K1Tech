@@ -7,6 +7,7 @@
     background-color: $color-01;
     @extend %head-size;
     @extend %border-def;
+    z-index: 1;
     .nav-box {
         @extend %nav-box-size;
         @include d-flex (flex,space-between,center);
@@ -36,6 +37,22 @@
                     .nav-a {
                         @extend %font-h1-def;
                         @extend %nav-a-med;
+                    }
+                    .nav-drop-ul {
+                        max-width: $size-0200;
+                        width: $size-0;
+                        height: $size-0270;
+                        margin-top: $size-010;
+                        @include d-flex (flex,space-around,initial);
+                        flex-direction: column;
+                        .nav-drop-li{
+                            padding: $size-05 0;
+                            text-align: center;
+                            @extend %border-def;
+                            .nav-drop {
+                                @extend %font-a-drop;
+                            }
+                        }
                     }
                 }
             }
@@ -75,7 +92,9 @@
     @extend %sect-1-med;
     .sect-1-cont {
         margin: 0 $size-030;
+        z-index: 2;
         .sect-1-box {
+            @extend %border-def;
             .sect-1-img {
                 width: $size-0;
             }
@@ -125,11 +144,10 @@
     .xazi {
         @extend %xazi;
     }
-    .sect-3-slide {
+    .sect-3-cont {
         @include d-flex (flex,space-around,center);
         width: $size-80;
         margin: $size-040 auto;
-        position: initial;
         .cont-2-box {
             @extend %cont-2-box-size;
             @extend %border-def;
@@ -195,6 +213,7 @@
             @extend %bg-def;
             @include d-flex (flex,space-around,center);
             @extend %border-def;
+            margin-left: $size-015;
             .sect-4-img {
                 max-width: 150px;
                 .sect-4-img-box {
@@ -202,6 +221,7 @@
                 }
             }
             .sect-4-text {
+
                 .sect-4-h3 {
                     margin: $size-010;
                     @extend %font-h3-def;

@@ -1,7 +1,7 @@
 //IMAGE-100%
 %bg-def {
     @include bg-img (url(../img/k1.PNG),$color-01);
-    @include background (repeat,top left,auto $size-03,);
+    @include background (repeat,top left,auto $size-01,);
 }
 //Font
 %font-h1-def {
@@ -122,6 +122,14 @@
 %soc-ul-size {
     max-width: $size-0230;
     width: $size-0;
+}
+//Drop-Down
+%font-a-drop {
+    font-size: $size-015;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: $size-02;
+    text-shadow: $size-01 $size--01 $size-01 $color-02;
 }
 //Sections
 //Section-2

@@ -3,7 +3,7 @@ $('.center').slick({
   dots: true,
   centerMode: true,
   centerPadding: '60px',
-  slidesToShow: 3,
+  slidesToShow: 5,
   autoplay: true,
   autoplaySpeed: 2000,
   responsive: [
@@ -13,7 +13,7 @@ $('.center').slick({
         arrows: false,
         centerMode: true,
         centerPadding: '40px',
-        slidesToShow: 2
+        slidesToShow: 3
       }
     },
     {
@@ -35,7 +35,7 @@ $('.fade').slick({
   fade: true,
   cssEase: 'linear',
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 1600,
   arrows: false,
 });
 
@@ -46,8 +46,9 @@ $('.lazy').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 1800,
+  speed: 800,
+  centerPadding: '50px',
 });
 
-  
       
