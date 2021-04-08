@@ -34,21 +34,25 @@
                 .nav-li {
                     border-radius: $size-05;
                     @extend %nav-li-med;
+                    @extend %hover-dop;
                     .nav-a {
                         @extend %font-h1-def;
                         @extend %nav-a-med;
                     }
                     .nav-drop-ul {
-                        max-width: $size-0200;
+                        max-width: $size-0160;
                         width: $size-0;
                         height: $size-0270;
-                        margin-top: $size-010;
-                        @include d-flex (flex,space-around,initial);
-                        flex-direction: column;
+                        position: absolute;
+                        top: $size-65;
+                        left: $size-26;
+                        display: none;
                         .nav-drop-li{
+                            margin: $size-05 0;
                             padding: $size-05 0;
                             text-align: center;
                             @extend %border-def;
+                            background-color: $color-01;
                             .nav-drop {
                                 @extend %font-a-drop;
                             }
