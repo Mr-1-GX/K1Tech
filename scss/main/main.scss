@@ -93,8 +93,7 @@
 //Section-1
 .sect-1 {
     margin: $size-100 0 $size-025 0;
-    background-image: url(../img/shad.png);
-    @include background (repeat,top left,auto $size-01,);
+    position: relative;
     .sect-1-cont {
         margin: 0 $size-030;
         z-index: 2;
@@ -113,13 +112,21 @@
             }
         }
     }
+    .shadow {
+        width: $size-0;
+        height: 180px;
+        position: absolute;
+        top: 65%;
+        z-index: -1;
+        @extend %shad-def;
+    }
 }
 //Section-2
 .sect-2 {
     @extend %sect-2-size;
     @include d-flex (flex,space-evenly,center);
     flex-direction: column;
-    margin-top: $size-070;
+    margin-top: $size-0110;
     @extend %border-def;
     background-color: $color-01;
     .cont-1 {

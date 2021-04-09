@@ -3,6 +3,12 @@
     @include bg-img (url(../img/k1.PNG),$color-01);
     @include background (repeat,top left,auto $size-01,);
 }
+%shad-def {
+    background-image: url(../img/shad-3.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 1450px 180px;
+}
 //Font
 %font-h1-def {
     font-size: $size-020;

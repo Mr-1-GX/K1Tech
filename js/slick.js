@@ -35,7 +35,7 @@ $('.fade').slick({
   fade: true,
   cssEase: 'linear',
   autoplay: true,
-  autoplaySpeed: 4500,
+  autoplaySpeed: 5000,
   arrows: false,
 });
 
