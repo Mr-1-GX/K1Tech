@@ -102,6 +102,24 @@
             max-width: 1400px;
             @extend %border-def;
             border-radius: 5px;
+            .slick-dots {
+                bottom: 30px;
+                li {
+                    button {
+                        &:before {
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .slick-active {
+                    margin: 0 20px;
+                    button {
+                        &:before {
+                            color: $color-02;
+                        }
+                    }
+                }
+            }
             .sect-1-img {
                 margin: 2px;
                 width: $size-0;

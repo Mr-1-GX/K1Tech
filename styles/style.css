@@ -316,6 +316,14 @@ a {
     .sect-1 .sect-1-cont .sect-1-box {
       max-width: 1400px;
       border-radius: 5px; }
+      .sect-1 .sect-1-cont .sect-1-box .slick-dots {
+        bottom: 30px; }
+        .sect-1 .sect-1-cont .sect-1-box .slick-dots li button:before {
+          font-size: 15px; }
+        .sect-1 .sect-1-cont .sect-1-box .slick-dots .slick-active {
+          margin: 0 20px; }
+          .sect-1 .sect-1-cont .sect-1-box .slick-dots .slick-active button:before {
+            color: #00A1C2; }
       .sect-1 .sect-1-cont .sect-1-box .sect-1-img {
         margin: 2px;
         width: 100%;
