@@ -35,7 +35,7 @@ $('.fade').slick({
   fade: true,
   cssEase: 'linear',
   autoplay: true,
-  autoplaySpeed: 1600,
+  autoplaySpeed: 4500,
   arrows: false,
 });
 
@@ -51,13 +51,6 @@ $('.lazy').slick({
   centerPadding: '50px',
 });
 
-$('.autoplay').slick({
-  dots: true,
-  arrows: false,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-});
+
 
       

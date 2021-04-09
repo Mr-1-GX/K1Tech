@@ -93,14 +93,23 @@
 //Section-1
 .sect-1 {
     margin: $size-100 0 $size-025 0;
-    @extend %sect-1-med;
+    background-image: url(../img/shad.png);
+    @include background (repeat,top left,auto $size-01,);
     .sect-1-cont {
         margin: 0 $size-030;
         z-index: 2;
+        background-color: $color-01;
         .sect-1-box {
+            max-width: 1400px;
             @extend %border-def;
+            border-radius: 5px;
             .sect-1-img {
+                margin: 2px;
                 width: $size-0;
+                height: 350px;
+                @extend %border-def;
+                box-shadow: 0 0 $size-040 $size-02 $color-03;
+                border-radius: 5px;
             }
         }
     }
