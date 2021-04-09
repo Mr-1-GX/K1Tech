@@ -92,7 +92,7 @@
 }
 //Section-1
 .sect-1 {
-    margin: $size-100 0 $size-025 0;
+    margin: $size-0130 0 $size-025 0;
     position: relative;
     .sect-1-cont {
         margin: 0 $size-030;
@@ -100,7 +100,6 @@
         background-color: $color-01;
         .sect-1-box {
             max-width: 1400px;
-            @extend %border-def;
             border-radius: 5px;
             .slick-dots {
                 bottom: 30px;
@@ -130,14 +129,14 @@
             }
         }
     }
-    .shadow {
-        width: $size-0;
-        height: 180px;
-        position: absolute;
-        top: 65%;
-        z-index: -1;
-        @extend %shad-def;
-    }
+    // .shadow {
+    //     width: $size-0;
+    //     height: 180px;
+    //     position: absolute;
+    //     top: 65%;
+    //     z-index: -1;
+    //     @extend %shad-def;
+    // }
 }
 //Section-2
 .sect-2 {
