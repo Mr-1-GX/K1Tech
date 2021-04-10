@@ -11,11 +11,11 @@
 }
 //Font
 %font-h1-def {
-    font-size: $size-040;
+    font-size: $size-020;
     color: $color-02;
     font-family: 'archy-B';
-    letter-spacing: $size-05;
-    text-shadow: 0 0 0 $color-03;
+    letter-spacing: $size-02;
+    text-shadow: $size-01 $size--01 $size-01 $color-03;
 }
 %font-h2-def {
     font-size: $size-015;
@@ -32,7 +32,7 @@
     text-shadow: $size-01 $size--01 $size-01 $color-02;
 }
 %font-bol-def {
-    font-size: $size-030;
+    font-size: $size-015;
     color: $color-03;
     font-family: 'archy-B';
     letter-spacing: $size-02;
@@ -40,10 +40,10 @@
     border-radius: $size-05;
 }
 %font-fa-def {
-    font-size: $size-035;
+    font-size: $size-015;
     color: $color-02;
     letter-spacing: $size-02;
-    text-shadow: 0 0 0 $color-03;
+    text-shadow: $size-01 $size--01 $size-01 $color-03;
     border-radius: $size-05;
 }
 %font-p-def {
@@ -77,11 +77,10 @@
 }
 //Border
 %border-def {
-    border-radius: $size-02;
-    @include border (0, solid, $color-02);
-    box-shadow: 0 0 0 $size-01 $color-03;
+    border-radius: $size-03;
+    @include border ($size-01, solid, $color-02);
+    box-shadow: 0 0 $size-03 $size-01 $color-03;
 }
-
 //Hover
 %hover-def {
     &:hover {
@@ -117,31 +116,27 @@
     position: fixed;
 }
 %nav-box-size {
-    max-width: $size-02350;
-    width: $size-95;
+    max-width: $size-01750;
+    width: $size-0;
+    margin: 0 auto;
+    padding: $size-05 0 $size-05;
 }
 %nav-logo-size {
-<<<<<<< HEAD
-    max-width: $size-0110;
-    height: $size-0130;
-=======
     max-width: $size-070;
     height: $size-080;
->>>>>>> 0f4bbee98267ff929a58d6d8f0db3ddaad2a09a8
 }
 %navi-size {
-    max-width: $size-01980;
-    width: $size-0;
-}
-%nav-ul-size {
     max-width: $size-01280;
     width: $size-0;
 }
-%soc-ul-size {
-    max-width: $size-0450;
+%nav-ul-size {
+    max-width: $size-0600;
     width: $size-0;
 }
-
+%soc-ul-size {
+    max-width: $size-0230;
+    width: $size-0;
+}
 //Drop-Down
 %font-a-drop {
     font-size: $size-015;
@@ -150,42 +145,26 @@
     letter-spacing: $size-02;
     text-shadow: $size-01 $size--01 $size-01 $color-02;
 }
-//Section-1
-%sect-1-img-size {
-    margin: $size-01;
-    width: $size-0;
-    height: $size-0600;
-}
+//Sections
 //Section-2
 %sect-2-size {
-    max-width: $size-02560;
-    width: $size-0;
-}
-%sect-2-flt-size {
-    max-width: $size-0600;
-    width: $size-0;
-}
-%sect-2-box-size {
-    max-width: $size-01750;
+    max-width: $size-01920;
     width: $size-0;
     height: $size-0800;
 }
 %cont-1-size {
-    max-width: $size-01750;
+    max-width: $size-01240;
     width: $size-0;
 }
 %cont-1-box-size {
-    max-width: $size-0414;
+    max-width: $size-0270;
     width: $size-0;
-    height: $size-0360;
+    height: $size-0270;
 }
 %cont-1-h3-size {
     margin: $size-025 auto;
 }
 //Section-3
-%sect-3-size {
-    height: $size-0550;
-}
 %cont-2-text-size {
     max-width: $size-0270;
     width: $size-0;
