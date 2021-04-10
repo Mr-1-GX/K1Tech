@@ -4,11 +4,14 @@
 }
 //HEADER
 .head-cont {
+    margin-top: $size-010;
     background-color: $color-01;
     @extend %head-size;
     @extend %border-def;
     z-index: 1;
     .nav-box {
+        margin: 0 auto;
+        padding: $size-020 0;
         @extend %nav-box-size;
         @include d-flex (flex,space-between,center);
         @extend %nav-box-med;
@@ -65,7 +68,8 @@
                 @extend %soc-ul-size;
                 @extend %soc-ul-med;
                 .soc-li {
-                    padding: $size-05 0;
+                    padding: $size-010 $size-05;
+                    margin-bottom: $size-05;
                     .fa {
                         @extend %font-fa-def;
                     }
@@ -79,7 +83,7 @@
                     padding: 0 $size-010;
                 }
                 .contact-box {
-                    @include d-flex (flex,space-between,center);
+                    @include d-flex (flex,space-between,end);
                     flex-direction: column;
                 }
             }
@@ -92,16 +96,25 @@
 }
 //Section-1
 .sect-1 {
-    margin: $size-100 0 $size-025 0;
+<<<<<<< HEAD
+    margin: $size-0215 0 $size-025 0;
+=======
+    margin: $size-0130 0 $size-025 0;
+>>>>>>> 0f4bbee98267ff929a58d6d8f0db3ddaad2a09a8
     position: relative;
     .sect-1-cont {
-        margin: 0 $size-030;
+        margin: 0 $size-095;
         z-index: 2;
-        background-color: $color-01;
         .sect-1-box {
-            max-width: 1400px;
+<<<<<<< HEAD
+            max-width: 2560px;
+            width: $size-0;
             @extend %border-def;
+            border-radius: 3px;
+=======
+            max-width: 1400px;
             border-radius: 5px;
+>>>>>>> 0f4bbee98267ff929a58d6d8f0db3ddaad2a09a8
             .slick-dots {
                 bottom: 30px;
                 li {
@@ -121,38 +134,48 @@
                 }
             }
             .sect-1-img {
-                margin: 2px;
-                width: $size-0;
-                height: 350px;
-                @extend %border-def;
-                box-shadow: 0 0 $size-040 $size-02 $color-03;
-                border-radius: 5px;
+                @extend %sect-1-img-size;
+                border-radius: $size-05;
             }
         }
     }
-    .shadow {
-        width: $size-0;
-        height: 180px;
-        position: absolute;
-        top: 65%;
-        z-index: -1;
-        @extend %shad-def;
-    }
+    // .shadow {
+    //     width: $size-0;
+    //     height: 180px;
+    //     position: absolute;
+    //     top: 65%;
+    //     z-index: -1;
+    //     @extend %shad-def;
+    // }
 }
 //Section-2
 .sect-2 {
     @extend %sect-2-size;
-    @include d-flex (flex,space-evenly,center);
-    flex-direction: column;
-    margin-top: $size-0110;
     @extend %border-def;
     background-color: $color-01;
-    .cont-1 {
+    margin: $size-050 auto;
+    @include d-flex (flex,space-around,center);
+    .sect-2-flt {
+        @extend %sect-2-flt-size;
+        margin: 20px 0;
+        .s2-flt-ul {
+            .s2-flt-li {
+                padding: 20px;
+                @extend %font-h3-def;
+                @extend %border-def;
+            }
+        }
+    }
+    .sect-2-box {
+        @extend %sect-2-box-size;
+        @include d-flex (flex,space-evenly,center);
+        flex-direction: column;
+        .cont-1 {
         @extend %cont-1-size;
         @include d-flex (flex,space-around,center);
         .cont-1-box {
+            background-color: $color-010;
             @extend %cont-1-box-size;
-            @extend %bg-def;
             @extend %border-def;
             @include d-flex (flex,flex-end,center);
             flex-direction: column;
@@ -167,24 +190,28 @@
                 @extend %font-h3-def;
             }
         }
+        }
     }
 }
 //Section-3
 .sect-3 {
+    @extend %sect-3-size;
     @extend %border-def;
     text-align: center;
     margin: $size-070 0 $size-040;
     background-color: $color-01;
     .sect-3-h1 {
         @extend %font-h1-def;
-        margin-top: $size-030;
+        padding-top: $size-030;
     }
     .xazi {
+        margin: 25px auto;
         @extend %xazi;
     }
     .sect-3-cont {
         @include d-flex (flex,space-around,center);
         width: $size-80;
+
         margin: $size-040 auto;
         .cont-2-box {
             @extend %cont-2-box-size;
