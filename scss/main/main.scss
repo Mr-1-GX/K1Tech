@@ -4,11 +4,13 @@
 }
 //HEADER
 .head-cont {
+    margin-top: $size-02;
     background-color: $color-01;
     @extend %head-size;
     @extend %border-def;
     z-index: 1;
     .nav-box {
+        padding: $size-010 0 $size-010;
         @extend %nav-box-size;
         @include d-flex (flex,space-between,center);
         @extend %nav-box-med;
@@ -79,7 +81,7 @@
                     padding: 0 $size-010;
                 }
                 .contact-box {
-                    @include d-flex (flex,space-between,center);
+                    @include d-flex (flex,space-between,end);
                     flex-direction: column;
                 }
             }
@@ -92,14 +94,13 @@
 }
 //Section-1
 .sect-1 {
-    margin: $size-0130 0 $size-025 0;
+    margin: $size-0160 0 $size-025 0;
     position: relative;
     .sect-1-cont {
-        margin: 0 $size-030;
+        margin: 0 $size-095;
         z-index: 2;
-        background-color: $color-01;
         .sect-1-box {
-            max-width: 1400px;
+            max-width: $size-02440;
             border-radius: 5px;
             .slick-dots {
                 bottom: 30px;
@@ -122,9 +123,9 @@
             .sect-1-img {
                 margin: 2px;
                 width: $size-0;
-                height: 350px;
+                height: $size-0670;
                 @extend %border-def;
-                box-shadow: 0 0 $size-040 $size-02 $color-03;
+                box-shadow: 0 0 $size-01 $size-01 $color-03;
                 border-radius: 5px;
             }
         }
@@ -142,28 +143,42 @@
 .sect-2 {
     @extend %sect-2-size;
     @include d-flex (flex,space-evenly,center);
-    flex-direction: column;
-    margin-top: $size-0110;
+    margin: $size-080 auto;
     @extend %border-def;
     background-color: $color-01;
-    .cont-1 {
-        @extend %cont-1-size;
-        @include d-flex (flex,space-around,center);
-        .cont-1-box {
-            @extend %cont-1-box-size;
-            @extend %bg-def;
-            @extend %border-def;
-            @include d-flex (flex,flex-end,center);
-            flex-direction: column;
-            .cont-1-img {
-                max-width: $size-0200;
-                .cont-1-img-box {
-                    width: $size-0;
-                }
-            }
-            .cont-1-h3 {
-                @extend %cont-1-h3-size;
+    .sect-2-flt {
+        @extend %sect-2-flt-size;
+        @include d-flex (flex,space-evenly,center);
+        .s2-flt-ul{
+            .s2-flt-li {
                 @extend %font-h3-def;
+                @extend %border-def;
+            }
+        }
+    }
+    .sect-2-box {
+        @extend %sect-2-box-size;
+        @include d-flex (flex,space-between,center);
+        flex-direction: column;
+        .cont-1 {
+            @extend %cont-1-size;
+            @include d-flex (flex,space-between,center);
+            .cont-1-box {
+                background-color: $color-010;
+                @extend %cont-1-box-size;
+                @extend %border-def;
+                @include d-flex (flex,flex-end,center);
+                flex-direction: column;
+                .cont-1-img {
+                    max-width: $size-0200;
+                    .cont-1-img-box {
+                        width: $size-0;
+                    }
+                }
+                .cont-1-h3 {
+                    @extend %cont-1-h3-size;
+                    @extend %font-h3-def;
+                }
             }
         }
     }

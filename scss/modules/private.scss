@@ -11,11 +11,10 @@
 }
 //Font
 %font-h1-def {
-    font-size: $size-020;
+    font-size: $size-035;
     color: $color-02;
     font-family: 'archy-B';
     letter-spacing: $size-02;
-    text-shadow: $size-01 $size--01 $size-01 $color-03;
 }
 %font-h2-def {
     font-size: $size-015;
@@ -32,7 +31,7 @@
     text-shadow: $size-01 $size--01 $size-01 $color-02;
 }
 %font-bol-def {
-    font-size: $size-015;
+    font-size: $size-030;
     color: $color-03;
     font-family: 'archy-B';
     letter-spacing: $size-02;
@@ -40,10 +39,10 @@
     border-radius: $size-05;
 }
 %font-fa-def {
-    font-size: $size-015;
+    font-size: $size-030;
     color: $color-02;
-    letter-spacing: $size-02;
-    text-shadow: $size-01 $size--01 $size-01 $color-03;
+    letter-spacing: $size-020;
+    text-shadow: 0 0 $size-01 $color-03;
     border-radius: $size-05;
 }
 %font-p-def {
@@ -78,8 +77,8 @@
 //Border
 %border-def {
     border-radius: $size-03;
-    @include border ($size-01, solid, $color-02);
-    box-shadow: 0 0 $size-03 $size-01 $color-03;
+    @include border (o, solid, $color-02);
+    box-shadow: 0 0 0 $size-01 $color-03;
 }
 //Hover
 %hover-def {
@@ -116,25 +115,24 @@
     position: fixed;
 }
 %nav-box-size {
-    max-width: $size-01750;
+    max-width: $size-02240;
     width: $size-0;
     margin: 0 auto;
-    padding: $size-05 0 $size-05;
 }
 %nav-logo-size {
     max-width: $size-070;
     height: $size-080;
 }
 %navi-size {
-    max-width: $size-01280;
+    max-width: $size-01820;
     width: $size-0;
 }
 %nav-ul-size {
-    max-width: $size-0600;
+    max-width: $size-01080;
     width: $size-0;
 }
 %soc-ul-size {
-    max-width: $size-0230;
+    max-width: $size-0450;
     width: $size-0;
 }
 //Drop-Down
@@ -148,18 +146,28 @@
 //Sections
 //Section-2
 %sect-2-size {
-    max-width: $size-01920;
+    max-width: $size-02540;
     width: $size-0;
-    height: $size-0800;
+    height: $size-01366;
+}
+%sect-2-flt-size {
+    max-width: $size-0768;
+    width: $size-0;
+    height: $size-01120;
+}
+%sect-2-box-size {
+    max-width: $size-01560;
+    width: $size-0;
+    height: $size-01280;
 }
 %cont-1-size {
-    max-width: $size-01240;
+    max-width: $size-01536;
     width: $size-0;
 }
 %cont-1-box-size {
-    max-width: $size-0270;
+    max-width: $size-0375;
     width: $size-0;
-    height: $size-0270;
+    height: $size-0450;
 }
 %cont-1-h3-size {
     margin: $size-025 auto;
