@@ -4,7 +4,7 @@
 }
 //HEADER
 .head-cont {
-    margin-top: $size-02;
+    margin-top: $size-03;
     background-color: $color-01;
     @extend %head-size;
     @extend %border-def;
@@ -142,24 +142,52 @@
 //Section-2
 .sect-2 {
     @extend %sect-2-size;
-    @include d-flex (flex,space-evenly,center);
+    @include d-flex (flex,space-around,center);
     margin: $size-080 auto;
     @extend %border-def;
     background-color: $color-01;
-    .sect-2-flt {
-        @extend %sect-2-flt-size;
-        @include d-flex (flex,space-evenly,center);
-        .s2-flt-ul{
-            .s2-flt-li {
-                @extend %font-h3-def;
-                @extend %border-def;
+    flex-direction: column;
+    .sect-2-big {
+        @extend %sect-2-big-size;
+        @include d-flex (flex,space-around,center);
+        .sect-2-flt {
+            @extend %sect-2-flt-size;
+            @include d-flex (flex,space-between,center);
+            .s2-flt-ul{
+                @extend %s2-flt-ul-size;
+                .s2-flt-li {
+                    padding: $size-020;
+                    @extend %font-h3-flt;
+                    @extend %border-def;
+                }
             }
         }
-    }
-    .sect-2-box {
-        @extend %sect-2-box-size;
-        @include d-flex (flex,space-between,center);
-        flex-direction: column;
+        .sect-2-box {
+            @extend %sect-2-box-size;
+            @include d-flex (flex,end,center);
+            flex-direction: column;
+        .cont-1-list {
+            @extend %cont-1-size;
+            @include d-flex (flex,space-between,center);
+            .cont-1-list-box {
+                background-color: $color-010;
+                @extend %cont-1-list-box-size;
+                @extend %border-def;
+                @include d-flex (flex,flex-end,center);
+                flex-direction: column;
+                margin-bottom: $size-020;
+                .cont-1-img {
+                    max-width: $size-0200;
+                    .cont-1-img-box {
+                        width: $size-0;
+                    }
+                }
+                .cont-1-h3 {
+                    @extend %cont-1-h3-size;
+                    @extend %font-h3-def;
+                }
+            }
+        }
         .cont-1 {
             @extend %cont-1-size;
             @include d-flex (flex,space-between,center);
@@ -181,14 +209,37 @@
                 }
             }
         }
+        }
+    }
+    .sect-2-sm {
+        @extend %sect-2-sm-size;
+        @include d-flex (flex,space-between,center);
+        .cont-1-sm-box {
+            @extend %cont-1-sm-box-size;
+            @include d-flex (flex,flex-end,center);
+            background-color: $color-010;
+            @extend %border-def;
+            .cont-1-sm-img {
+                max-width: $size-0200;
+                .cont-1-sm-img-box {
+                    width: $size-0;
+                }
+            }
+            .cont-1-sm-h3 {
+                @extend %cont-1-h3-size;
+                @extend %font-h3-def;
+            }
+        }
     }
 }
 //Section-3
 .sect-3 {
+    @extend %sect-3-size;
     @extend %border-def;
     text-align: center;
-    margin: $size-070 0 $size-040;
+    margin: $size-070 auto $size-040;
     background-color: $color-01;
+    padding: $size-010;
     .sect-3-h1 {
         @extend %font-h1-def;
         margin-top: $size-030;
@@ -197,43 +248,39 @@
         @extend %xazi;
     }
     .sect-3-cont {
+        @extend %sect-3-cont-size;
         @include d-flex (flex,space-around,center);
-        width: $size-80;
-        margin: $size-040 auto;
+        margin: $size-010 auto;
         .cont-2-box {
             @extend %cont-2-box-size;
             @extend %border-def;
+            @include d-flex (flex,space-between,center);
+            flex-direction: column;
             margin: 0 $size-010;
             .cont-2-text {
-                @extend %bg-def;
+                background-color: $color-010;
                 @extend %cont-2-text-size;
                 @include d-flex (flex,space-around,baseline);
                 flex-direction: column;
-                .cont-2-sale {
-                    max-width: $size-0170;
-                    width: $size-0;
-                    height: $size-025;
-                    border-bottom-right-radius: $size-050 $size-035;
-                    background-color: $color-07;
-                    @include d-flex (flex,space-around,center);
-                    @include transition-hover (all,0.3s,linear,0.2s);
-                    .cont-2-box-h2 {
-                        @extend %font-h2-def;
-                    }
-                }
                 .cont-2-img-box {
                     .cont-2-text-img {
-                        width: $size-87;
+                        width: $size-0;
                     }
                 }
+            }
+            .cont-2-p-box {
+                @extend %cont-2-p-box-size;
+                @include d-flex (flex,space-between,flex-end);
+                flex-direction: column;
                 .cont-2-p {
-                    max-width: $size-0200;
-                    @extend %font-p-def;
+                    margin-left: $size-010;
+                    @extend %cont-2-p-font;
+                    text-align: left;
                 }
                 .cont-2-cost {
-                    margin: $size-010;
+                    margin: $size-025;
                     .cont-2-h4 {
-                        @extend %font-h3-def;
+                        @extend %cont-2-h4-fonts;
                     }
                 }
             }
@@ -242,8 +289,8 @@
 }
 //Section-4
 .sect-4 {
-    height: $size-0270;
-    margin: $size-035 0;
+    @extend %sect-4-size;
+    margin: $size-035 auto;
     background-color: $color-01;
     flex-direction: column;
     @include d-flex (flex,space-around,center);
@@ -292,7 +339,7 @@
     @include d-flex (flex,space-evenly,center);
     @extend %border-def;
     background-color: $color-02;
-    margin: $size-020 0 $size-020;
+    margin: $size-020 auto;
     .sect-baner-text {
         @extend %sect-baner-text-size;
         @include d-flex (flex,space-around,baseline);
@@ -310,8 +357,8 @@
         }
     }
     .sect-baner-img {
-        max-width: $size-0320;
-        margin-bottom: $size-013;
+        max-width: $size-0450;
+        margin-bottom: $size-019;
         .sect-baner-img-box {
             width: $size-0;
         }

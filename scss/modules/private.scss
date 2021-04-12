@@ -30,6 +30,13 @@
     letter-spacing: $size-02;
     text-shadow: $size-01 $size--01 $size-01 $color-02;
 }
+%font-h3-flt {
+    font-size: $size-030;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: $size-02;
+    text-shadow: $size-01 $size--01 $size-01 $color-02;
+}
 %font-bol-def {
     font-size: $size-030;
     color: $color-03;
@@ -150,44 +157,102 @@
     width: $size-0;
     height: $size-01366;
 }
-%sect-2-flt-size {
-    max-width: $size-0768;
+%sect-2-big-size {
+    max-width: $size-02440;
     width: $size-0;
-    height: $size-01120;
+}
+%sect-2-flt-size {
+    max-width: $size-0670;
+    width: $size-0;
+    height: $size-0962;
+}
+%s2-flt-ul-size {
+    max-width: $size-0600;
+    width: $size-0;
+    height: $size-01024;
 }
 %sect-2-box-size {
-    max-width: $size-01560;
+    max-width: $size-01680;
     width: $size-0;
-    height: $size-01280;
+    height: $size-01024;
 }
 %cont-1-size {
-    max-width: $size-01536;
+    max-width: $size-01640;
     width: $size-0;
 }
-%cont-1-box-size {
-    max-width: $size-0375;
+%cont-1-list-box-size {
+    max-width: $size-0810;
     width: $size-0;
-    height: $size-0450;
+    height: $size-0550;
+}
+%cont-1-box-size {
+    max-width: $size-0390;
+    width: $size-0;
+    height: $size-0414;
 }
 %cont-1-h3-size {
     margin: $size-025 auto;
 }
-//Section-3
-%cont-2-text-size {
-    max-width: $size-0270;
+%sect-2-sm-size {
+    max-width: $size-02440;
     width: $size-0;
-    height: $size-0270;
+    height: $size-0230;
+}
+%cont-1-sm-box-size {
+    max-width: $size-01190;
+    width: $size-0;
+    height: $size-0170;
+}
+//Section-3
+%sect-3-size {
+    max-width: $size-02540;
+    width: $size-0;
+}
+%sect-3-cont-size {
+    max-width: $size-02440;
+    width: $size-0;
+    height: $size-0800;
+}
+%cont-2-text-size {
+    max-width: $size-0550;
+    width: $size-0;
+    height: $size-0450;
+}
+%cont-2-p-box-size {
+    max-width: $size-0550;
+    width: $size-0;
+    height: $size-0200;
 }
 %cont-2-box-size {
-    max-width: $size-0230;
+    max-width: $size-0550;
+    width: $size-0;
+    height: $size-0670;
+}
+%cont-2-p-font {
+    font-size: $size-030;
+    color: $color-06;
+    font-family: 'BPG-A';
+    letter-spacing: $size-01;
+    text-shadow: 0 0 $size-01 $color-03;
+}
+%cont-2-h4-fonts {
+    font-size: $size-040;
+    color: $color-02;
+    font-family: 'archy-B';
+    letter-spacing: $size-03;
+    text-shadow: $size-01 $size--01 $size-01 $color-03;
+}
+//Section-4
+%sect-4-size {
+    max-width: $size-02540;
     width: $size-0;
     height: $size-0270;
 }
 //Section-Banner
 %sect-baner-size {
-    max-width: $size-01920;
+    max-width: $size-02540;
     width: $size-0;
-    height: $size-0320;
+    height: $size-0450;
 }
 %sect-baner-text-size {
     max-width: $size-0320;
