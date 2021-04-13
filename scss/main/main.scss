@@ -305,7 +305,7 @@
 //Section-BanBox
 .sect-banbox {
     @extend %sect-banbox-size;
-    @include d-flex (flex,space-around,center);
+    @include d-flex (flex,space-evenly,center);
     margin: $size-080 auto;
     @extend %border-def;
     background-color: $color-01;

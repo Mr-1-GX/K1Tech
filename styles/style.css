@@ -571,7 +571,7 @@ a {
 
 .sect-banbox {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   margin: 80px auto;
   background-color: #F4F6F6;
