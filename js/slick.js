@@ -3,9 +3,9 @@ $('.center').slick({
   dots: true,
   centerMode: true,
   centerPadding: '60px',
-  slidesToShow: 5,
+  slidesToShow: 3,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 4000,
   responsive: [
     {
       breakpoint: 768,
@@ -13,7 +13,7 @@ $('.center').slick({
         arrows: false,
         centerMode: true,
         centerPadding: '40px',
-        slidesToShow: 3
+        slidesToShow: 2
       }
     },
     {
@@ -46,9 +46,8 @@ $('.lazy').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 1800,
+  autoplaySpeed: 3000,
   speed: 800,
-  centerPadding: '50px',
 });
 
 

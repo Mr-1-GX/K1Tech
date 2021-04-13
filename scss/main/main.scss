@@ -170,45 +170,59 @@
             @extend %cont-1-size;
             @include d-flex (flex,space-between,center);
             .cont-1-list-box {
-                background-color: $color-010;
+                background-color: $color-01;
                 @extend %cont-1-list-box-size;
                 @extend %border-def;
-                @include d-flex (flex,flex-end,center);
-                flex-direction: column;
+                @include d-flex (flex,space-between,center);
                 margin-bottom: $size-020;
                 .cont-1-img {
-                    max-width: $size-0200;
+                    max-width: $size-0390;
+                    height: $size-0550;
+                    background-color: $color-010;
+                    @include d-flex (flex,space-between,center);
+                    @extend %border-def;
                     .cont-1-img-box {
-                        width: $size-0;
+                        width: $size-95;
                     }
                 }
-                .cont-1-h3 {
-                    @extend %cont-1-h3-size;
-                    @extend %font-h3-def;
+                .cont-1-fit {
+                    @extend %cont-1-fit-size;
+                    .cont-1-h3 {
+                        @extend %cont-1-h3-size;
+                        @extend %font-h3-def;
+                    }
+                    .cont-1-fit-ul {
+                        height: 400px;
+                        @include d-flex (flex,space-between,end);
+                        flex-direction: column;
+                        .cont-1-fit-li {
+                            @extend %cont-1-fit-li-font;
+                        }
+                    }
                 }
             }
         }
-        .cont-1 {
-            @extend %cont-1-size;
-            @include d-flex (flex,space-between,center);
-            .cont-1-box {
-                background-color: $color-010;
-                @extend %cont-1-box-size;
-                @extend %border-def;
-                @include d-flex (flex,flex-end,center);
-                flex-direction: column;
-                .cont-1-img {
-                    max-width: $size-0200;
-                    .cont-1-img-box {
-                        width: $size-0;
+            .cont-1 {
+                @extend %cont-1-size;
+                @include d-flex (flex,space-between,center);
+                .cont-1-box {
+                    background-color: $color-010;
+                    @extend %cont-1-box-size;
+                    @extend %border-def;
+                    @include d-flex (flex,flex-end,center);
+                    flex-direction: column;
+                    .cont-1-img {
+                        max-width: $size-0200;
+                        .cont-1-img-box {
+                            width: $size-0;
+                        }
+                    }
+                    .cont-1-h3 {
+                        @extend %cont-1-h3-size;
+                        @extend %font-h3-def;
                     }
                 }
-                .cont-1-h3 {
-                    @extend %cont-1-h3-size;
-                    @extend %font-h3-def;
-                }
             }
-        }
         }
     }
     .sect-2-sm {
@@ -220,7 +234,7 @@
             background-color: $color-010;
             @extend %border-def;
             .cont-1-sm-img {
-                max-width: $size-0200;
+                max-width: $size-0320;
                 .cont-1-sm-img-box {
                     width: $size-0;
                 }
@@ -256,12 +270,13 @@
             @extend %border-def;
             @include d-flex (flex,space-between,center);
             flex-direction: column;
-            margin: 0 $size-010;
+            margin: $size-010;
             .cont-2-text {
                 background-color: $color-010;
                 @extend %cont-2-text-size;
                 @include d-flex (flex,space-around,baseline);
                 flex-direction: column;
+                @extend %border-def;
                 .cont-2-img-box {
                     .cont-2-text-img {
                         width: $size-0;
@@ -287,6 +302,80 @@
         }
     }
 }
+//Section-BanBox
+.sect-banbox {
+    @extend %sect-banbox-size;
+    @include d-flex (flex,space-around,center);
+    margin: $size-080 auto;
+    @extend %border-def;
+    background-color: $color-01;
+    flex-direction: column;
+    .banbox-cont {
+        max-width: $size-02440;
+        width: $size-0;
+        height: $size-0230;
+        @include d-flex (flex,space-around,center);
+        .banbox-box {
+            max-width: $size-01190;
+            width: $size-0;
+            height: $size-0170;
+            @extend %border-def;
+            @include d-flex (flex,flex-end,flex-end);
+            .box-box {
+                max-width: $size-0750;
+                width: $size-0;
+                height: $size-0260;
+                @include d-flex (flex,flex-end,flex-start);
+                .box-img {
+                    width: $size-75;
+                }
+            }
+        }
+    }
+    .banbox-cont-2 {
+        max-width: $size-02440;
+        width: $size-0;
+        @include d-flex (flex,space-between,center);
+        .sect-ban-cont {
+            max-width: $size-01640;
+            width: $size-0;
+            height: $size-01024;
+            @extend %border-def;
+            @include d-flex (flex,space-around,center);
+            flex-direction: column;
+            background-color: $color-010;
+            .tv-box {
+                max-width: $size-01640;
+                width: $size-0;
+                @include d-flex (flex,center,center);
+                .tv {
+                    height: $size-0810;
+                    width: $size-0;
+                }
+            }
+            .sect-ban-h1 {
+                max-width: $size-01600;
+                width: $size-0;
+                height: $size-080;
+                padding-left: $size-0110;
+                @extend %sect-ban-h1-font;
+            }
+        }
+        .sect-ban-cont2 {
+            max-width: $size-0750;
+            width: $size-0;
+            height: $size-01024;
+            @include d-flex (flex,space-between,center);
+            flex-direction: column;
+            .sect-ban-box {
+                max-width: $size-0750;
+                width: $size-0;
+                height: $size-0480;
+                @extend %border-def;
+            }
+        }
+    }
+}
 //Section-4
 .sect-4 {
     @extend %sect-4-size;
@@ -303,24 +392,28 @@
         @extend %xazi;
     }
     .sect-4-cont {
-        max-width: $size-01060;
-        width: $size-0;
-        @include d-flex (flex,space-around,center);
+        @extend %sect-4-cont-size;
+        @include d-flex (flex,space-between,center);
         .sect-4-box {
-            max-width: $size-0320;
-            width: $size-0;
-            @extend %bg-def;
+            @extend %sect-4-box-size;
             @include d-flex (flex,space-around,center);
             @extend %border-def;
-            margin-left: $size-015;
+            background-color: $color-01;
+            margin: $size-015;
             .sect-4-img {
-                max-width: 150px;
+                max-width: $size-0450;
+                height: $size-0400;
+                background-color: $color-010;
+                @include d-flex (flex,space-around,center);
+                @extend %border-def;
                 .sect-4-img-box {
                     width: $size-0;
                 }
             }
             .sect-4-text {
-
+                max-width: $size-0450;
+                width: $size-0;
+                height: $size-0340;
                 .sect-4-h3 {
                     margin: $size-010;
                     @extend %font-h3-def;
@@ -371,42 +464,74 @@
     flex-direction: column;
     margin-top: 40px;
     @extend %border-def;
-    .foot-cont {
-        @extend %foot-cont-size;
-        @include d-flex (flex,space-between,center);
-        @extend %foot-cont-med;
-        .foot-box {
-            @extend %foot-box-size;
-            @include d-flex (flex,space-evenly,center);
-            flex-direction: column;
-            text-align: center;
-            .foot-h1 {
-                @extend %font-h1-def;
-            }
-            .foot-p {
-                @extend %foot-p-size;
-                @extend %font-p-def;
-            }
-            .foot-ul {
-                @extend %foot-ul-size;
-                @include d-flex (flex,space-around,center);
-                .foot-li {
-                    .fa {
-                        @extend %font-fa-def;
+    .foot-lok {
+        @extend %foot-lok-size;
+        @include d-flex (flex,space-around,center);
+        flex-direction: row-reverse;
+        .foot-cont {
+            @extend %foot-cont-size;
+            @include d-flex (flex,space-between,center);
+            flex-direction: column-reverse;
+            @extend %foot-cont-med;
+            .foot-box {
+                @extend %foot-box-size;
+                @include d-flex (flex,space-evenly,center);
+                flex-direction: column;
+                text-align: center;
+                .foot-h1 {
+                    @extend %font-h1-def;
+                }
+                .foot-p {
+                    @extend %foot-p-size;
+                    @extend %foot-p-font;
+                }
+                .foot-ul {
+                    @extend %foot-ul-size;
+                    @include d-flex (flex,space-around,center);
+                    .foot-li {
+                        .fa {
+                            @extend %font-fa-def;
+                        }
+                    }
+                }
+                .cont-p {
+                    @include d-flex (flex,space-between,center);
+                    flex-direction: column;
+                    .li-box {
+                        padding: $size-05 0;
+                        .fa {
+                            @extend %font-fa-def;
+                        }
+                        .contact {
+                            @extend %font-bol-def;
+                            @extend %hover-def;
+                        }
                     }
                 }
             }
-            .cont-p {
-                @include d-flex (flex,space-between,center);
+            .xazi {
+                @extend %xazi;
+                @extend %xazi-med;
+            }
+        }
+        .foot-cont-2 {
+            @extend %foot-cont-2-size;
+            @include d-flex (flex,space-around,baseline);
+            @extend %foot-cont-2-med;
+            .foot-2-box {
+                height: $size-0400;
+                @include d-flex (flex,space-around,center);
                 flex-direction: column;
-                .li-box {
-                    padding: $size-05 0;
-                    .fa {
-                        @extend %font-fa-def;
-                    }
-                    .contact {
-                        @extend %font-bol-def;
-                        @extend %hover-def;
+                .foot-2-h1 {
+                    @extend %font-h1-def;
+                }
+                .foot-2-ul {
+                    height: $size-0250;
+                    @include d-flex (flex,space-around,center);
+                    flex-direction: column;
+                    .foot-2-li {
+                    
+                        @extend %foot-2-li-font;
                     }
                 }
             }
@@ -416,39 +541,17 @@
         @extend %xazi;
         @extend %xazi-med;
     }
-    .foot-cont-2 {
-        @extend %foot-cont-2-size;
-        @include d-flex (flex,space-around,baseline);
-        @extend %foot-cont-2-med;
-        .foot-2-box {
-            height: $size-0200;
-            @include d-flex (flex,space-evenly,center);
-            flex-direction: column;
-            .foot-2-h1 {
-                @extend %font-h1-def;
-            }
-            .foot-2-ul {
-                height: $size-0130;
-                @include d-flex (flex,space-around,center);
-                flex-direction: column;
-                .foot-2-li {
-                    font-size: $size-015;
-                    @extend %font-p-def;
-                }
-            }
-        }
-    }
     .avtori {
         @extend %avtori-size;
         padding-bottom: $size-020;
         @include d-flex (flex,space-between,center);
         @extend %avtori-med;
         .avtori-p {
-            font-size: $size-010;
+            @extend %avtori-p-font;
             @extend %font-p-def; 
         }
         .avtori-a {
-            @extend %font-h2-def;
+            @extend %avtori-a-font;
             @extend %avtori-a-med;
         }
     }

@@ -73,9 +73,9 @@
 }
 //Xazi
 %xazi {
-    max-width: $size-01750;
+    max-width: $size-02240;
     width: $size-0;
-    margin:$size-025 0 $size-025 0;
+    margin:$size-025 auto;
     content: ' ';
     color: $color-06;
     @include border (0.1px, solid, $color-08);
@@ -190,6 +190,18 @@
     width: $size-0;
     height: $size-0414;
 }
+%cont-1-fit-size {
+    max-width: $size-0400;
+    width: $size-0;
+    height: $size-0500;
+}
+%cont-1-fit-li-font {
+    font-size: $size-025;
+    color: $color-06;
+    font-family: 'BPG-A';
+    letter-spacing: 0;
+    text-shadow: 0 0 $size-01 $color-03;
+}
 %cont-1-h3-size {
     margin: $size-025 auto;
 }
@@ -242,11 +254,34 @@
     letter-spacing: $size-03;
     text-shadow: $size-01 $size--01 $size-01 $color-03;
 }
+//Section-BanBox
+%sect-banbox-size {
+    max-width: $size-02540;
+    width: $size-0;
+    height: $size-01536;
+}
+%sect-ban-h1-font {
+    font-size: $size-050;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: $size-05;
+    text-shadow:  0 0 $size-01 $color-02;
+}
 //Section-4
 %sect-4-size {
     max-width: $size-02540;
     width: $size-0;
-    height: $size-0270;
+    height: $size-0600;
+}
+%sect-4-cont-size {
+    max-width: $size-02440;
+    width: $size-0;
+    height: $size-0450;
+}
+%sect-4-box-size {
+    max-width: $size-0750;
+    width: $size-0;
+    height: $size-0400;
 }
 //Section-Banner
 %sect-baner-size {
@@ -261,18 +296,30 @@
 }
 
 //Footer
-%foot-cont-size {
-    max-width: $size-0962;
+%foot-lok-size {
+    max-width: $size-02240;
     width: $size-0;
+    height: $size-0550;
+}
+%foot-cont-size {
+    max-width: $size-0550;
+    width: $size-0;
+    height: $size-0450;
 }
 %foot-box-size {
-    max-width: $size-0320;
+    max-width: $size-0500;
     width: $size-0;
-    height: $size-0160;
+    height: $size-0230;
 }
 %foot-p-size {
-    max-width: $size-0270;
+    max-width: $size-0450;
     width: $size-0;
+}
+%foot-p-font {
+    font-size: $size-025;
+    color: $color-03;
+    font-family: 'alk-s';
+    text-shadow: $size-01 0 $color-06;
 }
 %foot-ul-size {
     max-width: $size-0170;
@@ -281,10 +328,30 @@
 %foot-cont-2-size {
     max-width: $size-01750;
     width: $size-0;
+    height: $size-0320;
 } 
+%foot-2-li-font {
+    font-size: $size-030;
+    color: $color-03;
+    font-family: 'alk-s';
+    text-shadow: $size-01 0 $color-06;
+}
 %avtori-size {
-    max-width: $size-01750;
+    max-width: $size-02240;
     width: $size-0;
+}
+%avtori-p-font {
+    font-size: $size-025;
+    color: $color-03;
+    font-family: 'alk-s';
+    text-shadow: $size-01 0 $color-06;
+}
+%avtori-a-font {
+    font-size: $size-025;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: $size-02;
+    text-shadow: $size-01 $size--01 $size-01 $color-02;
 }
 
 
