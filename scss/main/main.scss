@@ -67,7 +67,7 @@
                 @extend %soc-ul-size;
                 @extend %soc-ul-med;
                 .soc-li {
-                    padding: $size-05 0;
+                    padding: $size-010 0;
                     .fa {
                         @extend %font-fa-def;
                     }
@@ -78,7 +78,8 @@
                     }
                 }
                 .contact-ul {
-                    padding: 0 $size-010;
+                    @include d-flex (flex,space-between,end);
+                    flex-direction: column;
                 }
                 .contact-box {
                     @include d-flex (flex,space-between,end);
@@ -94,7 +95,7 @@
 }
 //Section-1
 .sect-1 {
-    margin: $size-0160 0 $size-025 0;
+    margin: $size-0200 0 $size-025 0;
     position: relative;
     .sect-1-cont {
         margin: 0 $size-095;
@@ -143,7 +144,7 @@
 .sect-2 {
     @extend %sect-2-size;
     @include d-flex (flex,space-around,center);
-    margin: $size-080 auto;
+    margin: $size-050 auto;
     @extend %border-def;
     background-color: $color-01;
     flex-direction: column;
@@ -152,19 +153,52 @@
         @include d-flex (flex,space-around,center);
         .sect-2-flt {
             @extend %sect-2-flt-size;
-            @include d-flex (flex,space-between,center);
+            @include d-flex (flex,end,center);
+            flex-direction: column;
+            .flt-cont {
+                @extend %flt-cont-size;
+                @include d-flex (flex,space-between,center);
+                .flt-icon {
+                    max-width: $size-080;
+                    @include d-flex (flex,space-between,center);
+                    .flt-icon-box {
+                       width: $size-0;
+                    }
+                }
+                .flt-ico-nm {
+                    @extend %flt-ico-nm-size;
+                    text-align: end;
+                    .ico-nm-h2 {
+                        @extend %ico-nm-h2-font;
+                    }
+                    .xazi {
+                        @extend %xazi;
+                    }
+                }
+            }
             .s2-flt-ul{
                 @extend %s2-flt-ul-size;
                 .s2-flt-li {
-                    padding: $size-020;
+                    height: $size-090;
+                    padding-right: 25px;
                     @extend %font-h3-flt;
                     @extend %border-def;
+                    @include d-flex (flex,space-between,center);
+                    .flt-li-box {
+                        max-width: $size-0130;
+                        height: $size-070;
+                        margin: 10px;
+                        .flt-li-img {
+                            width: $size-0;
+                            height: $size-070;
+                        }
+                    }
                 }
             }
         }
         .sect-2-box {
             @extend %sect-2-box-size;
-            @include d-flex (flex,end,center);
+            @include d-flex (flex,flex-end,center);
             flex-direction: column;
         .cont-1-list {
             @extend %cont-1-size;
@@ -175,28 +209,62 @@
                 @extend %border-def;
                 @include d-flex (flex,space-between,center);
                 margin-bottom: $size-020;
+                flex-direction: column;
                 .cont-1-img {
-                    max-width: $size-0390;
-                    height: $size-0550;
-                    background-color: $color-010;
-                    @include d-flex (flex,space-between,center);
-                    @extend %border-def;
-                    .cont-1-img-box {
-                        width: $size-95;
+                    max-width: $size-0810;
+                    height: $size-0450;
+                    @include d-flex (flex,center,center);
+                    
+                    flex-direction: column;
+                    .cont-1-img-hrf {
+                        max-width: $size-0810;
+                        height: $size-0360;
+                        background-color: $color-010;
+                        @include d-flex (flex,center,end);
+                        .cont-1-img-box {
+                            height: $size-0350;
+                            width: $size-0;
+                        }
+                    }
+                    .cont-1-img-text {
+                        max-width: $size-0810;
+                        width: $size-0;
+                        height: $size-100;
+                        @include d-flex (flex,space-between,end);
+                        padding: 10px 20px;
+                        .flt-icon {
+                            max-width: $size-070;
+                            @include d-flex (flex,space-between,center);
+                            .flt-icon-box {
+                                width: $size-0;
+                            }
+                        }
+                        .flt-ico-nm {
+                            max-width: $size-0630;
+                            width: $size-0;
+                            height: $size-085;
+                            text-align: end;
+                            padding-top: $size-015;
+                            .ico-nm-h2 {
+                                font-size: 30px;
+                                padding-right: $size-020
+                            }
+                            .xazi {
+                                @extend %xazi;    
+                            }
+                        }
                     }
                 }
                 .cont-1-fit {
                     @extend %cont-1-fit-size;
-                    .cont-1-h3 {
-                        @extend %cont-1-h3-size;
-                        @extend %font-h3-def;
-                    }
+                    padding-right: $size-025;
                     .cont-1-fit-ul {
-                        height: 400px;
-                        @include d-flex (flex,space-between,end);
+                        height: $size-0200;
+                        @include d-flex (flex,space-around,flex-end);
                         flex-direction: column;
                         .cont-1-fit-li {
                             @extend %cont-1-fit-li-font;
+                            @extend %text-dec-def;
                         }
                     }
                 }
@@ -234,6 +302,7 @@
             background-color: $color-010;
             @extend %border-def;
             .cont-1-sm-img {
+                margin-left: $size-050;
                 max-width: $size-0320;
                 .cont-1-sm-img-box {
                     width: $size-0;
@@ -322,6 +391,7 @@
             @extend %border-def;
             @include d-flex (flex,flex-end,flex-end);
             .box-box {
+                margin-right: $size-050;
                 max-width: $size-0750;
                 width: $size-0;
                 height: $size-0260;
@@ -431,7 +501,7 @@
     @extend %sect-baner-size;
     @include d-flex (flex,space-evenly,center);
     @extend %border-def;
-    background-color: $color-02;
+    @extend %bg-banner;
     margin: $size-020 auto;
     .sect-baner-text {
         @extend %sect-baner-text-size;

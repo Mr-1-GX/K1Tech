@@ -3,11 +3,18 @@
     @include bg-img (url(../img/k1.PNG),$color-01);
     @include background (repeat,top left,auto $size-01,);
 }
+%bg-banner {
+    @include bg-img (url(../img/iphone-b.png),$color-02);
+    @include background (no-repeat,left,initial,);
+}
 %shad-def {
     background-image: url(../img/shad-3.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: 1450px 180px;
+}
+%text-dec-def {
+    text-decoration: underline solid $color-02;
 }
 //Font
 %font-h1-def {
@@ -34,8 +41,8 @@
     font-size: $size-030;
     color: $color-03;
     font-family: 'archy-B';
-    letter-spacing: $size-02;
-    text-shadow: $size-01 $size--01 $size-01 $color-02;
+    letter-spacing: $size-01;
+    text-shadow: 0 0 $size-01 $color-02;
 }
 %font-bol-def {
     font-size: $size-030;
@@ -70,6 +77,14 @@
     font-family: 'alk-s';
     letter-spacing: $size-01;
     text-shadow: $size-01 0 $color-06;
+}
+%ico-nm-h2-font {
+    font-size: $size-050;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: $size-010;
+    text-shadow: 0 0 $size-01 $color-02;
+    border-radius: $size-05;
 }
 //Xazi
 %xazi {
@@ -127,8 +142,8 @@
     margin: 0 auto;
 }
 %nav-logo-size {
-    max-width: $size-070;
-    height: $size-080;
+    max-width: $size-0110;
+    height: $size-0130;
 }
 %navi-size {
     max-width: $size-01820;
@@ -155,16 +170,27 @@
 %sect-2-size {
     max-width: $size-02540;
     width: $size-0;
-    height: $size-01366;
+    height: $size-01920;
 }
 %sect-2-big-size {
     max-width: $size-02440;
     width: $size-0;
+    height: $size-01440;
 }
 %sect-2-flt-size {
     max-width: $size-0670;
     width: $size-0;
-    height: $size-0962;
+    height: $size-01440;
+}
+%flt-cont-size {
+    max-width: $size-0550;
+    width: $size-0;
+    height: $size-0160;
+}
+%flt-ico-nm-size {
+    max-width: $size-0450;
+    width: $size-0;
+    height: $size-085;
 }
 %s2-flt-ul-size {
     max-width: $size-0600;
@@ -174,7 +200,7 @@
 %sect-2-box-size {
     max-width: $size-01680;
     width: $size-0;
-    height: $size-01024;
+    height: $size-01440;
 }
 %cont-1-size {
     max-width: $size-01640;
@@ -183,7 +209,7 @@
 %cont-1-list-box-size {
     max-width: $size-0810;
     width: $size-0;
-    height: $size-0550;
+    height: $size-0670;
 }
 %cont-1-box-size {
     max-width: $size-0390;
@@ -193,7 +219,7 @@
 %cont-1-fit-size {
     max-width: $size-0400;
     width: $size-0;
-    height: $size-0500;
+    height: $size-0630;
 }
 %cont-1-fit-li-font {
     font-size: $size-025;
