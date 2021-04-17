@@ -78,17 +78,9 @@
     letter-spacing: $size-01;
     text-shadow: $size-01 0 $color-06;
 }
-%ico-nm-h2-font {
-    font-size: $size-050;
-    color: $color-03;
-    font-family: 'archy-B';
-    letter-spacing: $size-010;
-    text-shadow: 0 0 $size-01 $color-02;
-    border-radius: $size-05;
-}
 //Xazi
 %xazi {
-    max-width: $size-02240;
+    max-width: $size-01820;
     width: $size-0;
     margin:$size-025 auto;
     content: ' ';
@@ -131,13 +123,14 @@
 
 //HEADER
 %head-size {
+    max-width: $size-01920;
     width: $size-0;
     top: 0;
     left: 0;
     position: fixed;
 }
 %nav-box-size {
-    max-width: $size-02240;
+    max-width: $size-01750;
     width: $size-0;
     margin: 0 auto;
 }
@@ -146,15 +139,15 @@
     height: $size-0130;
 }
 %navi-size {
-    max-width: $size-01820;
+    max-width: $size-01560;
     width: $size-0;
 }
 %nav-ul-size {
-    max-width: $size-01080;
+    max-width: $size-01024;
     width: $size-0;
 }
 %soc-ul-size {
-    max-width: $size-0450;
+    max-width: $size-0414;
     width: $size-0;
 }
 //Drop-Down
@@ -168,48 +161,81 @@
 //Sections
 //Section-2
 %sect-2-size {
-    max-width: $size-02540;
+    max-width: $size-01900;
     width: $size-0;
     height: $size-01920;
 }
 %sect-2-big-size {
-    max-width: $size-02440;
+    max-width: $size-01850;
     width: $size-0;
     height: $size-01440;
 }
 %sect-2-flt-size {
-    max-width: $size-0670;
+    max-width: $size-0550;
     width: $size-0;
     height: $size-01440;
 }
 %flt-cont-size {
     max-width: $size-0550;
     width: $size-0;
-    height: $size-0160;
+    height: $size-0170;
+}
+%flt-li-box-size {
+    max-width: $size-090;
+    height: $size-070;
 }
 %flt-ico-nm-size {
     max-width: $size-0450;
     width: $size-0;
-    height: $size-085;
+    height: $size-065;
+}
+%ico-nm-h2-font {
+    font-size: $size-040;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: $size-010;
+    text-shadow: 0 0 $size-01 $color-02;
+    border-radius: $size-05;
 }
 %s2-flt-ul-size {
-    max-width: $size-0600;
+    max-width: $size-0550;
     width: $size-0;
-    height: $size-01024;
+    height: $size-01280;
 }
 %sect-2-box-size {
-    max-width: $size-01680;
+    max-width: $size-01240;
     width: $size-0;
-    height: $size-01440;
+    height: $size-01425;
+}
+%cont-1-list-size {
+    max-width: $size-01750;
+    width: $size-0;
 }
 %cont-1-size {
-    max-width: $size-01640;
     width: $size-0;
 }
 %cont-1-list-box-size {
-    max-width: $size-0810;
+    max-width: $size-0600;
     width: $size-0;
-    height: $size-0670;
+    height: $size-0700;
+}
+%cont-1-img-size {
+    max-width: $size-0600;
+    height: $size-0480;
+}
+%cont-1-img-hrf-size {
+    max-width: $size-0600;
+    height: $size-0390;
+}
+%cont-1-img-text-size {
+    max-width: $size-0600;
+    width: $size-0;
+    height: $size-100;
+}
+%flt-ico-nm-size {
+    max-width: $size-0450;
+    width: $size-0;
+    height: $size-065;
 }
 %cont-1-box-size {
     max-width: $size-0390;
@@ -217,12 +243,12 @@
     height: $size-0414;
 }
 %cont-1-fit-size {
-    max-width: $size-0400;
+    max-width: $size-0600;
     width: $size-0;
-    height: $size-0630;
+    height: $size-0230;
 }
 %cont-1-fit-li-font {
-    font-size: $size-025;
+    font-size: $size-020;
     color: $color-06;
     font-family: 'BPG-A';
     letter-spacing: 0;
@@ -232,22 +258,22 @@
     margin: $size-025 auto;
 }
 %sect-2-sm-size {
-    max-width: $size-02440;
+    max-width: $size-01850;
     width: $size-0;
     height: $size-0230;
 }
 %cont-1-sm-box-size {
-    max-width: $size-01190;
+    max-width: $size-0910;
     width: $size-0;
     height: $size-0170;
 }
 //Section-3
 %sect-3-size {
-    max-width: $size-02540;
+    max-width: $size-01900;
     width: $size-0;
 }
 %sect-3-cont-size {
-    max-width: $size-02440;
+    max-width: $size-01780;
     width: $size-0;
     height: $size-0800;
 }
@@ -282,9 +308,71 @@
 }
 //Section-BanBox
 %sect-banbox-size {
-    max-width: $size-02540;
+    max-width: $size-01900;
     width: $size-0;
     height: $size-01536;
+}
+%banbox-cont-size {
+    max-width: $size-01850;
+    width: $size-0;
+    height: $size-0230;
+}
+%banbox-box-size {
+    max-width: $size-0880;
+    width: $size-0;
+    height: $size-0170;
+}
+%consol-size {
+    max-width: $size-0250;
+    width: $size-0;
+    height: $size-0170;
+}
+%consol-li-font {
+    font-size: $size-030;
+    color: $color-06;
+    font-family: 'archy-B';
+    letter-spacing: $size-05;
+    text-shadow: 0 0 $size-01 $color-03;
+}
+%consol-li-dec {
+    text-decoration: underline dotted $color-02;
+}
+%box-box-ico-size {
+    max-width: $size-0230;
+    width: $size-0;
+    height: $size-0180;
+}
+%box-box-size {
+    max-width: $size-0370;
+    width: $size-0;
+    height: $size-0250;
+}
+%banbox-cont-2-size {
+    max-width: $size-01850;
+    width: $size-0;
+}
+%sect-ban-cont-size {
+    max-width: $size-01080;
+    width: $size-0;
+    height: $size-01024;
+}
+%tv-box-size {
+    max-width: $size-01080;
+    width: $size-0;
+}
+%tv-text-cont-size {
+    max-width: $size-01080;
+    width: $size-0;
+    height: $size-0170;
+}
+%tv-ico-nm-size {
+    max-width: $size-0962;
+    width: $size-0;
+    height: $size-0125;
+}
+%tv-ban-h1-size {
+    width: $size-0;
+    height: $size-080;
 }
 %sect-ban-h1-font {
     font-size: $size-050;
@@ -293,25 +381,71 @@
     letter-spacing: $size-05;
     text-shadow:  0 0 $size-01 $color-02;
 }
+%sect-ban-cont-2-size {
+    max-width: $size-0750;
+    width: $size-0;
+    height: $size-01024;
+}
+%sect-ban-box-size {
+    max-width: $size-0750;
+    width: $size-0;
+    height: $size-0500;
+}
+%ban-box-img-size {
+    max-width: $size-0750;
+    width: $size-0;
+    height: $size-0390;
+}
+%tvh-text-cont-size {
+    max-width: $size-0710;
+    width: $size-0;
+    height: $size-100;
+}
+%tvh-ico-nm-size {
+    max-width: $size-0630;
+    width: $size-0;
+    height: $size-0150;
+}
+%tvh-ban-h1-size {
+    max-width: $size-01600;
+    width: $size-0;
+    height: $size-080;
+}
+%tvh-ban-h1-font {
+    font-size: $size-035;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: $size-03;
+    text-shadow:  0 0 $size-01 $color-02;
+}
 //Section-4
 %sect-4-size {
-    max-width: $size-02540;
+    max-width: $size-01900;
     width: $size-0;
     height: $size-0600;
 }
 %sect-4-cont-size {
-    max-width: $size-02440;
+    max-width: $size-01850;
     width: $size-0;
     height: $size-0450;
 }
 %sect-4-box-size {
-    max-width: $size-0750;
+    max-width: $size-0550;
     width: $size-0;
     height: $size-0400;
 }
+%sect-4-img-size {
+    max-width: $size-0300;
+    height: $size-0400;
+}
+%sect-4-text-size {
+    max-width: $size-0450;
+    width: $size-0;
+    height: $size-0340;
+}
 //Section-Banner
 %sect-baner-size {
-    max-width: $size-02540;
+    max-width: $size-01900;
     width: $size-0;
     height: $size-0450;
 }
@@ -323,12 +457,12 @@
 
 //Footer
 %foot-lok-size {
-    max-width: $size-02240;
+    max-width: $size-01900;
     width: $size-0;
     height: $size-0550;
 }
 %foot-cont-size {
-    max-width: $size-0550;
+    max-width: $size-0500;
     width: $size-0;
     height: $size-0450;
 }
@@ -352,9 +486,9 @@
     width: $size-0;
 }
 %foot-cont-2-size {
-    max-width: $size-01750;
+    max-width: $size-01240;
     width: $size-0;
-    height: $size-0320;
+    height: $size-0450;
 } 
 %foot-2-li-font {
     font-size: $size-030;
@@ -363,7 +497,7 @@
     text-shadow: $size-01 0 $color-06;
 }
 %avtori-size {
-    max-width: $size-02240;
+    max-width: $size-01750;
     width: $size-0;
 }
 %avtori-p-font {

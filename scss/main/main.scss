@@ -4,7 +4,7 @@
 }
 //HEADER
 .head-cont {
-    margin-top: $size-03;
+    margin: $size-02 auto;
     background-color: $color-01;
     @extend %head-size;
     @extend %border-def;
@@ -101,7 +101,7 @@
         margin: 0 $size-095;
         z-index: 2;
         .sect-1-box {
-            max-width: $size-02440;
+            max-width: $size-01780;
             border-radius: 5px;
             .slick-dots {
                 bottom: 30px;
@@ -185,8 +185,7 @@
                     @extend %border-def;
                     @include d-flex (flex,space-between,center);
                     .flt-li-box {
-                        max-width: $size-0130;
-                        height: $size-070;
+                        @extend %flt-li-box-size;
                         margin: 10px;
                         .flt-li-img {
                             width: $size-0;
@@ -198,27 +197,23 @@
         }
         .sect-2-box {
             @extend %sect-2-box-size;
-            @include d-flex (flex,flex-end,center);
+            @include d-flex (flex,space-between,center);
             flex-direction: column;
         .cont-1-list {
-            @extend %cont-1-size;
+            @extend %cont-1-list-size;
             @include d-flex (flex,space-between,center);
             .cont-1-list-box {
                 background-color: $color-01;
                 @extend %cont-1-list-box-size;
                 @extend %border-def;
                 @include d-flex (flex,space-between,center);
-                margin-bottom: $size-020;
                 flex-direction: column;
                 .cont-1-img {
-                    max-width: $size-0810;
-                    height: $size-0450;
+                    @extend %cont-1-img-size;
                     @include d-flex (flex,center,center);
-                    
                     flex-direction: column;
                     .cont-1-img-hrf {
-                        max-width: $size-0810;
-                        height: $size-0360;
+                        @extend %cont-1-img-hrf-size;
                         background-color: $color-010;
                         @include d-flex (flex,center,end);
                         .cont-1-img-box {
@@ -227,9 +222,7 @@
                         }
                     }
                     .cont-1-img-text {
-                        max-width: $size-0810;
-                        width: $size-0;
-                        height: $size-100;
+                        @extend %cont-1-img-text-size;
                         @include d-flex (flex,space-between,end);
                         padding: 10px 20px;
                         .flt-icon {
@@ -240,13 +233,11 @@
                             }
                         }
                         .flt-ico-nm {
-                            max-width: $size-0630;
-                            width: $size-0;
-                            height: $size-085;
+                            @extend %flt-ico-nm-size;
                             text-align: end;
                             padding-top: $size-015;
                             .ico-nm-h2 {
-                                font-size: 30px;
+                                font-size: 25px;
                                 padding-right: $size-020
                             }
                             .xazi {
@@ -257,14 +248,19 @@
                 }
                 .cont-1-fit {
                     @extend %cont-1-fit-size;
-                    padding-right: $size-025;
+                    padding-left: $size-025;
                     .cont-1-fit-ul {
-                        height: $size-0200;
-                        @include d-flex (flex,space-around,flex-end);
+                        height: $size-0215;
+                        @include d-flex (flex,space-around,end);
                         flex-direction: column;
                         .cont-1-fit-li {
-                            @extend %cont-1-fit-li-font;
-                            @extend %text-dec-def;
+                            max-width: $size-0535;
+                            width: $size-0;
+                            @include d-flex (flex,space-between,center);
+                            .cont-1-fit-a {
+                                @extend %cont-1-fit-li-font;
+                                @extend %text-dec-def;
+                            }
                         }
                     }
                 }
@@ -380,68 +376,124 @@
     background-color: $color-01;
     flex-direction: column;
     .banbox-cont {
-        max-width: $size-02440;
-        width: $size-0;
-        height: $size-0230;
+        @extend %banbox-cont-size;
         @include d-flex (flex,space-around,center);
         .banbox-box {
-            max-width: $size-01190;
-            width: $size-0;
-            height: $size-0170;
+            @extend %banbox-box-size;
             @extend %border-def;
             @include d-flex (flex,flex-end,flex-end);
+            .consol {
+                @extend %consol-size;
+                .consol-ul {
+                    height: $size-0160;
+                    @include d-flex (flex,center,center);
+                    flex-direction: column;
+                    .consol-li {
+                        padding-top: $size-010;
+                        @extend %consol-li-font;
+                        @extend %consol-li-dec;
+                    }
+                }
+            }
+            .box-box-ico {
+                @extend %box-box-ico-size;
+                @include d-flex (flex,flex-end,center);
+                .box-img-ico {
+                    height: $size-0200;
+                    width: $size-0;
+                }
+            }
             .box-box {
-                margin-right: $size-050;
-                max-width: $size-0750;
-                width: $size-0;
-                height: $size-0260;
-                @include d-flex (flex,flex-end,flex-start);
+                @extend %box-box-size;
+                @include d-flex (flex,flex-end,center);
                 .box-img {
-                    width: $size-75;
+                    height: $size-0270;
+                    width: $size-0;
                 }
             }
         }
     }
     .banbox-cont-2 {
-        max-width: $size-02440;
-        width: $size-0;
+        @extend %banbox-cont-2-size;
         @include d-flex (flex,space-between,center);
         .sect-ban-cont {
-            max-width: $size-01640;
-            width: $size-0;
-            height: $size-01024;
+            @extend %sect-ban-cont-size;
             @extend %border-def;
             @include d-flex (flex,space-around,center);
             flex-direction: column;
             background-color: $color-010;
             .tv-box {
-                max-width: $size-01640;
-                width: $size-0;
+                @extend %tv-box-size;
                 @include d-flex (flex,center,center);
                 .tv {
                     height: $size-0810;
                     width: $size-0;
                 }
             }
-            .sect-ban-h1 {
-                max-width: $size-01600;
-                width: $size-0;
-                height: $size-080;
-                padding-left: $size-0110;
-                @extend %sect-ban-h1-font;
+            .tv-text-cont {
+                @extend %tv-text-cont-size;
+                @include d-flex (flex,space-between,center);
+                .tv-icon {
+                    max-width: $size-100;
+                    @include d-flex (flex,space-between,center);
+                    .tv-icon-box {
+                       width: $size-0;
+                    }
+                }
+                .tv-ico-nm {
+                    @extend %tv-ico-nm-size;
+                    text-align: end;
+                    .tv-ban-h1 {
+                        @extend %tv-ban-h1-size;
+                        padding: $size-030 $size-045;
+                        @extend %sect-ban-h1-font;
+                    }
+                    .xazi {
+                        @extend %xazi;
+                    }
+                }
             }
         }
-        .sect-ban-cont2 {
-            max-width: $size-0750;
-            width: $size-0;
-            height: $size-01024;
+        .sect-ban-cont-2 {
+            @extend %sect-ban-cont-2-size;
             @include d-flex (flex,space-between,center);
             flex-direction: column;
             .sect-ban-box {
-                max-width: $size-0750;
-                width: $size-0;
-                height: $size-0480;
+                @extend %sect-ban-box-size;
                 @extend %border-def;
+                @include d-flex (flex,space-between,center);
+                flex-direction: column;
+                .ban-box-img {
+                    @extend %ban-box-img-size;
+                    background-color: $color-010;
+                    .cinema {
+                        height: $size-0375;
+                        width: $size-0;
+                    }
+                }
+                .tvh-text-cont {
+                    @extend %tvh-text-cont-size;
+                    @include d-flex (flex,space-between,center);
+                    .tvh-icon {
+                        max-width: $size-070;
+                        @include d-flex (flex,space-between,center);
+                        .tvh-icon-box {
+                           width: $size-0;
+                        }
+                    }
+                    .tvh-ico-nm {
+                        @extend %tvh-ico-nm-size;
+                        text-align: end;
+                        .tvh-ban-h1 {
+                            @extend %tvh-ban-h1-size;
+                            padding: $size-040 $size-025;
+                            @extend %tvh-ban-h1-font;
+                        }
+                        .xazi {
+                            @extend %xazi;
+                        }
+                    }
+                }
             }
         }
     }
@@ -471,8 +523,7 @@
             background-color: $color-01;
             margin: $size-015;
             .sect-4-img {
-                max-width: $size-0450;
-                height: $size-0400;
+                @extend %sect-4-img-size;
                 background-color: $color-010;
                 @include d-flex (flex,space-around,center);
                 @extend %border-def;
@@ -481,9 +532,7 @@
                 }
             }
             .sect-4-text {
-                max-width: $size-0450;
-                width: $size-0;
-                height: $size-0340;
+                @extend %sect-4-text-size;
                 .sect-4-h3 {
                     margin: $size-010;
                     @extend %font-h3-def;
