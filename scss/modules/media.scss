@@ -1,17 +1,24 @@
 //HEADER
+%nav-box-med {
+    @media (max-width: $size-01600) {
+        width: $size-90;
+    }
+    @media (max-width: $size-0600) {
+        flex-direction: column;
+    }
+}
 %nav-logo-med {
-    // @media (max-width: $size-0670) {
-    //     position: fixed;
-    //     top: $size-05;
-    //     left: $size-0110;
-    // }
+    @media (max-width: $size-01600) {
+        max-width: $size-060;
+        height: $size-070;
+    }
     @media (max-width: $size-0600) {
         margin: 0 auto;
     }
 }
 %navi-med {
-    @media (max-width: $size-01680) {
-        width: $size-75;
+    @media (max-width: $size-01600) {
+        width: $size-85;
     }
     @media (max-width: $size-01366) {
         width: $size-80;
@@ -28,14 +35,6 @@
         flex-direction: column;
     }
 }
-%nav-box-med {
-    @media (max-width: $size-01680) {
-        width: $size-90;
-    }
-    @media (max-width: $size-0600) {
-        flex-direction: column;
-    }
-}
 %nav-ul-open-med {
     @media (max-width: $size-0600) {
         .open-menu {
@@ -46,8 +45,8 @@
     }
 }
 %nav-ul-med {
-    @media (max-width: $size-01024) {
-        max-width: $size-0450;
+    @media (max-width: $size-01600) {
+        width: $size-60;
     }
     @media (max-width: $size-0800) {
         max-width: $size-0375;
@@ -68,8 +67,8 @@
     }
 }
 %nav-a-med {
-    @media (max-width: $size-01024) {
-        font-size: $size-015;
+    @media (max-width: $size-01600) {
+        font-size: $size-025;
     }
     @media (max-width: $size-0800) {
         font-size: $size-013;
@@ -79,8 +78,9 @@
     // }
 }
 %soc-ul-med {
-    @media (max-width: $size-0800) {
-        max-width: $size-0200;
+    @media (max-width: $size-01600) {
+        justify-content: flex-end;
+        padding-right: $size-030;
     }
     // @media (max-width: $size-0670) {
     //     padding-right: $size-030;
@@ -98,9 +98,19 @@
         }
     }
 }
+%soc-li-med {
+    @media (max-width: $size-01600) {
+        padding: $size-05 0;
+    }
+}
+%fa-med {
+    @media (max-width: $size-01600) {
+        font-size: $size-020;
+    }
+}
 %soc-a-med {
-    @media (max-width: $size-0800) {
-        font-size: $size-013;
+    @media (max-width: $size-01600) {
+        font-size: $size-020;
     }
 }
 %burger-icon-med {
@@ -115,8 +125,70 @@
     }
 }
 //Section-1
-
-
+%sect-1-med {
+    @media (max-width: $size-01600) {
+        height: $size-0480;
+        margin: $size-0125 0 $size-025;
+    }
+}
+%sect-1-cont-med {
+    @media (max-width: $size-01600) {
+        margin: 0 $size-025;
+    }
+}
+%sect-1-img-med {
+    @media (max-width: $size-01600) {
+        height: $size-0480;
+        margin: $size-05 0;
+    }
+}
+//Section-2
+%sect-2-med {
+    @media (max-width: $size-01600) {
+        margin: $size-040 0;
+    }
+}
+%sect-2-big-med {
+    @media (max-width: $size-01600) {
+        width: $size-98;
+    }
+}
+%flt-cont-med {
+    @media (max-width: $size-01600) {
+        width: $size-90;
+    }
+}
+%s2-flt-ul-med {
+    @media (max-width: $size-01600) {
+        width: $size-90;
+    }
+}
+%sect-2-box-med {
+    @media (max-width: $size-01600) {
+        height: $size-01420;
+    }
+}
+%cont-1-list-box-med {
+    @media (max-width: $size-01600) {
+        max-width: $size-0500;
+        width: $size-90;
+    }
+}
+%cont-1-img-med {
+    @media (max-width: $size-01600) {
+        width: $size-90;
+    }
+}
+%cont-1-fit-med {
+    @media (max-width: $size-01600) {
+        width: $size-90;
+    }
+}
+%cont-1-fit-ul-med {
+    @media (max-width: $size-01600) {
+        width: $size-90;
+    }
+}
 //FOOTER
 %xazi-med {
     @media (max-width: $size-01680) {

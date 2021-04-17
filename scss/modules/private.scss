@@ -123,7 +123,6 @@
 
 //HEADER
 %head-size {
-    max-width: $size-01920;
     width: $size-0;
     top: 0;
     left: 0;
@@ -136,6 +135,7 @@
 }
 %nav-logo-size {
     max-width: $size-0110;
+    width: $size-0;
     height: $size-0130;
 }
 %navi-size {
@@ -163,7 +163,7 @@
 %sect-2-size {
     max-width: $size-01900;
     width: $size-0;
-    height: $size-01920;
+    height: $size-01820;
 }
 %sect-2-big-size {
     max-width: $size-01850;
@@ -215,7 +215,7 @@
     width: $size-0;
 }
 %cont-1-list-box-size {
-    max-width: $size-0600;
+    max-width: $size-0610;
     width: $size-0;
     height: $size-0700;
 }
@@ -310,7 +310,7 @@
 %sect-banbox-size {
     max-width: $size-01900;
     width: $size-0;
-    height: $size-01536;
+    height: $size-01440;
 }
 %banbox-cont-size {
     max-width: $size-01850;
@@ -354,19 +354,19 @@
 %sect-ban-cont-size {
     max-width: $size-01080;
     width: $size-0;
-    height: $size-01024;
+    height: $size-0860;
 }
 %tv-box-size {
     max-width: $size-01080;
     width: $size-0;
 }
 %tv-text-cont-size {
-    max-width: $size-01080;
+    max-width: $size-01024;
     width: $size-0;
     height: $size-0170;
 }
 %tv-ico-nm-size {
-    max-width: $size-0962;
+    max-width: $size-0880;
     width: $size-0;
     height: $size-0125;
 }
@@ -384,12 +384,12 @@
 %sect-ban-cont-2-size {
     max-width: $size-0750;
     width: $size-0;
-    height: $size-01024;
+    height: $size-0860;
 }
 %sect-ban-box-size {
     max-width: $size-0750;
     width: $size-0;
-    height: $size-0500;
+    height: $size-0420;
 }
 %ban-box-img-size {
     max-width: $size-0750;

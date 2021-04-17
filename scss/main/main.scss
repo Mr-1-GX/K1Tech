@@ -68,8 +68,10 @@
                 @extend %soc-ul-med;
                 .soc-li {
                     padding: $size-010 0;
+                    @extend %soc-li-med;
                     .fa {
                         @extend %font-fa-def;
+                        @extend %fa-med;
                     }
                     .soc-a {
                         @extend %font-bol-def;
@@ -95,13 +97,15 @@
 }
 //Section-1
 .sect-1 {
-    margin: $size-0200 0 $size-025 0;
+    margin: $size-0200 auto $size-025 auto;
     position: relative;
+    @extend %sect-1-med;
     .sect-1-cont {
-        margin: 0 $size-095;
+        margin: 0 370px;
         z-index: 2;
+        @extend %sect-1-cont-med;
         .sect-1-box {
-            max-width: $size-01780;
+            max-width: $size-01820;
             border-radius: 5px;
             .slick-dots {
                 bottom: 30px;
@@ -124,10 +128,11 @@
             .sect-1-img {
                 margin: 2px;
                 width: $size-0;
-                height: $size-0670;
+                height: $size-0535;
                 @extend %border-def;
                 box-shadow: 0 0 $size-01 $size-01 $color-03;
                 border-radius: 5px;
+                @extend %sect-1-img-med;
             }
         }
     }
@@ -148,9 +153,11 @@
     @extend %border-def;
     background-color: $color-01;
     flex-direction: column;
+    @extend %sect-2-med;
     .sect-2-big {
         @extend %sect-2-big-size;
         @include d-flex (flex,space-around,center);
+        @extend %sect-2-big-med;
         .sect-2-flt {
             @extend %sect-2-flt-size;
             @include d-flex (flex,end,center);
@@ -158,6 +165,7 @@
             .flt-cont {
                 @extend %flt-cont-size;
                 @include d-flex (flex,space-between,center);
+                @extend %flt-cont-med;
                 .flt-icon {
                     max-width: $size-080;
                     @include d-flex (flex,space-between,center);
@@ -176,8 +184,9 @@
                     }
                 }
             }
-            .s2-flt-ul{
+            .s2-flt-ul {
                 @extend %s2-flt-ul-size;
+                @extend %s2-flt-ul-med;
                 .s2-flt-li {
                     height: $size-090;
                     padding-right: 25px;
@@ -199,73 +208,77 @@
             @extend %sect-2-box-size;
             @include d-flex (flex,space-between,center);
             flex-direction: column;
-        .cont-1-list {
-            @extend %cont-1-list-size;
-            @include d-flex (flex,space-between,center);
-            .cont-1-list-box {
-                background-color: $color-01;
-                @extend %cont-1-list-box-size;
-                @extend %border-def;
+            @extend %sect-2-box-med;
+            .cont-1-list {
+                @extend %cont-1-list-size;
                 @include d-flex (flex,space-between,center);
-                flex-direction: column;
-                .cont-1-img {
-                    @extend %cont-1-img-size;
-                    @include d-flex (flex,center,center);
+                .cont-1-list-box {
+                    background-color: $color-01;
+                    @extend %cont-1-list-box-size;
+                    @extend %border-def;
+                    @include d-flex (flex,space-between,center);
                     flex-direction: column;
-                    .cont-1-img-hrf {
-                        @extend %cont-1-img-hrf-size;
-                        background-color: $color-010;
-                        @include d-flex (flex,center,end);
-                        .cont-1-img-box {
-                            height: $size-0350;
-                            width: $size-0;
-                        }
-                    }
-                    .cont-1-img-text {
-                        @extend %cont-1-img-text-size;
-                        @include d-flex (flex,space-between,end);
-                        padding: 10px 20px;
-                        .flt-icon {
-                            max-width: $size-070;
-                            @include d-flex (flex,space-between,center);
-                            .flt-icon-box {
+                    @extend %cont-1-list-box-med;
+                    .cont-1-img {
+                        @extend %cont-1-img-size;
+                        @include d-flex (flex,center,center);
+                        flex-direction: column;
+                        @extend %cont-1-img-med;
+                        .cont-1-img-hrf {
+                            @extend %cont-1-img-hrf-size;
+                            background-color: $color-010;
+                            @include d-flex (flex,center,end);
+                            .cont-1-img-box {
+                                height: $size-0350;
                                 width: $size-0;
                             }
                         }
-                        .flt-ico-nm {
-                            @extend %flt-ico-nm-size;
-                            text-align: end;
-                            padding-top: $size-015;
-                            .ico-nm-h2 {
-                                font-size: 25px;
-                                padding-right: $size-020
+                        .cont-1-img-text {
+                            @extend %cont-1-img-text-size;
+                            @include d-flex (flex,space-between,end);
+                            padding: 10px 20px;
+                            .flt-icon {
+                                max-width: $size-070;
+                                @include d-flex (flex,space-between,center);
+                                .flt-icon-box {
+                                    width: $size-0;
+                                }
                             }
-                            .xazi {
-                                @extend %xazi;    
+                            .flt-ico-nm {
+                                @extend %flt-ico-nm-size;
+                                text-align: end;
+                                padding-top: $size-015;
+                                .ico-nm-h2 {
+                                    font-size: 25px;
+                                    padding-right: $size-020
+                                }
+                                .xazi {
+                                    @extend %xazi;    
+                                }
                             }
                         }
                     }
-                }
-                .cont-1-fit {
-                    @extend %cont-1-fit-size;
-                    padding-left: $size-025;
-                    .cont-1-fit-ul {
-                        height: $size-0215;
-                        @include d-flex (flex,space-around,end);
-                        flex-direction: column;
-                        .cont-1-fit-li {
-                            max-width: $size-0535;
-                            width: $size-0;
-                            @include d-flex (flex,space-between,center);
-                            .cont-1-fit-a {
-                                @extend %cont-1-fit-li-font;
-                                @extend %text-dec-def;
+                    .cont-1-fit {
+                        @extend %cont-1-fit-size;
+                        padding-left: $size-025;
+                        .cont-1-fit-ul {
+                            height: $size-0215;
+                            @include d-flex (flex,space-around,end);
+                            flex-direction: column;
+                            @extend %cont-1-fit-ul-med;
+                            .cont-1-fit-li {
+                                max-width: $size-0535;
+                                width: $size-0;
+                                @include d-flex (flex,space-between,center);
+                                .cont-1-fit-a {
+                                    @extend %cont-1-fit-li-font;
+                                    @extend %text-dec-def;
+                                }
                             }
                         }
                     }
                 }
             }
-        }
             .cont-1 {
                 @extend %cont-1-size;
                 @include d-flex (flex,space-between,center);
@@ -426,7 +439,7 @@
                 @extend %tv-box-size;
                 @include d-flex (flex,center,center);
                 .tv {
-                    height: $size-0810;
+                    height: $size-0550;
                     width: $size-0;
                 }
             }
@@ -526,7 +539,6 @@
                 @extend %sect-4-img-size;
                 background-color: $color-010;
                 @include d-flex (flex,space-around,center);
-                @extend %border-def;
                 .sect-4-img-box {
                     width: $size-0;
                 }
@@ -538,6 +550,7 @@
                     @extend %font-h3-def;
                 }
                 .sect-4-p {
+                    height: $size-0320;
                     margin: $size-010;
                     @extend %font-p-def;
                 }
