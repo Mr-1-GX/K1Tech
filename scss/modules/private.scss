@@ -1,6 +1,6 @@
 //IMAGE-100%
 %bg-def {
-    @include bg-img (url(../img/k1.PNG),$color-01);
+    @include bg-img (url(../img/k1.PNG),#08FBDE);
     @include background (repeat,top left,auto $size-01,);
 }
 %bg-banner {
@@ -82,7 +82,7 @@
 %xazi {
     max-width: $size-01820;
     width: $size-0;
-    margin:$size-025 auto;
+    margin:$size-010 auto;
     content: ' ';
     color: $color-06;
     @include border (0.1px, solid, $color-08);
@@ -215,7 +215,7 @@
     width: $size-0;
 }
 %cont-1-list-box-size {
-    max-width: $size-0610;
+    max-width: $size-0590;
     width: $size-0;
     height: $size-0700;
 }
@@ -232,7 +232,7 @@
     width: $size-0;
     height: $size-100;
 }
-%flt-ico-nm-size {
+%flt-ico-nm-2-size {
     max-width: $size-0450;
     width: $size-0;
     height: $size-065;
@@ -310,7 +310,7 @@
 %sect-banbox-size {
     max-width: $size-01900;
     width: $size-0;
-    height: $size-01440;
+    
 }
 %banbox-cont-size {
     max-width: $size-01850;
@@ -354,7 +354,7 @@
 %sect-ban-cont-size {
     max-width: $size-01080;
     width: $size-0;
-    height: $size-0860;
+    height: $size-01024;
 }
 %tv-box-size {
     max-width: $size-01080;
@@ -384,12 +384,12 @@
 %sect-ban-cont-2-size {
     max-width: $size-0750;
     width: $size-0;
-    height: $size-0860;
+    height: $size-01024;
 }
 %sect-ban-box-size {
     max-width: $size-0750;
     width: $size-0;
-    height: $size-0420;
+    height: $size-0500;
 }
 %ban-box-img-size {
     max-width: $size-0750;

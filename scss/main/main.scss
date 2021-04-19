@@ -101,7 +101,7 @@
     position: relative;
     @extend %sect-1-med;
     .sect-1-cont {
-        margin: 0 370px;
+        margin: 0 $size-080;
         z-index: 2;
         @extend %sect-1-cont-med;
         .sect-1-box {
@@ -162,6 +162,7 @@
             @extend %sect-2-flt-size;
             @include d-flex (flex,end,center);
             flex-direction: column;
+            @extend %sect-2-flt-med;
             .flt-cont {
                 @extend %flt-cont-size;
                 @include d-flex (flex,space-between,center);
@@ -169,6 +170,7 @@
                 .flt-icon {
                     max-width: $size-080;
                     @include d-flex (flex,space-between,center);
+                    @extend %flt-icon-med;
                     .flt-icon-box {
                        width: $size-0;
                     }
@@ -176,8 +178,10 @@
                 .flt-ico-nm {
                     @extend %flt-ico-nm-size;
                     text-align: end;
+                    @extend %flt-ico-nm-med;
                     .ico-nm-h2 {
                         @extend %ico-nm-h2-font;
+                        @extend %ico-nm-h2-med;
                     }
                     .xazi {
                         @extend %xazi;
@@ -193,12 +197,15 @@
                     @extend %font-h3-flt;
                     @extend %border-def;
                     @include d-flex (flex,space-between,center);
+                    @extend %s2-flt-li-med;
                     .flt-li-box {
                         @extend %flt-li-box-size;
+                        @extend %flt-li-box-med;
                         margin: 10px;
                         .flt-li-img {
                             width: $size-0;
                             height: $size-070;
+                            @extend %flt-li-img-med;
                         }
                     }
                 }
@@ -211,7 +218,7 @@
             @extend %sect-2-box-med;
             .cont-1-list {
                 @extend %cont-1-list-size;
-                @include d-flex (flex,space-between,center);
+                @include d-flex (flex,space-evenly,center);
                 .cont-1-list-box {
                     background-color: $color-01;
                     @extend %cont-1-list-box-size;
@@ -245,9 +252,10 @@
                                 }
                             }
                             .flt-ico-nm {
-                                @extend %flt-ico-nm-size;
+                                @extend %flt-ico-nm-2-size;
                                 text-align: end;
                                 padding-top: $size-015;
+                                @extend %flt-ico-nm-2-med;
                                 .ico-nm-h2 {
                                     font-size: 25px;
                                     padding-right: $size-020
@@ -305,11 +313,13 @@
     .sect-2-sm {
         @extend %sect-2-sm-size;
         @include d-flex (flex,space-between,center);
+        @extend %sect-2-sm-med;
         .cont-1-sm-box {
             @extend %cont-1-sm-box-size;
             @include d-flex (flex,flex-end,center);
             background-color: $color-010;
             @extend %border-def;
+            @extend %cont-1-sm-box-med;
             .cont-1-sm-img {
                 margin-left: $size-050;
                 max-width: $size-0320;
@@ -332,6 +342,7 @@
     margin: $size-070 auto $size-040;
     background-color: $color-01;
     padding: $size-010;
+    @extend %sect-3-med;
     .sect-3-h1 {
         @extend %font-h1-def;
         margin-top: $size-030;
@@ -343,18 +354,21 @@
         @extend %sect-3-cont-size;
         @include d-flex (flex,space-around,center);
         margin: $size-010 auto;
+        @extend %sect-3-cont-med;
         .cont-2-box {
             @extend %cont-2-box-size;
             @extend %border-def;
             @include d-flex (flex,space-between,center);
             flex-direction: column;
             margin: $size-010;
+            @extend %cont-2-box-med;
             .cont-2-text {
                 background-color: $color-010;
                 @extend %cont-2-text-size;
                 @include d-flex (flex,space-around,baseline);
                 flex-direction: column;
                 @extend %border-def;
+                @extend %cont-2-text-med;
                 .cont-2-img-box {
                     .cont-2-text-img {
                         width: $size-0;
@@ -385,43 +399,52 @@
     @extend %sect-banbox-size;
     @include d-flex (flex,space-evenly,center);
     margin: $size-080 auto;
+    padding: $size-020 0;
     @extend %border-def;
     background-color: $color-01;
     flex-direction: column;
+    @extend %sect-banbox-med;
     .banbox-cont {
         @extend %banbox-cont-size;
         @include d-flex (flex,space-around,center);
+        @extend %banbox-cont-med;
         .banbox-box {
             @extend %banbox-box-size;
             @extend %border-def;
             @include d-flex (flex,flex-end,flex-end);
+            @extend %banbox-box-med;
             .consol {
                 @extend %consol-size;
+                @extend %consol-med;
                 .consol-ul {
-                    height: $size-0160;
                     @include d-flex (flex,center,center);
                     flex-direction: column;
                     .consol-li {
                         padding-top: $size-010;
                         @extend %consol-li-font;
                         @extend %consol-li-dec;
+                        @extend %consol-li-med;
                     }
                 }
             }
             .box-box-ico {
                 @extend %box-box-ico-size;
                 @include d-flex (flex,flex-end,center);
+                @extend %box-box-ico-med;
                 .box-img-ico {
                     height: $size-0200;
                     width: $size-0;
+                    @extend %box-img-ico-med;
                 }
             }
             .box-box {
                 @extend %box-box-size;
                 @include d-flex (flex,flex-end,center);
+                @extend %box-box-med;
                 .box-img {
                     height: $size-0270;
                     width: $size-0;
+                    @extend %box-img-med;
                 }
             }
         }
@@ -429,12 +452,14 @@
     .banbox-cont-2 {
         @extend %banbox-cont-2-size;
         @include d-flex (flex,space-between,center);
+        @extend %banbox-cont-2-med;
         .sect-ban-cont {
             @extend %sect-ban-cont-size;
             @extend %border-def;
             @include d-flex (flex,space-around,center);
             flex-direction: column;
             background-color: $color-010;
+            @extend %sect-ban-cont-med;
             .tv-box {
                 @extend %tv-box-size;
                 @include d-flex (flex,center,center);
@@ -471,17 +496,20 @@
             @extend %sect-ban-cont-2-size;
             @include d-flex (flex,space-between,center);
             flex-direction: column;
+            @extend %sect-ban-cont-2-med;
             .sect-ban-box {
                 @extend %sect-ban-box-size;
                 @extend %border-def;
                 @include d-flex (flex,space-between,center);
                 flex-direction: column;
+                @extend %sect-ban-box-med;
                 .ban-box-img {
                     @extend %ban-box-img-size;
                     background-color: $color-010;
                     .cinema {
                         height: $size-0375;
                         width: $size-0;
+                        @extend %cinema-med;
                     }
                 }
                 .tvh-text-cont {
@@ -519,6 +547,7 @@
     flex-direction: column;
     @include d-flex (flex,space-around,center);
     @extend %border-def;
+    @extend %sect-4-med;
     .sect-4-h1 {
         margin-top: $size-020;
         @extend %font-h1-def;
@@ -565,6 +594,7 @@
     @extend %border-def;
     @extend %bg-banner;
     margin: $size-020 auto;
+    @extend %sect-baner-med;
     .sect-baner-text {
         @extend %sect-baner-text-size;
         @include d-flex (flex,space-around,baseline);
@@ -648,7 +678,7 @@
         }
         .foot-cont-2 {
             @extend %foot-cont-2-size;
-            @include d-flex (flex,space-around,baseline);
+            @include d-flex (flex,space-around,center);
             @extend %foot-cont-2-med;
             .foot-2-box {
                 height: $size-0400;
@@ -658,7 +688,7 @@
                     @extend %font-h1-def;
                 }
                 .foot-2-ul {
-                    height: $size-0250;
+                    height: $size-0365;
                     @include d-flex (flex,space-around,center);
                     flex-direction: column;
                     .foot-2-li {

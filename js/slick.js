@@ -1,6 +1,7 @@
 
 $('.center').slick({
   dots: true,
+  arrows: false,
   centerMode: true,
   centerPadding: '60px',
   slidesToShow: 3,
