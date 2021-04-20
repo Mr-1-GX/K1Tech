@@ -132,6 +132,9 @@
     }
 }
 %sect-1-cont-med {
+    @media (max-width: $size-01920) {
+        margin: 0 $size-060;
+    }
     @media (max-width: $size-01600) {
         margin: 0 $size-060;
     }

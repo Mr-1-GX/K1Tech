@@ -101,7 +101,7 @@
     position: relative;
     @extend %sect-1-med;
     .sect-1-cont {
-        margin: 0 $size-080;
+        margin: 0 $size-0340;
         z-index: 2;
         @extend %sect-1-cont-med;
         .sect-1-box {
@@ -155,6 +155,7 @@
     flex-direction: column;
     @extend %sect-2-med;
     .sect-2-big {
+        margin: $size-035 0;
         @extend %sect-2-big-size;
         @include d-flex (flex,space-around,center);
         @extend %sect-2-big-med;
@@ -168,7 +169,7 @@
                 @include d-flex (flex,space-between,center);
                 @extend %flt-cont-med;
                 .flt-icon {
-                    max-width: $size-080;
+                    max-width: $size-070;
                     @include d-flex (flex,space-between,center);
                     @extend %flt-icon-med;
                     .flt-icon-box {
@@ -180,6 +181,7 @@
                     text-align: end;
                     @extend %flt-ico-nm-med;
                     .ico-nm-h2 {
+                        margin:0 $size-05 $size-015 0;
                         @extend %ico-nm-h2-font;
                         @extend %ico-nm-h2-med;
                     }
@@ -192,7 +194,7 @@
                 @extend %s2-flt-ul-size;
                 @extend %s2-flt-ul-med;
                 .s2-flt-li {
-                    height: $size-090;
+                    height: $size-060;
                     padding-right: 25px;
                     @extend %font-h3-flt;
                     @extend %border-def;
@@ -204,7 +206,7 @@
                         margin: 10px;
                         .flt-li-img {
                             width: $size-0;
-                            height: $size-070;
+                            height: $size-050;
                             @extend %flt-li-img-med;
                         }
                     }
@@ -245,7 +247,7 @@
                             @include d-flex (flex,space-between,end);
                             padding: 10px 20px;
                             .flt-icon {
-                                max-width: $size-070;
+                                max-width: $size-050;
                                 @include d-flex (flex,space-between,center);
                                 .flt-icon-box {
                                     width: $size-0;
@@ -254,11 +256,12 @@
                             .flt-ico-nm {
                                 @extend %flt-ico-nm-2-size;
                                 text-align: end;
-                                padding-top: $size-015;
+                                padding-top: $size-05;
                                 @extend %flt-ico-nm-2-med;
                                 .ico-nm-h2 {
                                     font-size: 25px;
-                                    padding-right: $size-020
+                                    padding-right: $size-020;
+                                    margin-bottom: $size-020;
                                 }
                                 .xazi {
                                     @extend %xazi;    
@@ -270,7 +273,7 @@
                         @extend %cont-1-fit-size;
                         padding-left: $size-025;
                         .cont-1-fit-ul {
-                            height: $size-0215;
+                            height: $size-0160;
                             @include d-flex (flex,space-around,end);
                             flex-direction: column;
                             @extend %cont-1-fit-ul-med;
@@ -399,7 +402,7 @@
     @extend %sect-banbox-size;
     @include d-flex (flex,space-evenly,center);
     margin: $size-080 auto;
-    padding: $size-020 0;
+    padding: $size-060 0;
     @extend %border-def;
     background-color: $color-01;
     flex-direction: column;
@@ -420,7 +423,7 @@
                     @include d-flex (flex,center,center);
                     flex-direction: column;
                     .consol-li {
-                        padding-top: $size-010;
+                        padding: $size-05 0;
                         @extend %consol-li-font;
                         @extend %consol-li-dec;
                         @extend %consol-li-med;
@@ -549,7 +552,7 @@
     @extend %border-def;
     @extend %sect-4-med;
     .sect-4-h1 {
-        margin-top: $size-020;
+        margin-top: $size-05;
         @extend %font-h1-def;
     }
     .xazi {

@@ -104,7 +104,7 @@ a {
   text-shadow: 1px -1px 1px #00A1C2; }
 
 .sect-2 .sect-2-big .sect-2-flt .s2-flt-ul .s2-flt-li {
-  font-size: 30px;
+  font-size: 25px;
   color: #565555;
   font-family: 'archy-B';
   letter-spacing: 1px;
@@ -203,50 +203,49 @@ a {
 
 .sect-2 {
   max-width: 1900px;
-  width: 100%;
-  height: 1820px; }
+  width: 100%; }
 
 .sect-2 .sect-2-big {
   max-width: 1850px;
   width: 100%;
-  height: 1440px; }
+  height: 1320px; }
 
 .sect-2 .sect-2-big .sect-2-flt {
   max-width: 550px;
   width: 100%;
-  height: 1440px; }
+  height: 1320px; }
 
 .sect-2 .sect-2-big .sect-2-flt .flt-cont {
-  max-width: 550px;
+  max-width: 500px;
   width: 100%;
-  height: 170px; }
+  height: 100px; }
 
 .sect-2 .sect-2-big .sect-2-flt .s2-flt-ul .s2-flt-li .flt-li-box {
-  max-width: 90px;
-  height: 70px; }
+  max-width: 75px;
+  height: 50px; }
 
 .sect-2 .sect-2-big .sect-2-flt .flt-cont .flt-ico-nm {
-  max-width: 450px;
+  max-width: 470px;
   width: 100%;
-  height: 65px; }
+  height: 45px; }
 
 .sect-2 .sect-2-big .sect-2-flt .flt-cont .flt-ico-nm .ico-nm-h2 {
-  font-size: 40px;
+  font-size: 35px;
   color: #565555;
   font-family: 'archy-B';
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   text-shadow: 0 0 1px #00A1C2;
   border-radius: 5px; }
 
 .sect-2 .sect-2-big .sect-2-flt .s2-flt-ul {
-  max-width: 550px;
+  max-width: 500px;
   width: 100%;
   height: 1280px; }
 
 .sect-2 .sect-2-big .sect-2-box {
-  max-width: 1240px;
+  max-width: 1320px;
   width: 100%;
-  height: 1425px; }
+  height: 1285px; }
 
 .sect-2 .sect-2-big .sect-2-box .cont-1-list {
   max-width: 1750px;
@@ -256,25 +255,25 @@ a {
   width: 100%; }
 
 .sect-2 .sect-2-big .sect-2-box .cont-1-list .cont-1-list-box {
-  max-width: 590px;
+  max-width: 630px;
   width: 100%;
-  height: 700px; }
+  height: 635px; }
 
 .sect-2 .sect-2-big .sect-2-box .cont-1-list .cont-1-list-box .cont-1-img {
-  max-width: 600px;
+  max-width: 630px;
   height: 480px; }
 
 .sect-2 .sect-2-big .sect-2-box .cont-1-list .cont-1-list-box .cont-1-img .cont-1-img-hrf {
-  max-width: 600px;
+  max-width: 630px;
   height: 390px; }
 
 .sect-2 .sect-2-big .sect-2-box .cont-1-list .cont-1-list-box .cont-1-img .cont-1-img-text {
   max-width: 600px;
   width: 100%;
-  height: 100px; }
+  height: 70px; }
 
 .sect-2 .sect-2-big .sect-2-box .cont-1-list .cont-1-list-box .cont-1-img .cont-1-img-text .flt-ico-nm {
-  max-width: 450px;
+  max-width: 480px;
   width: 100%;
   height: 65px; }
 
@@ -289,10 +288,10 @@ a {
   height: 230px; }
 
 .sect-2 .sect-2-big .sect-2-box .cont-1-list .cont-1-list-box .cont-1-fit .cont-1-fit-ul .cont-1-fit-li .cont-1-fit-a {
-  font-size: 20px;
+  font-size: 18px;
   color: #062D2D;
   font-family: 'BPG-A';
-  letter-spacing: 0;
+  letter-spacing: 1px;
   text-shadow: 0 0 1px #565555; }
 
 .sect-2 .sect-2-big .sect-2-box .cont-1 .cont-1-box .cont-1-h3, .sect-2 .sect-2-sm .cont-1-sm-box .cont-1-sm-h3 {
@@ -315,12 +314,12 @@ a {
 .sect-3 .sect-3-cont {
   max-width: 1780px;
   width: 100%;
-  height: 800px; }
+  height: 480px; }
 
 .sect-3 .sect-3-cont .cont-2-box .cont-2-text {
   max-width: 550px;
   width: 100%;
-  height: 450px; }
+  height: 300px; }
 
 .sect-3 .sect-3-cont .cont-2-box .cont-2-p-box {
   max-width: 550px;
@@ -328,9 +327,9 @@ a {
   height: 200px; }
 
 .sect-3 .sect-3-cont .cont-2-box {
-  max-width: 550px;
+  max-width: 480px;
   width: 100%;
-  height: 670px; }
+  height: 430px; }
 
 .sect-3 .sect-3-cont .cont-2-box .cont-2-p-box .cont-2-p {
   font-size: 30px;
@@ -358,15 +357,14 @@ a {
 .sect-banbox .banbox-cont .banbox-box {
   max-width: 880px;
   width: 100%;
-  height: 170px; }
+  height: 120px; }
 
 .sect-banbox .banbox-cont .banbox-box .consol {
   max-width: 250px;
-  width: 100%;
-  height: 170px; }
+  width: 100%; }
 
 .sect-banbox .banbox-cont .banbox-box .consol .consol-ul .consol-li {
-  font-size: 30px;
+  font-size: 20px;
   color: #062D2D;
   font-family: 'archy-B';
   letter-spacing: 5px;
@@ -459,26 +457,26 @@ a {
 .sect-4 {
   max-width: 1900px;
   width: 100%;
-  height: 600px; }
+  height: 430px; }
 
 .sect-4 .sect-4-cont {
   max-width: 1850px;
   width: 100%;
-  height: 450px; }
+  height: 270px; }
 
 .sect-4 .sect-4-cont .sect-4-box {
   max-width: 550px;
   width: 100%;
-  height: 400px; }
+  height: 270px; }
 
 .sect-4 .sect-4-cont .sect-4-box .sect-4-img {
   max-width: 300px;
-  height: 400px; }
+  height: 270px; }
 
 .sect-4 .sect-4-cont .sect-4-box .sect-4-text {
   max-width: 450px;
   width: 100%;
-  height: 340px; }
+  height: 250px; }
 
 .sect-baner {
   max-width: 1900px;
@@ -602,7 +600,7 @@ a {
   margin: 200px auto 25px auto;
   position: relative; }
   .sect-1 .sect-1-cont {
-    margin: 0 80px;
+    margin: 0 340px;
     z-index: 2; }
     .sect-1 .sect-1-cont .sect-1-box {
       max-width: 1820px;
@@ -630,6 +628,7 @@ a {
   background-color: #F4F6F6;
   flex-direction: column; }
   .sect-2 .sect-2-big {
+    margin: 35px 0;
     display: flex;
     justify-content: space-around;
     align-items: center; }
@@ -643,7 +642,7 @@ a {
         justify-content: space-between;
         align-items: center; }
         .sect-2 .sect-2-big .sect-2-flt .flt-cont .flt-icon {
-          max-width: 80px;
+          max-width: 70px;
           display: flex;
           justify-content: space-between;
           align-items: center; }
@@ -651,8 +650,10 @@ a {
             width: 100%; }
         .sect-2 .sect-2-big .sect-2-flt .flt-cont .flt-ico-nm {
           text-align: end; }
+          .sect-2 .sect-2-big .sect-2-flt .flt-cont .flt-ico-nm .ico-nm-h2 {
+            margin: 0 5px 15px 0; }
       .sect-2 .sect-2-big .sect-2-flt .s2-flt-ul .s2-flt-li {
-        height: 90px;
+        height: 60px;
         padding-right: 25px;
         display: flex;
         justify-content: space-between;
@@ -661,7 +662,7 @@ a {
           margin: 10px; }
           .sect-2 .sect-2-big .sect-2-flt .s2-flt-ul .s2-flt-li .flt-li-box .flt-li-img {
             width: 100%;
-            height: 70px; }
+            height: 50px; }
     .sect-2 .sect-2-big .sect-2-box {
       display: flex;
       justify-content: space-between;
@@ -696,7 +697,7 @@ a {
               align-items: end;
               padding: 10px 20px; }
               .sect-2 .sect-2-big .sect-2-box .cont-1-list .cont-1-list-box .cont-1-img .cont-1-img-text .flt-icon {
-                max-width: 70px;
+                max-width: 50px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center; }
@@ -704,14 +705,15 @@ a {
                   width: 100%; }
               .sect-2 .sect-2-big .sect-2-box .cont-1-list .cont-1-list-box .cont-1-img .cont-1-img-text .flt-ico-nm {
                 text-align: end;
-                padding-top: 15px; }
+                padding-top: 5px; }
                 .sect-2 .sect-2-big .sect-2-box .cont-1-list .cont-1-list-box .cont-1-img .cont-1-img-text .flt-ico-nm .ico-nm-h2 {
                   font-size: 25px;
-                  padding-right: 20px; }
+                  padding-right: 20px;
+                  margin-bottom: 20px; }
           .sect-2 .sect-2-big .sect-2-box .cont-1-list .cont-1-list-box .cont-1-fit {
             padding-left: 25px; }
             .sect-2 .sect-2-big .sect-2-box .cont-1-list .cont-1-list-box .cont-1-fit .cont-1-fit-ul {
-              height: 215px;
+              height: 160px;
               display: flex;
               justify-content: space-around;
               align-items: end;
@@ -793,7 +795,7 @@ a {
   justify-content: space-evenly;
   align-items: center;
   margin: 80px auto;
-  padding: 20px 0;
+  padding: 60px 0;
   background-color: #F4F6F6;
   flex-direction: column; }
   .sect-banbox .banbox-cont {
@@ -810,7 +812,7 @@ a {
         align-items: center;
         flex-direction: column; }
         .sect-banbox .banbox-cont .banbox-box .consol .consol-ul .consol-li {
-          padding-top: 10px; }
+          padding: 5px 0; }
       .sect-banbox .banbox-cont .banbox-box .box-box-ico {
         display: flex;
         justify-content: flex-end;
@@ -896,7 +898,7 @@ a {
   justify-content: space-around;
   align-items: center; }
   .sect-4 .sect-4-h1 {
-    margin-top: 20px; }
+    margin-top: 5px; }
   .sect-4 .sect-4-cont {
     display: flex;
     justify-content: space-between;
@@ -1495,6 +1497,10 @@ a {
 @media (max-width: 1600px) {
   .sect-1 {
     margin: 125px 0 25px; } }
+
+@media (max-width: 1920px) {
+  .sect-1 .sect-1-cont {
+    margin: 0 60px; } }
 
 @media (max-width: 1600px) {
   .sect-1 .sect-1-cont {

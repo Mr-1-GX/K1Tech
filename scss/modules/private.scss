@@ -38,7 +38,7 @@
     text-shadow: $size-01 $size--01 $size-01 $color-02;
 }
 %font-h3-flt {
-    font-size: $size-030;
+    font-size: $size-025;
     color: $color-03;
     font-family: 'archy-B';
     letter-spacing: $size-01;
@@ -163,49 +163,48 @@
 %sect-2-size {
     max-width: $size-01900;
     width: $size-0;
-    height: $size-01820;
 }
 %sect-2-big-size {
     max-width: $size-01850;
     width: $size-0;
-    height: $size-01440;
+    height: $size-01320;
 }
 %sect-2-flt-size {
     max-width: $size-0550;
     width: $size-0;
-    height: $size-01440;
+    height: $size-01320;
 }
 %flt-cont-size {
-    max-width: $size-0550;
+    max-width: $size-0500;
     width: $size-0;
-    height: $size-0170;
+    height: $size-100;
 }
 %flt-li-box-size {
-    max-width: $size-090;
-    height: $size-070;
+    max-width: $size-075;
+    height: $size-050;
 }
 %flt-ico-nm-size {
-    max-width: $size-0450;
+    max-width: $size-0470;
     width: $size-0;
-    height: $size-065;
+    height: $size-045;
 }
 %ico-nm-h2-font {
-    font-size: $size-040;
+    font-size: $size-035;
     color: $color-03;
     font-family: 'archy-B';
-    letter-spacing: $size-010;
+    letter-spacing: $size-05;
     text-shadow: 0 0 $size-01 $color-02;
     border-radius: $size-05;
 }
 %s2-flt-ul-size {
-    max-width: $size-0550;
+    max-width: $size-0500;
     width: $size-0;
     height: $size-01280;
 }
 %sect-2-box-size {
-    max-width: $size-01240;
+    max-width: $size-01320;
     width: $size-0;
-    height: $size-01425;
+    height: $size-01285;
 }
 %cont-1-list-size {
     max-width: $size-01750;
@@ -215,25 +214,25 @@
     width: $size-0;
 }
 %cont-1-list-box-size {
-    max-width: $size-0590;
+    max-width: $size-0630;
     width: $size-0;
-    height: $size-0700;
+    height: $size-0635;
 }
 %cont-1-img-size {
-    max-width: $size-0600;
+    max-width: $size-0630;
     height: $size-0480;
 }
 %cont-1-img-hrf-size {
-    max-width: $size-0600;
+    max-width: $size-0630;
     height: $size-0390;
 }
 %cont-1-img-text-size {
     max-width: $size-0600;
     width: $size-0;
-    height: $size-100;
+    height: $size-070;
 }
 %flt-ico-nm-2-size {
-    max-width: $size-0450;
+    max-width: $size-0480;
     width: $size-0;
     height: $size-065;
 }
@@ -248,10 +247,10 @@
     height: $size-0230;
 }
 %cont-1-fit-li-font {
-    font-size: $size-020;
+    font-size: $size-018;
     color: $color-06;
     font-family: 'BPG-A';
-    letter-spacing: 0;
+    letter-spacing: $size-01;
     text-shadow: 0 0 $size-01 $color-03;
 }
 %cont-1-h3-size {
@@ -275,12 +274,12 @@
 %sect-3-cont-size {
     max-width: $size-01780;
     width: $size-0;
-    height: $size-0800;
+    height: $size-0480;
 }
 %cont-2-text-size {
     max-width: $size-0550;
     width: $size-0;
-    height: $size-0450;
+    height: $size-0300;
 }
 %cont-2-p-box-size {
     max-width: $size-0550;
@@ -288,9 +287,9 @@
     height: $size-0200;
 }
 %cont-2-box-size {
-    max-width: $size-0550;
+    max-width: $size-0480;
     width: $size-0;
-    height: $size-0670;
+    height: $size-0430;
 }
 %cont-2-p-font {
     font-size: $size-030;
@@ -320,15 +319,14 @@
 %banbox-box-size {
     max-width: $size-0880;
     width: $size-0;
-    height: $size-0170;
+    height: $size-0120;
 }
 %consol-size {
     max-width: $size-0250;
     width: $size-0;
-    height: $size-0170;
 }
 %consol-li-font {
-    font-size: $size-030;
+    font-size: $size-020;
     color: $color-06;
     font-family: 'archy-B';
     letter-spacing: $size-05;
@@ -422,26 +420,26 @@
 %sect-4-size {
     max-width: $size-01900;
     width: $size-0;
-    height: $size-0600;
+    height: $size-0430;
 }
 %sect-4-cont-size {
     max-width: $size-01850;
     width: $size-0;
-    height: $size-0450;
+    height: $size-0270;
 }
 %sect-4-box-size {
     max-width: $size-0550;
     width: $size-0;
-    height: $size-0400;
+    height: $size-0270;
 }
 %sect-4-img-size {
     max-width: $size-0300;
-    height: $size-0400;
+    height: $size-0270;
 }
 %sect-4-text-size {
     max-width: $size-0450;
     width: $size-0;
-    height: $size-0340;
+    height: $size-0250;
 }
 //Section-Banner
 %sect-baner-size {
