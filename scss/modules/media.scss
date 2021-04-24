@@ -1,28 +1,32 @@
 
 //HEADER
 %nav-box-med {
-    @media (max-width: $size-01600) {
-        width: $size-90;
+    @media (max-width: 1600px) {
+        width: 85%;
     }
     @media (max-width: $size-0600) {
         flex-direction: column;
     }
 }
 %nav-logo-med {
-    @media (max-width: $size-01600) {
-        max-width: $size-060;
-        height: $size-070;
+    @media (max-width: 1600px) {
+        max-width: 53px;
+        height: 60px;
+    }
+    @media (max-width: 1366px) {
+        max-width: 45px;
+        height: 51px;
     }
     @media (max-width: $size-0600) {
         margin: 0 auto;
     }
 }
 %navi-med {
-    @media (max-width: $size-01600) {
-        width: $size-85;
+    @media (max-width: 1600px) {
+        width: 83%;
     }
-    @media (max-width: $size-01366) {
-        width: $size-80;
+    @media (max-width: 1366px) {
+        width: 80%;
     }
     @media (max-width: $size-01024) {
         width: $size-87;
@@ -46,8 +50,11 @@
     }
 }
 %nav-ul-med {
-    @media (max-width: $size-01600) {
-        width: $size-60;
+    @media (max-width: 1600px) {
+        width: 60%;
+    }
+    @media (max-width: 1366px) {
+        width: 58%;
     }
     @media (max-width: $size-0800) {
         max-width: $size-0375;
@@ -68,8 +75,11 @@
     }
 }
 %nav-a-med {
-    @media (max-width: $size-01600) {
-        font-size: $size-025;
+    @media (max-width: 1600px) {
+        font-size: 22px;
+    }
+    @media (max-width: 1366px) {
+        font-size: 18px;
     }
     @media (max-width: $size-0800) {
         font-size: $size-013;
@@ -79,43 +89,52 @@
     // }
 }
 %soc-ul-med {
-    @media (max-width: $size-01600) {
+    @media (max-width: 600px) {
         justify-content: flex-end;
         padding-right: $size-030;
+    }
+    @media (max-width: 1366px) {
+        width: 35%;
     }
     // @media (max-width: $size-0670) {
     //     padding-right: $size-030;
     //     justify-content: flex-end;
     //     max-width: $size-0360;
     // }
-    @media (max-width: $size-0600) {
+    @media (max-width: 600px) {
         display: none;
     }
 }
 %open-soci-med {
-    @media (max-width: $size-0600) {
+    @media (max-width: 600px) {
         .open-socicon {
             display: flex;
         }
     }
 }
 %soc-li-med {
-    @media (max-width: $size-01600) {
+    @media (max-width: 1600px) {
         padding: $size-05 0;
     }
 }
 %fa-med {
-    @media (max-width: $size-01600) {
-        font-size: $size-020;
+    @media (max-width: 1600px) {
+        font-size: 20px;
+    }
+    @media (max-width: 1366px) {
+        font-size: 15px;
     }
 }
 %soc-a-med {
-    @media (max-width: $size-01600) {
-        font-size: $size-020;
+    @media (max-width: 1600px) {
+        font-size: 20px;
+    }
+    @media (max-width: 11366px) {
+        font-size: 16px;
     }
 }
 %burger-icon-med {
-    @media (max-width: $size-0600) {
+    @media (max-width: 600px) {
         display: block;
         color: $color-02;
         font-size: $size-030;
@@ -127,118 +146,185 @@
 }
 //Section-1
 %sect-1-med {
-    @media (max-width: $size-01600) {
-        margin: $size-0125 0 $size-025;
+    @media (max-width: 1600px) {
+        margin: 110px 0 5px;
+    }
+    @media (max-width: 1600px) {
+        margin: 90px 0 5px;
     }
 }
 %sect-1-cont-med {
-    @media (max-width: $size-01920) {
+    @media (max-width: 1600px) {
         margin: 0 $size-060;
     }
-    @media (max-width: $size-01600) {
+    @media (max-width: 1600px) {
         margin: 0 $size-060;
     }
 }
+%sect-1-box-med {
+    @media (max-width: 1366px) {
+        margin-bottom: 15px;
+    }
+}
 %sect-1-img-med {
-    @media (max-width: $size-01600) {
-        height: $size-0400;
-        margin: $size-05 0;
+    @media (max-width: 1600px) {
+        height: 400px;
+        margin: 5px 0;
+    }
+    @media (max-width: 1366px) {
+        height: 330px;
     }
 }
 //Section-2
 %sect-2-med {
-    @media (max-width: $size-01600) {
-        margin: $size-040 auto;
-        width: $size-99;
-        height: $size-01700;
+    @media (max-width: 1600px) {
+        margin: 5px auto;
+        width: 99%;
+        height: 1415px;
+    }
+    @media (max-width: 1366px) {
+        height: 1145px;
     }
 }
 %sect-2-big-med {
-    @media (max-width: $size-01600) {
-        width: $size-98;
-        height: $size-01355;
+    @media (max-width: 1600px) {
+        width: 98%;
+        height: 1355px;
+    }
+    @media (max-width: 1366px) {
+        height: 970px;
     }
 }
 %sect-2-flt-med {
-    @media (max-width: $size-01600) {
-        width: $size-40;
-        padding-top: $size-030;
+    @media (max-width: 1600px) {
+        width: 40%;
+        height: 1175px;
+        padding-top: 30px;
+    }
+    @media (max-width: 1366px) {
+        height: 955px;
     }
 }
 %flt-cont-med {
-    @media (max-width: $size-01600) {
-        width: $size-95;
-        height: $size-0110;
+    @media (max-width: 1600px) {
+        width: 85%;
     }
 }
 %flt-icon-med {
-    @media (max-width: $size-01600) {
-        max-width: $size-060;
+    @media (max-width: 1600px) {
+        max-width: $size-055;
+    }
+    @media (max-width: 1366px) {
+        max-width: 44px;
     }
 }
 %flt-ico-nm-med {
-    @media (max-width: $size-01600) {
+    @media (max-width: 1600px) {
         width: $size-83;
-        height: $size-035;
     }
 }
 %ico-nm-h2-med {
-    @media (max-width: $size-01600) {
+    @media (max-width: 1600px) {
         letter-spacing: $size-03;
-        font-size: $size-033;
+        font-size: 28px;
+        margin: 0 15px 17px 0;
+    }
+    @media (max-width: 1366px) {
+        font-size: 22px;
+    }
+}
+%ico-nm-h2-med-2 {
+    @media (max-width: 1600px) {
+        letter-spacing: 1px;
+        font-size: 18px;
+        margin: 0 15px 22px 0;
     }
 }
 %s2-flt-ul-med {
-    @media (max-width: $size-01600) {
-        width: $size-95;
+    @media (max-width: 1600px) {
+        width: 85%;
+    }
+    @media (max-width: px) {
+        height: 950px;
     }
 }
 %s2-flt-li-med {
-    @media (max-width: $size-01600) {
-        height: $size-060;
-        padding-right: $size-010;
-        font-size: $size-020;
+    @media (max-width: 1600px) {
+        height: 50px;
+        padding-right: 10px;
+        font-size: 18px;
+    }
+    @media (max-width: 1366px) {
+        font-size: 15px;
+        height: 35px;
     }
 }
 %flt-li-box-med {
-    @media (max-width: $size-01600) {
+    @media (max-width: 1600px) {
         margin: $size-015;
         max-width: $size-055;
-        height: $size-050;
+        height: 40px;
     }
 }
 %flt-li-img-med {
-    @media (max-width: $size-01600) {
-        height: $size-050;
+    @media (max-width: 1600px) {
+        height: 40px;
+    }
+}
+%s2-flt-cont-2-med {
+    @media (max-width: 1600px) {
+        width: 85%;
+        height: 600px;
     }
 }
 %sect-2-box-med {
-    @media (max-width: $size-01600) {
-        height: $size-01355;
+    @media (max-width: 1600px) {
+        height: 1175px;
     }
-}
-%cont-1-list-med {
-    @media (max-width: $size-01600) {
-        
+    @media (max-width: 1366px) {
+        height: 955px;
     }
 }
 %cont-1-list-box-med {
-    @media (max-width: $size-01600) {
-        width: $size-48;
-        height: $size-0670;
+    @media (max-width: 1600px) {
+        width: 48%;
+        height: 580px;
+    }
+    @media (max-width: 1536px) {
+        height: 470px;
     }
 }
 %cont-1-img-med {
-    @media (max-width: $size-01600) {
-        width: $size-0;
-        height: $size-0450;
+    @media (max-width: 1600px) {
+        width: $size-0-def;
+        height: 450px;
+    }
+    @media (max-width: 1366px) {
+        width: $size-0-def;
+        height: 320px;
+    }
+}
+%cont-1-img-hrf-med {
+    @media (max-width: 1600px) {
+        height: 365px;
+    }
+}
+%cont-1-img-box-med {
+    @media (max-width: 1366px) {
+        height: 250px;
+    }
+}
+%cont-1-img-text-med {
+    @media (max-width: 1600px) {
+        height: 65px;
+        padding: 5px 20px;
     }
 }
 %flt-ico-nm-2-med {
     @media (max-width: $size-01600) {
         width: $size-83;
         height: $size-035;
-        padding-top: $size-035;
+        padding-top: 7px;
     }
 }
 %cont-1-fit-med {
@@ -250,66 +336,156 @@
 %cont-1-fit-ul-med {
     @media (max-width: $size-01600) {
         width: $size-90;
+        height: 130px;
+    }
+}
+%cont-1-fit-a-med {
+    @media (max-width: $size-01600) {
+        font-size: 15px;
+    }
+    @media (max-width: 1366px) {
+        font-size: 13px;
     }
 }
 %sect-2-sm-med {
     @media (max-width: $size-01600) {
-        width: $size-95;
+        width: 95%;
+        height: 190px;
     }
 }
 %cont-1-sm-box-med {
     @media (max-width: $size-01600) {
-        width: $size-49;
+        width: 49%;
+        height: 115px;
+    }
+    @media (max-width: 1366px) {
+        height: 75px;
+    }
+}
+%cont-1-sm-img-med {
+    @media (max-width: 1366px) {
+        max-width: 140px;
+    }
+}
+%cont-1-sm-h3-med {
+    @media (max-width: 1366px) {
+        font-size: 15px;
     }
 }
 //Section-3
 %sect-3-med {
-    @media (max-width: $size-01600) {
-        width: $size-99;
+    @media (max-width: 1600px) {
+        width: 99%;
+    }
+    @media (max-width: 1366px) {
+        margin: 20px auto 10px;
+    }
+}
+%sect-3-h1-med {
+    @media (max-width: 1600px) {
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+    @media (max-width: 1366px) {
+        margin: 10px 0;
     }
 }
 %sect-3-cont-med {
-    @media (max-width: $size-01600) {
-        width: $size-98;
+    @media (max-width: 1600px) {
+        width: 98%;
+        height: 380px;
+    }
+    @media (max-width: 1366px) {
+        height: 270px;
     }
 }
 %cont-2-box-med {
-    @media (max-width: $size-01600) {
-        height: $size-0450;
+    @media (max-width: 1600px) {
+        height: 340px;
+    }
+    @media (max-width: 1366px) {
+        height: 240px;
     }
 }
 %cont-2-text-med {
-    @media (max-width: $size-01600) {
-        height: $size-0320;
+    @media (max-width: 1600px) {
+        height: 240px;
+    }
+    @media (max-width: 1366px) {
+        height: 170px;
+    }
+}
+%cont-2-text-img-med {
+    @media (max-width: 1600px) {
+        height: 270px;
+    }
+    @media (max-width: 1366px) {
+        height: 190px;
+    }
+}
+%cont-2-p-box-med {
+    @media (max-width: 1366px) {
+        height: 65px;
+    }
+}
+%cont-2-p-med {
+    @media (max-width: 1366px) {
+        font-size: 15px;
+    }
+}
+%cont-2-cost-med {
+    @media (max-width: 1366px) {
+        margin: 5px;
+    }
+}
+%cont-2-h4-med {
+    @media (max-width: 1366px) {
+        font-size: 25px;
     }
 }
 //Section-BanBox
 %sect-banbox-med {
-    @media (max-width: $size-01600) {
-        width: $size-99;
+    @media (max-width: 1600px) {
+        width: 99%;
+    }
+    @media (max-width: 1366px) {
+        margin: 20px auto;
     }
 }
 %banbox-cont-med {
-    @media (max-width: $size-01600) {
-        width: $size-98;
+    @media (max-width: 1600px) {
+        width: 98%;
+    }
+    @media (max-width: 1366px) {
+        height: 140px;
     }
 }
 %banbox-box-med {
-    @media (max-width: $size-01600) {
-        width: $size-48;
-        height: $size-0120;
+    @media (max-width: 1600px) {
+        width: 48%;
+        height: 120px;
+    }
+    @media (max-width: 1366px) {
+        height: 90px;
     }
 }
 %consol-med {
-    @media (max-width: $size-01600) {
-        width: $size-60;
-        height: $size-0115;
+    @media (max-width: 1600px) {
+        width: 60%;
+        height: 115px;
+    }
+    @media (max-width: 1366px) {
+        height: 85px;
     }
 }
 %consol-li-med {
-    @media (max-width: $size-01600) {
-        font-size: $size-020;
-        padding-top: $size-05;
+    @media (max-width: 1600px) {
+        font-size: 20px;
+        padding-top: 5px;
+    }
+    @media (max-width: 1366px) {
+        font-size: 15px;
+        padding-top: 1px;
     }
 }
 %box-box-ico-med {
@@ -418,6 +594,12 @@
             flex-direction: column;
             padding: $size-015 0;
         }
+    }
+}
+//Default-media
+%xazi-med {
+    @media (max-width: 1600px) {
+        width: 90%;
     }
 }
 

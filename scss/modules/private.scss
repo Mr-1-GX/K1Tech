@@ -53,7 +53,7 @@
     border-radius: $size-05;
 }
 %font-fa-def {
-    font-size: $size-030;
+    font-size: $size-025;
     color: $color-02;
     letter-spacing: $size-020;
     text-shadow: 0 0 $size-01 $color-03;
@@ -78,20 +78,40 @@
     letter-spacing: $size-01;
     text-shadow: $size-01 0 $color-06;
 }
+//slick-dots-def
+%slick-dots {
+    li {
+        button {
+            &:before {
+                color: $color-06;
+                font-size: 15px;
+            }
+        }
+    }
+    .slick-active {
+        margin: 1px 15px;
+        button {
+            &:before {
+                color: $color-02;
+                font-size: 25px;
+            }
+        }
+    }
+}
 //Xazi
 %xazi {
-    max-width: $size-01820;
-    width: $size-0;
-    margin:$size-010 auto;
+    max-width: $xazi-wid;
+    width: $size-0-def;
+    margin:$xazi-mrgn;
     content: ' ';
     color: $color-06;
-    @include border (0.1px, solid, $color-08);
-    box-shadow: 0 0 $size-015 $color-02;
+    @include border ($xazi-brd, solid, $color-08);
+    box-shadow: $xazi-shad $color-02;
 }
 //Border
 %border-def {
     border-radius: $size-03;
-    @include border (o, solid, $color-02);
+    @include border (0, solid, $color-02);
     box-shadow: 0 0 0 $size-01 $color-03;
 }
 //Hover
@@ -105,7 +125,7 @@
 %hover-sale {
     &:hover {
         max-width: $size-0170;
-        width: $size-0;
+        width: $size-0-def;
         height: $size-025;
         border-bottom-right-radius: $size-050 $size-035;
         background-color: $color-07;
@@ -123,128 +143,224 @@
 
 //HEADER
 %head-size {
-    width: $size-0;
-    top: 0;
-    left: 0;
+    width: $size-0-def;
+    top: $head-tp;
+    left: $head-lft;
     position: fixed;
+    margin: $head-mrg;
 }
 %nav-box-size {
-    max-width: $size-01750;
-    width: $size-0;
-    margin: 0 auto;
+    max-width: $nav-box-wid;
+    width: $size-0-def;
+    margin: $nav-box-mrg;
+    padding: $nav-box-pdng;
 }
 %nav-logo-size {
-    max-width: $size-0110;
-    width: $size-0;
-    height: $size-0130;
+    max-width: $nav-logo-wid;
+    width: $size-0-def;
+    height: $nav-logo-heig;
 }
 %navi-size {
-    max-width: $size-01560;
-    width: $size-0;
+    max-width: $navi-wid;
+    width: $size-0-def;
 }
 %nav-ul-size {
-    max-width: $size-01024;
-    width: $size-0;
+    max-width: $nav-ul-wid;
+    width: $size-0-def;
 }
-%soc-ul-size {
-    max-width: $size-0414;
-    width: $size-0;
+%nav-a-h1-font {
+    font-size: $nav-a-h1-sz;
+    color: $nav-a-h1-col;
+    font-family: 'archy-B';
+    letter-spacing: $nav-a-h1-ls;
 }
 //Drop-Down
-%font-a-drop {
-    font-size: $size-015;
-    color: $color-03;
-    font-family: 'archy-B';
-    letter-spacing: $size-02;
-    text-shadow: $size-01 $size--01 $size-01 $color-02;
+%nav-drop-ul-size {
+    max-width: $nav-drop-ul-wid;
+    width: $size-0-def;
+    height: $nav-drop-ul-heig;
+    top: $nav-drop-ul-tp;
+    left: $nav-drop-ul-lft;
 }
-//Sections
+%nav-drop-li-size {
+    margin: $nav-drop-li-mrg;
+    padding: $nav-drop-li-pdng;
+}
+%font-a-drop {
+    font-size: $font-a-drop-sz;
+    color: $font-a-drop-col;
+    font-family: 'archy-B';
+    letter-spacing: $font-a-drop-ls;
+    text-shadow: $font-a-drop-shad $font-a-drop-shdw;
+}
+%soc-ul-size {
+    max-width: $soc-ul-wid;
+    width: $size-0-def;
+}
+%font-fa {
+    font-size: $font-fa-sz;
+    color: $font-fa-col;
+    letter-spacing: $font-fa-ls;
+    text-shadow: $font-fa-shad $font-fa-shdw;
+    border-radius: $font-fa-rad;
+}
+%soc-a-fonts {
+    font-size: $soc-a-fonts-sz;
+    color: $soc-a-fonts-col;
+    font-family: 'archy-B';
+    letter-spacing: $soc-a-fonts-ls;
+    text-shadow: $soc-a-fonts-shad $soc-a-fonts-shdw;
+    border-radius: $soc-a-fonts-rad;
+}
+
+//Sections-1
+%sect-1-size {
+    margin: $sect-1-mrg;
+}
+%sect-1-cont-size {
+    margin: $sect-1-cont-mrg;
+}
+%sect-1-box-size {
+    max-width: $sect-1-box-wid;
+    border-radius: $sect-1-box-rad;
+}
+%sect-1-img-size {
+    margin: $sect-1-img-mrg;
+    width: $size-0-def;
+    height: $sect-1-img-heig;
+    box-shadow: $sect-1-img-shad $color-03;
+    border-radius: $sect-1-img-rad;
+}
 //Section-2
 %sect-2-size {
-    max-width: $size-01900;
-    width: $size-0;
+    max-width: $sect-2-wid;
+    width: $size-0-def;
+    margin: $sect-2-mrg;
 }
 %sect-2-big-size {
-    max-width: $size-01850;
-    width: $size-0;
-    height: $size-01320;
+    max-width: $sect-2-big-wid;
+    width: $size-0-def;
+    height: $sect-2-big-heig;
+    margin: $sect-2-big-mrg;
 }
 %sect-2-flt-size {
-    max-width: $size-0550;
-    width: $size-0;
-    height: $size-01320;
+    max-width: $sect-2-flt-wid;
+    width: $size-0-def;
+    height: $sect-2-flt-heig;
 }
 %flt-cont-size {
-    max-width: $size-0500;
-    width: $size-0;
-    height: $size-100;
+    max-width: $flt-cont-wid;
+    width: $size-0-def;
+    height: $flt-cont-heig;
 }
-%flt-li-box-size {
-    max-width: $size-075;
-    height: $size-050;
+%flt-icon-1-size {
+    max-width: $flt-icon-1-wid;
+}
+%flt-icon-size {
+    max-width: $flt-icon-wid;
+}
+%flt-icon-box-size {
+    width: $size-0-def;
 }
 %flt-ico-nm-size {
-    max-width: $size-0470;
-    width: $size-0;
-    height: $size-045;
+    max-width: $flt-ico-nm-wid;
+    width: $size-0-def;
+    height: $flt-ico-nm-heig;
+}
+%ico-nm-h2-size {
+    margin: $ico-nm-h2-mrg;
 }
 %ico-nm-h2-font {
-    font-size: $size-035;
-    color: $color-03;
+    font-size: $ico-nm-h2-sz;
+    color: $ico-nm-h2-col;
     font-family: 'archy-B';
-    letter-spacing: $size-05;
-    text-shadow: 0 0 $size-01 $color-02;
-    border-radius: $size-05;
+    letter-spacing: $ico-nm-h2-ls;
+    text-shadow: $ico-nm-h2-shad $ico-nm-h2-shdw;
+    border-radius: $ico-nm-h2-rad;
 }
 %s2-flt-ul-size {
-    max-width: $size-0500;
-    width: $size-0;
-    height: $size-01280;
+    max-width: $s2-flt-ul-wid;
+    width: $size-0-def;
+    height: $s2-flt-ul-heig;
+    padding: $s2-flt-ul-pdng;
+}
+%s2-flt-li-size {
+    height: $s2-flt-li-heig;
+    padding: $s2-flt-li-pdng;
+}
+%s2-flt-li-font {
+    font-size: $s2-flt-li-sz;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: $s2-flt-li-ls;
+    text-shadow: $s2-flt-li-shad $color-02;
+}
+%flt-li-box-size {
+    max-width: $flt-li-box-wid;
+    height: $flt-li-box-heig;
+}
+%flt-li-img-size {
+    width: $size-0-def;
+    height: $flt-li-img-heig;
+}
+%s2-flt-cont-2-size {
+    max-width: $s2-flt-cont-2-wid;
+    width: $size-0-def;
+    height: $s2-flt-cont-2-heig;
 }
 %sect-2-box-size {
-    max-width: $size-01320;
-    width: $size-0;
-    height: $size-01285;
+    max-width: $sect-2-box-wid;
+    width: $size-0-def;
+    height: $sect-2-box-heig;
 }
 %cont-1-list-size {
-    max-width: $size-01750;
-    width: $size-0;
-}
-%cont-1-size {
-    width: $size-0;
+    max-width: $cont-1-list-wid;
+    width: $size-0-def;
 }
 %cont-1-list-box-size {
-    max-width: $size-0630;
-    width: $size-0;
-    height: $size-0635;
+    max-width: $cont-1-list-box-wid;
+    width: $size-0-def;
+    height: $cont-1-list-box-heig;
 }
 %cont-1-img-size {
-    max-width: $size-0630;
-    height: $size-0480;
+    max-width: $cont-1-img-wid;
+    height: $cont-1-img-heig;
 }
 %cont-1-img-hrf-size {
-    max-width: $size-0630;
-    height: $size-0390;
+    max-width: $cont-1-img-hrf-wid;
+    height: $cont-1-img-hrf-heig;
+}
+%cont-1-img-box-size {
+    width: $size-0-def;
+    height: $cont-1-img-box-heig;
 }
 %cont-1-img-text-size {
-    max-width: $size-0600;
-    width: $size-0;
-    height: $size-070;
+    max-width: $cont-1-img-text-wid;
+    width: $size-0-def;
+    height: $cont-1-img-text-heig;
+    padding: $cont-1-img-text-pdng;
+}
+%flt-icon-size {
+    max-width: $flt-icon-wid;
 }
 %flt-ico-nm-2-size {
-    max-width: $size-0480;
-    width: $size-0;
-    height: $size-065;
-}
-%cont-1-box-size {
-    max-width: $size-0390;
-    width: $size-0;
-    height: $size-0414;
+    max-width: $flt-ico-nm-2-wid;
+    width: $size-0-def;
+    height: $flt-ico-nm-2-heig;
+    padding-top: $flt-ico-nm-2-pdng;
 }
 %cont-1-fit-size {
-    max-width: $size-0600;
-    width: $size-0;
-    height: $size-0230;
+    max-width: $cont-1-fit-wid;
+    width: $size-0-def;
+    height: $cont-1-fit-heig;
+    padding: $cont-1-fit-pad;
+}
+%cont-1-fit-ul-size {
+    height: $cont-1-fit-ul-heig;
+}
+%cont-1-fit-li-size {
+    max-width: $cont-1-fit-li-wid;
+    width: $size-0-def;
 }
 %cont-1-fit-li-font {
     font-size: $size-018;
@@ -253,263 +369,359 @@
     letter-spacing: $size-01;
     text-shadow: 0 0 $size-01 $color-03;
 }
-%cont-1-h3-size {
-    margin: $size-025 auto;
-}
 %sect-2-sm-size {
-    max-width: $size-01850;
-    width: $size-0;
-    height: $size-0230;
+    max-width: $sect-2-sm-wid;
+    width: $size-0-def;
+    height: $sect-2-sm-heig;
 }
 %cont-1-sm-box-size {
-    max-width: $size-0910;
-    width: $size-0;
-    height: $size-0170;
+    max-width: $cont-1-sm-box-wid;
+    width: $size-0-def;
+    height: $cont-1-sm-box-heig;
+}
+%cont-1-sm-h3-size {
+    margin: $cont-1-sm-h3-mrg;
 }
 //Section-3
 %sect-3-size {
-    max-width: $size-01900;
-    width: $size-0;
+    max-width: $sect-3-wid;
+    width: $size-0-def;
+    margin: $sect-3-mrg;
+    padding: $sect-3-pdng;
 }
-%sect-3-cont-size {
-    max-width: $size-01780;
-    width: $size-0;
-    height: $size-0480;
-}
-%cont-2-text-size {
-    max-width: $size-0550;
-    width: $size-0;
-    height: $size-0300;
-}
-%cont-2-p-box-size {
-    max-width: $size-0550;
-    width: $size-0;
-    height: $size-0200;
-}
-%cont-2-box-size {
-    max-width: $size-0480;
-    width: $size-0;
-    height: $size-0430;
-}
-%cont-2-p-font {
-    font-size: $size-030;
-    color: $color-06;
-    font-family: 'BPG-A';
-    letter-spacing: $size-01;
-    text-shadow: 0 0 $size-01 $color-03;
-}
-%cont-2-h4-fonts {
-    font-size: $size-040;
+%sect-3-h1-font {
+    font-size: $sect-3-h1-sz;
     color: $color-02;
     font-family: 'archy-B';
-    letter-spacing: $size-03;
-    text-shadow: $size-01 $size--01 $size-01 $color-03;
+    letter-spacing: $sect-3-h1-ls;
+}
+%sect-3-cont-size {
+    max-width: $sect-3-cont-wid;
+    height: $sect-3-cont-heig;
+    margin: $sect-3-cont-mrgn;
+}
+%cont-2-box-size {
+    height: $cont-2-box-heig;
+    margin: $cont-2-box-megn;
+}
+%cont-2-text-size {
+    max-width: $cont-2-text-wid;
+    width: $size-0-def;
+    height: $cont-2-text-heig;
+}
+%cont-2-p-box-size {
+    max-width: $cont-2-p-box-wid;
+    width: $size-0-def;
+    height: $cont-2-p-box-heig;
+}
+%cont-2-p-font {
+    font-size: $cont-2-p-font-sz;
+    color: $color-06;
+    font-family: 'BPG-A';
+    letter-spacing: $cont-2-p-font-ls;
+    text-shadow: $cont-2-p-font-shdw $color-03;
+}
+%cont-2-h4-font {
+    font-size: $cont-2-h4-font-sz;
+    color: $color-02;
+    font-family: 'archy-B';
+    letter-spacing: $cont-2-h4-font-ls;
+    text-shadow: $cont-2-h4-font-shdw $color-03;
 }
 //Section-BanBox
 %sect-banbox-size {
-    max-width: $size-01900;
-    width: $size-0;
-    
+    max-width: $sect-banbox-wid;
+    width: $size-0-def; 
+    margin: $sect-banbox-mrg;
+    padding: $sect-banbox-pdng; 
 }
 %banbox-cont-size {
-    max-width: $size-01850;
-    width: $size-0;
-    height: $size-0230;
+    max-width: $banbox-cont-def-wid;
+    width: $size-0-def;
+    height: $banbox-cont-heig;
 }
 %banbox-box-size {
-    max-width: $size-0880;
-    width: $size-0;
-    height: $size-0120;
+    max-width: $banbox-box-wid;
+    width: $size-0-def;
+    height: $banbox-box-heig;
 }
 %consol-size {
-    max-width: $size-0250;
-    width: $size-0;
+    max-width: $consol-wid;
+    width: $size-0-def;
 }
 %consol-li-font {
-    font-size: $size-020;
+    font-size: $consol-li-font-sz;
     color: $color-06;
     font-family: 'archy-B';
-    letter-spacing: $size-05;
-    text-shadow: 0 0 $size-01 $color-03;
+    letter-spacing: $consol-li-font-ls;
+    text-shadow: $consol-li-font-shdw $color-03;
 }
 %consol-li-dec {
     text-decoration: underline dotted $color-02;
 }
 %box-box-ico-size {
-    max-width: $size-0230;
-    width: $size-0;
-    height: $size-0180;
+    max-width: $box-box-ico-wid;
+    width: $size-0-def;
+    height: $box-box-ico-heig;
+}
+%box-img-ico-size {
+    width: $size-0-def;
+    height: $box-img-ico-heig;
 }
 %box-box-size {
-    max-width: $size-0370;
-    width: $size-0;
-    height: $size-0250;
+    max-width: $box-box-wid;
+    width: $size-0-def;
+    height: $box-box-heig;
 }
 %banbox-cont-2-size {
-    max-width: $size-01850;
-    width: $size-0;
+    max-width: $banbox-cont-def-wid;
+    width: $size-0-def;
+}
+%box-img-size {
+    width: $size-0-def;
+    height: $box-img-heig;
 }
 %sect-ban-cont-size {
-    max-width: $size-01080;
-    width: $size-0;
-    height: $size-01024;
+    max-width: $sect-ban-cont-wid;
+    width: $size-0-def;
+    height: $sect-ban-cont-def-heig;
 }
 %tv-box-size {
-    max-width: $size-01080;
-    width: $size-0;
+    max-width: $tv-box-wid;
+    width: $size-0-def;
+    margin:$tv-box-size-mrgn;
+}
+%tv-size {
+    width: $size-0-def;
+    height: $tv-heig;
 }
 %tv-text-cont-size {
-    max-width: $size-01024;
-    width: $size-0;
-    height: $size-0170;
+    max-width: $tv-text-cont-wid;
+    width: $size-0-def;
+    height: $tv-text-cont-heig;
+    margin: $tv-text-cont-mrgn;
 }
 %tv-ico-nm-size {
-    max-width: $size-0880;
-    width: $size-0;
-    height: $size-0125;
+    max-width: $tv-ico-nm-wid;
+    width: $size-0-def;
+    height: $tv-ico-nm-heig;
 }
 %tv-ban-h1-size {
-    width: $size-0;
-    height: $size-080;
+    width: $size-0-def;
+    height: $tv-ban-h1-heig;
+    padding: $tv-ban-h1-pdng;
 }
 %sect-ban-h1-font {
-    font-size: $size-050;
+    font-size: $sect-ban-h1-font-sz;
     color: $color-03;
     font-family: 'archy-B';
-    letter-spacing: $size-05;
-    text-shadow:  0 0 $size-01 $color-02;
+    letter-spacing: $sect-ban-h1-font-ls;
+    text-shadow: $sect-ban-h1-font-shad $color-02;
 }
 %sect-ban-cont-2-size {
-    max-width: $size-0750;
-    width: $size-0;
-    height: $size-01024;
+    max-width: $sect-ban-cont-2-wid;
+    width: $size-0-def;
+    height: $sect-ban-cont-def-heig;
 }
 %sect-ban-box-size {
-    max-width: $size-0750;
-    width: $size-0;
-    height: $size-0500;
+    width: $size-0-def;
+    height: $sect-ban-box-heig;
 }
 %ban-box-img-size {
-    max-width: $size-0750;
-    width: $size-0;
-    height: $size-0390;
+    max-width: $ban-box-img-wid;
+    width: $size-0-def;
+    height: $ban-box-img-heig;
+}
+%cinema-size {
+    width: $size-0-def;
+    height: $cinema-heig;
 }
 %tvh-text-cont-size {
-    max-width: $size-0710;
-    width: $size-0;
-    height: $size-100;
+    max-width: $tvh-text-cont-wid;
+    width: $size-0-def;
+    height: $tvh-text-cont-heig;
 }
 %tvh-ico-nm-size {
-    max-width: $size-0630;
-    width: $size-0;
-    height: $size-0150;
+    max-width: $tvh-ico-nm-wid;
+    width: $size-0-def;
+    height: $tvh-ico-nm-heig;
 }
 %tvh-ban-h1-size {
-    max-width: $size-01600;
-    width: $size-0;
-    height: $size-080;
+    max-width: $tvh-ban-h1-wid;
+    width: $size-0-def;
+    height: $tvh-ban-h1-heig;
+    padding: $tvh-ban-h1-pdng;
 }
 %tvh-ban-h1-font {
-    font-size: $size-035;
+    font-size: $tvh-ban-h1-font-sz;
     color: $color-03;
     font-family: 'archy-B';
-    letter-spacing: $size-03;
-    text-shadow:  0 0 $size-01 $color-02;
+    letter-spacing: $tvh-ban-h1-font-ls;
+    text-shadow:  $tvh-ban-h1-font-shdw $color-02;
 }
 //Section-4
 %sect-4-size {
-    max-width: $size-01900;
-    width: $size-0;
-    height: $size-0430;
+    max-width: $sect-4-wid;
+    width: $size-0-def;
+    margin: $sect-4-mrg;
+    padding: $sect-4-pdng;
+}
+%sect-4-h1-font {
+    font-size: $sect-4-h1-font-sz;
+    color: $color-02;
+    font-family: 'archy-B';
+    letter-spacing: $sect-4-h1-font-ls;
 }
 %sect-4-cont-size {
-    max-width: $size-01850;
-    width: $size-0;
-    height: $size-0270;
+    max-width: $sect-4-cont-wid;
+    width: $size-0-def;
+    height: $sect-4-cont-heig;
+    margin: $sect-4-cont-mrgn;
 }
 %sect-4-box-size {
-    max-width: $size-0550;
-    width: $size-0;
-    height: $size-0270;
+    max-width: $sect-4-box-wid;
+    width: $size-0-def;
+    height: $sect-4-box-heig;
+    margin: $sect-4-box-mrgn;
 }
 %sect-4-img-size {
-    max-width: $size-0300;
-    height: $size-0270;
+    max-width: $sect-4-img-wid;
+    height: $sect-4-img-heig;
 }
 %sect-4-text-size {
-    max-width: $size-0450;
-    width: $size-0;
-    height: $size-0250;
+    max-width: $sect-4-text-wid;
+    width: $size-0-def;
+    height: $sect-4-text-heig;
+}
+%sect-4-h3-font {
+    font-size: $sect-4-h3-font-sz;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: $sect-4-h3-font-ls;
+    text-shadow: $sect-4-h3-font-shad $color-02;
+}
+%sect-4-p-size {
+    height: $sect-4-p-heig;
+    margin: $sect-4-p-mrgn;
+}
+%sect-4-p-font {
+    font-size: $sect-4-p-sz;
+    color: $color-03;
+    font-family: 'alk-s';
+    text-shadow: $sect-4-p-shad $color-06;
 }
 //Section-Banner
 %sect-baner-size {
-    max-width: $size-01900;
-    width: $size-0;
-    height: $size-0450;
+    max-width: $sect-baner-wid;
+    width: $size-0-def;
+    height: $sect-baner-heig;
+    margin: $sect-baner-mrgn;
 }
 %sect-baner-text-size {
-    max-width: $size-0320;
-    width: $size-0;
-    height: $size-0230;
+    max-width: $sect-baner-text-wid;
+    width: $size-0-def;
+    height: $sect-baner-text-heig;
 }
-
+%sect-baner-h1-font {
+    font-size: $sect-baner-h1-font-sz;
+    color: $color-01;
+    font-family: 'archy-B';
+    letter-spacing: $sect-baner-h1-font-ls;
+    text-shadow: $sect-baner-h1-font-shad $color-06;
+}
+%sect-baner-p-font {
+    font-size: $sect-baner-p-font-sz;
+    color: $color-01;
+    font-family: 'alk-s';
+    letter-spacing: $sect-baner-p-font-ls;
+    text-shadow: $sect-baner-p-font-shad $color-06;
+}
+%sect-baner-h4-font {
+    font-size: $sect-baner-p-font-sz;
+    color: $color-01;
+    font-family: 'alk-s';
+    letter-spacing: $sect-baner-p-font-ls;
+    text-shadow: $sect-baner-p-font-shad $color-06;
+}
+%sect-baner-img-size {
+    max-width: $size-0450;
+    margin-bottom: $size-019;
+}
 //Footer
 %foot-lok-size {
-    max-width: $size-01900;
-    width: $size-0;
-    height: $size-0550;
+    max-width: $foot-lok-wid;
+    width: $size-0-def;
 }
 %foot-cont-size {
-    max-width: $size-0500;
-    width: $size-0;
-    height: $size-0450;
+    max-width: $foot-cont-wid;
+    width: $size-0-def;
+    padding: $foot-cont-pdng;
 }
 %foot-box-size {
-    max-width: $size-0500;
-    width: $size-0;
-    height: $size-0230;
+    max-width: $foot-box-wid;
+    width: $size-0-def;
+}
+%foot-h1-font {
+    font-size: $foot-h1-font-sz;
+    color: $color-02;
+    font-family: 'archy-B';
+    letter-spacing: $foot-h1-font-ls;
 }
 %foot-p-size {
-    max-width: $size-0450;
-    width: $size-0;
+    max-width: $foot-p-wid;
+    width: $size-0-def;
 }
 %foot-p-font {
-    font-size: $size-025;
+    font-size: $foot-p-font-sz;
     color: $color-03;
     font-family: 'alk-s';
-    text-shadow: $size-01 0 $color-06;
+    text-shadow: $foot-p-font-shad $color-06;
+}
+%foot-ul-fa-size {
+    max-width: $foot-ul-fa-wid;
+    width: $size-0-def;
+}
+%foot-li-fa-font {
+    font-size: $foot-li-fa-font-sz;
+    color: $color-03;
+    font-family: 'alk-s';
+    text-shadow: $foot-li-fa-font-shad $color-06;
 }
 %foot-ul-size {
-    max-width: $size-0170;
-    width: $size-0;
+    max-width: $foot-ul-wid;
+    width: $size-0-def;
 }
-%foot-cont-2-size {
-    max-width: $size-01240;
-    width: $size-0;
-    height: $size-0450;
-} 
-%foot-2-li-font {
-    font-size: $size-030;
+%foot-li-font {
+    font-size: $foot-li-font-sz;
     color: $color-03;
     font-family: 'alk-s';
-    text-shadow: $size-01 0 $color-06;
+    text-shadow: $foot-li-font-ls $color-06;
 }
-%avtori-size {
-    max-width: $size-01750;
-    width: $size-0;
-}
-%avtori-p-font {
-    font-size: $size-025;
-    color: $color-03;
-    font-family: 'alk-s';
-    text-shadow: $size-01 0 $color-06;
-}
-%avtori-a-font {
-    font-size: $size-025;
+%contact-font {
+    font-size: $contact-font-sz;
     color: $color-03;
     font-family: 'archy-B';
-    letter-spacing: $size-02;
-    text-shadow: $size-01 $size--01 $size-01 $color-02;
+    letter-spacing: $contact-font-ls;
+    text-shadow: $contact-font-shad $color-02;
+    border-radius: $contact-font-rad;
+}
+%avtori-size {
+    max-width: $avtori-wid;
+    width: $size-0-def;
+    margin: $avtori-mrgn;
+}
+%avtori-p-font {
+    font-size: $avtori-p-font-sz;
+    color: $color-03;
+    font-family: 'alk-s';
+    text-shadow: $avtori-p-font-shad $color-06;
+}
+%avtori-a-font {
+    font-size: $avtori-a-font-sz;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: $avtori-a-font-ls;
+    text-shadow: $avtori-a-font-shad $color-02;
 }
 
 

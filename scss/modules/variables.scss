@@ -1,3 +1,387 @@
+//Header
+//------------
+//head-size
+$head-tp: 0;
+$head-lft: 0;
+$head-mrg: 2px auto;
+//nav-box-size
+$nav-box-wid: 1580px;
+$nav-box-mrg: 0 auto;
+$nav-box-pdng: 10px 0 10px;
+//nav-logo-size
+$nav-logo-wid: 80px;
+$nav-logo-heig: 90px;
+$img-100-wid: 100%;
+//navi-size
+$navi-wid: 1260px;
+//nav-ul-size
+$nav-ul-wid: 720px;
+//nav-a-h1-font-Size
+$nav-a-h1-sz: 25px;
+$nav-a-h1-ls: 2px;
+//nav-drop-ul-size
+$nav-drop-ul-wid: 160px;
+$nav-drop-ul-heig: 270px;
+$nav-drop-ul-tp: 65px;
+$nav-drop-ul-lft: 26px;
+//nav-drop-li-size
+$nav-drop-li-mrg: 5px 0;
+$nav-drop-li-pdng: 5px 0;
+//font-a-drop-font-size
+$font-a-drop-sz: 15px;
+$font-a-drop-ls: 2px;
+$font-a-drop-shad: 1px -1px 1px;
+//soc-ul-size
+$soc-ul-wid: 414px;
+//soc-li-size
+$soc-li-pdng: 5px 0;
+//font-fa-size
+$font-fa-sz: 25px;
+$font-fa-ls: 20px;
+$font-fa-shad: 0 0 1px;
+$font-fa-rad: 5px;
+//soc-a-fonts-size
+$soc-a-fonts-sz: 25px;
+$soc-a-fonts-ls: 2px;
+$soc-a-fonts-shad: 1px -1px 1px;
+$soc-a-fonts-rad: 5px;
+//Sections
+//-----------
+//sect-1-size
+$sect-1-mrg: 160px auto 25px auto;
+//sect-1-cont-size
+$sect-1-cont-mrg: 0 340px;
+//sect-1-box-Size
+$sect-1-box-wid: 1820px;
+$sect-1-box-rad: 5px;
+//sect-1-img-size
+$sect-1-img-mrg: 2px;
+$sect-1-img-heig: 535px;
+$sect-1-img-shad: 0 0 1px 1px;
+$sect-1-img-rad: 5px;
+//---------------
+//Section-2-size
+$sect-2-wid: 1900px;
+$sect-2-mrg: 50px auto;
+//sect-2-big-size
+$sect-2-big-wid: 1850px;
+$sect-2-big-heig: 1320px;
+$sect-2-big-mrg: 35px 0;
+//sect-2-flt-size
+$sect-2-flt-wid: 550px;
+$sect-2-flt-heig: 1290px;
+//flt-cont-size
+$flt-cont-wid: 500px;
+$flt-cont-heig: 100px;
+//flt-icon-size
+$flt-icon-wid: 70px;
+//flt-ico-nm-size
+$flt-ico-nm-wid: 415px;
+$flt-ico-nm-heig: 45px;
+//ico-nm-h2-size
+$ico-nm-h2-mrg: 0 15px 15px 0;
+$ico-nm-h2-pdng: 20px;
+//ico-nm-h2-font-size
+$ico-nm-h2-sz: 35px;
+$ico-nm-h2-ls: 5px;
+$ico-nm-h2-shad: 0 0 1px;
+$ico-nm-h2-rad: 5px;
+//s2-flt-ul-size
+$s2-flt-ul-wid: 500px;
+$s2-flt-ul-heig: 1280px;
+$s2-flt-ul-pdng: 15px 0 0 0;
+//s2-flt-li-size
+$s2-flt-li-heig: 60px;
+$s2-flt-li-pdng: 0 25px 0 0;
+//%s2-flt-li-font-size
+$s2-flt-li-sz: 25px;
+$s2-flt-li-ls: 1px;
+$s2-flt-li-shad: 0 0 1px;
+//flt-li-box-size
+$flt-li-box-wid: 75px;
+$flt-li-box-heig: 50px;
+//flt-li-img-size
+$flt-li-img-heig: 50px;
+//s2-flt-cont-2-size
+$s2-flt-cont-2-wid: 500px;
+$s2-flt-cont-2-heig: 460px;
+//sect-2-box-size
+$sect-2-box-wid: 1320px;
+$sect-2-box-heig: 1285px;
+//cont-1-list-size
+$cont-1-list-wid: 1750px;
+//cont-1-list-box-size
+$cont-1-list-box-wid: 630px;
+$cont-1-list-box-heig: 635px;
+//cont-1-img-size
+$cont-1-img-wid: 630px;
+$cont-1-img-heig: 480px;
+//cont-1-img-hrf-size
+$cont-1-img-hrf-wid: 630px;
+$cont-1-img-hrf-heig: 390px;
+//cont-1-img-box-size
+$cont-1-img-box-heig: 350px;
+//cont-1-img-text-size
+$cont-1-img-text-wid: 600px;
+$cont-1-img-text-heig: 70px;
+$cont-1-img-text-pdng: 10px 20px;
+//flt-icon-1-size
+$flt-icon-1-wid: 70px;
+//flt-icon-size
+$flt-icon-wid: 47px;
+//flt-ico-nm-2-size
+$flt-ico-nm-2-wid: 480px;
+$flt-ico-nm-2-heig: 65px;
+$flt-ico-nm-2-pdng: 5px;
+//cont-1-fit-size
+$cont-1-fit-wid: 600px;
+$cont-1-fit-heig: 230px;
+$cont-1-fit-pad: 0 0 0 25px;
+//cont-1-fit-ul-size
+$cont-1-fit-ul-heig: 160px;
+//cont-1-fit-li-size
+$cont-1-fit-li-wid: 535px;
+//cont-1-box-size
+$cont-1-box-wid: 390px;
+$cont-1-box-heig: 414px;
+//%cont-1-img-size
+$cont-1-box-img-wid: 200px;
+//sect-2-sm-size
+$sect-2-sm-wid: 1850px;
+$sect-2-sm-heig: 160px;
+//cont-1-sm-box-size
+$cont-1-sm-box-wid: 910px;
+$cont-1-sm-box-heig: 120px;
+//cont-1-sm-h3-size
+$cont-1-sm-h3-mrg: 25px auto;
+//------------
+//sect-3-size
+$sect-3-wid: 1900px;
+$sect-3-mrg: 70px auto 40px; 
+$sect-3-pdng: 10px;
+//sect-3-h1-font-size
+$sect-3-h1-sz: 35px;
+$sect-3-h1-ls: 2px;
+//sect-3-cont-size
+$sect-3-cont-wid: 1620px;
+$sect-3-cont-heig: 480px;
+$sect-3-cont-mrgn: 10px auto;
+//cont-2-box-size
+$cont-2-box-heig: 430px;
+$cont-2-box-megn: 10px;
+//cont-2-text-size
+$cont-2-text-wid: 574px;
+$cont-2-text-heig: 300px;
+//cont-2-p-box-size
+$cont-2-p-box-wid: 550px;
+$cont-2-p-box-heig: 125px;
+//cont-2-p-font-size
+$cont-2-p-font-sz: 30px;
+$cont-2-p-font-ls: 1px;
+$cont-2-p-font-shdw: 0 0 1px;
+//cont-2-h4-font-size
+$cont-2-h4-font-sz: 40px;
+$cont-2-h4-font-ls: 3px;
+$cont-2-h4-font-shdw: 1px -1px 1px;
+//--------------------
+//Section-BanBox-size
+$sect-banbox-wid: 1900px;
+$sect-banbox-mrg: 80px auto;
+$sect-banbox-pdng: 30px 0;
+//banbox-cont-size
+$banbox-cont-heig: 230px;
+//banbox-box-size
+$banbox-box-wid: 880px;
+$banbox-box-heig: 120px;
+//consol-size
+$consol-wid: 250px;
+//consol-li-font-size
+$consol-li-font-sz: 20px;
+$consol-li-font-ls: 5px;
+$consol-li-font-shdw: 0 0 1px;
+//box-box-ico-size
+$box-box-ico-wid: 230px;
+$box-box-ico-heig: 180px;
+//box-img-ico-size
+$box-img-ico-heig: 200px;
+//box-box-size
+$box-box-wid: 370px;
+$box-box-heig: 180px;
+//box-img-size
+$box-img-heig: 190px;
+//sect-ban-cont-size
+$sect-ban-cont-wid: 1070px;
+//tv-box-size
+$tv-box-wid: 1080px;
+$tv-box-size-mrgn: 55px auto;
+//tv-size
+$tv-heig: 460px;
+//tv-text-cont-size
+$tv-text-cont-wid: 1024px;
+$tv-text-cont-heig: 100px;
+$tv-text-cont-mrgn: 15px auto;
+//tv-ico-nm-size
+$tv-ico-nm-wid: 900px;
+$tv-ico-nm-heig: 115px;
+//tv-ban-h1-size
+$tv-ban-h1-heig: 80px;
+$tv-ban-h1-pdng: 10px 45px;
+//sect-ban-h1-font-size
+$sect-ban-h1-font-sz: 50px;
+$sect-ban-h1-font-ls: 5px;
+$sect-ban-h1-font-shad: 0 0 1px;
+//sect-ban-cont-2-size
+$sect-ban-cont-2-wid: 680px;
+//sect-ban-box-size
+$sect-ban-box-heig: 340px;
+//ban-box-img-size
+$ban-box-img-wid: 680px;
+$ban-box-img-heig: 270px;
+//cinema-size
+$cinema-heig: 270px;
+//tvh-text-cont-size
+$tvh-text-cont-wid: 650px;
+$tvh-text-cont-heig: 80px;
+//tvh-ico-nm-size
+$tvh-ico-nm-wid: 570px;
+$tvh-ico-nm-heig: 65px;
+//tvh-ban-h1-size
+$tvh-ban-h1-wid: 1600px;
+$tvh-ban-h1-heig: 43px;
+$tvh-ban-h1-pdng: 5px 25px;
+//tvh-ban-h1-font-size
+$tvh-ban-h1-font-sz: 30px;
+$tvh-ban-h1-font-ls: 3px;
+$tvh-ban-h1-font-shdw: 0 0 1px;
+//---------------
+//Section-4-size
+$sect-4-wid: 1900px;
+$sect-4-mrg: 35px auto;
+$sect-4-pdng: 30px 0;
+//sect-4-h1-font-size
+$sect-4-h1-font-sz: 35px;
+$sect-4-h1-font-ls: 2px;
+//sect-4-cont-size
+$sect-4-cont-wid: 1850px;
+$sect-4-cont-heig: 270px;
+$sect-4-cont-mrgn: 10px auto;
+//sect-4-box-size
+$sect-4-box-wid: 550px;
+$sect-4-box-heig: 270px;
+$sect-4-box-mrgn: 15px;
+//sect-4-img-size
+$sect-4-img-wid: 300px;
+$sect-4-img-heig: 270px;
+//sect-4-text-size
+$sect-4-text-wid: 450px;
+$sect-4-text-heig: 250px;
+//sect-4-h3-font-size
+$sect-4-h3-font-sz: 20px;
+$sect-4-h3-font-ls: 2px;
+$sect-4-h3-font-shad: 1px -1px 1px;
+//sect-4-p-size
+$sect-4-p-heig: 320px;
+$sect-4-p-mrgn: 10px; 
+//sect-4-p-font-size
+$sect-4-p-sz: 20px;
+$sect-4-p-shad: 1px 0;
+//---------------
+//Section-Banner
+$sect-baner-wid: 1900px;
+$sect-baner-heig: 450px;
+$sect-baner-mrgn: 20px auto;
+//sect-baner-text-size
+$sect-baner-text-wid: 320px;
+$sect-baner-text-heig: 230px;
+//sect-baner-h1-font-size
+$sect-baner-h1-font-sz: 35px;
+$sect-baner-h1-font-ls: 1px;
+$sect-baner-h1-font-shad: 1px 0;
+//sect-baner-p-font-size
+$sect-baner-p-font-sz: 15px;
+$sect-baner-p-font-ls: 1px;
+$sect-baner-p-font-shad: 1px 0;
+//Footer
+//foot-lok-size
+$foot-lok-wid: 1900px;
+//foot-cont-size
+$foot-cont-wid: 1510px;
+$foot-cont-pdng: 40px 0 20px 0;
+//foot-box-size
+$foot-box-wid: 500px;
+//foot-h1-font-size
+$foot-h1-font-sz: 25px;
+$foot-h1-font-ls: 2px;
+//foot-p-size
+$foot-p-wid: 450px;
+//foot-p-font-size
+$foot-p-font-sz: 15px;
+$foot-p-font-shad: 1px 0;
+//foot-ul-fa-size
+$foot-ul-fa-wid: 170px;
+//foot-li-fa-font-size
+$foot-li-fa-font-sz: 15px;
+$foot-li-fa-font-shad: 1px 0;
+//foot-ul-size
+$foot-ul-wid: 300px;
+//foot-li-font-size
+$foot-li-font-sz: 15px;
+$foot-li-font-ls: 1px 0;
+//contact-font-size
+$contact-font-sz: 25px;
+$contact-font-ls: 2px;
+$contact-font-shad: 1px -1px 1px;
+$contact-font-rad: 5px;
+//avtori-size
+$avtori-wid: 1650px;
+$avtori-mrgn: 15px auto;
+//avtori-p-font-size
+$avtori-p-font-sz: 15px;
+$avtori-p-font-shad: 1px 0;
+//avtori-a-font-size
+$avtori-a-font-sz: 15px;
+$avtori-a-font-ls: 2px;
+$avtori-a-font-shad: 1px -1px 1px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Header
+//---------------
+//head-cont-Color
+$head-cont-bg: #F4F6F6;
+//nav-a-h1-Font-Color
+$nav-a-h1-col: #00A1C2;
+//nav-drop-li-Color
+$nav-drop-li-bg: #F4F6F6;
+//font-a-drop-Font-Color
+$font-a-drop-col: #565555;
+$font-a-drop-shdw: #00A1C2;
+//font-fa-Font-Color
+$font-fa-col: #00A1C2;
+$font-fa-shdw: #565555;
+//soc-a-fonts-Color
+$soc-a-fonts-col: #565555;
+$soc-a-fonts-shdw: #00A1C2;
+//Section-2-Color
+$sect-2-bg: #F4F6F6;
+//ico-nm-h2-font-Color
+$ico-nm-h2-col: #565555;
+$ico-nm-h2-shdw: #00A1C2;
+
+
+
+
 //Color
 $color-01: #F4F6F6;
 $color-02: #00A1C2;
@@ -103,6 +487,7 @@ $size-0590: 590px;
 $size-0610: 610px;
 $size-0630: 630px;
 $size-0635: 635px;
+$size-0650: 650px;
 $size-0700: 700px;
 $size-0710: 710px;
 $size-0750: 750px;
@@ -123,6 +508,7 @@ $size-01355: 1355px;
 $size-01420: 1420px;
 $size-01425: 1425px;
 $size-01560: 1560px;
+$size-01580: 1580px;
 $size-01700: 1700px;
 $size-01750: 1750px;
 $size-01780: 1780px;
