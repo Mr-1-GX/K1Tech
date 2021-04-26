@@ -103,6 +103,7 @@
             .slick-dots {
                 bottom: 25px;
                 @extend %slick-dots;
+                @extend %slick-dots-med;
             }
             .sect-1-img {
                 @extend %sect-1-img-size;
@@ -231,6 +232,7 @@
                             .flt-icon {
                                 @extend %flt-icon-size;
                                 @include d-flex (flex,space-between,center);
+                                @extend %flt-icon-med;
                                 .flt-icon-box {
                                     width: $size-0;
                                 }
@@ -430,26 +432,32 @@
             .tv-box {
                 @extend %tv-box-size;
                 @include d-flex (flex,center,center);
+                @extend %tv-box-med;
                 .tv {
                     @extend %tv-size;
+                    @extend %tv-med;
                 }
             }
             .tv-text-cont {
                 @extend %tv-text-cont-size;
                 @include d-flex (flex,space-between,center);
+                @extend %tv-text-cont-med;
                 .tv-icon {
                     max-width: 80px;
                     @include d-flex (flex,space-between,center);
                     .tv-icon-box {
                        width: 100%;
+                       @extend %tv-icon-box-med;
                     }
                 }
                 .tv-ico-nm {
                     @extend %tv-ico-nm-size;
                     text-align: end;
+                    @extend %tv-ico-nm-med;
                     .tv-ban-h1 {
                         @extend %tv-ban-h1-size;
                         @extend %sect-ban-h1-font;
+                        @extend %tv-ban-h1-med;
                     }
                     .xazi {
                         @extend %xazi;
@@ -471,6 +479,7 @@
                 .ban-box-img {
                     @extend %ban-box-img-size;
                     background-color: $color-010;
+                    @extend %ban-box-img-med;
                     .cinema {
                         @extend %cinema-size;
                         @extend %cinema-med;
@@ -479,19 +488,23 @@
                 .tvh-text-cont {
                     @extend %tvh-text-cont-size;
                     @include d-flex (flex,space-between,center);
+                    @extend %tvh-text-cont-med;
                     .tvh-icon {
                         max-width: 55px;
                         @include d-flex (flex,space-between,center);
                         .tvh-icon-box {
                            width: 100%;
+                           @extend %tvh-icon-box-med;
                         }
                     }
                     .tvh-ico-nm {
                         @extend %tvh-ico-nm-size;
                         text-align: end;
+                        @extend %tvh-ico-nm-med;
                         .tvh-ban-h1 {
                             @extend %tvh-ban-h1-size;
                             @extend %tvh-ban-h1-font;
+                            @extend %tvh-ban-h1-med;
                         }
                         .xazi {
                             @extend %xazi;
@@ -513,6 +526,7 @@
     .sect-4-h1 {
         margin-top: 5px;
         @extend %sect-4-h1-font;
+        @extend %sect-4-h1-med;
     }
     .xazi {
         @extend %xazi;
@@ -521,6 +535,7 @@
     .sect-4-cont {
         @extend %sect-4-cont-size;
         @include d-flex (flex,space-between,center);
+        @extend %sect-4-cont-med;
         .slick-dots {
             bottom: -40px;
             @extend %slick-dots;
@@ -530,16 +545,19 @@
             @include d-flex (flex,space-around,center);
             @extend %border-def;
             background-color: $color-01;
+            @extend %sect-4-box-med;
             .sect-4-img {
                 @extend %sect-4-img-size;
                 background-color: $color-010;
                 @include d-flex (flex,space-around,center);
+                @extend %sect-4-img-med;
                 .sect-4-img-box {
-                    width: $size-0;
+                    width: $size-0-def;
                 }
             }
             .sect-4-text {
                 @extend %sect-4-text-size;
+                @extend %sect-4-text-med;
                 .sect-4-h3 {
                     margin: 10px;
                     @extend %sect-4-h3-font;
@@ -547,6 +565,7 @@
                 .sect-4-p {
                     @extend %sect-4-p-size;
                     @extend %sect-4-p-font;
+                    @extend %sect-4-p-med;
                 }
             }
         }
@@ -578,7 +597,8 @@
     .sect-baner-img {
         @extend %sect-baner-img-size;
         .sect-baner-img-box {
-            width: $size-0;
+            width: $size-0-def;
+            @extend %sect-baner-img-box-med;
         }
     }
 }
@@ -602,14 +622,17 @@
                 @include d-flex (flex,space-evenly,center);
                 flex-direction: column;
                 text-align: center;
+                @extend %foot-box-med;
                 .foot-h1 {
                     padding-bottom: 20px;
                     @extend %foot-h1-font;
+                    @extend %foot-h1-med;
                 }
                 .foot-p {
                     padding: 10px 0 20px 0;
                     @extend %foot-p-size;
                     @extend %foot-p-font;
+                    @extend %foot-p-med;
                 }
                 .foot-ul-fa {
                     @extend %foot-ul-fa-size;
@@ -619,6 +642,7 @@
                         @extend %foot-li-fa-font;
                         .fa {
                             @extend %font-fa-def;
+                            @extend %fa-med;
                         }
                     }
                 }
@@ -629,6 +653,7 @@
                     .foot-li {
                         padding: 5px 0;
                         @extend %foot-li-font;
+                        @extend %foot-li-med;
                         .fa {
                             @extend %font-fa-def;
                         }
@@ -641,10 +666,12 @@
                         padding: 10px 0;
                         .fa {
                             @extend %font-fa-def;
+                            @extend %fa-med;
                         }
                         .contact {
                             @extend %contact-font;
                             @extend %hover-def;
+                            @extend %contact-med;
                         }
                     }
                 }
@@ -661,6 +688,7 @@
         @extend %avtori-med;
         .avtori-p {
             @extend %avtori-p-font;
+            @extend %avtori-p-med;
         }
         .avtori-a {
             @extend %avtori-a-font;
