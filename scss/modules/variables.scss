@@ -157,14 +157,14 @@ $cont-1-sm-h3-mrg: 25px auto;
 //------------
 //sect-3-size
 $sect-3-wid: 1900px;
-$sect-3-mrg: 70px auto 40px; 
-$sect-3-pdng: 10px;
+$sect-3-mrg: 35px auto 25px; 
+$sect-3-pdng: 2px 0 30px 0;
 //sect-3-h1-font-size
 $sect-3-h1-sz: 35px;
 $sect-3-h1-ls: 2px;
 //sect-3-cont-size
-$sect-3-cont-wid: 1620px;
-$sect-3-cont-heig: 480px;
+$sect-3-cont-wid: 1820px;
+$sect-3-cont-heig: 445px;
 $sect-3-cont-mrgn: 10px auto;
 //cont-2-box-size
 $cont-2-box-heig: 430px;
@@ -186,7 +186,7 @@ $cont-2-h4-font-shdw: 1px -1px 1px;
 //--------------------
 //Section-BanBox-size
 $sect-banbox-wid: 1900px;
-$sect-banbox-mrg: 80px auto;
+$sect-banbox-mrg: 30px auto;
 $sect-banbox-pdng: 30px 0;
 //banbox-cont-size
 $banbox-cont-heig: 230px;
@@ -231,7 +231,7 @@ $sect-ban-h1-font-sz: 50px;
 $sect-ban-h1-font-ls: 5px;
 $sect-ban-h1-font-shad: 0 0 1px;
 //sect-ban-cont-2-size
-$sect-ban-cont-2-wid: 680px;
+$sect-ban-cont-2-wid: 730px;
 //sect-ban-box-size
 $sect-ban-box-heig: 340px;
 //ban-box-img-size
@@ -240,10 +240,10 @@ $ban-box-img-heig: 270px;
 //cinema-size
 $cinema-heig: 270px;
 //tvh-text-cont-size
-$tvh-text-cont-wid: 650px;
+$tvh-text-cont-wid: 700px;
 $tvh-text-cont-heig: 80px;
 //tvh-ico-nm-size
-$tvh-ico-nm-wid: 570px;
+$tvh-ico-nm-wid: 615px;
 $tvh-ico-nm-heig: 65px;
 //tvh-ban-h1-size
 $tvh-ban-h1-wid: 1600px;
@@ -257,7 +257,7 @@ $tvh-ban-h1-font-shdw: 0 0 1px;
 //Section-4-size
 $sect-4-wid: 1900px;
 $sect-4-mrg: 35px auto;
-$sect-4-pdng: 30px 0;
+$sect-4-pdng: 0 0 30px 0;
 //sect-4-h1-font-size
 $sect-4-h1-font-sz: 35px;
 $sect-4-h1-font-ls: 2px;
@@ -488,6 +488,7 @@ $size-0610: 610px;
 $size-0630: 630px;
 $size-0635: 635px;
 $size-0650: 650px;
+$size-0670: 670px;
 $size-0700: 700px;
 $size-0710: 710px;
 $size-0750: 750px;
@@ -517,8 +518,7 @@ $size-01980: 1980px;
 
 
 $size-01240: 1240px;
-$size-01366: 1366px;
-$size-01440: 1440px;
+
 $size-01536: 1536px;
 
 $size-01640: 1640px;
@@ -532,15 +532,20 @@ $size-01850: 1850px;
 $size-01920: 1920px;
 $size-01600: 1600px;
 $size-01536: 1536px;
-//Tablet-media
-$size-0600: 600px;
-$size-0670: 670px;
-$size-0768: 768px;
-$size-0800: 800px;
-$size-0962: 962px;
-$size-01024: 1024px;
+$size-01440: 1440px;
+$size-01366: 1366px;
 $size-01280: 1280px;
+$size-0768: 768px;
+//Tablet-media
+$size-01024: 1024px;
+$size-0962: 962px;
+$size-0834: 834px;
+$size-0810: 810px;
+$size-0800: 800px;
+$size-0768: 768px;
+$size-0600: 600px;
 //Mobile-media
-$size-0360: 360px;
-$size-0375: 375px;
 $size-0414: 414px;
+$size-0412: 412px;
+$size-0375: 375px;
+$size-0360: 360px;

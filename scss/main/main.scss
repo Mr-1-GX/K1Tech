@@ -145,7 +145,7 @@
                 .flt-icon-1 {
                     @extend %flt-icon-1-size;
                     @include d-flex (flex,space-between,center);
-                    @extend %flt-icon-med;
+                    @extend %flt-icon-1-med;
                     .flt-icon-box {
                        @extend %flt-icon-box-size;
                     }
@@ -309,7 +309,7 @@
     @extend %sect-3-med;
     .sect-3-h1 {
         @extend %sect-3-h1-font;
-        margin-top: 30px;
+        margin-top: 10px;
         @extend %sect-3-h1-med;
     }
     .xazi {
@@ -582,6 +582,7 @@
         @extend %sect-baner-text-size;
         @include d-flex (flex,space-around,baseline);
         flex-direction: column;
+        @extend %sect-baner-text-med;
         .sect-baner-h1 {
             @extend %sect-baner-h1-font;
         }
