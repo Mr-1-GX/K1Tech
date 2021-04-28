@@ -203,6 +203,7 @@
             .cont-1-list {
                 @extend %cont-1-list-size;
                 @include d-flex (flex,space-evenly,center);
+                @extend %cont-1-list-med;
                 .cont-1-list-box {
                     background-color: $color-01;
                     @extend %cont-1-list-box-size;
@@ -254,6 +255,7 @@
                     }
                     .cont-1-fit {
                         @extend %cont-1-fit-size;
+                        @extend %cont-1-fit-med;
                         .cont-1-fit-ul {
                             @extend %cont-1-fit-ul-size;
                             @include d-flex (flex,space-around,end);
@@ -665,6 +667,7 @@
                     flex-direction: column;
                     .li-box {
                         padding: 10px 0;
+                        @extend %li-box-med;
                         .fa {
                             @extend %font-fa-def;
                             @extend %fa-med;
