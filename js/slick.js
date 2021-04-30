@@ -6,7 +6,8 @@ $('.center').slick({
   centerPadding: '60px',
   slidesToShow: 3,
   autoplay: true,
-  autoplaySpeed: 4000,
+  autoplaySpeed: 6000,
+  speed: 1000,
   responsive: [
     {
       breakpoint: 768,
@@ -32,11 +33,11 @@ $('.center').slick({
 $('.fade').slick({
   dots: true,
   infinite: true,
-  speed: 200,
+  speed: 1100,
   fade: true,
   cssEase: 'linear',
   autoplay: true,
-  autoplaySpeed: 5000,
+  autoplaySpeed: 3000,
   arrows: false,
 });
 
@@ -47,8 +48,8 @@ $('.lazy').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 3000,
-  speed: 800,
+  autoplaySpeed: 6000,
+  speed: 1000,
   responsive: [
     {
       breakpoint: 768,

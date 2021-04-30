@@ -164,34 +164,27 @@
     max-width: $navi-wid;
     width: $size-0-def;
 }
+%navi-cont-size {
+    max-width: 1360px;
+    width: $size-0-def;
+}
 %nav-ul-size {
     max-width: $nav-ul-wid;
     width: $size-0-def;
+    margin-bottom: 15px;
+}
+%search-size {
+    max-width: 960px;
+    width: $size-0-def;
+    height: 30px;
 }
 %nav-a-h1-font {
-    font-size: $nav-a-h1-sz;
-    color: $nav-a-h1-col;
-    font-family: 'archy-B';
-    letter-spacing: $nav-a-h1-ls;
-}
-//Drop-Down
-%nav-drop-ul-size {
-    max-width: $nav-drop-ul-wid;
-    width: $size-0-def;
-    height: $nav-drop-ul-heig;
-    top: $nav-drop-ul-tp;
-    left: $nav-drop-ul-lft;
-}
-%nav-drop-li-size {
-    margin: $nav-drop-li-mrg;
-    padding: $nav-drop-li-pdng;
-}
-%font-a-drop {
-    font-size: $font-a-drop-sz;
-    color: $font-a-drop-col;
-    font-family: 'archy-B';
-    letter-spacing: $font-a-drop-ls;
-    text-shadow: $font-a-drop-shad $font-a-drop-shdw;
+    font-size: 15px;
+    color: $soc-a-fonts-col;
+    font-family: 'alk-s';
+    letter-spacing: $soc-a-fonts-ls;
+    text-shadow: $soc-a-fonts-shad $soc-a-fonts-shdw;
+    border-radius: $soc-a-fonts-rad;
 }
 %soc-ul-size {
     max-width: $soc-ul-wid;
@@ -204,7 +197,7 @@
     text-shadow: $font-fa-shad $font-fa-shdw;
     border-radius: $font-fa-rad;
 }
-%soc-a-fonts {
+%soc-a-font {
     font-size: $soc-a-fonts-sz;
     color: $soc-a-fonts-col;
     font-family: 'archy-B';
@@ -212,17 +205,46 @@
     text-shadow: $soc-a-fonts-shad $soc-a-fonts-shdw;
     border-radius: $soc-a-fonts-rad;
 }
+%hedad-flt-cont-size {
+    max-width: $hedad-flt-cont-wid;
+    width: $size-0-def;
+    margin: $hedad-flt-cont-mrg;
+    padding: $hedad-flt-cont-pdng;
+}
+%head-flt-ul-size {
+    max-width: 1810px;
+    width: $size-0-def;
+    height: 130px;
+}
+%head-flt-li-size {
+    max-width: 280px;
+    width: $size-0-def;
+    height: 130px;
+}
+%head-flt-li-font {
+    font-size: 25px;
+    color: $nav-a-h1-col;
+    font-family: 'archy-B';
+    letter-spacing: $nav-a-h1-ls;
+}
+%head-li-box-size {
+    max-width: 100px;
+    height: 85px;
+    margin: 5px auto;
 
+}
+%head-li-img-size {
+    width: $size-0-def;
+    height: 75px;
+}
 //Sections-1
 %sect-1-size {
     margin: $sect-1-mrg;
 }
-%sect-1-cont-size {
-    margin: $sect-1-cont-mrg;
-}
 %sect-1-box-size {
     max-width: $sect-1-box-wid;
     border-radius: $sect-1-box-rad;
+    margin: $sect-1-box-mrg;
 }
 %sect-1-img-size {
     margin: $sect-1-img-mrg;

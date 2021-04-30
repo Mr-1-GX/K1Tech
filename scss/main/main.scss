@@ -1,6 +1,6 @@
 //Body
 .body-bg {
-    background-color: $color-04;
+    background-color: #E0F2F3;
 }
 //HEADER
 .head-cont {
@@ -27,31 +27,46 @@
             @extend %navi-med;
             @extend %nav-ul-open-med;
             @extend %open-soci-med;
-            .nav-ul {
-                @extend %nav-ul-size;
+            .navi-cont {
+                @extend %navi-cont-size;
                 @include d-flex (flex,space-between,center);
-                @extend %nav-ul-med;
-                .nav-li {
-                    @extend %nav-li-med;
-                    @extend %hover-dop;
-                    .nav-a {
-                        @extend %nav-a-h1-font;
-                        @extend %nav-a-med;
-                    }
-                    .nav-drop-ul {
-                        @extend %nav-drop-ul-size;
-                        position: absolute;
-                        display: none;
-                        .nav-drop-li{
-                            @extend %nav-drop-li-size;
-                            text-align: center;
-                            @extend %border-def;
-                            background-color: $nav-drop-li-bg;
-                            .nav-drop {
-                                @extend %font-a-drop;
+                flex-direction: column;
+                .nav-ul {
+                    @extend %nav-ul-size;
+                    @include d-flex (flex,space-between,center);
+                    @extend %nav-ul-med;
+                    .nav-li {
+                        @extend %nav-li-med;
+                        @extend %hover-dop;
+                        .geo-img {
+                            max-width: 30px;
+                            .geo {
+                                width: 100%;
+                                height: 25px;
                             }
                         }
+                        .fa {
+                            @extend %font-fa;
+                            @extend %fa-med;
+                        }
+                        .nav-a {
+                            @extend %nav-a-h1-font;
+                            @extend %nav-a-med;
+                        }
+                        
                     }
+                }
+                .search {
+                   @extend %search-size; 
+                   @extend %border-def;
+                   .element-search {
+                       .inp-search {
+                        .fa {
+                            @extend %font-fa;
+                            @extend %fa-med;
+                        }
+                       }
+                   }
                 }
             }
             .soc-ul {
@@ -67,7 +82,7 @@
                         @extend %fa-med;
                     }
                     .soc-a {
-                        @extend %soc-a-fonts;
+                        @extend %soc-a-font;
                         @extend %hover-def;
                         @extend %soc-a-med;
                     }
@@ -87,6 +102,28 @@
             @extend %burger-icon-med;
         }
     }
+    .xazi {
+        @extend %xazi;    
+    }
+    .hedad-flt-cont {
+        @extend %hedad-flt-cont-size;
+        @include d-flex (flex,space-between,center);
+        .head-flt-ul {
+            @extend %head-flt-ul-size;
+            @include d-flex (flex,space-between,center);
+            .head-flt-li {
+                @extend %head-flt-li-size;
+                @extend %head-flt-li-font;
+                text-align: center;
+                .head-li-box {
+                    @extend %head-li-box-size;
+                    .head-li-img {
+                        @extend %head-li-img-size;
+                    }
+                }
+            }
+        }
+    }
 }
 //Section-1
 .sect-1 {
@@ -94,7 +131,6 @@
     position: relative;
     @extend %sect-1-med;
     .sect-1-cont {
-        @extend %sect-1-cont-size;
         z-index: 2;
         @extend %sect-1-cont-med;
         .sect-1-box {
