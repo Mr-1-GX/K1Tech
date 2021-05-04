@@ -53,11 +53,17 @@
     border-radius: $size-05;
 }
 %font-fa-def {
-    font-size: $size-025;
+    font-size: 25px;
     color: $color-02;
-    letter-spacing: $size-020;
-    text-shadow: 0 0 $size-01 $color-03;
-    border-radius: $size-05;
+    letter-spacing: 10px;
+    text-shadow: 0 0 1px $color-03;
+    border-radius: 5px;
+}
+%search-fa {
+    font-size: 27px;
+    color: $color-02;
+    text-shadow: 0 0 1px $color-03;
+    border-radius: 5px;
 }
 %font-p-def {
     color: $color-03;
@@ -113,6 +119,11 @@
     border-radius: $size-03;
     @include border (0, solid, $color-02);
     box-shadow: 0 0 0 $size-01 $color-03;
+}
+%border-srch {
+    border-radius: 3px;
+    @include border (0px, solid, $color-02);
+    box-shadow: 0 0 1px 1px $color-02;
 }
 //Hover
 %hover-def {
@@ -171,12 +182,20 @@
 %nav-ul-size {
     max-width: $nav-ul-wid;
     width: $size-0-def;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 %search-size {
-    max-width: 960px;
-    width: $size-0-def;
-    height: 30px;
+    width: 900px;
+    height: 40px;
+}
+%element-search-size {
+    width: 100%;
+    height: 100%;
+}
+%inp-search-size {
+    width: 830px;
+    height: 100%;
+    padding: 0 5px;
 }
 %nav-a-h1-font {
     font-size: 15px;
@@ -205,21 +224,21 @@
     text-shadow: $soc-a-fonts-shad $soc-a-fonts-shdw;
     border-radius: $soc-a-fonts-rad;
 }
-%hedad-flt-cont-size {
+%head-flt-cont-size {
     max-width: $hedad-flt-cont-wid;
     width: $size-0-def;
     margin: $hedad-flt-cont-mrg;
     padding: $hedad-flt-cont-pdng;
 }
 %head-flt-ul-size {
-    max-width: 1810px;
+    max-width: 1800px;
     width: $size-0-def;
-    height: 130px;
+    margin: 0 auto;
 }
 %head-flt-li-size {
-    max-width: 280px;
+    max-width: 185px;
     width: $size-0-def;
-    height: 130px;
+    height: 95px;
 }
 %head-flt-li-font {
     font-size: 25px;
@@ -228,14 +247,13 @@
     letter-spacing: $nav-a-h1-ls;
 }
 %head-li-box-size {
-    max-width: 100px;
-    height: 85px;
+    max-width: 70px;
+    height: 55px;
     margin: 5px auto;
-
 }
 %head-li-img-size {
     width: $size-0-def;
-    height: 75px;
+    height: 45px;
 }
 //Sections-1
 %sect-1-size {

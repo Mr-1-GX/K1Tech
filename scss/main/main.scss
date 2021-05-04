@@ -57,15 +57,27 @@
                     }
                 }
                 .search {
-                   @extend %search-size; 
-                   @extend %border-def;
-                   .element-search {
-                       .inp-search {
-                        .fa {
-                            @extend %font-fa;
-                            @extend %fa-med;
+                    @extend %search-size;
+                    @extend %border-srch;
+                    @extend %search-med;
+                    .element-search {
+                        @extend %element-search-size;
+                        .inp-search {
+                           @extend %inp-search-size;
+                           border: none;
+                           vertical-align: bottom;
+                           padding: 0 25px;
+                           @extend %font-p-def;
+                           @extend %border-srch;
+                           @extend %inp-search-med;
                         }
-                       }
+                        .srch-fa {
+                            @extend %search-fa;
+                            padding: 5px;
+                            vertical-align: bottom;
+                            padding: 0 20px 5px;
+                            @extend %srch-fa-med;
+                        }
                    }
                 }
             }
@@ -75,7 +87,7 @@
                 @extend %soc-ul-size;
                 @extend %soc-ul-med;
                 .soc-li {
-                    padding: $soc-li-pdng;
+                    padding: 15px 0 0 0;
                     @extend %soc-li-med;
                     .fa {
                         @extend %font-fa;
@@ -105,20 +117,25 @@
     .xazi {
         @extend %xazi;    
     }
-    .hedad-flt-cont {
-        @extend %hedad-flt-cont-size;
+    .head-flt-cont {
+        @extend %head-flt-cont-size;
         @include d-flex (flex,space-between,center);
+        @extend %head-flt-cont-med;
         .head-flt-ul {
             @extend %head-flt-ul-size;
             @include d-flex (flex,space-between,center);
+            @extend %head-flt-ul-med;
             .head-flt-li {
                 @extend %head-flt-li-size;
                 @extend %head-flt-li-font;
+                @extend %head-flt-li-med;
                 text-align: center;
                 .head-li-box {
                     @extend %head-li-box-size;
+                    @extend %head-li-box-med;
                     .head-li-img {
                         @extend %head-li-img-size;
+                        @extend %head-li-img-med;
                     }
                 }
             }
