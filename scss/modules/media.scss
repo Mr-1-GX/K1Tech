@@ -1,5 +1,10 @@
 
 //HEADER
+%head-cont-med {
+    @media (max-width: 1600px) {
+        top: -142px;
+    }
+}
 %nav-box-med {
     @media (max-width: 1920px) {
         width: 75%;
@@ -76,6 +81,10 @@
     @media (max-width: $size-0800) {
         max-width: $size-0375;
     }
+    @media (max-width: 768px) {
+        width: 97%;
+    }
+    
     // @media (max-width: $size-0670) {
     //     padding: $size-010 0;
     //     max-width: $size-0500;
@@ -104,12 +113,14 @@
     @media (max-width: 834px) {
         font-size: 12px;
     }
-    @media (max-width: 768px) {
-        letter-spacing: 1px;
-    }
     @media (max-width: 800px) {
         font-size: 13px;
     }
+    @media (max-width: 768px) {
+        letter-spacing: 1px;
+        font-size: 8px;
+    }
+    
     // @media (max-width: $size-0670) {
     //     font-size: $size-015;
     // }
@@ -119,6 +130,10 @@
         width: 620px;
         height: 30px;
     }
+    @media (max-width: 768px) {
+        width: 370px;
+        height: 15px;
+    }
 }
 %inp-search-med {
     @media (max-width: 1600px) {
@@ -127,10 +142,18 @@
         font-size: 10px;
         letter-spacing: 3px;
     }
+    @media (max-width: 768px) {
+        width: 320px;
+        font-size: 7px;
+    }
 }
 %srch-fa-med {
     @media (max-width: 1600px) {
         font-size: 20px;
+    }
+    @media (max-width: 768px) {
+        font-size: 15px;
+        padding: 0 12px 5px;
     }
 }
 %soc-ul-med {
@@ -158,7 +181,7 @@
 }
 %soc-li-med {
     @media (max-width: 1600px) {
-        padding: 15px 0 0 0;
+        padding: 10px 0 0 0;
     }
     @media (max-width: 962px) {
         padding: 3px 0;
@@ -181,14 +204,12 @@
         font-size: 12px;
     }
     @media (max-width: 768px) {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 %head-flt-cont-med {
-    @media (max-width: 1920px) {
-        width: 85%;
-    }
     @media (max-width: 1600px) {
+        width: 85%;
         padding: 1px 0 1px;
     }
 }
@@ -198,26 +219,32 @@
     }
 }
 %head-flt-li-med {
-    @media (max-width: 1920px) {
-        font-size: 20px;
-    }
     @media (max-width: 1600px) {
         max-width: 160px;
-        height: 80px;
+        height: 70px;
         font-size: 18px;
+    }
+    @media (max-width: 1366px) {
+        font-size: 16px;
+    }
+    @media (max-width: 768px) {
+        font-size: 10px;
     }
 }
 %head-li-box-med {
-    @media (max-width: 1920px) {
-        max-width: 45px;
-    }
     @media (max-width: 1600px) {
-        height: 45px;
+        height: 35px;
+    }
+    @media (max-width: 1366px) {
+        max-width: 35px;
     }
 }
 %head-li-img-med {
     @media (max-width: 1920px) {
         height: 35px;
+    }
+    @media (max-width: 1366px) {
+        height: 30px;
     }
 }
 %burger-icon-med {
@@ -233,14 +260,11 @@
 }
 //Section-1
 %sect-1-med {
-    @media (max-width: 1920px) {
-        margin: 265px 0 5px;
-    }
     @media (max-width: 1600px) {
-        margin: 210px 0 5px;
+        margin: 3px 0 5px;
     }
     @media (max-width: 1366px) {
-        margin: 90px 0 5px;
+        margin: 3px 0 5px;
     }
     @media (max-width: 810px) {
         margin: 75px 0 5px;
@@ -259,7 +283,7 @@
 }
 %sect-1-box-med {
     @media (max-width: 1366px) {
-        margin-bottom: 15px;
+        margin-bottom: 1px;
     }
     @media (max-width: 810px) {
         margin-bottom: 10px;
@@ -334,6 +358,7 @@
     }
     @media (max-width: 1366px) {
         height: 955px;
+        padding-top: 2px;
     }
     @media (max-width: 1024px) {
         height: 850px;
@@ -484,7 +509,7 @@
     }
     @media (max-width: 1366px) {
         font-size: 15px;
-        height: 35px;
+        height: 38px;
     }
     @media (max-width: 1024px) {
         font-size: 13px;
@@ -512,6 +537,10 @@
         max-width: 55px;
         height: 40px;
     }
+    @media (max-width: 1366px) {
+        max-width: 40px;
+        height: 30px;
+    }
     @media (max-width: 1024px) {
         max-width: 50px;
         height: 30px;
@@ -531,6 +560,9 @@
 %flt-li-img-med {
     @media (max-width: 1600px) {
         height: 40px;
+    }
+    @media (max-width: 1366px) {
+        height: 28px;
     }
     @media (max-width: 1024px) {
         width: 90%;
@@ -697,6 +729,7 @@
     @media (max-width: 1600px) {
         width: 90%;
         height: 220px;
+        padding: 0 0 0 1px;
     }
 }
 %cont-1-fit-med {
@@ -1411,9 +1444,15 @@
     }
 }
 //FOOTER
+%head-xazi-med {
+    @media (max-width: 1600px) {
+        top: 1px;
+    }
+}
 %xazi-med {
     @media (max-width: 1600px) {
         width: 95%;
+        top: 1px;
     }
 }
 %foot-cont-2-med {
@@ -1453,10 +1492,10 @@
 }
 %fa-med {
     @media (max-width: 1600px) {
-        font-size: 24px;
+        font-size: 20px;
     }
     @media (max-width: 1366px) {
-        font-size: 23px;
+        font-size: 19px;
     }
     @media (max-width: 962px) {
         font-size: 15px;
