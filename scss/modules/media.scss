@@ -2,13 +2,10 @@
 //HEADER
 %head-cont-med {
     @media (max-width: 1600px) {
-        top: -142px;
+        margin: 0 auto;
     }
 }
 %nav-box-med {
-    @media (max-width: 1920px) {
-        width: 75%;
-    }
     @media (max-width: 1600px) {
         width: 70%;
     }
@@ -258,10 +255,103 @@
         cursor:pointer;
     }
 }
+//Active-Header
+%active-med {
+    @media (max-width: 1600px) {
+        position: sticky;
+        top: 0;
+        left: 0;
+        height: 60px;
+        z-index: 22;
+        background: #F4F6F6;
+        transition: all 0.3s;
+        display: flex;
+        flex-direction: column-reverse;
+        .nav-box {
+            width: 75%;
+            .nav-logo {
+                max-width: 35px;
+                height: 40px;
+                .img-100 {
+                    width: 100%
+                }
+            }
+            .navi {
+                width: 95%;
+                height: 40px;
+                .navi-cont {
+                    width: 60%;
+                    .nav-ul {
+                        display: none;
+                    }
+                    .search {
+                        width: 600px;
+                        .element-search {
+                            .inp-search {
+                                width: 540px;
+                            }
+                        }
+                    }
+                }
+                .soc-ul {
+                    width: 39%;
+                    justify-content: space-between;
+                    .contact-ul {
+                        width: 11%;
+                        flex-direction: row;
+                        margin-right: 10px;
+                        .soc-li {
+                            padding: 2px 0 0 0;
+                            .fa {
+                                font-size: 15px;
+                                letter-spacing: 5px;
+                            }
+                        }
+                    }
+                    .contact-box {
+                        max-width: 470px;
+                        width: 100%;
+                        flex-direction: row;
+                        .soc-li {
+                            padding: 2px 0 0 0;
+                            .soc-a {
+                                font-size: 15px;
+                                .fa {
+                                    font-size: 15px;
+                                    letter-spacing: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .xazi {
+            width: 75%;
+            margin: 0 auto;
+        }
+        .head-flt-cont {
+            max-width: 1400px;
+            padding: 1px 0 0;
+            .head-flt-ul {
+                width: 90%;
+                .head-flt-li {
+                    height: 12px;
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                    .head-li-box {
+                        display: none;
+                        transition: all 0.3s;
+                    }
+                }
+            }
+        }
+    }
+}
 //Section-1
 %sect-1-med {
     @media (max-width: 1600px) {
-        margin: 3px 0 5px;
+        margin: 0 0 0 0;
     }
     @media (max-width: 1366px) {
         margin: 3px 0 5px;
@@ -272,7 +362,7 @@
 }
 %sect-1-cont-med {
     @media (max-width: 1600px) {
-        margin: 0 10px;
+        margin: 0 1px;
     }
     @media (max-width: 834px) {
         margin: 0 20px;
@@ -292,7 +382,7 @@
 %sect-1-img-med {
     @media (max-width: 1600px) {
         height: 400px;
-        margin: 5px 0;
+        margin: 2px 0;
     }
     @media (max-width: 1366px) {
         height: 330px;
@@ -310,9 +400,9 @@
 //Section-2
 %sect-2-med {
     @media (max-width: 1600px) {
-        margin: 5px auto;
+        margin: 1px auto;
         width: 99%;
-        height: 1415px;
+        height: 1280px;
     }
     @media (max-width: 1366px) {
         height: 1145px;
@@ -332,8 +422,9 @@
 }
 %sect-2-big-med {
     @media (max-width: 1600px) {
-        width: 98%;
-        height: 1355px;
+        width: 99%;
+        height: 1080px;
+        margin: 1px 0;
     }
     @media (max-width: 1366px) {
         height: 970px;
@@ -353,8 +444,8 @@
 %sect-2-flt-med {
     @media (max-width: 1600px) {
         width: 40%;
-        height: 1175px;
-        padding-top: 30px;
+        height: 1075px;
+        padding-top: 1px;
     }
     @media (max-width: 1366px) {
         height: 955px;
@@ -380,6 +471,7 @@
 %flt-cont-med {
     @media (max-width: 1600px) {
         width: 95%;
+        height: 65px;
     }
     @media (max-width: 768px) {
         width: 96%;
@@ -486,6 +578,8 @@
 %s2-flt-ul-med {
     @media (max-width: 1600px) {
         width: 98%;
+        height: 715px;
+        padding: 2px 0 0 0;
     }
     @media (max-width: 1280px) {
         width: 99%;
@@ -578,7 +672,7 @@
 %s2-flt-cont-2-med {
     @media (max-width: 1600px) {
         width: 98%;
-        height: 600px;
+        height: 293px;
     }
     @media (max-width: 1366px) {
         height: 780px;
@@ -599,7 +693,7 @@
 }
 %sect-2-box-med {
     @media (max-width: 1600px) {
-        height: 1175px;
+        height: 1075px;
     }
     @media (max-width: 1366px) {
         height: 955px;
@@ -626,7 +720,7 @@
 %cont-1-list-box-med {
     @media (max-width: 1600px) {
         width: 48%;
-        height: 580px;
+        height: 530px;
     }
     @media (max-width: 1536px) {
         height: 580px;
@@ -652,7 +746,7 @@
 %cont-1-img-med {
     @media (max-width: 1600px) {
         width: $size-0-def;
-        height: 450px;
+        height: 380px;
     }
     @media (max-width: 1366px) {
         width: $size-0-def;
@@ -673,7 +767,7 @@
 }
 %cont-1-img-hrf-med {
     @media (max-width: 1600px) {
-        height: 365px;
+        height: 315px;
     }
     @media (max-width: 768px) {
         height: 145px;
@@ -683,6 +777,9 @@
     }
 }
 %cont-1-img-box-med {
+    @media (max-width: 1600px) {
+        height: 320px;
+    }
     @media (max-width: 1366px) {
         height: 250px;
     }
@@ -770,7 +867,7 @@
 %sect-2-sm-med {
     @media (max-width: 1600px) {
         width: 98%;
-        height: 190px;
+        height: 120px;
     }
     @media (max-width: 1024px) {
         height: 120px;

@@ -3,12 +3,24 @@
     background-color: #E0F2F3;
 }
 //HEADER
+.sect-baner-s {
+    height: 80px;
+    background-color: $color-02;
+    @extend %border-def;
+    .baner-s {
+        padding-top: 20px;
+        .baner-s-p {
+            font-size: 30px;
+            text-align: center;
+            @extend %font-baner-s-p;
+        }
+    }
+}
 .head-cont {
-    background-color: $head-cont-bg;
-    @extend %head-size;
+    background-color: $color-01;
+    @extend %head-cont-size;
     @extend %border-def;
     @extend %head-cont-med;
-    z-index: 1;
     .nav-box {
         @extend %nav-box-size;
         @include d-flex (flex,space-between,center);
@@ -118,8 +130,6 @@
     }
     .xazi {
         @extend %xazi;
-        position: sticky;
-        top: 5px;
         @extend %head-xazi-med;
     }
     .head-flt-cont {
@@ -142,6 +152,97 @@
                         @extend %head-li-img-size;
                         @extend %head-li-img-med;
                     }
+                }
+            }
+        }
+    }
+}
+//Active-Header
+.active {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 85px;
+    z-index: 22;
+    background: #F4F6F6;
+    transition: all 3s;
+    display: flex;
+    flex-direction: column-reverse;
+    @extend %active-med;
+    .nav-box {
+        max-width: 1390px;
+        .nav-logo {
+            max-width: 45px;
+            height: 50px;
+            .img-100 {
+                width: 100%
+            }
+        }
+        .navi {
+            max-width: 1320px;
+            height: 50px;
+            .navi-cont {
+                max-width: 730px;
+                    width: 100%;
+                .nav-ul {
+                    display: none;
+                }
+                .search {
+                    width: 690px;
+                    .element-search {
+                        .inp-search {
+                            width: 640px;
+                        }
+                    }
+                }
+            }
+            .soc-ul {
+                max-width: 550px;
+                justify-content: space-between;
+                .contact-ul {
+                    max-width: 60px;
+                    width: 100%;
+                    flex-direction: row;
+                    .soc-li {
+                        padding: 2px 0 0 0;
+                        .fa {
+                            font-size: 22px;
+                            letter-spacing: 5px;
+                        }
+                    }
+                }
+                .contact-box {
+                    max-width: 470px;
+                    width: 100%;
+                    flex-direction: row;
+                    .soc-li {
+                        padding: 2px 0 0 0;
+                        .soc-a {
+                            font-size: 21px;
+                            .fa {
+                                font-size: 22px;
+                                letter-spacing: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .xazi {
+        max-width: 1380px;
+        margin: 2px auto;
+    }
+    .head-flt-cont {
+        max-width: 1400px;
+        padding: 1px 0 2px;
+        .head-flt-ul {
+            .head-flt-li {
+                height: 20px;
+                font-size: 18px;
+                .head-li-box {
+                    display: none;
+                    transition: all 0.3s;
                 }
             }
         }

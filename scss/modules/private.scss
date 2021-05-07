@@ -17,6 +17,13 @@
     text-decoration: underline solid $color-02;
 }
 //Font
+%font-baner-s-p {
+    font-size: 35px;
+    color: $color-010;
+    font-family: 'archy-B';
+    letter-spacing: 2px;
+    text-shadow: 1px -1px 1px $color-05;
+}
 %font-h1-def {
     font-size: $size-035;
     color: $color-02;
@@ -151,14 +158,26 @@
         }
     }
 }
-
-//HEADER
-%head-size {
+%head-cont-stk {
+        &:before {
+            width: 30%;
+        }
+        &:after {
+            display: block;
+        }
+}
+//Fixed
+%fixed {
+    position: fixed;
     width: 100%;
-    position: sticky;
-    top: -157px;
-    left: 0px;
+    top: 0px;
+    z-index: 22;
+}
+//HEADER
+%head-cont-size {
+    width: 100%;
     margin: 2px auto;
+    position: relative;
 }
 %nav-box-size {
     max-width: $nav-box-wid;
@@ -256,10 +275,9 @@
 }
 //Sections-1
 %sect-1-size {
-    margin: 10px auto 5px;
+    margin: 0 auto;
 }
 %sect-1-box-size {
-    max-width: $sect-1-box-wid;
     border-radius: $sect-1-box-rad;
     margin: $sect-1-box-mrg;
 }
@@ -274,7 +292,7 @@
 %sect-2-size {
     max-width: $sect-2-wid;
     width: 100%;
-    margin: 10px auto;
+    margin: 0 auto;
 }
 %sect-2-big-size {
     max-width: $sect-2-big-wid;
