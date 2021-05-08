@@ -38,7 +38,6 @@
             @include d-flex (flex,space-between,center);
             @extend %navi-med;
             @extend %nav-ul-open-med;
-            @extend %open-soci-med;
             .navi-cont {
                 @extend %navi-cont-size;
                 @include d-flex (flex,space-between,center);
@@ -125,7 +124,6 @@
         }
         .burger-icon {
             display: none;
-            @extend %burger-icon-med;
         }
     }
     .xazi {
@@ -162,36 +160,56 @@
     position: sticky;
     top: 0;
     left: 0;
-    height: 85px;
+    height: 55px;
     z-index: 22;
     background: #F4F6F6;
-    transition: all 3s;
+    transition: all 0.6s;
     display: flex;
     flex-direction: column-reverse;
     @extend %active-med;
     .nav-box {
         max-width: 1390px;
+        @extend %nav-box-act-med;
+        .burger-icon {
+            display: block;
+            color: $color-02;
+            font-size: 30px;
+            top: 13px;
+            right: 50px;
+            cursor: pointer;
+            @extend %burger-icon-act-med;
+        }
         .nav-logo {
             max-width: 45px;
             height: 50px;
+            @extend %nav-logo-act-med;
             .img-100 {
                 width: 100%
             }
         }
         .navi {
-            max-width: 1320px;
+            max-width: 1270px;
             height: 50px;
+            @extend %navi-act-med;
             .navi-cont {
-                max-width: 730px;
-                    width: 100%;
+                max-width: 710px;
+                width: 100%;
+                flex-direction: column-reverse;
+                @extend %navi-cont-act-med;
                 .nav-ul {
                     display: none;
+                    @extend %nav-ul-act-med;
+                }
+                .open-menu {
+                    display: flex;
                 }
                 .search {
                     width: 690px;
+                    @extend %search-act-med;
                     .element-search {
                         .inp-search {
                             width: 640px;
+                            @extend %inp-search-act-med;
                         }
                     }
                 }
@@ -199,15 +217,19 @@
             .soc-ul {
                 max-width: 550px;
                 justify-content: space-between;
+                @extend %soc-ul-act-med;
                 .contact-ul {
                     max-width: 60px;
                     width: 100%;
                     flex-direction: row;
+                    @extend %contact-ul-act-med;
                     .soc-li {
                         padding: 2px 0 0 0;
+                        @extend %soc-li-act-med;
                         .fa {
                             font-size: 22px;
                             letter-spacing: 5px;
+                            @extend %fa-act-med;
                         }
                     }
                 }
@@ -215,13 +237,17 @@
                     max-width: 470px;
                     width: 100%;
                     flex-direction: row;
+                    @extend %contact-box-act-med;
                     .soc-li {
                         padding: 2px 0 0 0;
+                        @extend %soc-li-act-med;
                         .soc-a {
                             font-size: 21px;
+                            @extend %soc-a-act-med;
                             .fa {
                                 font-size: 22px;
                                 letter-spacing: 5px;
+                                @extend %fa-act-med;
                             }
                         }
                     }
@@ -229,24 +255,37 @@
             }
         }
     }
+    
     .xazi {
         max-width: 1380px;
         margin: 2px auto;
+        @extend %xazi-act-med;
     }
     .head-flt-cont {
-        max-width: 1400px;
-        padding: 1px 0 2px;
+        display: none;
+        @extend %head-flt-cont-act-med;
         .head-flt-ul {
+            @extend %head-flt-ul-act-med;
             .head-flt-li {
                 height: 20px;
                 font-size: 18px;
+                @extend %head-flt-li-act-med;
                 .head-li-box {
                     display: none;
-                    transition: all 0.3s;
+                    @extend %head-li-box-act-med;
                 }
             }
         }
     }
+    .open-socicon {
+        display: flex;
+        @extend %open-socicon-act-med;
+    }
+}
+.open-head-size {
+    height: 120px;
+    flex-direction: column;
+    @extend %open-head-size-act-med;
 }
 //Section-1
 .sect-1 {

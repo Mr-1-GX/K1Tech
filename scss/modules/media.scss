@@ -244,108 +244,143 @@
         height: 30px;
     }
 }
-%burger-icon-med {
-    @media (max-width: 600px) {
-        display: block;
-        color: $color-02;
-        font-size: $size-030;
-        position: absolute;
-        top: $size-013;
-        right: $size-050;
-        cursor:pointer;
-    }
-}
+
 //Active-Header
 %active-med {
     @media (max-width: 1600px) {
         position: sticky;
         top: 0;
         left: 0;
-        height: 60px;
+        height: 45px;
         z-index: 22;
         background: #F4F6F6;
         transition: all 0.3s;
         display: flex;
         flex-direction: column-reverse;
-        .nav-box {
-            width: 75%;
-            .nav-logo {
-                max-width: 35px;
-                height: 40px;
-                .img-100 {
-                    width: 100%
-                }
-            }
-            .navi {
-                width: 95%;
-                height: 40px;
-                .navi-cont {
-                    width: 60%;
-                    .nav-ul {
-                        display: none;
-                    }
-                    .search {
-                        width: 600px;
-                        .element-search {
-                            .inp-search {
-                                width: 540px;
-                            }
-                        }
-                    }
-                }
-                .soc-ul {
-                    width: 39%;
-                    justify-content: space-between;
-                    .contact-ul {
-                        width: 11%;
-                        flex-direction: row;
-                        margin-right: 10px;
-                        .soc-li {
-                            padding: 2px 0 0 0;
-                            .fa {
-                                font-size: 15px;
-                                letter-spacing: 5px;
-                            }
-                        }
-                    }
-                    .contact-box {
-                        max-width: 470px;
-                        width: 100%;
-                        flex-direction: row;
-                        .soc-li {
-                            padding: 2px 0 0 0;
-                            .soc-a {
-                                font-size: 15px;
-                                .fa {
-                                    font-size: 15px;
-                                    letter-spacing: 5px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .xazi {
-            width: 75%;
-            margin: 0 auto;
-        }
-        .head-flt-cont {
-            max-width: 1400px;
-            padding: 1px 0 0;
-            .head-flt-ul {
-                width: 90%;
-                .head-flt-li {
-                    height: 12px;
-                    font-size: 12px;
-                    letter-spacing: 1px;
-                    .head-li-box {
-                        display: none;
-                        transition: all 0.3s;
-                    }
-                }
-            }
-        }
+    }
+}
+%nav-box-act-med {
+    @media (max-width: 1600px) {
+        width: 75%;
+    }
+}
+%burger-icon-act-med {
+    @media (max-width: 1600px) {
+        display: block;
+        color: $color-02;
+        font-size: 30px;
+        top: 13px;
+        right: 50px;
+        cursor: pointer;
+    }
+}
+%nav-logo-act-med {
+    @media (max-width: 1600px) {
+        max-width: 35px;
+        height: 40px;
+    }
+}
+%navi-act-med {
+    @media (max-width: 1600px) {
+        width: 95%;
+        height: 40px;
+    }
+}
+%navi-cont-act-med {
+    @media (max-width: 1600px) {
+        width: 60%;
+    }
+}
+%nav-ul-act-med {
+    @media (max-width: 1600px) {
+        display: none;
+    }
+}
+%search-act-med {
+    @media (max-width: 1600px) {
+        width: 600px;
+    }
+}
+%inp-search-act-med {
+    @media (max-width: 1600px) {
+        width: 540px;
+    }
+}
+%soc-ul-act-med {
+    @media (max-width: 1600px) {
+        width: 39%;
+        justify-content: space-between;
+    }
+}
+%contact-ul-act-med {
+    @media (max-width: 1600px) {
+        width: 11%;
+        flex-direction: row;
+        margin-right: 10px;
+    }
+}
+%soc-li-act-med {
+    @media (max-width: 1600px) {
+        padding: 2px 0 0 0;
+    }
+}
+%fa-act-med {
+    @media (max-width: 1600px) {
+        font-size: 15px;
+        letter-spacing: 5px;
+    }
+}
+%contact-box-act-med {
+    @media (max-width: 1600px) {
+        max-width: 470px;
+        width: 100%;
+        flex-direction: row;
+    }
+}
+%soc-a-act-med {
+    @media (max-width: 1600px) {
+        font-size: 15px;
+    }
+}
+%xazi-act-med {
+    @media (max-width: 1600px) {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+%head-flt-cont-act-med {
+    @media (max-width: 1600px) {
+        max-width: 1400px;
+        padding: 1px 0 0;
+    }
+}
+%head-flt-ul-act-med {
+    @media (max-width: 1600px) {
+        width: 90%;
+    }
+}
+%head-flt-li-act-med {
+    @media (max-width: 1600px) {
+        height: 12px;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+}
+%head-li-box-act-med {
+    @media (max-width: 1600px) {
+        display: none;
+        transition: all 0.3s;
+    }
+}
+%open-socicon-act-med {
+    @media (max-width: 1600px) {
+        display: flex;
+    }
+}
+%open-head-size-act-med {
+    @media (max-width: 1600px) {
+        height: 120px;
+        flex-direction: column;
     }
 }
 //Section-1
