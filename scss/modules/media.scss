@@ -263,6 +263,9 @@
     @media (max-width: 1600px) {
         width: 75%;
     }
+    @media (max-width: 768px) {
+        width: 85%;
+    }
 }
 %burger-icon-act-med {
     @media (max-width: 1600px) {
@@ -282,34 +285,55 @@
 }
 %navi-act-med {
     @media (max-width: 1600px) {
-        width: 95%;
+        width: 92%;
         height: 40px;
+    }
+    @media (max-width: 768px) {
+        width: 85%;
     }
 }
 %navi-cont-act-med {
     @media (max-width: 1600px) {
-        width: 60%;
+        width: 95%;
+    }
+    @media (max-width: 768px) {
+        width: 99%;
     }
 }
 %nav-ul-act-med {
     @media (max-width: 1600px) {
-        display: none;
+        width: 42%;
+    }
+    @media (max-width: 768px) {
+        width: 37%;
+    }
+}
+%nav-li-act-med {
+    @media (max-width: 768px) {
+        &:last-child {
+            width: 69%;
+        }
+    }
+}
+%nav-a-act-med {
+    @media (max-width: 768px) {
+        font-size: 7px;
     }
 }
 %search-act-med {
     @media (max-width: 1600px) {
         width: 600px;
     }
+    @media (max-width: 768px) {
+        width: 330px;
+    }
 }
 %inp-search-act-med {
     @media (max-width: 1600px) {
         width: 540px;
     }
-}
-%soc-ul-act-med {
-    @media (max-width: 1600px) {
-        width: 39%;
-        justify-content: space-between;
+    @media (max-width: 768px) {
+        width: 280px;
     }
 }
 %contact-ul-act-med {
@@ -375,14 +399,16 @@
 %open-socicon-act-med {
     @media (max-width: 1600px) {
         display: flex;
+        height: 40px;
     }
 }
 %open-head-size-act-med {
     @media (max-width: 1600px) {
-        height: 120px;
+        height: 105px;
         flex-direction: column;
     }
 }
+//---------
 //Section-1
 %sect-1-med {
     @media (max-width: 1600px) {
@@ -394,6 +420,9 @@
     @media (max-width: 810px) {
         margin: 75px 0 5px;
     }
+    @media (max-width: 768px) {
+        margin: 1px 0 5px;
+    }
 }
 %sect-1-cont-med {
     @media (max-width: 1600px) {
@@ -403,7 +432,7 @@
         margin: 0 20px;
     }
     @media (max-width: 768px) {
-        margin: 0 15px;
+        margin: 0 1px;
     }
 }
 %sect-1-box-med {
@@ -432,6 +461,7 @@
         height: 190px;
     }
 }
+//----------
 //Section-2
 %sect-2-med {
     @media (max-width: 1600px) {
@@ -943,6 +973,7 @@
         font-size: 15px;
     }
 }
+//----------
 //Section-3
 %sect-3-med {
     @media (max-width: 1600px) {

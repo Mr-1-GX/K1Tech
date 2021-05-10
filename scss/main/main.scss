@@ -169,6 +169,7 @@
     @extend %active-med;
     .nav-box {
         max-width: 1390px;
+        height: 60px;
         @extend %nav-box-act-med;
         .burger-icon {
             display: block;
@@ -188,17 +189,30 @@
             }
         }
         .navi {
-            max-width: 1270px;
+            max-width: 1230px;
             height: 50px;
             @extend %navi-act-med;
             .navi-cont {
-                max-width: 710px;
+                max-width: 1220px;
                 width: 100%;
-                flex-direction: column-reverse;
+                flex-direction: row-reverse;
                 @extend %navi-cont-act-med;
                 .nav-ul {
-                    display: none;
+                    max-width: 470px;
+                    width: 100%;
                     @extend %nav-ul-act-med;
+                    .nav-li {
+                        &:first-child {
+                            display: none;
+                        }
+                        &:last-child {
+                            max-width: 300px;
+                            width: 100%;
+                        }
+                        .nav-a {
+                            @extend %nav-a-act-med;
+                        }
+                    }
                 }
                 .open-menu {
                     display: flex;
@@ -215,9 +229,7 @@
                 }
             }
             .soc-ul {
-                max-width: 550px;
-                justify-content: space-between;
-                @extend %soc-ul-act-med;
+                display: none;
                 .contact-ul {
                     max-width: 60px;
                     width: 100%;
@@ -255,7 +267,6 @@
             }
         }
     }
-    
     .xazi {
         max-width: 1380px;
         margin: 2px auto;
@@ -265,6 +276,8 @@
         display: none;
         @extend %head-flt-cont-act-med;
         .head-flt-ul {
+            max-width: 1420px;
+            width: 100%;
             @extend %head-flt-ul-act-med;
             .head-flt-li {
                 height: 20px;
@@ -278,6 +291,8 @@
         }
     }
     .open-socicon {
+        height: 50px;
+        padding: 5px 0 5px;
         display: flex;
         @extend %open-socicon-act-med;
     }
@@ -287,6 +302,7 @@
     flex-direction: column;
     @extend %open-head-size-act-med;
 }
+//----------
 //Section-1
 .sect-1 {
     @extend %sect-1-size;
