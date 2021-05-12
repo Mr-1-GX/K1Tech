@@ -42,6 +42,7 @@
                 @extend %navi-cont-size;
                 @include d-flex (flex,space-between,center);
                 flex-direction: column;
+                @extend %navi-cont-med;
                 .nav-ul {
                     @extend %nav-ul-size;
                     @include d-flex (flex,space-between,center);
@@ -208,6 +209,7 @@
                         &:last-child {
                             max-width: 300px;
                             width: 100%;
+                            @extend %nav-li-act-med;
                         }
                         .nav-a {
                             @extend %nav-a-act-med;

@@ -15,6 +15,9 @@
     @media (max-width: 1366px) {
         width: 80%;
     }
+    @media (max-width: 1024px) {
+        width: 85%;
+    }
     @media (max-width: 600px) {
         flex-direction: column;
     }
@@ -27,6 +30,10 @@
     @media (max-width: 1366px) {
         max-width: 70px;
         height: 80px;
+    }
+    @media (max-width: 1024px) {
+        max-width: 55px;
+        height: 55px;
     }
     @media (max-width: 962px) {
         max-width: 40px;
@@ -48,7 +55,7 @@
         width: 92%;
     }
     @media (max-width: 1024px) {
-        width: 87%;
+        width: 90%;
     }
     // @media (max-width: $size-0670) {
     //     width: $size-90;
@@ -57,6 +64,11 @@
     // }
     @media (max-width: $size-0600) {
         flex-direction: column;
+    }
+}
+%navi-cont-med {
+    @media (max-width: 1024px) {
+        width: 83%;
     }
 }
 %nav-ul-open-med {
@@ -75,8 +87,14 @@
     @media (max-width: 1366px) {
         width: 85%;
     }
-    @media (max-width: $size-0800) {
-        max-width: $size-0375;
+    @media (max-width: 1280px) {
+        width: 92%;
+    }
+    @media (max-width: 1024px) {
+        width: 95%;
+    }
+    @media (max-width: 800px) {
+        max-width: 375px;
     }
     @media (max-width: 768px) {
         width: 97%;
@@ -104,6 +122,12 @@
     @media (max-width: 1366px) {
         font-size: 18px;
     }
+    @media (max-width: 1280px) {
+        font-size: 15px;
+    }
+    @media (max-width: 1024px) {
+        font-size: 11px;
+    }
     @media (max-width: 962px) {
         font-size: 15px;
     }
@@ -127,9 +151,12 @@
         width: 620px;
         height: 30px;
     }
+    @media (max-width: 1024px) {
+        width: 490px;
+    }
     @media (max-width: 768px) {
         width: 370px;
-        height: 15px;
+        height: 20px;
     }
 }
 %inp-search-med {
@@ -138,6 +165,9 @@
         height: 100%;
         font-size: 10px;
         letter-spacing: 3px;
+    }
+    @media (max-width: 1024px) {
+        width: 430px;
     }
     @media (max-width: 768px) {
         width: 320px;
@@ -194,6 +224,9 @@
     @media (max-width: 1366px) {
         font-size: 20px;
     }
+    @media (max-width: 1024px) {
+        font-size: 15px;
+    }
     @media (max-width: 962px) {
         font-size: 14px;
     }
@@ -208,6 +241,9 @@
     @media (max-width: 1600px) {
         width: 85%;
         padding: 1px 0 1px;
+    }
+    @media (max-width: 1024px) {
+        width: 88%;
     }
 }
 %head-flt-ul-med {
@@ -224,6 +260,10 @@
     @media (max-width: 1366px) {
         font-size: 16px;
     }
+    @media (max-width: 1024px) {
+        font-size: 12px;
+        height: 50px;
+    }
     @media (max-width: 768px) {
         font-size: 10px;
     }
@@ -235,6 +275,10 @@
     @media (max-width: 1366px) {
         max-width: 35px;
     }
+    @media (max-width: 1024px) {
+        max-width: 30px;
+        height: 20px;
+    }
 }
 %head-li-img-med {
     @media (max-width: 1920px) {
@@ -242,6 +286,9 @@
     }
     @media (max-width: 1366px) {
         height: 30px;
+    }
+    @media (max-width: 1024px) {
+        height: 20px;
     }
 }
 
@@ -263,8 +310,14 @@
     @media (max-width: 1600px) {
         width: 75%;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 1280px) {
         width: 85%;
+    }
+    @media (max-width: 1024px) {
+        width: 90%;
+    }
+    @media (max-width: 768px) {
+        width: 88%;
     }
 }
 %burger-icon-act-med {
@@ -288,13 +341,19 @@
         width: 92%;
         height: 40px;
     }
+    @media (max-width: 1024px) {
+        width: 90%;
+    }
     @media (max-width: 768px) {
-        width: 85%;
+        width: 86%;
     }
 }
 %navi-cont-act-med {
     @media (max-width: 1600px) {
         width: 95%;
+    }
+    @media (max-width: 1280px) {
+        width: 100%;
     }
     @media (max-width: 768px) {
         width: 99%;
@@ -304,18 +363,41 @@
     @media (max-width: 1600px) {
         width: 42%;
     }
+    @media (max-width: 1280px) {
+        width: 38%;
+    }
     @media (max-width: 768px) {
-        width: 37%;
+        width: 39%;
     }
 }
 %nav-li-act-med {
+    @media (max-width: 1280px) {
+        &:last-child {
+            width: 66%;
+        }
+    }
     @media (max-width: 768px) {
         &:last-child {
-            width: 69%;
+            width: 63%;
         }
     }
 }
+%fa-act-med {
+    @media (max-width: 1600px) {
+        font-size: 15px;
+        letter-spacing: 5px;
+    }
+    @media (max-width: 1280px) {
+        letter-spacing: 12px;
+    }
+}
 %nav-a-act-med {
+    @media (max-width: 1280px) {
+        font-size: 12px;
+    }
+    @media (max-width: 1024px) {
+        font-size: 10px;
+    }
     @media (max-width: 768px) {
         font-size: 7px;
     }
@@ -324,6 +406,9 @@
     @media (max-width: 1600px) {
         width: 600px;
     }
+    @media (max-width: 1024px) {
+        width: 520px;
+    }
     @media (max-width: 768px) {
         width: 330px;
     }
@@ -331,6 +416,9 @@
 %inp-search-act-med {
     @media (max-width: 1600px) {
         width: 540px;
+    }
+    @media (max-width: 1024px) {
+        width: 460px;
     }
     @media (max-width: 768px) {
         width: 280px;
@@ -346,12 +434,6 @@
 %soc-li-act-med {
     @media (max-width: 1600px) {
         padding: 2px 0 0 0;
-    }
-}
-%fa-act-med {
-    @media (max-width: 1600px) {
-        font-size: 15px;
-        letter-spacing: 5px;
     }
 }
 %contact-box-act-med {
@@ -1611,6 +1693,9 @@
     @media (max-width: 1600px) {
         top: 1px;
     }
+    @media (max-width: 1024px) {
+        margin: 7px auto;
+    }
 }
 %xazi-med {
     @media (max-width: 1600px) {
@@ -1804,55 +1889,5 @@
                 }
             }
         }
-    }
-}
-
-//Desktop
-%desk-med {
-    @media (max-width: $size-01750) {
-        max-width: $size-95;
-    }
-    @media (max-width: $size-01536) {
-        max-width: $size-90;
-    }
-    @media (max-width: $size-01440) {
-        max-width: $size-90;
-    }
-    @media (max-width: $size-01366) {
-        max-width: $size-90;
-    }
-    @media (max-width: $size-01024) {
-        max-width: $size-90;
-    }
-}
-
-//Tablet
-%tab-med {
-    @media (max-width: $size-01280) {
-        max-width: $size-95;
-    }
-    @media (max-width: $size-0962) {
-        max-width: $size-90;
-    }
-    @media (max-width: $size-0800) {
-        font-size: $size-015;
-    }
-    // @media (max-width: $size-0768) {
-    //     max-width: $size-90;
-    // }
-    @media (max-width: $size-0600) {
-        max-width: $size-90;
-    }
-}
-//Mobile
-%mob-med {
-    @media (max-width: $size-0414) {
-        max-width: $size-95;
-    }
-    @media (max-width: $size-0375) {
-        max-width: $size-90;
-    }
-    @media (max-width: $size-0360) {
-        max-width: $size-90;
     }
 }
