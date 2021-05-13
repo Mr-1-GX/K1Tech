@@ -43,7 +43,7 @@
         max-width: 40px;
         height: 45px;
     }
-    @media (max-width: $size-0600) {
+    @media (max-width: 600px) {
         margin: 0 auto;
     }
 }
@@ -57,12 +57,7 @@
     @media (max-width: 1024px) {
         width: 90%;
     }
-    // @media (max-width: $size-0670) {
-    //     width: $size-90;
-    //     align-items: flex-end;
-    //     flex-direction: column-reverse;
-    // }
-    @media (max-width: $size-0600) {
+    @media (max-width: 600px) {
         flex-direction: column;
     }
 }
@@ -71,12 +66,20 @@
         width: 83%;
     }
 }
+%head-xazi-med {
+    @media (max-width: 1600px) {
+        top: 1px;
+    }
+    @media (max-width: 1024px) {
+        margin: 7px auto;
+    }
+}
 %nav-ul-open-med {
-    @media (max-width: $size-0600) {
+    @media (max-width: 600px) {
         .open-menu {
             display: block;
             text-align: center;
-            padding: $size-020 0;
+            padding: 20px 0;
         }
     }
 }
@@ -93,26 +96,56 @@
     @media (max-width: 1024px) {
         width: 95%;
     }
+    @media (max-width: 962px) {
+        margin-bottom: 1px;
+    }
     @media (max-width: 800px) {
         max-width: 375px;
     }
     @media (max-width: 768px) {
         width: 97%;
     }
-    
-    // @media (max-width: $size-0670) {
-    //     padding: $size-010 0;
-    //     max-width: $size-0500;
-    // }
-    @media (max-width: $size-0600) {
+    @media (max-width: 600px) {
         display: none;
     }
 }
 %nav-li-med {
-    @media (max-width: $size-0600) {
-        max-width: $size-0110;
+    @media (max-width: 600px) {
+        max-width: 110px;
         margin: 0 auto;
-        padding: $size-05 0;
+        padding: 5px 0;
+    }
+}
+%geo-img-med {
+    @media (max-width: 962px) {
+        width: 40%;
+    }
+}
+%geo-med {
+    @media (max-width: 962px) {
+        height: 18px;
+    }
+}
+%nav-fa-med {
+    @media (max-width: 1600px) {
+        font-size: 20px;
+    }
+    @media (max-width: 1366px) {
+        font-size: 19px;
+    }
+    @media (max-width: 962px) {
+        font-size: 15px;
+        letter-spacing: 12px;
+    }
+    @media (max-width: 834px) {
+        font-size: 12px;
+    }
+    @media (max-width: 768px) {
+        font-size: 11px;
+        letter-spacing: 10px;
+    }
+    @media (max-width: 600px) {
+        font-size: 9px;
     }
 }
 %nav-a-med {
@@ -129,7 +162,7 @@
         font-size: 11px;
     }
     @media (max-width: 962px) {
-        font-size: 15px;
+        font-size: 11px;
     }
     @media (max-width: 834px) {
         font-size: 12px;
@@ -141,10 +174,6 @@
         letter-spacing: 1px;
         font-size: 8px;
     }
-    
-    // @media (max-width: $size-0670) {
-    //     font-size: $size-015;
-    // }
 }
 %search-med {
     @media (max-width: 1600px) {
@@ -153,6 +182,9 @@
     }
     @media (max-width: 1024px) {
         width: 490px;
+    }
+    @media (max-width: 962px) {
+        height: 20px;
     }
     @media (max-width: 768px) {
         width: 370px;
@@ -178,6 +210,9 @@
     @media (max-width: 1600px) {
         font-size: 20px;
     }
+    @media (max-width: 962px) {
+        font-size: 15px;
+    }
     @media (max-width: 768px) {
         font-size: 15px;
         padding: 0 12px 5px;
@@ -187,17 +222,15 @@
     @media (max-width: 1366px) {
         width: 45%;
     }
+    @media (max-width: 962px) {
+        margin-top: 5px;
+    }
     @media (max-width: 600px) {
         justify-content: flex-end;
-        padding-right: $size-030;
+        padding-right: 30px;
         display: none;
         width: 55%;
     }
-    // @media (max-width: $size-0670) {
-    //     padding-right: $size-030;
-    //     justify-content: flex-end;
-    //     max-width: $size-0360;
-    // }
 }
 %open-soci-med {
     @media (max-width: 600px) {
@@ -366,6 +399,9 @@
     @media (max-width: 1280px) {
         width: 38%;
     }
+    @media (max-width: 1280px) {
+        width: 37%;
+    }
     @media (max-width: 768px) {
         width: 39%;
     }
@@ -376,19 +412,31 @@
             width: 66%;
         }
     }
+    @media (max-width: 1024px) {
+        &:last-child {
+            width: 68%;
+        }
+    }
     @media (max-width: 768px) {
         &:last-child {
             width: 63%;
         }
     }
 }
-%fa-act-med {
+%nav-fa-act-med {
     @media (max-width: 1600px) {
         font-size: 15px;
         letter-spacing: 5px;
     }
     @media (max-width: 1280px) {
         letter-spacing: 12px;
+    }
+    @media (max-width: 1024px) {
+        font-size: 13px;
+        letter-spacing: 12px;
+    }
+    @media (max-width: 962px) {
+        letter-spacing: 10px;
     }
 }
 %nav-a-act-med {
@@ -397,6 +445,9 @@
     }
     @media (max-width: 1024px) {
         font-size: 10px;
+    }
+    @media (max-width: 962px) {
+        font-size: 9px;
     }
     @media (max-width: 768px) {
         font-size: 7px;
@@ -407,7 +458,10 @@
         width: 600px;
     }
     @media (max-width: 1024px) {
-        width: 520px;
+        width: 500px;
+    }
+    @media (max-width: 962px) {
+        width: 470px;
     }
     @media (max-width: 768px) {
         width: 330px;
@@ -418,7 +472,10 @@
         width: 540px;
     }
     @media (max-width: 1024px) {
-        width: 460px;
+        width: 440px;
+    }
+    @media (max-width: 962px) {
+        width: 420px;
     }
     @media (max-width: 768px) {
         width: 280px;
@@ -448,10 +505,29 @@
         font-size: 15px;
     }
 }
+%soc-fa-act-med {
+    @media (max-width: 1600px) {
+        font-size: 15px;
+        letter-spacing: 5px;
+    }
+    @media (max-width: 1280px) {
+        letter-spacing: 12px;
+    }
+    @media (max-width: 1024px) {
+        font-size: 13px;
+    }
+}
 %xazi-act-med {
     @media (max-width: 1600px) {
         width: 75%;
         margin: 0 auto;
+    }
+    @media (max-width: 1280px) {
+        width: 85%;
+    }
+    @media (max-width: 962px) {
+        width: 89%;
+        margin: 1px auto;
     }
 }
 %head-flt-cont-act-med {
@@ -463,6 +539,9 @@
 %head-flt-ul-act-med {
     @media (max-width: 1600px) {
         width: 90%;
+    }
+    @media (max-width: 1025px) {
+        width: 95%;
     }
 }
 %head-flt-li-act-med {
@@ -489,6 +568,9 @@
         height: 105px;
         flex-direction: column;
     }
+    @media (max-width: 962px) {
+        height: 85px;
+    }
 }
 //---------
 //Section-1
@@ -498,6 +580,9 @@
     }
     @media (max-width: 1366px) {
         margin: 3px 0 5px;
+    }
+    @media (max-width: 1280px) {
+        margin: 15px 0 15px;
     }
     @media (max-width: 810px) {
         margin: 75px 0 5px;
@@ -553,6 +638,9 @@
     }
     @media (max-width: 1366px) {
         height: 1145px;
+    }
+    @media (max-width: 1280px) {
+        height: 1100px;
     }
     @media (max-width: 1024px) {
         height: 1020px;
@@ -824,8 +912,11 @@
     @media (max-width: 1366px) {
         height: 780px;
     }
+    @media (max-width: 1280px) {
+        height: 450px;
+    }
     @media (max-width: 1024px) {
-        height: 630px;
+        height: 320px;
     }
     @media (max-width: 834px) {
         height: 545px;
@@ -1350,8 +1441,14 @@
         width: 95%;
         height: 630px;
     }
+    @media (max-width: 1280px) {
+        height: 550px;
+    }
     @media (max-width: 1024px) {
         height: 525px;
+    }
+    @media (max-width: 962px) {
+        height: 380px;
     }
     @media (max-width: 834px) {
         height: 450px;
@@ -1373,8 +1470,14 @@
         width: 60%;
         height: 615px;
     }
+    @media (max-width: 1280px) {
+        height: 540px;
+    }
     @media (max-width: 1024px) {
         height: 520px;
+    }
+    @media (max-width: 962px) {
+        height: 470px;
     }
     @media (max-width: 834px) {
         height: 430px;
@@ -1460,8 +1563,14 @@
         width: 38%;
         height: 615px;
     }
+    @media (max-width: 1280px) {
+        height: 540px;
+    }
     @media (max-width: 1024px) {
         height: 520px;
+    }
+    @media (max-width: 962px) {
+        height: 470px;
     }
     @media (max-width: 834px) {
         height: 430px;
@@ -1483,8 +1592,14 @@
         width: 100%;
         height: 300px;
     }
+    @media (max-width: 1280px) {
+        height: 265px;
+    }
     @media (max-width: 1024px) {
         height: 255px;
+    }
+    @media (max-width: 962px) {
+        height: 230px;
     }
     @media (max-width: 834px) {
         height: 210px;
@@ -1507,6 +1622,9 @@
     }
     @media (max-width: 1366px) {
         height: 240px;
+    }
+    @media (max-width: 1280px) {
+        height: 210px;
     }
     @media (max-width: 1024px) {
         height: 180px;
@@ -1689,14 +1807,7 @@
     }
 }
 //FOOTER
-%head-xazi-med {
-    @media (max-width: 1600px) {
-        top: 1px;
-    }
-    @media (max-width: 1024px) {
-        margin: 7px auto;
-    }
-}
+
 %xazi-med {
     @media (max-width: 1600px) {
         width: 95%;

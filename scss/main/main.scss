@@ -54,14 +54,16 @@
                         .geo-img {
                             max-width: 30px;
                             margin-right: 10px;
+                            @extend %geo-img-med;
                             .geo {
                                 width: 100%;
                                 height: 25px;
+                                @extend %geo-med;
                             }
                         }
                         .fa {
                             @extend %font-fa;
-                            @extend %fa-med;
+                            @extend %nav-fa-med;
                         }
                         .nav-a {
                             @extend %nav-a-h1-font;
@@ -211,6 +213,9 @@
                             width: 100%;
                             @extend %nav-li-act-med;
                         }
+                        .fa {
+                            @extend %nav-fa-act-med;
+                        }
                         .nav-a {
                             @extend %nav-a-act-med;
                         }
@@ -243,7 +248,7 @@
                         .fa {
                             font-size: 22px;
                             letter-spacing: 5px;
-                            @extend %fa-act-med;
+                            @extend %soc-fa-act-med;
                         }
                     }
                 }
@@ -261,7 +266,7 @@
                             .fa {
                                 font-size: 22px;
                                 letter-spacing: 5px;
-                                @extend %fa-act-med;
+                                @extend %soc-fa-act-med;
                             }
                         }
                     }
