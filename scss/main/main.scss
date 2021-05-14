@@ -508,11 +508,12 @@
             @extend %border-def;
             @extend %cont-1-sm-box-med;
             .cont-1-sm-img {
-                margin-left: $size-050;
+                margin-left: 50px;
                 max-width: 220px;
                 @extend %cont-1-sm-img-med;
                 .cont-1-sm-img-box {
-                    width: $size-0;
+                    width: 100%;
+                    @extend %cont-1-sm-img-box-med;
                 }
             }
             .cont-1-sm-h3 {
