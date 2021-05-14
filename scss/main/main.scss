@@ -456,7 +456,7 @@
                                 @include d-flex (flex,space-between,center);
                                 @extend %flt-icon-med;
                                 .flt-icon-box {
-                                    width: $size-0;
+                                    width: 100%;
                                 }
                             }
                             .flt-ico-nm {

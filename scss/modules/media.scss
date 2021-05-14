@@ -749,6 +749,9 @@
     @media (max-width: 768px) {
         margin: 1px 0 5px;
     }
+    @media (max-width: 601px) {
+        margin: 10px 0 0;
+    }
 }
 %sect-1-cont-med {
     @media (max-width: 1600px) {
@@ -820,7 +823,7 @@
         height: 740px;
     }
     @media (max-width: 601px) {
-        height: 700px;
+        height: 620px;
     }
     @media (max-width: 600px) {
         height: 1440px;
@@ -840,6 +843,10 @@
     }
     @media (max-width: 768px) {
         height: 580px;
+    }
+    @media (max-width: 601px) {
+        height: 500px;
+        margin: 1px 0;
     }
     @media (max-width: 600px) {
         height: 1040px;
@@ -872,6 +879,9 @@
     @media (max-width: 768px) {
         height: 568px;
         padding-top: 2px;
+    }
+    @media (max-width: 601px) {
+        height: 487px;
     }
     @media (max-width: 600px) {
         height: 1040px;
@@ -958,9 +968,6 @@
         letter-spacing: 2px;
         margin: 0 5px 10px 0;
     }
-    @media (max-width: 601px) {
-        font-size: 11px;
-    }
     @media (max-width: 600px) {
         font-size: 17px;
     }
@@ -982,6 +989,9 @@
         letter-spacing: 1px;
         margin: 0 5px 1px 0;
         padding-top: 3px;
+    }
+    @media (max-width: 601px) {
+        font-size: 11px;
     }
     @media (max-width: 600px) {
         font-size: 16px;
@@ -1035,7 +1045,7 @@
     }
     @media (max-width: 601px) {
         font-size: 7px;
-        height: 26px;
+        height: 23px;
     }
     @media (max-width: 600px) {
         font-size: 11px;
@@ -1065,6 +1075,9 @@
         height: 20px;
         margin: 1px;
     }
+    @media (max-width: 601px) {
+        height: 16px;
+    }
     @media (max-width: 600px) {
         max-width: 50px;
         height: 40px;
@@ -1088,6 +1101,9 @@
     }
     @media (max-width: 768px) {
         height: 20px;
+    }
+    @media (max-width: 601px) {
+        height: 16px;
     }
     @media (max-width: 600px) {
         height: 35px;
@@ -1118,7 +1134,7 @@
         height: 220px;
     }
     @media (max-width: 601px) {
-        height: 290px;
+        height: 250px;
     }
     @media (max-width: 600px) {
         height: 660px;
@@ -1142,6 +1158,9 @@
     }
     @media (max-width: 768px) {
         height: 567px;
+    }
+    @media (max-width: 601px) {
+        height: 487px;
     }
     @media (max-width: 600px) {
         width: 65%;
@@ -1179,6 +1198,9 @@
     @media (max-width: 768px) {
         height: 280px;
     }
+    @media (max-width: 601px) {
+        height: 240px;
+    }
     @media (max-width: 600px) {
         width: 95%;
         height: 340px;
@@ -1202,6 +1224,9 @@
     }
     @media (max-width: 768px) {
         height: 210px;
+    }
+    @media (max-width: 601px) {
+        height: 160px;
     }
     @media (max-width: 600px) {
         height: 230px;
@@ -1233,6 +1258,9 @@
     }
     @media (max-width: 768px) {
         height: 145px;
+    }
+    @media (max-width: 601px) {
+        height: 110px;
     }
     @media (max-width: 600px) {
         height: 190px;
@@ -1288,6 +1316,10 @@
     @media (max-width: 768px) {
         height: 90px;
     }
+    @media (max-width: 601px) {
+        width: 98%;
+        height: 70px;
+    }
     @media (max-width: 600px) {
         width: 99%;
     }
@@ -1322,6 +1354,9 @@
     }
     @media (max-width: 834px) {
         height: 130px;
+    }
+    @media (max-width: 601px) {
+        height: 100px;
     }
     @media (max-width: 600px) {
         height: 340px;
@@ -1528,6 +1563,9 @@
     @media (max-width: 768px) {
         height: 110px;
     }
+    @media (max-width: 601px) {
+        height: 78px;
+    }
     @media (max-width: 600px) {
         height: 230px;
         margin: 0 0 5px 0;
@@ -1553,6 +1591,9 @@
     }
     @media (max-width: 768px) {
         height: 65px;
+    }
+    @media (max-width: 601px) {
+        height: 55px;
     }
     @media (max-width: 600px) {
         width: 96%;
@@ -1581,6 +1622,9 @@
     }
     @media (max-width: 768px) {
         height: 67px;
+    }
+    @media (max-width: 601px) {
+        height: 50px;
     }
     @media (max-width: 600px) {
         height: 95px;
@@ -1614,6 +1658,11 @@
         letter-spacing: 3px;
         padding: 2px 0;
     }
+    @media (max-width: 601px) {
+        font-size: 9px;
+        letter-spacing: 2px;
+        padding: 1px 0;
+    }
     @media (max-width: 600px) {
         font-size: 18px;
     }
@@ -1631,6 +1680,9 @@
     }
     @media (max-width: 768px) {
         height: 70px;
+    }
+    @media (max-width: 601px) {
+        height: 55px;
     }
     @media (max-width: 600px) {
         height: 100px;
@@ -1656,6 +1708,9 @@
     }
     @media (max-width: 768px) {
         height: 85px;
+    }
+    @media (max-width: 601px) {
+        height: 65px;
     }
     @media (max-width: 600px) {
         height: 110px;
@@ -1684,6 +1739,9 @@
     @media (max-width: 768px) {
         height: 93px;
     }
+    @media (max-width: 601px) {
+        height: 75px;
+    }
     @media (max-width: 600px) {
         width: 80%;
         height: 105px;
@@ -1711,6 +1769,9 @@
     @media (max-width: 768px) {
         height: 100px;
     }
+    @media (max-width: 601px) {
+        height: 70px;
+    }
     @media (max-width: 600px) {
         height: 110px;
     }
@@ -1737,6 +1798,9 @@
     }
     @media (max-width: 768px) {
         height: 380px;
+    }
+    @media (max-width: 601px) {
+        height: 310px;
     }
     @media (max-width: 600px) {
         height: 570px;
@@ -1770,6 +1834,9 @@
     @media (max-width: 768px) {
         height: 380px;
     }
+    @media (max-width: 601px) {
+        height: 300px;
+    }
     @media (max-width: 600px) {
         width: 99%;
         height: 360px;
@@ -1795,6 +1862,9 @@
     }
     @media (max-width: 768px) {
         height: 240px;
+    }
+    @media (max-width: 601px) {
+        height: 160px;
     }
 }
 %tv-text-cont-med {
@@ -1866,6 +1936,9 @@
     @media (max-width: 768px) {
         height: 380px;
     }
+    @media (max-width: 601px) {
+        height: 300px;
+    }
     @media (max-width: 600px) {
         width: 99%;
         height: 200px;
@@ -1897,6 +1970,9 @@
     }
     @media (max-width: 768px) {
         height: 186px;
+    }
+    @media (max-width: 601px) {
+        height: 148px;
     }
     @media (max-width: 600px) {
         width: 49%;
@@ -1934,6 +2010,9 @@
     }
     @media (max-width: 768px) {
         height: 140px;
+    }
+    @media (max-width: 601px) {
+        height: 100px;
     }
 }
 %tvh-text-cont-med {
