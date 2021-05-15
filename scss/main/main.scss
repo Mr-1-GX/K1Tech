@@ -118,10 +118,12 @@
                 .contact-ul {
                     @include d-flex (flex,space-between,end);
                     flex-direction: column;
+                    @extend %contact-ul-med;
                 }
                 .contact-box {
                     @include d-flex (flex,space-between,end);
                     flex-direction: column;
+                    @extend %contact-box-med;
                 }
             }
         }
