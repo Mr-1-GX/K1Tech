@@ -113,6 +113,11 @@
                         @extend %soc-a-font;
                         @extend %hover-def;
                         @extend %soc-a-med;
+                        .soc-a-h2 {
+                            @extend %soc-a-font;
+                            @extend %hover-def;
+                            @extend %soc-a-h2-med;
+                        }
                     }
                 }
                 .contact-ul {
@@ -129,6 +134,7 @@
         }
         .burger-icon {
             display: none;
+            @extend %burger-icon-med;
         }
     }
     .xazi {
@@ -233,6 +239,9 @@
                         .inp-search {
                             width: 640px;
                             @extend %inp-search-act-med;
+                        }
+                        .srch-fa {
+                            @extend %srch-fa-act-med;
                         }
                     }
                 }
@@ -356,6 +365,9 @@
         @extend %sect-2-big-size;
         @include d-flex (flex,space-around,center);
         @extend %sect-2-big-med;
+        .open-sect-2-flt-size {
+            @extend %open-sect-2-flt-med;
+        }
         .sect-2-flt {
             @extend %sect-2-flt-size;
             @include d-flex (flex,end,center);
