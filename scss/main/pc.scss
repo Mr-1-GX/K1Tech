@@ -1,51 +1,210 @@
 .flt-href {
     margin-left: 20px;
 }
-.pc-1-list-box {
-    max-width: 1220px;
+.pc-1-list {
+    max-width: 1750px;
     width: 100%;
-    height: 330px;
-    background-color: $color-01;
     @include d-flex (flex,space-between,center);
-    .pc-1-img {
-        max-width: 316px;
-        height: 420px;
-        @include d-flex (flex,center,center);
-        flex-direction: column;
-        .pc-1-img-hrf {
-            max-width: 256px;
-            height: 250px;
-            background-color: $color-010;
-            @include d-flex (flex,center,end);
-            .pc-1-img-box {
+    flex-direction: column;
+    .pc-1-list-box {
+        max-width: 1160px;
+        width: 100%;
+        height: 290px;
+        background-color: $color-01;
+        @include d-flex (flex,space-between,center);
+        .pc-1-img {
+            max-width: 320px;
+            width: 100%;
+            height: 280px;
+            @include d-flex (flex,center,center);
+            flex-direction: column;
+            .pc-1-img-hrf {
+                max-width: 140px;
+                height: 140px;
+                @include d-flex (flex,center,end);
+                .pc-1-img-box {
+                    width: 100%;
+                    height: 120px;
+                }
+            }
+            .pc-1-img-text {
+                max-width: 600px;
                 width: 100%;
-                height: 240px;
+                height: 70px;
+                padding: 10px 20px;
+                @include d-flex (flex,space-between,end);
+                .pc-flt-icon {
+                    max-width: 47px;
+                    @include d-flex (flex,space-between,center);
+                    .pc-flt-icon-box {
+                        width: 100%;
+                    }
+                }
+                .pc-flt-ico-nm {
+                    max-width: 250px;
+                    width: 100%;
+                    height: 65px;
+                    padding-top: 5px;
+                    text-align: end;
+                    .pc-ico-nm-h2 {
+                        font-size: 21px;
+                        margin: 0 15px 20px 0;
+                    }
+                    .pc-xazi {
+                        max-width: 250px;
+                        width: 100%;
+                        margin:10px auto;
+                        content: ' ';
+                        color: $color-06;
+                        @include border ($xazi-brd, solid, $color-08);
+                        box-shadow: $xazi-shad $color-02;
+                    }
+                }
             }
         }
-        .cont-1-img-text {
-            @extend %cont-1-img-text-size;
+    }
+    .pc-1-slide-box {
+        max-width: 1160px;
+        width: 100%;
+        height: 350px;
+        margin-bottom: 30px;
+        background-color: $color-01;
+        @include d-flex (flex,space-between,center);
+        flex-direction: column;
+        .pc-slide-img-text {
+            max-width: 1160px;
+            width: 100%;
+            height: 110px;
+            padding: 10px 20px;
             @include d-flex (flex,space-between,end);
-            @extend %cont-1-img-text-med;
-            .flt-icon {
-                @extend %flt-icon-size;
+            .pc-slide-icon {
+                max-width: 70px;
                 @include d-flex (flex,space-between,center);
-                @extend %flt-icon-med;
-                .flt-icon-box {
+                .pc-slide-icon-box {
                     width: 100%;
                 }
             }
-            .flt-ico-nm {
-                @extend %flt-ico-nm-2-size;
+            .pc-slide-nm {
+                max-width: 1050px;
+                width: 100%;
+                height: 80px;
+                padding-top: 30px;
                 text-align: end;
-                @extend %flt-ico-nm-2-med;
-                .ico-nm-h2 {
-                    font-size: 25px;
-                    @extend %ico-nm-h2-size;
-                    @extend %ico-nm-h2-med-2;
+                .pc-slide-nm-h2 {
+                    font-size: 21px;
+                    margin: 0 15px 20px 0;
                 }
-                .xazi {
-                    @extend %xazi;    
+                .pc-slide-xazi {
+                    max-width: 1030px;
+                    width: 100%;
+                    margin:10px auto;
+                    content: ' ';
+                    color: $color-06;
+                    @include border ($xazi-brd, solid, $color-08);
+                    box-shadow: $xazi-shad $color-02;
                 }
+            }
+        }
+        .pc-best {
+            max-width: 1160px;
+            width: 100%;
+            height: 240px;
+            @include d-flex (flex,space-between,center);
+            .slide-4-box {
+                max-width: 410px;
+                width: 100%;
+                height: 220px;
+                @include d-flex (flex,space-around,center);
+                @extend %border-def;
+                background-color: $color-01;
+                .pc-4-img {
+                    max-width: 250px;
+                    width: 100%;
+                    height: 215px;
+                    background-color: $color-010;
+                    @include d-flex (flex,space-around,center);
+                    .pc-4-img-box {
+                        width: 100%;
+                    }
+                }
+                .pc-4-text {
+                    max-width: 190px;
+                    width: 100%;
+                    height: 215px;
+                    .pc-4-h3 {
+                        margin: 10px;
+                        @extend %sect-4-h3-font;
+                    }
+                    .pc-4-p {
+                        @extend %sect-4-p-size;
+                        @extend %sect-4-p-font;
+                    }
+                }
+            }
+        }
+    }
+    .pc-1-brands-box {
+        max-width: 1160px;
+        width: 100%;
+        height: 240px;
+        background-color: $color-01;
+        @include d-flex (flex,space-between,center);
+        flex-direction: column;
+        .pc-slide-img-text {
+            max-width: 1160px;
+            width: 100%;
+            height: 110px;
+            padding: 10px 20px;
+            @include d-flex (flex,space-between,end);
+            .pc-slide-icon {
+                max-width: 70px;
+                @include d-flex (flex,space-between,center);
+                .pc-slide-icon-box {
+                    width: 100%;
+                }
+            }
+            .pc-slide-nm {
+                max-width: 1050px;
+                width: 100%;
+                height: 80px;
+                padding-top: 30px;
+                text-align: end;
+                .pc-slide-nm-h2 {
+                    font-size: 21px;
+                    margin: 0 15px 20px 0;
+                }
+                .pc-slide-xazi {
+                    max-width: 1030px;
+                    width: 100%;
+                    margin:10px auto;
+                    content: ' ';
+                    color: $color-06;
+                    @include border ($xazi-brd, solid, $color-08);
+                    box-shadow: $xazi-shad $color-02;
+                }
+            }
+        }
+        .pc-brends {
+            max-width: 1160px;
+            width: 100%;
+            height: 180px;
+            margin: 10px auto;
+            @include d-flex (flex,space-between,center);
+            .pc-4-box {
+                max-width: 330px;
+                width: 100%;
+                height: 110px;
+                @include d-flex (flex,space-around,center);
+                .pc-4-img {
+                    max-width: 150px;
+                    height: 115px;
+                    @include d-flex (flex,space-around,center);
+                    .pc-4-img-box {
+                        width: 100%;
+                        height: 80px;
+                    }
+                }
+                
             }
         }
     }

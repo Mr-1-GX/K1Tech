@@ -785,7 +785,7 @@
                 @include d-flex (flex,space-around,center);
                 @extend %sect-4-img-med;
                 .sect-4-img-box {
-                    width: $size-0-def;
+                    width: 100px;
                 }
             }
             .sect-4-text {
