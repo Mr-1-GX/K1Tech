@@ -448,7 +448,6 @@
                         @extend %cont-1-img-med;
                         .cont-1-img-hrf {
                             @extend %cont-1-img-hrf-size;
-                            background-color: $color-010;
                             @include d-flex (flex,center,end);
                             @extend %cont-1-img-hrf-med;
                             .cont-1-img-box {

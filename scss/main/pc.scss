@@ -1,5 +1,48 @@
+
 .flt-href {
-    margin-left: 20px;
+    margin-left: 50px;
+    color: $color-05;
+}
+.pc-navi {
+    width: 100%;
+    height: 50px;
+    @extend %border-def;
+    @include d-flex (flex,end,center);
+    background-color: $color-010;
+    .pc-fa {
+        font-size: 27px;
+        color: $color-02;
+        text-shadow: 0 0 1px $color-03;
+        border-radius: 5px;
+        margin-left: 20px;
+        &:after {
+            max-width: 20px;
+            width: 100%;
+            margin: 0 20px;
+            content: ' ';
+            color: $color-06;
+            @include border ($xazi-brd, solid, $color-08);
+            box-shadow: $xazi-shad $color-02;
+        }
+    }
+    .pc-navi-href {
+        .pc-navi-h4 {
+            font-size: 21px;
+            color: $color-03;
+            font-family: 'archy-B';
+            letter-spacing: 2px;
+            text-shadow: 0 0 1px $color-02;
+            &:after {
+                max-width: 20px;
+                width: 100%;
+                margin: 0 20px;
+                content: ' ';
+                color: $color-06;
+                @include border ($xazi-brd, solid, $color-08);
+                box-shadow: $xazi-shad $color-02;
+            }
+        }
+    }
 }
 .pc-1-list {
     max-width: 1750px;
@@ -41,7 +84,7 @@
                     }
                 }
                 .pc-flt-ico-nm {
-                    max-width: 250px;
+                    max-width: 215px;
                     width: 100%;
                     height: 65px;
                     padding-top: 5px;
@@ -51,7 +94,6 @@
                         margin: 0 15px 20px 0;
                     }
                     .pc-xazi {
-                        max-width: 250px;
                         width: 100%;
                         margin:10px auto;
                         content: ' ';
@@ -64,7 +106,7 @@
         }
     }
     .pc-1-slide-box {
-        max-width: 1160px;
+        max-width: 1260px;
         width: 100%;
         height: 350px;
         margin-bottom: 30px;
@@ -72,7 +114,7 @@
         @include d-flex (flex,space-between,center);
         flex-direction: column;
         .pc-slide-img-text {
-            max-width: 1160px;
+            max-width: 1250px;
             width: 100%;
             height: 110px;
             padding: 10px 20px;
@@ -85,7 +127,7 @@
                 }
             }
             .pc-slide-nm {
-                max-width: 1050px;
+                max-width: 1120px;
                 width: 100%;
                 height: 80px;
                 padding-top: 30px;
@@ -95,7 +137,6 @@
                     margin: 0 15px 20px 0;
                 }
                 .pc-slide-xazi {
-                    max-width: 1030px;
                     width: 100%;
                     margin:10px auto;
                     content: ' ';
@@ -111,7 +152,7 @@
             height: 240px;
             @include d-flex (flex,space-between,center);
             .slide-4-box {
-                max-width: 410px;
+                max-width: 370px;
                 width: 100%;
                 height: 220px;
                 @include d-flex (flex,space-around,center);
@@ -141,17 +182,37 @@
                     }
                 }
             }
+            .slick-dots {
+                bottom: -40px;
+                li {
+                    button {
+                        &:before {
+                            color: $color-06;
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .slick-active {
+                    margin: 1px 15px;
+                    button {
+                        &:before {
+                            color: $color-02;
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
         }
     }
     .pc-1-brands-box {
-        max-width: 1160px;
+        max-width: 1250px;
         width: 100%;
         height: 240px;
         background-color: $color-01;
         @include d-flex (flex,space-between,center);
         flex-direction: column;
         .pc-slide-img-text {
-            max-width: 1160px;
+            max-width: 1250px;
             width: 100%;
             height: 110px;
             padding: 10px 20px;
@@ -164,7 +225,7 @@
                 }
             }
             .pc-slide-nm {
-                max-width: 1050px;
+                max-width: 1120px;
                 width: 100%;
                 height: 80px;
                 padding-top: 30px;
@@ -174,7 +235,6 @@
                     margin: 0 15px 20px 0;
                 }
                 .pc-slide-xazi {
-                    max-width: 1030px;
                     width: 100%;
                     margin:10px auto;
                     content: ' ';
@@ -207,5 +267,17 @@
                 
             }
         }
+    }
+}
+.pc-baner-s {
+    width: 100%;
+    height: 80px;
+    background-color: $color-02;
+    @extend %border-def;
+    padding-top: 25px;
+    .pc-baner-s-p {
+        font-size: 30px;
+        text-align: center;
+        @extend %font-baner-s-p;
     }
 }
