@@ -842,6 +842,7 @@
     flex-direction: column;
     margin-top: 40px;
     @extend %border-def;
+    @extend %foot-bg-med;
     .foot-lok {
         @extend %foot-lok-size;
         @include d-flex (flex,space-around,center);

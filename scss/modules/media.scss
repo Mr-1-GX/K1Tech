@@ -983,7 +983,7 @@
 //Section-2
 %sect-2-med {
     @media (max-width: 1600px) {
-        margin: 1px auto;
+        margin: 20px auto;
         width: 99%;
         height: 1280px;
     }
@@ -1020,7 +1020,7 @@
 }
 %sect-2-big-med {
     @media (max-width: 1600px) {
-        width: 99%;
+        width: 95%;
         height: 1080px;
         margin: 1px 0;
     }
@@ -1455,7 +1455,7 @@
 }
 %cont-1-img-box-med {
     @media (max-width: 1600px) {
-        height: 320px;
+        height: 270px;
     }
     @media (max-width: 1366px) {
         height: 250px;
@@ -2609,6 +2609,11 @@
     }
     @media (max-width: 414px) {
         flex-direction: column;
+    }
+}
+%foot-bg-med {
+    @media (max-width: 1536px) {
+        margin-top: 1px;
     }
 }
 %foot-cont-med {
