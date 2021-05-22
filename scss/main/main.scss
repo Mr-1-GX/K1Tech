@@ -356,6 +356,50 @@
     background-color: $sect-2-bg;
     flex-direction: column;
     @extend %sect-2-med;
+    .pro-navi {
+        width: 100%;
+        height: 50px;
+        @extend %border-def;
+        @include d-flex (flex,end,center);
+        background-color: $color-010;
+        @extend %pro-navi-med;
+        .pro-fa {
+            font-size: 27px;
+            color: $color-02;
+            text-shadow: 0 0 1px $color-03;
+            border-radius: 5px;
+            margin-left: 20px;
+            @extend %pro-fa-med;
+            &:after {
+                max-width: 20px;
+                width: 100%;
+                margin: 0 20px;
+                content: ' ';
+                color: $color-06;
+                @include border ($xazi-brd, solid, $color-08);
+                box-shadow: $xazi-shad $color-02;
+            }
+        }
+        .pro-navi-href {
+            .pro-navi-h4 {
+                font-size: 21px;
+                color: $color-03;
+                font-family: 'archy-B';
+                letter-spacing: 2px;
+                text-shadow: 0 0 1px $color-02;
+                @extend %pro-navi-h4-med;
+                &:after {
+                    max-width: 20px;
+                    width: 100%;
+                    margin: 0 20px;
+                    content: ' ';
+                    color: $color-06;
+                    @include border ($xazi-brd, solid, $color-08);
+                    box-shadow: $xazi-shad $color-02;
+                }
+            }
+        }
+    }
     .sect-2-big {
         @extend %sect-2-big-size;
         @include d-flex (flex,space-around,center);

@@ -3,55 +3,11 @@
     margin-left: 50px;
     color: $color-05;
 }
-.pc-navi {
-    width: 100%;
-    height: 50px;
-    @extend %border-def;
-    @include d-flex (flex,end,center);
-    background-color: $color-010;
-    @extend %pc-navi-med;
-    .pc-fa {
-        font-size: 27px;
-        color: $color-02;
-        text-shadow: 0 0 1px $color-03;
-        border-radius: 5px;
-        margin-left: 20px;
-        @extend %pc-fa-med;
-        &:after {
-            max-width: 20px;
-            width: 100%;
-            margin: 0 20px;
-            content: ' ';
-            color: $color-06;
-            @include border ($xazi-brd, solid, $color-08);
-            box-shadow: $xazi-shad $color-02;
-        }
-    }
-    .pc-navi-href {
-        .pc-navi-h4 {
-            font-size: 21px;
-            color: $color-03;
-            font-family: 'archy-B';
-            letter-spacing: 2px;
-            text-shadow: 0 0 1px $color-02;
-            @extend %pc-navi-h4-med;
-            &:after {
-                max-width: 20px;
-                width: 100%;
-                margin: 0 20px;
-                content: ' ';
-                color: $color-06;
-                @include border ($xazi-brd, solid, $color-08);
-                box-shadow: $xazi-shad $color-02;
-            }
-        }
-    }
-}
 .sect-2-big {
     .pc-sect-2-box {
         max-width: 1320px;
         width: 100%;
-        height: 1285px;
+        height: 1185px;
         @include d-flex (flex,space-between,center);
         flex-direction: column;
         @extend %pc-sect-2-box-med;
@@ -234,81 +190,9 @@
                     }
                 }
             }
-            .pc-1-brands-box {
-                max-width: 1250px;
-                width: 100%;
-                height: 240px;
-                background-color: $color-01;
-                @include d-flex (flex,space-between,center);
-                flex-direction: column;
-                @extend %pc-1-brands-box-med;
-                .pc-slide-img-text {
-                    max-width: 1250px;
-                    width: 100%;
-                    height: 110px;
-                    padding: 10px 20px;
-                    @include d-flex (flex,space-between,end);
-                    @extend %pc-slide-img-text-med;
-                    .pc-slide-icon {
-                        max-width: 70px;
-                        @include d-flex (flex,space-between,center);
-                        @extend %pc-slide-icon-med;
-                        .pc-slide-icon-box {
-                            width: 100%;
-                        }
-                    }
-                    .pc-slide-nm {
-                        max-width: 1120px;
-                        width: 100%;
-                        height: 80px;
-                        padding-top: 30px;
-                        text-align: end;
-                        @extend %pc-slide-nm-med;
-                        .pc-slide-nm-h2 {
-                            font-size: 21px;
-                            margin: 0 15px 20px 0;
-                            @extend %pc-slide-nm-h2-med;
-                        }
-                        .pc-slide-xazi {
-                            width: 100%;
-                            margin:10px auto;
-                            content: ' ';
-                            color: $color-06;
-                            @include border ($xazi-brd, solid, $color-08);
-                            box-shadow: $xazi-shad $color-02;
-                        }
-                    }
-                }
-                .pc-brends {
-                    max-width: 1160px;
-                    width: 100%;
-                    height: 180px;
-                    margin: 10px auto;
-                    @include d-flex (flex,space-between,center);
-                    @extend %pc-brends-med;
-                    .pc-4-box {
-                        max-width: 330px;
-                        width: 100%;
-                        height: 110px;
-                        @include d-flex (flex,space-around,center);
-                        @extend %pc-4-box-med;
-                        .pc-4-img {
-                            max-width: 150px;
-                            height: 115px;
-                            @include d-flex (flex,space-around,center);
-                            @extend %pc-4-img-med;
-                            .pc-4-img-box {
-                                width: 100%;
-                                height: 80px;
-                                @extend %pc-4-img-box-med;
-                            }
-                        }
-                        
-                    }
-                }
-            }
         }
     }
+    
     .pc-baner-s {
         width: 100%;
         background-color: $color-02;
@@ -319,6 +203,80 @@
             font-size: 30px;
             text-align: center;
             @extend %font-baner-s-p;
+        }
+    }
+}
+.pc-1-brands-box {
+    max-width: 1255px;
+    width: 100%;
+    height: 240px;
+    margin: 0 0 85px 575px;
+    background-color: $color-01;
+    @include d-flex (flex,space-between,center);
+    flex-direction: column;
+    @extend %pc-1-brands-box-med;
+    .pc-slide-img-text {
+        max-width: 1250px;
+        width: 100%;
+        height: 110px;
+        padding: 10px 20px;
+        @include d-flex (flex,space-between,end);
+        @extend %pc-slide-img-text-med;
+        .pc-slide-icon {
+            max-width: 70px;
+            @include d-flex (flex,space-between,center);
+            @extend %pc-slide-icon-med;
+            .pc-slide-icon-box {
+                width: 100%;
+            }
+        }
+        .pc-slide-nm {
+            max-width: 1120px;
+            width: 100%;
+            height: 80px;
+            padding-top: 30px;
+            text-align: end;
+            @extend %pc-slide-nm-med;
+            .pc-slide-nm-h2 {
+                font-size: 21px;
+                margin: 0 15px 20px 0;
+                @extend %pc-slide-nm-h2-med;
+            }
+            .pc-slide-xazi {
+                width: 100%;
+                margin:10px auto;
+                content: ' ';
+                color: $color-06;
+                @include border ($xazi-brd, solid, $color-08);
+                box-shadow: $xazi-shad $color-02;
+            }
+        }
+    }
+    .pc-brends {
+        max-width: 920px;
+        width: 100%;
+        height: 180px;
+        margin: 10px auto;
+        @include d-flex (flex,space-between,center);
+        @extend %pc-brends-med;
+        .pc-4-box {
+            max-width: 330px;
+            width: 100%;
+            height: 110px;
+            @include d-flex (flex,space-around,center);
+            @extend %pc-4-box-med;
+            .pc-4-img {
+                max-width: 95px;
+                height: 115px;
+                @include d-flex (flex,space-around,center);
+                @extend %pc-4-img-med;
+                .pc-4-img-box {
+                    width: 100%;
+                    height: 40px;
+                    @extend %pc-4-img-box-med;
+                }
+            }
+            
         }
     }
 }
