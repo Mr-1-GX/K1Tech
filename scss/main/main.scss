@@ -481,7 +481,6 @@
                 .cont-1-list-box {
                     background-color: $color-01;
                     @extend %cont-1-list-box-size;
-                    @extend %border-def;
                     @include d-flex (flex,space-between,center);
                     flex-direction: column;
                     @extend %cont-1-list-box-med;
