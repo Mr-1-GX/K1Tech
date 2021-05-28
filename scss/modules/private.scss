@@ -297,13 +297,11 @@
 %sect-2-big-size {
     max-width: $sect-2-big-wid;
     width: $size-0-def;
-    height: $sect-2-big-heig;
     margin: $sect-2-big-mrg;
 }
 %sect-2-flt-size {
-    max-width: $sect-2-flt-wid;
+    max-width: 550px;
     width: $size-0-def;
-    height: $sect-2-flt-heig;
 }
 %flt-cont-size {
     max-width: $flt-cont-wid;
@@ -336,10 +334,9 @@
     border-radius: $ico-nm-h2-rad;
 }
 %s2-flt-ul-size {
-    max-width: $s2-flt-ul-wid;
+    max-width: 500px;
     width: $size-0-def;
-    height: $s2-flt-ul-heig;
-    padding: $s2-flt-ul-pdng;
+    padding: 15px 0 0 0;
 }
 %s2-flt-li-size {
     height: 55px;
