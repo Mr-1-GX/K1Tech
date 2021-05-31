@@ -112,8 +112,8 @@
                         text-align: end;
                         @extend %pc-slide-nm-med;
                         .pc-slide-nm-h2 {
-                            font-size: 21px;
-                            margin: 0 15px 20px 0;
+                            margin: 0 15px 10px 0;
+                            @extend %pc-k1-ico-nm-h2;
                             @extend %pc-slide-nm-h2-med;
                         }
                         .pc-slide-xazi {
