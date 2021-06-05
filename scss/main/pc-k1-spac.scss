@@ -1,14 +1,15 @@
 .pc-k1-cont {
     width: 100%;
-    margin-top: 70px;
+    margin: 70px 0 40px;
     @include d-flex (flex,space-between,center);
     .pc-k1-img-list {
         width: 100%;
+        @include d-flex (flex,space-between,center);
+        flex-direction: column;
         &:first-child {
             height: 960px
         }
-        @include d-flex (flex,space-between,center);
-        flex-direction: column;
+        @extend %pc-k1-img-list-med;
         .pc-k1-img-cont {
             width: 100%;
             @include d-flex (flex,space-between,center);
@@ -18,20 +19,28 @@
                 width: 100%;
                 height: 530px;
                 padding: 10px;
+                @extend %pc-k1-img-box-med;
                 .pc-k1-img-box-slide {
                     .pc-k1-img {
                         width: 100%;
                         height: 450px;
+                        @extend %pc-k1-img-med;
                     }
                 }
             }
             .pc-k1-img-list-sm {
+                max-width: 610px;
                 width: 100%;
+                
                 .pc-k1-img-box-sm {
-                    max-width: 125px;
-                    padding: 20px;
+                    padding: 20px 40px;
                     margin: 0 10px;
                     @extend %border-def;
+                    @extend %pc-k1-img-box-sm-med;
+                    &:hover {
+                        border-color: $color-02;
+                        cursor: pointer;
+                    }
                     .pc-k1-img-sm {
                         width: 100%;
                         height: 85px;
@@ -44,13 +53,23 @@
             width: 100%;
             @include d-flex (flex,space-between,center);
             flex-direction: column;
+            @extend %pc-k1-img-text-med;
             .pc-k1-img-p {
+                @extend %pc-k1-img-p-fonts;
+                @extend %pc-k1-img-p-med;
                 .pc-k1-img-p-span {
                     @extend %pc-k1-img-p-span-fonts;
+                    @extend %pc-k1-img-p-span-med;
                 }
+            }
+            .p-xazi {
+                width: 100%;
+                margin:10px auto;
+                content: ' ';
+                color: $color-06;
+                @include border ($xazi-brd, solid, $color-08);
+                box-shadow: $xazi-shad $color-02;
                 margin-bottom: 40px;
-                @extend %pc-k1-img-p-fonts;
-                
             }
             .pc-k1-img-prais {
                 width: 100%;
@@ -80,11 +99,13 @@
                             background-color: #008CBA;
                             color: white;
                         }
+                        @extend %pc-k1-button-med;
                     }
                     .pc-k1-butt-r {
                         @include d-flex (flex,space-between,center);
                         .pc-k1-butt-r-h4 {
                             @extend %pc-k1-butt-r-h4;
+                            @extend %pc-k1-butt-r-h4-med;
                         }
                         .pc-k1-butt-inp-h4 {
                             max-width: 80px;
@@ -95,6 +116,7 @@
                             text-align: center;
                             border-color: $color-02;
                             color: $color-06;
+                            @extend %pc-k1-butt-inp-h4-med;
                         }
                     }
                 }
@@ -122,7 +144,7 @@
                     .pc-k1-ico-nm-h2 {
                         margin: 0 15px 12px 0;
                         @extend %pc-k1-ico-nm-h2;
-                        @extend %pc-ico-nm-h2-med;
+                        @extend %pc-k1-ico-nm-h2-med;
                     }
                     .pc-xazi {
                         width: 100%;
@@ -143,8 +165,10 @@
                     background-color: $color-010;
                     @include d-flex (flex,space-between,center);
                     @extend %pc-k1-img-li-font;
+                    @extend %pc-k1-img-li-med;
                     .pc-k1-img-li-span {
                         @extend %pc-k1-img-li-span;
+                        @extend %pc-k1-img-li-span-med;
                     }
                 }
             }

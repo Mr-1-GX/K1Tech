@@ -505,7 +505,7 @@
         top: 0;
         left: 0;
         height: 45px;
-        z-index: 22;
+        z-index: 500;
         background: #F4F6F6;
         transition: all 0.3s;
         display: flex;
@@ -995,10 +995,14 @@
 }
 %pro-navi-med {
     @media (max-width: 1600px) {
-        height: 60px;
+        position: sticky;
+        top: 48px;
+        z-index: 300;
+        height: 33px;
+        margin-top: 10px;
     }
     @media (max-width: 1536px) {
-        height: 55px;
+        height: 35px;
     }
     @media (max-width: 1440px) {
         height: 50px;
@@ -1014,6 +1018,9 @@
     }
 }
 %pro-fa-med {
+    @media (max-width: 1600px) {
+        font-size: 22px;
+    }
     @media (max-width: 1366px) {
         font-size: 23px;
     }
@@ -1026,7 +1033,7 @@
 }
 %pro-navi-h4-med {
     @media (max-width: 1600px) {
-        font-size: 19px;
+        font-size: 16px;
     }
     @media (max-width: 1366px) {
         font-size: 15px;
