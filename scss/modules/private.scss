@@ -17,6 +17,7 @@
     text-decoration: underline solid $color-02;
 }
 //Font
+//---------------
 %font-baner-s-p {
     font-size: 35px;
     color: $color-010;
@@ -113,13 +114,12 @@
 }
 //Xazi
 %xazi {
-    max-width: $xazi-wid;
-    width: $size-0-def;
-    margin:$xazi-mrgn;
+    width: 100%;
+    margin:10px auto;
     content: ' ';
     color: $color-06;
-    @include border ($xazi-brd, solid, $color-08);
-    box-shadow: $xazi-shad $color-02;
+    @include border (0.1px, solid, $color-08);
+    box-shadow: 0 0 13px $color-02;
 }
 //Border
 %border-def {
@@ -133,6 +133,61 @@
     box-shadow: 0 0 1px 1px $color-02;
 }
 //Hover
+//Hower-font-efect-Defaulty
+//-------------------
+%pro-navi-ico-fe {
+    &:hover {
+        font-size: 28px;
+        letter-spacing: 7px;
+    }
+}
+%pro-navi-fe {
+    &:hover {
+        font-size: 18px;
+        letter-spacing: 5px;
+    }
+}
+%flt-ico-nm-h2-fe {
+    &:hover {
+        font-size: 32px;
+        letter-spacing: 6px;
+    }
+}
+%s2-flt-li-fe {
+    &:hover {
+        font-size: 23px;
+        letter-spacing: 3px;
+    }
+}
+%font-hover-def {
+    &:hover {
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+}
+//-------------------
+//Hower-image-efect-Defaulty
+//-------------------
+%cont-1-img-href-ie {
+    &:hover {
+        height: 400px;
+        padding: 2px;
+        margin-bottom: 30px;
+    }
+}
+%pc-1-img-hrf-hover {
+    &:hover {
+        height: 200px;
+        margin-bottom: 30px;
+    }
+}
+%image-hover-def {
+    &:hover {
+        height: 150px;
+        margin-bottom: 30px;
+    }
+}
+//-----------------
 %hover-def {
     &:hover {
         background-color: $color-08;
@@ -318,12 +373,9 @@
     width: $size-0-def;
 }
 %flt-ico-nm-size {
-    max-width: $flt-ico-nm-wid;
-    width: $size-0-def;
-    height: $flt-ico-nm-heig;
-}
-%ico-nm-h2-size {
-    margin: $ico-nm-h2-mrg;
+    width: 100%;
+    height: 65px;
+    padding-top: 7px;
 }
 %ico-nm-h2-font {
     font-size: $ico-nm-h2-sz;
@@ -332,6 +384,7 @@
     letter-spacing: $ico-nm-h2-ls;
     text-shadow: $ico-nm-h2-shad $ico-nm-h2-shdw;
     border-radius: $ico-nm-h2-rad;
+    margin: $ico-nm-h2-mrg;
 }
 %s2-flt-ul-size {
     max-width: 500px;
@@ -390,19 +443,13 @@
     height: $cont-1-img-box-heig;
 }
 %cont-1-img-text-size {
-    max-width: $cont-1-img-text-wid;
-    width: $size-0-def;
-    height: $cont-1-img-text-heig;
-    padding: $cont-1-img-text-pdng;
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+    padding: 10px 20px;
 }
 %flt-icon-size {
     max-width: $flt-icon-wid;
-}
-%flt-ico-nm-2-size {
-    max-width: $flt-ico-nm-2-wid;
-    width: $size-0-def;
-    height: $flt-ico-nm-2-heig;
-    padding-top: $flt-ico-nm-2-pdng;
 }
 %cont-1-fit-size {
     max-width: $cont-1-fit-wid;
@@ -620,12 +667,6 @@
     width: $size-0-def;
     margin: $sect-4-mrg;
     padding: $sect-4-pdng;
-}
-%sect-4-h1-font {
-    font-size: $sect-4-h1-font-sz;
-    color: $color-02;
-    font-family: 'archy-B';
-    letter-spacing: $sect-4-h1-font-ls;
 }
 %sect-4-cont-size {
     max-width: $sect-4-cont-wid;

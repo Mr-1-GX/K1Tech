@@ -19,8 +19,12 @@
     }
 }
 .k1-pc-text {
-    margin: 30px auto;
+    margin: 10px auto;
+    text-align: center;
     .k1-pc-p {
-        @extend %k1-flt-li-font;
+        margin: 6px auto;
+        background-color: $color-010;
+        @extend %font-hover-def;
+        @extend %pc-k1-img-li-span;
     }
 }

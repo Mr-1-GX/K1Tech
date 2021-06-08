@@ -19,29 +19,25 @@
             .pc-1-list-box {
                 max-width: 1160px;
                 width: 100%;
-                height: 390px;
                 background-color: $color-01;
                 @include d-flex (flex,space-between,center);
                 @extend %pc-1-list-box-med;
                 .pc-1-img {
                     max-width: 320px;
                     width: 100%;
-                    height: 280px;
+                    height: 480px;
                     @include d-flex (flex,center,center);
                     flex-direction: column;
                     @extend %pc-1-img-med;
                     .pc-1-img-hrf {
-                        max-width: 140px;
-                        height: 140px;
+                        max-width: 180px;
+                        margin-bottom: 25px;
                         @include d-flex (flex,center,end);
                         @extend %pc-1-img-hrf-med;
-                        &:hover {
-                            height: 150px;
-                            margin-bottom: 30px;
-                        }
+                        @extend %pc-1-img-hrf-hover;
                         .pc-1-img-box {
                             width: 100%;
-                            height: 120px;
+                            height: 180px;
                             @extend %pc-1-img-box-med;
                         }
                     }
@@ -71,10 +67,6 @@
                                 @extend %pc-k1-butt-r-h4;
                                 margin: 0 15px 20px 0;
                                 @extend %pc-ico-nm-h2-med;
-                                &:hover {
-                                    font-size: 18px;
-                                    letter-spacing: 4px;
-                                }
                             }
                             .pc-xazi {
                                 width: 100%;
@@ -245,8 +237,8 @@
             text-align: end;
             @extend %pc-slide-nm-med;
             .pc-slide-nm-h2 {
-                font-size: 21px;
-                margin: 0 15px 20px 0;
+                margin: 0 15px 10px 0;
+                @extend %pc-k1-ico-nm-h2;
                 @extend %pc-slide-nm-h2-med;
             }
             .pc-slide-xazi {
