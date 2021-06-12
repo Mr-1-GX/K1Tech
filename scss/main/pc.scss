@@ -37,7 +37,7 @@
                         @extend %pc-1-img-hrf-hover;
                         .pc-1-img-box {
                             width: 100%;
-                            height: 180px;
+                            height: 170px;
                             @extend %pc-1-img-box-med;
                         }
                     }
@@ -66,6 +66,7 @@
                             .pc-ico-nm-h2 {
                                 @extend %pc-k1-butt-r-h4;
                                 margin: 0 15px 20px 0;
+                                @extend %pc-ico-nm-h2-fe;
                                 @extend %pc-ico-nm-h2-med;
                             }
                             .pc-xazi {

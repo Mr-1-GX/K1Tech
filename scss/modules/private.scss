@@ -1,20 +1,7 @@
 //IMAGE-100%
-%bg-def {
-    @include bg-img (url(../img/k1.PNG),#08FBDE);
-    @include background (repeat,top left,auto $size-01,);
-}
 %bg-banner {
     @include bg-img (url(../img/iphone-b.png),$color-02);
     @include background (no-repeat,left,initial,);
-}
-%shad-def {
-    background-image: url(../img/shad-3.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 1450px 180px;
-}
-%text-dec-def {
-    text-decoration: underline solid $color-02;
 }
 //Font
 //---------------
@@ -92,6 +79,8 @@
     letter-spacing: $size-01;
     text-shadow: $size-01 0 $color-06;
 }
+//Effects-Defaulty
+//---------------
 //slick-dots-def
 %slick-dots {
     li {
@@ -113,6 +102,7 @@
     }
 }
 //Xazi
+//--------
 %xazi {
     width: 100%;
     margin:10px auto;
@@ -122,6 +112,8 @@
     box-shadow: 0 0 13px $color-02;
 }
 //Border
+//Border-Defaulti
+//---------------
 %border-def {
     border-radius: $size-03;
     @include border (1px, solid, $color-05);
@@ -132,6 +124,49 @@
     @include border (0px, solid, $color-02);
     box-shadow: 0 0 1px 1px $color-02;
 }
+//Pro-navi-Defaulti-Size
+//-------------------
+%pro-navi-def {
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top: 58px;
+    z-index: 300;
+    background-color: $color-010;
+}
+%pro-fa-def {
+    font-size: 27px;
+    color: $color-02;
+    text-shadow: 0 0 1px $color-03;
+    border-radius: 5px;
+    margin-left: 20px;
+    &:after {
+        max-width: 20px;
+        width: 100%;
+        margin: 0 20px;
+        content: ' ';
+        color: $color-06;
+        @include border ($xazi-brd, solid, $color-08);
+        box-shadow: $xazi-shad $color-02;
+    }
+}
+%pro-navi-h4-def {
+    font-size: 21px;
+    color: $color-03;
+    font-family: 'archy-B';
+    letter-spacing: 2px;
+    text-shadow: 0 0 1px $color-02;
+    &:after {
+        max-width: 20px;
+        width: 100%;
+        margin: 0 20px;
+        content: ' ';
+        color: $color-06;
+        @include border ($xazi-brd, solid, $color-08);
+        box-shadow: $xazi-shad $color-02;
+    }
+}
+
 //Hover
 //Hower-font-efect-Defaulty
 //-------------------
@@ -143,8 +178,8 @@
 }
 %pro-navi-fe {
     &:hover {
-        font-size: 18px;
-        letter-spacing: 5px;
+        font-size: 20px;
+        letter-spacing: 4px;
     }
 }
 %flt-ico-nm-h2-fe {
@@ -159,10 +194,17 @@
         letter-spacing: 3px;
     }
 }
+%pc-ico-nm-h2-fe {
+    &:hover {
+        font-size: 21px;
+        letter-spacing: 3px;
+    }
+}
 %font-hover-def {
     &:hover {
-        font-size: 16px;
+        font-size: 20px;
         letter-spacing: 3px;
+        text-decoration: underline dotted $color-02;
     }
 }
 //-------------------
@@ -177,7 +219,7 @@
 }
 %pc-1-img-hrf-hover {
     &:hover {
-        height: 200px;
+        height: 170px;
         margin-bottom: 30px;
     }
 }
@@ -345,23 +387,19 @@
 }
 //Section-2
 %sect-2-size {
-    max-width: $sect-2-wid;
+    max-width: 1900px;
     width: 100%;
     margin: 0 auto;
+    background-color: $sect-2-bg;
 }
 %sect-2-big-size {
-    max-width: $sect-2-big-wid;
-    width: $size-0-def;
-    margin: $sect-2-big-mrg;
+    max-width: 1850px;
+    width: 100%;
+    margin: 35px 0;
 }
 %sect-2-flt-size {
     max-width: 550px;
-    width: $size-0-def;
-}
-%flt-cont-size {
-    max-width: $flt-cont-wid;
-    width: $size-0-def;
-    height: $flt-cont-heig;
+    width: 100%;
 }
 %flt-icon-1-size {
     max-width: $flt-icon-1-wid;
