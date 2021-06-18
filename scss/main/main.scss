@@ -387,6 +387,7 @@
                     @extend %flt-icon-med;
                     .flt-icon-box {
                         width: 100%;
+                        @extend %flt-icon-box-med;
                     }
                 }
                 .flt-ico-nm {
@@ -475,6 +476,7 @@
                                 @extend %flt-icon-med;
                                 .flt-icon-box {
                                     width: 100%;
+                                    @extend %flt-icon-box-med;
                                 }
                             }
                             .flt-ico-nm {
@@ -560,6 +562,7 @@
             @extend %flt-icon-med;
             .flt-icon-box {
                 width: 100%;
+                @extend %flt-icon-box-med;
             }
         }
         .flt-ico-nm {
@@ -794,6 +797,7 @@
             @extend %flt-icon-med;
             .flt-icon-box {
                 width: 100%;
+                @extend %flt-icon-box-med;
             }
         }
         .flt-ico-nm {

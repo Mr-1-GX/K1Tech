@@ -54,6 +54,7 @@
                             @extend %pc-flt-icon-med;
                             .pc-flt-icon-box {
                                 width: 100%;
+                                @extend %pc-flt-icon-box-med;
                             }
                         }
                         .pc-flt-ico-nm {
