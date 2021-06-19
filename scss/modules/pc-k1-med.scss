@@ -17,6 +17,10 @@
         width: 77%;
         height: 720px;
     }
+    @media (max-width: 1366px) {
+        width: 70%;
+        height: 810px;
+    }
 }
 %pc-k1-img-list-med {
     @media (max-width: 1600px) {
@@ -32,6 +36,11 @@
         height: 490px;
         padding: 5px;
     }
+    @media (max-width: 1366px) {
+        width: 50%;
+        height: 390px;
+        padding: 4px;
+    }
 }
 %pc-k1-img-med {
     @media (max-width: 1600px) {
@@ -39,6 +48,9 @@
     }
     @media (max-width: 1536px) {
         height: 390px;
+    }
+    @media (max-width: 1366px) {
+        height: 350px;
     }
 }
 %pc-k1-img-box-sm-med {

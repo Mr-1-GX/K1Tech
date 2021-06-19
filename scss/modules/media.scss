@@ -1005,13 +1005,13 @@
         height: 35px;
     }
     @media (max-width: 1440px) {
-        height: 30px;
+        height: 32px;
     }
     @media (max-width: 1366px) {
-        height: 40px;
+        height: 30px;
     }
     @media (max-width: 1280px) {
-        height: 35px;
+        height: 28px;
     }
     @media (max-width: 768px) {
         height: 25px;
@@ -1053,6 +1053,9 @@
         width: 95%;
         margin: 50px 0;
     }
+    @media (max-width: 1024px) {
+        align-items: flex-start;
+    }
     @media (max-width: 834px) {
         margin: 15px 0;
     }
@@ -1080,6 +1083,12 @@
     }
     @media (max-width: 1366px) {
         padding-top: 2px;
+    }
+    @media (max-width: 1024px) {
+        width: 35%;
+        position: sticky;
+        top: 80px;
+
     }
     @media (max-width: 962px) {
         padding-top: 5px;
@@ -1360,7 +1369,8 @@
         height: 830px;
     }
     @media (max-width: 1024px) {
-        height: 850px;
+        width: 50%;
+        height: 1870px;
     }
     @media (max-width: 834px) {
         height: 770px;
@@ -1384,6 +1394,9 @@
     }
 }
 %cont-1-list-med {
+    @media (max-width: 1024px) {
+        flex-direction: column;
+    }
     @media (max-width: 600px) {
         flex-direction: column;
     }
@@ -1403,7 +1416,8 @@
         height: 410px;
     }
     @media (max-width: 1024px) {
-        height: 420px;
+        width: 95%;
+        height: 450px;
     }
     @media (max-width: 834px) {
         height: 380px;
@@ -1464,6 +1478,10 @@
     @media (max-width: 1366px) {
         max-width: 415px;
         height: 220px;
+    }
+    @media (max-width: 1024px) {
+        width: 85%;
+        height: 240px;
     }
     @media (max-width: 768px) {
         max-width: 240px;
@@ -1599,7 +1617,9 @@
         height: 180px;
     }
     @media (max-width: 1024px) {
-        height: 120px;
+        height: 200px;
+        flex-direction: column;
+        margin-bottom: 20px;
     }
     @media (max-width: 834px) {
         height: 130px;
@@ -1630,6 +1650,10 @@
     }
     @media (max-width: 1366px) {
         height: 75px;
+    }
+    @media (max-width: 1024px) {
+        width: 90%;
+        height: 90px;
     }
     @media (max-width: 600px) {
         width: 38%;
@@ -1856,6 +1880,10 @@
     @media (max-width: 1366px) {
         height: 160px;
     }
+    @media (max-width: 1024px) {
+        height: 310px;
+        flex-direction: column;
+    }
     @media (max-width: 962px) {
         height: 120px;
     }
@@ -1884,6 +1912,9 @@
     }
     @media (max-width: 1366px) {
         height: 90px;
+    }
+    @media (max-width: 1024px) {
+        width: 90%;
     }
     @media (max-width: 962px) {
         height: 80px;
