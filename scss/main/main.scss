@@ -425,16 +425,6 @@
                     }
                 }
             }
-            .s2-flt-cont-2 {
-                @extend %s2-flt-cont-2-size;
-                @extend %border-def;
-                @extend %s2-flt-cont-2-med;
-                .flt-cont-2-img {
-                    .flt-cont-2-box {
-                        width: $size-0-def;
-                    }
-                }
-            }
         }
         .sect-2-box {
             @extend %sect-2-box-size;
@@ -572,7 +562,6 @@
             .ico-nm-h2 {
                 font-size: 25px;
                 @extend %ico-nm-h2-font;
-                @extend %flt-ico-nm-h2-fe;
                 @extend %ico-nm-h2-med;
             }
             .xazi {
@@ -807,7 +796,6 @@
             .ico-nm-h2 {
                 font-size: 25px;
                 @extend %ico-nm-h2-font;
-                @extend %flt-ico-nm-h2-fe;
                 @extend %ico-nm-h2-med;
             }
             .xazi {
