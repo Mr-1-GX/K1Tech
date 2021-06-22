@@ -223,6 +223,11 @@
         height: 20px;
         margin: 11px 0;
     }
+    @media (max-width: 414px) {
+        font-size: 12px;
+        height: 18px;
+        margin: 11px 0;
+    }
 }
 %pc-k1-img-li-span-med {
     @media (max-width: 1600px) {
@@ -230,5 +235,8 @@
     }
     @media (max-width: 834px) {
         font-size: 14px;
+    }
+    @media (max-width: 414px) {
+        font-size: 12px;
     }
 }
