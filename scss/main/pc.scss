@@ -77,6 +77,7 @@
                                 color: $color-06;
                                 @include border ($xazi-brd, solid, $color-08);
                                 box-shadow: $xazi-shad $color-02;
+                                @extend %pc-xazi-med;
                             }
                         }
                     }

@@ -808,7 +808,7 @@ a {
   color: #565555;
   font-family: 'archy-B';
   letter-spacing: 2px;
-  text-shadow: 1px 0 1px #00A1C2; }
+  text-shadow: 0 0 1px #00A1C2; }
 
 .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-slide-box .pc-slide-img-text .pc-slide-nm .pc-slide-nm-h2, .pc-1-brands-box .pc-slide-img-text .pc-slide-nm .pc-slide-nm-h2, .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text .pc-1-img-text .pc-flt-ico-nm .pc-k1-ico-nm-h2 {
   font-size: 30px;
@@ -3206,6 +3206,13 @@ a {
   .sect-2 .pro-navi .pro-fa {
     font-size: 13px; } }
 
+@media (max-width: 414px) {
+  .sect-2 .pro-navi .pro-fa {
+    font-size: 16px;
+    margin-left: 5px; }
+    .sect-2 .pro-navi .pro-fa:after {
+      margin: 0 6px; } }
+
 @media (max-width: 1600px) {
   .sect-2 .pro-navi .pro-navi-href .pro-navi-h4 {
     font-size: 16px; } }
@@ -3240,6 +3247,13 @@ a {
     font-size: 8px;
     letter-spacing: 0; } }
 
+@media (max-width: 414px) {
+  .sect-2 .pro-navi .pro-navi-href .pro-navi-h4 {
+    font-size: 11px;
+    letter-spacing: 1px; }
+    .sect-2 .pro-navi .pro-navi-href .pro-navi-h4:after {
+      margin: 0 6px; } }
+
 @media (max-width: 1600px) {
   .sect-2 .sect-2-big {
     width: 95%;
@@ -3264,7 +3278,7 @@ a {
 
 @media (max-width: 414px) {
   .sect-2 .sect-2-big {
-    height: 1460px; } }
+    margin: 50px 0; } }
 
 @media (max-width: 1600px) {
   .sect-2 .sect-2-big .sect-2-flt {
@@ -5055,6 +5069,10 @@ a {
   .sect-2-big .pc-sect-2-box {
     width: 72%; } }
 
+@media (max-width: 414px) {
+  .sect-2-big .pc-sect-2-box {
+    width: 99%; } }
+
 @media (max-width: 1600px) {
   .sect-2-big .pc-sect-2-box .pc-1-list {
     width: 99%; } }
@@ -5085,6 +5103,12 @@ a {
   .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box {
     height: 230px; } }
 
+@media (max-width: 414px) {
+  .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box {
+    height: 990px;
+    flex-direction: column;
+    margin-bottom: 50px; } }
+
 @media (max-width: 1536px) {
   .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box .pc-1-img .pc-1-img-text, .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text .pc-1-img-text {
     width: 99%; } }
@@ -5103,6 +5127,10 @@ a {
     height: 30px;
     padding: 3px 1px; } }
 
+@media (max-width: 414px) {
+  .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box .pc-1-img .pc-1-img-text, .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text .pc-1-img-text {
+    height: 50px; } }
+
 @media (max-width: 1600px) {
   .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box .pc-1-img {
     height: 190px; } }
@@ -5118,6 +5146,11 @@ a {
 @media (max-width: 768px) {
   .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box .pc-1-img {
     height: 97px; } }
+
+@media (max-width: 414px) {
+  .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box .pc-1-img {
+    width: 75%;
+    height: 320px; } }
 
 @media (max-width: 1600px) {
   .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box .pc-1-img .pc-1-img-hrf {
@@ -5136,6 +5169,11 @@ a {
   .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box .pc-1-img .pc-1-img-hrf {
     max-width: 80px;
     height: 65px; } }
+
+@media (max-width: 414px) {
+  .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box .pc-1-img .pc-1-img-hrf {
+    max-width: 155px;
+    height: 125px; } }
 
 @media (max-width: 1600px) {
   .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box .pc-1-img .pc-1-img-hrf .pc-1-img-box {
@@ -5166,6 +5204,11 @@ a {
   .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box .pc-1-img .pc-1-img-hrf .pc-1-img-box {
     height: 60px; } }
 
+@media (max-width: 414px) {
+  .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box .pc-1-img .pc-1-img-hrf .pc-1-img-box {
+    width: 99%;
+    height: 120px; } }
+
 @media (max-width: 1600px) {
   .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box .pc-1-img .pc-1-img-text .pc-flt-icon, .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text .pc-1-img-text .pc-flt-icon {
     max-width: 45px; } }
@@ -5181,6 +5224,10 @@ a {
 @media (max-width: 768px) {
   .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box .pc-1-img .pc-1-img-text .pc-flt-icon, .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text .pc-1-img-text .pc-flt-icon {
     max-width: 23px; } }
+
+@media (max-width: 414px) {
+  .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box .pc-1-img .pc-1-img-text .pc-flt-icon, .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text .pc-1-img-text .pc-flt-icon {
+    max-width: 45px; } }
 
 @media (max-width: 1440px) {
   .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box .pc-1-img .pc-1-img-text .pc-flt-icon .pc-flt-icon-box {
@@ -5203,6 +5250,11 @@ a {
     width: 99%;
     height: 25px;
     padding-top: 4px; } }
+
+@media (max-width: 414px) {
+  .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box .pc-1-img .pc-1-img-text .pc-flt-ico-nm, .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text .pc-1-img-text .pc-flt-ico-nm {
+    height: 45px;
+    padding-top: 7px; } }
 
 @media (max-width: 1600px) {
   .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box .pc-1-img .pc-1-img-text .pc-flt-ico-nm .pc-ico-nm-h2 {
@@ -5233,6 +5285,16 @@ a {
     font-size: 8px;
     margin: 0 7px 8px 0; } }
 
+@media (max-width: 414px) {
+  .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box .pc-1-img .pc-1-img-text .pc-flt-ico-nm .pc-ico-nm-h2 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin: 0 10px 10px 0; } }
+
+@media (max-width: 414px) {
+  .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box .pc-1-img .pc-1-img-text .pc-flt-ico-nm .pc-xazi {
+    margin: 5px auto; } }
+
 @media (max-width: 1600px) {
   .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-slide-box {
     height: 310px; } }
@@ -5246,6 +5308,11 @@ a {
   .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-slide-box {
     height: 220px;
     margin-bottom: 9px; } }
+
+@media (max-width: 414px) {
+  .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-slide-box {
+    height: 360px;
+    margin: 50px 0 10px 0; } }
 
 @media (max-width: 1600px) {
   .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-slide-box .pc-slide-img-text, .pc-1-brands-box .pc-slide-img-text {
@@ -5315,6 +5382,10 @@ a {
     width: 85%;
     height: 135px; } }
 
+@media (max-width: 414px) {
+  .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-slide-box .pc-best {
+    height: 290px; } }
+
 @media (max-width: 1600px) {
   .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-slide-box .pc-best .slide-4-box {
     width: 96%;
@@ -5328,6 +5399,10 @@ a {
 @media (max-width: 768px) {
   .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-slide-box .pc-best .slide-4-box {
     height: 130px; } }
+
+@media (max-width: 414px) {
+  .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-slide-box .pc-best .slide-4-box {
+    height: 260px; } }
 
 @media (max-width: 1600px) {
   .pc-1-brands-box .pc-brends .pc-4-box {
@@ -5449,6 +5524,10 @@ a {
   .k1-pc-text .k1-pc-p {
     font-size: 9px; } }
 
+@media (max-width: 414px) {
+  .k1-pc-text .k1-pc-p {
+    font-size: 16px; } }
+
 @media (max-width: 1440px) {
   .pc-k1-spec .pc-k1-cont {
     margin: 20px 0 40px; } }
@@ -5519,6 +5598,10 @@ a {
     width: 39%;
     height: 260px; } }
 
+@media (max-width: 414px) {
+  .pc-k1-spec .pc-k1-img-list-big .pc-k1-img-cont .pc-k1-img-box {
+    height: 225px; } }
+
 @media (max-width: 1600px) {
   .pc-k1-spec .pc-k1-img-list-big .pc-k1-img-cont .pc-k1-img-box .pc-k1-img-box-slide .pc-k1-img {
     height: 395px; } }
@@ -5539,6 +5622,10 @@ a {
   .pc-k1-spec .pc-k1-img-list-big .pc-k1-img-cont .pc-k1-img-box .pc-k1-img-box-slide .pc-k1-img {
     height: 230px; } }
 
+@media (max-width: 414px) {
+  .pc-k1-spec .pc-k1-img-list-big .pc-k1-img-cont .pc-k1-img-box .pc-k1-img-box-slide .pc-k1-img {
+    height: 190px; } }
+
 @media (max-width: 834px) {
   .pc-k1-spec .pc-k1-img-list-big .pc-k1-img-cont .pc-k1-img-list-sm {
     width: 75%; } }
@@ -5550,6 +5637,10 @@ a {
 @media (max-width: 601px) {
   .pc-k1-spec .pc-k1-img-list-big .pc-k1-img-cont .pc-k1-img-list-sm .pc-k1-img-box-sm {
     padding: 5px 15px; } }
+
+@media (max-width: 414px) {
+  .pc-k1-spec .pc-k1-img-list-big .pc-k1-img-cont .pc-k1-img-list-sm .pc-k1-img-box-sm {
+    padding: 5px 2px; } }
 
 @media (max-width: 834px) {
   .pc-k1-spec .pc-k1-img-list-big .pc-k1-img-cont .pc-k1-img-list-sm .pc-k1-img-box-sm .pc-k1-img-sm {
@@ -5576,6 +5667,10 @@ a {
 @media (max-width: 601px) {
   .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text {
     margin-left: 150px; } }
+
+@media (max-width: 414px) {
+  .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text {
+    margin-left: 5px; } }
 
 @media (max-width: 1600px) {
   .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text .pc-k1-img-p {

@@ -18,6 +18,9 @@
     @media (max-width: 768px) {
         width: 72%;
     }
+    @media (max-width: 414px) {
+        width: 99%;
+    }
 }
 %pc-1-list-med {
     @media (max-width: 1600px) {
@@ -45,6 +48,11 @@
     @media (max-width: 601px) {
         height: 230px;
     }
+    @media (max-width: 414px) {
+        height: 990px;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
 }
 %pc-1-img-text-med {
     @media (max-width: 1536px) {
@@ -61,6 +69,9 @@
         height: 30px;
         padding: 3px 1px;
     }
+    @media (max-width: 414px) {
+        height: 50px;
+    }
 }
 %pc-1-img-med {
     @media (max-width: 1600px) {
@@ -74,6 +85,10 @@
     }
     @media (max-width: 768px) {
         height: 97px;
+    }
+    @media (max-width: 414px) {
+        width: 75%;
+        height: 320px;
     }
 }
 %pc-1-img-hrf-med {
@@ -90,6 +105,10 @@
     @media (max-width: 768px) {
         max-width: 80px;
         height: 65px;
+    }
+    @media (max-width: 414px) {
+        max-width: 155px;
+        height: 125px;
     }
 }
 %pc-1-img-box-med {
@@ -116,6 +135,10 @@
     @media (max-width: 768px) {
         height: 60px;
     }
+    @media (max-width: 414px) {
+        width: 99%;
+        height: 120px;
+    }
 }
 %pc-flt-icon-med {
     @media (max-width: 1600px) {
@@ -129,6 +152,9 @@
     }
     @media (max-width: 768px) {
         max-width: 23px;
+    }
+    @media (max-width: 414px) {
+        max-width: 45px;
     }
 }
 %pc-flt-icon-box-med {
@@ -150,6 +176,10 @@
         width: 99%;
         height: 25px;
         padding-top: 4px;
+    }
+    @media (max-width: 414px) {
+        height: 45px;
+        padding-top: 7px;
     }
 }
 %pc-ico-nm-h2-med {
@@ -176,6 +206,16 @@
         font-size: 8px;
         margin: 0 7px 8px 0;
     }
+    @media (max-width: 414px) {
+        font-size: 18px;
+        letter-spacing: 2px;
+        margin: 0 10px 10px 0;
+    }
+}
+%pc-xazi-med {
+    @media (max-width: 414px) {
+        margin: 5px auto;
+    }
 }
 %pc-1-slide-box-med {
     @media (max-width: 1600px) {
@@ -188,6 +228,10 @@
     @media (max-width: 768px) {
         height: 220px;
         margin-bottom: 9px;
+    }
+    @media (max-width: 414px) {
+        height: 360px;
+        margin: 50px 0 10px 0;
     }
 }
 %pc-slide-img-text-med {
@@ -252,6 +296,9 @@
         width: 85%;
         height: 135px;
     }
+    @media (max-width: 414px) {
+        height: 290px;
+    }
 }
 %slide-4-box-med {
     @media (max-width: 1600px) {
@@ -264,6 +311,9 @@
     }
     @media (max-width: 768px) {
         height: 130px;
+    }
+    @media (max-width: 414px) {
+        height: 260px;
     }
 }
 %pc-4-box-med {

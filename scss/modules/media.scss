@@ -1039,6 +1039,13 @@
     @media (max-width: 768px) {
         font-size: 13px;
     }
+    @media (max-width: 414px) {
+        font-size: 16px;
+        margin-left: 5px;
+        &:after {
+            margin: 0 6px;
+        }
+    }
 }
 %pro-navi-h4-med {
     @media (max-width: 1600px) {
@@ -1067,7 +1074,13 @@
         font-size: 8px;
         letter-spacing: 0;
     }
-    
+    @media (max-width: 414px) {
+        font-size: 11px;
+        letter-spacing: 1px;
+        &:after {
+            margin: 0 6px;
+        }
+    }
 }
 %sect-2-big-med {
     @media (max-width: 1600px) {
@@ -1088,7 +1101,7 @@
         margin: 25px 0;
     }
     @media (max-width: 414px) {
-        height: 1460px;
+        margin: 50px 0;
     }
 }
 %sect-2-flt-med {
