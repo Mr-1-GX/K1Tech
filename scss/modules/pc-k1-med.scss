@@ -48,6 +48,9 @@
     @media (max-width: 601px) {
         height: 360px;
     }
+    @media (max-width: 360px) {
+        height: 270px;
+    }
 }
 %pc-k1-img-list-med {
     @media (max-width: 1600px) {
@@ -82,6 +85,9 @@
     @media (max-width: 414px) {
         height: 225px;
     }
+    @media (max-width: 375px) {
+        height: 200px;
+    }
 }
 %pc-k1-img-med {
     @media (max-width: 1600px) {
@@ -101,6 +107,9 @@
     }
     @media (max-width: 414px) {
         height: 190px;
+    }
+    @media (max-width: 414px) {
+        height: 160px;
     }
 }
 %pc-k1-img-list-sm-med {
@@ -123,6 +132,9 @@
     @media (max-width: 834px) {
         width: 90%;
         height: 60px;
+    }
+    @media (max-width: 375px) {
+        height: 30px;
     }
 }
 %pc-k1-img-text-med {
@@ -177,6 +189,15 @@
         font-size: 11px;
         padding: 7px 15px;
     }
+    @media (max-width: 360px) {
+        font-size: 10px;
+        padding: 5px 5px;
+    }
+}
+%pc-k1-butt-r-med {
+    @media (max-width: 360px) {
+        justify-content: space-evenly;
+    }
 }
 %pc-k1-butt-r-h4-med {
     @media (max-width: 1600px) {
@@ -184,6 +205,9 @@
     }
     @media (max-width: 601px) {
         font-size: 15px;
+    }
+    @media (max-width: 360px) {
+        font-size: 13px;
     }
 }
 %pc-k1-butt-inp-h4-med {
@@ -196,6 +220,10 @@
     @media (max-width: 601px) {
         font-size: 14px;
         height: 27px;
+    }
+    @media (max-width: 3609px) {
+        font-size: 13px;
+        height: 25px;
     }
 }
 %pc-k1-ico-nm-h2-med {
@@ -227,6 +255,9 @@
         font-size: 12px;
         height: 18px;
         margin: 11px 0;
+    }
+    @media (max-width: 360px) {
+        font-size: 11px;
     }
 }
 %pc-k1-img-li-span-med {

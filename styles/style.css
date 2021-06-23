@@ -815,7 +815,7 @@ a {
   color: #565555;
   font-family: 'archy-B';
   letter-spacing: 2px;
-  text-shadow: 1px 0px 1px #00A1C2; }
+  text-shadow: 0px 0px 1px #00A1C2; }
 
 .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text .pc-k1-img-ul .pc-k1-img-li {
   font-size: 20px;
@@ -3065,12 +3065,16 @@ a {
 
 @media (max-width: 414px) {
   .open-head-size {
-    height: 790px; }
+    height: 730px; }
     .open-head-size .nav-box .navi .navi-cont {
       flex-direction: column; }
       .open-head-size .nav-box .navi .navi-cont .search {
         border: 0 solid #00A1C2;
         box-shadow: 0 0 1px 1px #00A1C2; } }
+
+@media (max-width: 375px) {
+  .open-head-size {
+    height: 660px; } }
 
 @media (max-width: 1600px) {
   .sect-1 {
@@ -3254,6 +3258,13 @@ a {
     .sect-2 .pro-navi .pro-navi-href .pro-navi-h4:after {
       margin: 0 6px; } }
 
+@media (max-width: 375px) {
+  .sect-2 .pro-navi .pro-navi-href .pro-navi-h4 {
+    font-size: 10px;
+    letter-spacing: 1px; }
+    .sect-2 .pro-navi .pro-navi-href .pro-navi-h4:after {
+      margin: 0 4px; } }
+
 @media (max-width: 1600px) {
   .sect-2 .sect-2-big {
     width: 95%;
@@ -3278,7 +3289,7 @@ a {
 
 @media (max-width: 414px) {
   .sect-2 .sect-2-big {
-    margin: 50px 0; } }
+    margin: 50px 0 5px 0; } }
 
 @media (max-width: 1600px) {
   .sect-2 .sect-2-big .sect-2-flt {
@@ -3640,7 +3651,7 @@ a {
 
 @media (max-width: 414px) {
   .sect-2 .sect-2-big .sect-2-box .cont-1-list .cont-1-list-box .cont-1-img {
-    height: 265px; } }
+    height: 200px; } }
 
 @media (max-width: 1600px) {
   .sect-2 .sect-2-big .sect-2-box .cont-1-list .cont-1-list-box .cont-1-img .cont-1-img-hrf {
@@ -3702,7 +3713,7 @@ a {
 
 @media (max-width: 414px) {
   .sect-2 .sect-2-big .sect-2-box .cont-1-list .cont-1-list-box .cont-1-img .cont-1-img-hrf .cont-1-img-box {
-    height: 200px; } }
+    height: 140px; } }
 
 @media (max-width: 1600px) {
   .sect-2 .sect-2-big .sect-2-flt .cont-1-img-text, .sect-2 .sect-2-big .sect-2-box .cont-1-list .cont-1-list-box .cont-1-img .cont-1-img-text, .sect-3 .cont-1-img-text, .sect-4 .cont-1-img-text {
@@ -3880,7 +3891,7 @@ a {
   .sect-2 .sect-2-big .open-sect-2-flt-size {
     display: block;
     position: fixed;
-    top: 250px;
+    top: 205px;
     width: 85%;
     height: 570px;
     z-index: 500; }
@@ -3899,6 +3910,10 @@ a {
             height: 25px; }
     .sect-2 .sect-2-big .open-sect-2-flt-size .s2-flt-cont-2 {
       display: none; } }
+
+@media (max-width: 375px) {
+  .sect-2 .sect-2-big .open-sect-2-flt-size {
+    top: 130px; } }
 
 @media (max-width: 1600px) {
   .sect-3 {
@@ -5566,6 +5581,10 @@ a {
   .pc-k1-spec .pc-k1-img-list-big {
     height: 360px; } }
 
+@media (max-width: 360px) {
+  .pc-k1-spec .pc-k1-img-list-big {
+    height: 270px; } }
+
 @media (max-width: 1600px) {
   .pc-k1-spec .pc-k1-cont .pc-k1-img-list {
     height: 850px; } }
@@ -5604,6 +5623,10 @@ a {
   .pc-k1-spec .pc-k1-img-list-big .pc-k1-img-cont .pc-k1-img-box {
     height: 225px; } }
 
+@media (max-width: 375px) {
+  .pc-k1-spec .pc-k1-img-list-big .pc-k1-img-cont .pc-k1-img-box {
+    height: 200px; } }
+
 @media (max-width: 1600px) {
   .pc-k1-spec .pc-k1-img-list-big .pc-k1-img-cont .pc-k1-img-box .pc-k1-img-box-slide .pc-k1-img {
     height: 395px; } }
@@ -5628,6 +5651,10 @@ a {
   .pc-k1-spec .pc-k1-img-list-big .pc-k1-img-cont .pc-k1-img-box .pc-k1-img-box-slide .pc-k1-img {
     height: 190px; } }
 
+@media (max-width: 414px) {
+  .pc-k1-spec .pc-k1-img-list-big .pc-k1-img-cont .pc-k1-img-box .pc-k1-img-box-slide .pc-k1-img {
+    height: 160px; } }
+
 @media (max-width: 834px) {
   .pc-k1-spec .pc-k1-img-list-big .pc-k1-img-cont .pc-k1-img-list-sm {
     width: 75%; } }
@@ -5648,6 +5675,10 @@ a {
   .pc-k1-spec .pc-k1-img-list-big .pc-k1-img-cont .pc-k1-img-list-sm .pc-k1-img-box-sm .pc-k1-img-sm {
     width: 90%;
     height: 60px; } }
+
+@media (max-width: 375px) {
+  .pc-k1-spec .pc-k1-img-list-big .pc-k1-img-cont .pc-k1-img-list-sm .pc-k1-img-box-sm .pc-k1-img-sm {
+    height: 30px; } }
 
 @media (max-width: 1600px) {
   .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text {
@@ -5708,6 +5739,15 @@ a {
     font-size: 11px;
     padding: 7px 15px; } }
 
+@media (max-width: 360px) {
+  .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text .pc-k1-img-prais .pc-k1-bags .pc-k1-button {
+    font-size: 10px;
+    padding: 5px 5px; } }
+
+@media (max-width: 360px) {
+  .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text .pc-k1-img-prais .pc-k1-bags .pc-k1-butt-r {
+    justify-content: space-evenly; } }
+
 @media (max-width: 1600px) {
   .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text .pc-k1-img-prais .pc-k1-bags .pc-k1-butt-r .pc-k1-butt-r-h4 {
     font-size: 20px; } }
@@ -5715,6 +5755,10 @@ a {
 @media (max-width: 601px) {
   .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text .pc-k1-img-prais .pc-k1-bags .pc-k1-butt-r .pc-k1-butt-r-h4 {
     font-size: 15px; } }
+
+@media (max-width: 360px) {
+  .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text .pc-k1-img-prais .pc-k1-bags .pc-k1-butt-r .pc-k1-butt-r-h4 {
+    font-size: 13px; } }
 
 @media (max-width: 1600px) {
   .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text .pc-k1-img-prais .pc-k1-bags .pc-k1-butt-r .pc-k1-butt-inp-h4 {
@@ -5727,6 +5771,11 @@ a {
   .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text .pc-k1-img-prais .pc-k1-bags .pc-k1-butt-r .pc-k1-butt-inp-h4 {
     font-size: 14px;
     height: 27px; } }
+
+@media (max-width: 3609px) {
+  .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text .pc-k1-img-prais .pc-k1-bags .pc-k1-butt-r .pc-k1-butt-inp-h4 {
+    font-size: 13px;
+    height: 25px; } }
 
 @media (max-width: 1600px) {
   .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text .pc-1-img-text .pc-flt-ico-nm .pc-k1-ico-nm-h2 {
@@ -5760,6 +5809,10 @@ a {
     font-size: 12px;
     height: 18px;
     margin: 11px 0; } }
+
+@media (max-width: 360px) {
+  .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text .pc-k1-img-ul .pc-k1-img-li {
+    font-size: 11px; } }
 
 @media (max-width: 1600px) {
   .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text .pc-k1-img-ul .pc-k1-img-li .pc-k1-img-li-span {

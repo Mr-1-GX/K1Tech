@@ -115,6 +115,7 @@
                         }
                         .pc-k1-butt-r {
                             @include d-flex (flex,space-between,center);
+                            @extend %pc-k1-butt-r-med;
                             .pc-k1-butt-r-h4 {
                                 @extend %pc-k1-butt-r-h4;
                                 @extend %pc-k1-butt-r-h4-med;
