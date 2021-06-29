@@ -5,13 +5,6 @@
 }
 //Font
 //---------------
-%font-baner-s-p {
-    font-size: 35px;
-    color: $color-010;
-    font-family: 'archy-B';
-    letter-spacing: 2px;
-    text-shadow: 1px -1px 1px $color-05;
-}
 %font-h1-def {
     font-size: $size-035;
     color: $color-02;
@@ -55,7 +48,7 @@
     border-radius: 5px;
 }
 %search-fa {
-    font-size: 27px;
+    font-size: 32px;
     color: $color-02;
     text-shadow: 0 0 1px $color-03;
     border-radius: 5px;
@@ -271,58 +264,29 @@
     z-index: 22;
 }
 //HEADER
+%banner-font-fa {
+    font-size: 28px;
+    color: $color-01;
+    letter-spacing: 5px;
+    text-shadow: 0 0 1px $font-fa-shdw;
+    border-radius: 5px;
+}
 %head-cont-size {
     width: 100%;
     margin: 2px auto;
     position: relative;
 }
-%nav-box-size {
-    max-width: $nav-box-wid;
-    width: $size-0-def;
-    margin: $nav-box-mrg;
-}
-%nav-logo-size {
-    max-width: $nav-logo-wid;
-    width: $size-0-def;
-    height: $nav-logo-heig;
-}
-%navi-size {
-    max-width: $navi-wid;
-    width: $size-0-def;
-}
-%navi-cont-size {
-    max-width: 1360px;
-    width: $size-0-def;
-}
-%nav-ul-size {
-    max-width: $nav-ul-wid;
-    width: $size-0-def;
-    margin-bottom: 5px;
-}
-%search-size {
-    width: 900px;
-    height: 40px;
-}
 %element-search-size {
     width: 100%;
     height: 100%;
 }
-%inp-search-size {
-    width: 830px;
-    height: 100%;
-    padding: 0 5px;
-}
 %nav-a-h1-font {
     font-size: 15px;
-    color: $soc-a-fonts-col;
+    color: $color-01;
     font-family: 'alk-s';
-    letter-spacing: $soc-a-fonts-ls;
-    text-shadow: $soc-a-fonts-shad $soc-a-fonts-shdw;
-    border-radius: $soc-a-fonts-rad;
-}
-%soc-ul-size {
-    max-width: $soc-ul-wid;
-    width: $size-0-def;
+    letter-spacing: 2px;
+    text-shadow: 1px -1px 1px $color-02;
+    border-radius: 5px;
 }
 %font-fa {
     font-size: $font-fa-sz;
@@ -331,40 +295,26 @@
     text-shadow: $font-fa-shad $font-fa-shdw;
     border-radius: $font-fa-rad;
 }
+%font-fa-header {
+    font-size: $font-fa-sz;
+    color: $color-01;
+    letter-spacing: $font-fa-ls;
+    text-shadow: $font-fa-shad $font-fa-shdw;
+    border-radius: $font-fa-rad;
+}
 %soc-a-font {
-    font-size: $soc-a-fonts-sz;
-    color: $soc-a-fonts-col;
+    font-size: 26px;
+    color: $color-01;
     font-family: 'archy-B';
-    letter-spacing: $soc-a-fonts-ls;
-    text-shadow: $soc-a-fonts-shad $soc-a-fonts-shdw;
-    border-radius: $soc-a-fonts-rad;
-}
-%head-flt-cont-size {
-    max-width: $head-flt-cont-wid;
-    width: $size-0-def;
-    margin: $head-flt-cont-mrg;
-    padding: $head-flt-cont-pdng;
-}
-%head-flt-ul-size {
-    max-width: 1800px;
-    width: $size-0-def;
-    margin: 0 auto;
-}
-%head-flt-li-size {
-    max-width: 185px;
-    width: $size-0-def;
-    height: 75px;
+    letter-spacing: 2px;
+    text-shadow: 1px -1px 1px $color-02;
+    border-radius: 5px;
 }
 %head-flt-li-font {
-    font-size: 20px;
-    color: $nav-a-h1-col;
+    font-size: 22px;
+    color: $color-02;
     font-family: 'archy-B';
-    letter-spacing: $nav-a-h1-ls;
-}
-%head-li-box-size {
-    max-width: 45px;
-    height: 40px;
-    margin: 5px auto;
+    letter-spacing: 1px;
 }
 %head-li-img-size {
     width: 100%;

@@ -1,112 +1,58 @@
 //Body
 .body-bg {
-    background-color: #E0F2F3;
+    background-color: $color-01;
 }
 //HEADER
 .sect-baner-s {
-    height: 80px;
+    height: 50px;
     background-color: $color-02;
+    @include d-flex (flex,space-around,center);
     @extend %border-def;
+    @extend %sect-baner-s-med;
     .baner-s {
-        padding-top: 20px;
-        .baner-s-p {
-            font-size: 30px;
-            text-align: center;
-            @extend %font-baner-s-p;
-        }
-    }
-}
-.head-cont {
-    background-color: $color-01;
-    @extend %head-cont-size;
-    @extend %border-def;
-    @extend %head-cont-med;
-    .nav-box {
-        @extend %nav-box-size;
-        @include d-flex (flex,space-between,center);
-        @extend %nav-box-med;
-        .nav-logo {
-            @extend %nav-logo-size;
-            @extend %hover-def;
-            @extend %nav-logo-med;
-            .img-100 {
-                width: $img-100-wid;
-            }
-        }
-        .navi {
-            @extend %navi-size;
+        width: 100%;
+        @include d-flex (flex,center,center);
+        .nav-ul {
+            max-width: 1800px;
+            width: 100%;
             @include d-flex (flex,space-between,center);
-            @extend %navi-med;
-            @extend %nav-ul-open-med;
-            .navi-cont {
-                @extend %navi-cont-size;
+            @extend %nav-ul-med;
+            .nav-li {
+                @extend %nav-li-med;
+                @extend %hover-dop;
                 @include d-flex (flex,space-between,center);
-                flex-direction: column;
-                @extend %navi-cont-med;
-                .nav-ul {
-                    @extend %nav-ul-size;
-                    @include d-flex (flex,space-between,center);
-                    @extend %nav-ul-med;
-                    .nav-li {
-                        @extend %nav-li-med;
-                        @extend %hover-dop;
-                        @include d-flex (flex,space-between,center);
-                        .geo-img {
-                            max-width: 30px;
-                            margin-right: 10px;
-                            @extend %geo-img-med;
-                            .geo {
-                                width: 100%;
-                                height: 25px;
-                                @extend %geo-med;
-                            }
-                        }
-                        .fa {
-                            @extend %font-fa;
-                            @extend %nav-fa-med;
-                        }
-                        .nav-a {
-                            @extend %nav-a-h1-font;
-                            @extend %nav-a-med;
-                        }
-                        
+                .geo-img {
+                    max-width: 30px;
+                    margin-right: 10px;
+                    @extend %geo-img-med;
+                    .geo {
+                        width: 100%;
+                        height: 25px;
+                        @extend %geo-med;
                     }
                 }
-                .search {
-                    @extend %search-size;
-                    @extend %border-srch;
-                    @extend %search-med;
-                    .element-search {
-                        @extend %element-search-size;
-                        .inp-search {
-                           @extend %inp-search-size;
-                           border: none;
-                           vertical-align: bottom;
-                           padding: 0 25px;
-                           @extend %font-p-def;
-                           @extend %border-srch;
-                           @extend %inp-search-med;
-                        }
-                        .srch-fa {
-                            @extend %search-fa;
-                            padding: 5px;
-                            vertical-align: bottom;
-                            padding: 0 20px 5px;
-                            @extend %srch-fa-med;
-                        }
-                   }
+                .fa {
+                    margin-right: 30px;
+                    @extend %banner-font-fa;
+                    @extend %nav-fa-med;
+                    @extend %baner-s-fa-med;
                 }
+                .nav-a {
+                    @extend %nav-a-h1-font;
+                    @extend %nav-a-med;
+                }
+                
             }
             .soc-ul {
+                max-width: 875px;
+                width: 100%;
                 display: flex;
-                justify-content: flex-end;
-                @extend %soc-ul-size;
+                justify-content: space-around;
                 @extend %soc-ul-med;
                 .soc-li {
-                    padding: 15px 0 0 0;
                     @extend %soc-li-med;
                     .fa {
-                        @extend %font-fa;
+                        @extend %font-fa-header;
                         @extend %fa-med;
                     }
                     .soc-a {
@@ -117,47 +63,98 @@
                 }
                 .contact-ul {
                     @include d-flex (flex,space-between,end);
-                    flex-direction: column;
                     @extend %contact-ul-med;
                 }
                 .contact-box {
+                    max-width: 600px;
+                    width: 100%;
                     @include d-flex (flex,space-between,end);
-                    flex-direction: column;
                     @extend %contact-box-med;
+                }
+            }
+        }
+    }
+}
+.head-cont {
+    background-color: $color-01;
+    @extend %head-cont-size;
+    @extend %border-def;
+    @extend %head-cont-med;
+    .nav-box {
+        max-width: 1820px;
+        width: 100%;
+        margin: 10px auto;
+        @include d-flex (flex,space-between,center);
+        @extend %nav-box-med;
+        .nav-logo {
+            max-width: 90px;
+            width: 100%;
+            @extend %hover-def;
+            @extend %nav-logo-med;
+            .img-100 {
+                width: 100%;
+            }
+        }
+        .head-flt-cont {
+            max-width: 920px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 5px 0 10px;
+            @include d-flex (flex,space-between,center);
+            @extend %head-flt-cont-med;
+            .head-flt-ul {
+                width: 100%;
+                margin: 0 auto;
+                @include d-flex (flex,space-between,center);
+                @extend %head-flt-ul-med;
+                .head-flt-li {
+                    @extend %head-flt-li-font;
+                    @extend %head-flt-li-med;
+                    text-align: center;
+                }
+            }
+        }
+        .navi {
+            max-width: 580px;
+            width: 100%;
+            @include d-flex (flex,space-between,center);
+            @extend %navi-med;
+            @extend %nav-ul-open-med;
+            .navi-cont {
+                width: 100%;
+                @include d-flex (flex,space-between,center);
+                flex-direction: column;
+                @extend %navi-cont-med;
+                .search {
+                    width: 550px;
+                    height: 60px;
+                    @extend %border-srch;
+                    @extend %search-med;
+                    .element-search {
+                        @extend %element-search-size;
+                        .inp-search {
+                            width: 480px;
+                           height: 100%;
+                           border: none;
+                           vertical-align: bottom;
+                           padding: 0 25px;
+                           @extend %font-p-def;
+                           @extend %border-srch;
+                           @extend %inp-search-med;
+                        }
+                        .srch-fa {
+                            @extend %search-fa;
+                            vertical-align: bottom;
+                            padding: 0 20px 15px;
+                            @extend %srch-fa-med;
+                        }
+                   }
                 }
             }
         }
         .burger-icon {
             display: none;
             @extend %burger-icon-med;
-        }
-    }
-    .xazi {
-        @extend %xazi;
-        @extend %head-xazi-med;
-    }
-    .head-flt-cont {
-        @extend %head-flt-cont-size;
-        @include d-flex (flex,space-between,center);
-        @extend %head-flt-cont-med;
-        .head-flt-ul {
-            @extend %head-flt-ul-size;
-            @include d-flex (flex,space-between,center);
-            @extend %head-flt-ul-med;
-            .head-flt-li {
-                @extend %head-flt-li-size;
-                @extend %head-flt-li-font;
-                @extend %head-flt-li-med;
-                text-align: center;
-                .head-li-box {
-                    @extend %head-li-box-size;
-                    @extend %head-li-box-med;
-                    .head-li-img {
-                        @extend %head-li-img-size;
-                        @extend %head-li-img-med;
-                    }
-                }
-            }
         }
     }
 }
@@ -296,10 +293,6 @@
                 height: 20px;
                 font-size: 18px;
                 @extend %head-flt-li-act-med;
-                .head-li-box {
-                    display: none;
-                    @extend %head-li-box-act-med;
-                }
             }
         }
     }
@@ -367,7 +360,7 @@
     }
     .sect-2-big {
         @extend %sect-2-big-size;
-        @include d-flex (flex,space-around,center);
+        @include d-flex (flex,space-around,flex-start);
         @extend %sect-2-big-med;
         .open-sect-2-flt-size {
             @extend %open-sect-2-flt-med;
@@ -376,6 +369,8 @@
             @extend %sect-2-flt-size;
             @include d-flex (flex,end,center);
             flex-direction: column;
+            position: sticky;
+            top: 110px;
             @extend %sect-2-flt-med;
             .cont-1-img-text {
                 @extend %cont-1-img-text-size;
