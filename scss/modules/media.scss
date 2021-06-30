@@ -10,6 +10,9 @@
     @media (max-width: 768px) {
         height: 25px;
     }
+    @media (max-width: 414px) {
+        height: 60px;
+    }
 }
 %baner-s-fa-med {
     @media (max-width: 1440px) {
@@ -65,13 +68,13 @@
         height: 45px;
     }
     @media (max-width: 600px) {
-        max-width: 35px;
+        max-width: 31px;
         height: 35px;
         margin: 0 auto;
     }
     @media (max-width: 414px) {
-        max-width: 45px;
-        height: 55px;
+        max-width: 40px;
+        height: 45px;
     }
 }
 %navi-med {
@@ -91,7 +94,6 @@
     @media (max-width: 414px) {
         width: 80%;
         flex-direction: column-reverse;
-        margin-top: 5px;
     }
 }
 %navi-cont-med {
@@ -99,9 +101,7 @@
         width: 83%;
     }
     @media (max-width: 414px) {
-        width: 87%;
-        flex-direction: row;
-        justify-content: end;
+        width: 90%;
         margin: 10px 0;
     }
 }
@@ -161,21 +161,18 @@
         width: 92%;
     }
     @media (max-width: 414px) {
-        width: 45%;
+        width: 97%;
     }
 }
 %nav-li-med {
     @media (max-width: 600px) {
-        max-width: 140px;
+        max-width: 70px;
         margin: 0 auto;
         padding: 1px 0;
-        &:first-child {
-            width: 12%;
-        }
     }
     @media (max-width: 414px) {
         &:first-child {
-            width: 20%;
+            max-width: 68px;
         }
     }
 }
@@ -194,7 +191,7 @@
         height: 13px;
     }
     @media (max-width: 414px) {
-        display: none;
+        height: 20px;
     }
 }
 %geo-med {
@@ -208,7 +205,6 @@
         height: 13px;
     }
     @media (max-width: 414px) {
-        font-size: 19px;
         height: 20px;
     }
 }
@@ -233,10 +229,11 @@
         letter-spacing: 2px;
     }
     @media (max-width: 600px) {
-        font-size: 9px;
+        font-size: 13px;
     }
     @media (max-width: 414px) {
-        font-size: 15px;
+        font-size: 30px;
+        letter-spacing: 3px;
     }
 }
 %nav-a-med {
@@ -275,7 +272,7 @@
         font-size: 7px;
     }
     @media (max-width: 600px) {
-        font-size: 6px;
+        letter-spacing: 0px;
     }
     @media (max-width: 414px) {
         display: none;
@@ -316,10 +313,8 @@
         height: 23px;
     }
     @media (max-width: 414px) {
-        width: 50px;
-        border: none;
-        box-shadow: none;
-        margin-left: 70px;
+        width: 245px;
+        height: 35px;
     }
 }
 %inp-search-med {
@@ -349,12 +344,11 @@
         width: 140px;
     }
     @media (max-width: 600px) {
-        width: 230px;
-        height: 91%;
+        width: 140px;
         margin-bottom: 1px;
     }
     @media (max-width: 414px) {
-        display: none;
+        width: 200px;
     }
 }
 %srch-fa-med {
@@ -381,8 +375,8 @@
         padding: 0 12px 4px;
     }
     @media (max-width: 600px) {
-        font-size: 10px;
-        padding: 0 12px 4px;
+        font-size: 15px;
+        padding: 0 6px 5px;
     }
     @media (max-width: 414px) {
         font-size: 20px;
@@ -401,8 +395,13 @@
     @media (max-width: 601px) {
         width: 56%;
     }
+    @media (max-width: 600px) {
+        justify-content: space-evenly;
+        margin-right: 15px;
+    }
     @media (max-width: 414px) {
-        width: 65%;
+        width: 55%;
+        height: 45px;
         justify-content: space-between;
         margin-left: 20px;
     }
@@ -417,7 +416,7 @@
 %soc-li-med {
     @media (max-width: 414px) {
         &:first-child {
-            display: none;
+            display: block;
         }
     }
 }
@@ -453,7 +452,7 @@
 }
 %contact-ul-med {
     @media (max-width: 414px) {
-        display: none;
+        flex-direction: column-reverse;
     }
 }
 %contact-box-med {
@@ -467,7 +466,8 @@
         width: 75%;
     }
     @media (max-width: 414px) {
-        flex-direction: row;
+        width: 90%;
+        flex-direction: column;
     }
 }
 %head-flt-cont-med {
@@ -483,6 +483,9 @@
     }
     @media (max-width: 768px) {
         margin-left: 20px;
+    }
+    @media (max-width: 414px) {
+        display: none;
     }
 }
 %head-flt-ul-med {
@@ -519,7 +522,6 @@
     }
     @media (max-width: 810px) {
         font-size: 10px;
-        letter-spacing: 1px;
     }
     @media (max-width: 800px) {
         font-size: 11px;
@@ -528,11 +530,13 @@
         font-size: 11px;
     }
     @media (max-width: 601px) {
-        font-size: 7px;
+        max-width: 60px;
+        font-size: 10px;
+        letter-spacing: 0px;
     }
     @media (max-width: 600px) {
-        height: 35px;
-        font-size: 6px;
+        max-width: 45px;
+        font-size: 9px;
     }
 }
 %head-li-box-med {
@@ -598,7 +602,7 @@
     }
     @media (max-width: 414px) {
         width: 90%;
-        flex-direction: row;
+        margin: 4px auto;
     }
 }
 %burger-icon-act-med {
@@ -610,11 +614,18 @@
         right: 50px;
         cursor: pointer;
     }
+    @media (max-width: 414px) {
+        margin-top: 8px;
+    }
 }
 %nav-logo-act-med {
     @media (max-width: 1600px) {
         max-width: 35px;
         height: 40px;
+    }
+    @media (max-width: 414px) {
+        height: 35px;
+        margin: 0 0 0 1px;
     }
 }
 %navi-act-med {
@@ -635,7 +646,7 @@
         width: 86%;
     }
     @media (max-width: 414px) {
-        width: 77%;
+        width: 75%;
     }
 }
 %navi-cont-act-med {
@@ -655,7 +666,9 @@
         width: 99%;
     }
     @media (max-width: 414px) {
-        width: 70%;
+        width: 98%;
+        height: 35px;
+        margin: 5px 0;
     }
 }
 %nav-ul-act-med {
@@ -817,8 +830,7 @@
         width: 275px;
     }
     @media (max-width: 414px) {
-        display: block;
-        margin-bottom: 11px;
+        margin-bottom: 1px;
     }
 }
 %inp-search-act-med {
@@ -1179,7 +1191,8 @@
         margin: 25px 0;
     }
     @media (max-width: 414px) {
-        margin: 50px 0 5px 0;
+        margin: 10px 0 5px 0;
+        flex-direction: column;
     }
 }
 %sect-2-flt-med {
@@ -1196,7 +1209,6 @@
     @media (max-width: 1024px) {
         width: 35%;
         top: 80px;
-
     }
     @media (max-width: 962px) {
         padding-top: 5px;
@@ -1205,8 +1217,9 @@
         padding-top: 2px;
     }
     @media (max-width: 414px) {
-        display: none;
-        
+        width: 91%;
+        left: 30px;
+        margin-bottom: 20px;
     }
 }
 %flt-cont-med {
@@ -1342,6 +1355,9 @@
         width: 100%;
         padding: 5px 0 0 0;
     }
+    @media (max-width: 414px) {
+        display: none;
+    }
 }
 %s2-flt-li-med {
     @media (max-width: 1600px) {
@@ -1381,6 +1397,9 @@
     @media (max-width: 600px) {
         font-size: 11px;
         height: 35px;
+    }
+    @media (max-width: 414px) {
+        display: block;
     }
 }
 %flt-li-box-med {
@@ -1616,6 +1635,9 @@
     @media (max-width: 768px) {
         height: 40px;
         padding: 2px 10px;
+    }
+    @media (max-width: 414px) {
+        cursor: pointer;
     }
 }
 %flt-ico-nm-2-med {
@@ -2708,10 +2730,10 @@
         letter-spacing: 4px;
     }
     @media (max-width: 600px) {
-        font-size: 9px;
+        font-size: 13px;
     }
     @media (max-width: 414px) {
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 %li-box-med {
