@@ -133,6 +133,9 @@
         width: 90%;
         height: 60px;
     }
+    @media (max-width: 414px) {
+        height: 38px;
+    }
     @media (max-width: 375px) {
         height: 30px;
     }

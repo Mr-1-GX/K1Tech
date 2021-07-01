@@ -13,6 +13,9 @@
     @media (max-width: 414px) {
         height: 60px;
     }
+    @media (max-width: 360px) {
+        height: 47px;
+    }
 }
 %baner-s-fa-med {
     @media (max-width: 1440px) {
@@ -44,6 +47,10 @@
     @media (max-width: 414px) {
         width: 85%;
         flex-direction: row;
+    }
+    @media (max-width: 360px) {
+        width: 93%;
+        margin: 0 auto;
     }
 }
 %nav-logo-med {
@@ -103,6 +110,9 @@
     @media (max-width: 414px) {
         width: 90%;
         margin: 10px 0;
+    }
+    @media (max-width: 360px) {
+        margin: 0 5px;
     }
 }
 %burger-icon-med {
@@ -235,6 +245,12 @@
         font-size: 30px;
         letter-spacing: 3px;
     }
+    @media (max-width: 360px) {
+        font-size: 26px;
+    }
+    @media (max-width: 320px) {
+        font-size: 23px;
+    }
 }
 %nav-a-med {
     @media (max-width: 1600px) {
@@ -316,6 +332,12 @@
         width: 245px;
         height: 35px;
     }
+    @media (max-width: 360px) {
+        width: 230px;
+    }
+    @media (max-width: 320px) {
+        width: 195px;
+    }
 }
 %inp-search-med {
     @media (max-width: 1600px) {
@@ -350,6 +372,12 @@
     @media (max-width: 414px) {
         width: 200px;
     }
+    @media (max-width: 360px) {
+        width: 190px;
+    }
+    @media (max-width: 320px) {
+        width: 154px;
+    }
 }
 %srch-fa-med {
     @media (max-width: 1600px) {
@@ -381,6 +409,9 @@
     @media (max-width: 414px) {
         font-size: 20px;
     }
+    @media (max-width: 360px) {
+        padding: 0 10px 8px;
+    }
 }
 %soc-ul-med {
     @media (max-width: 1440px) {
@@ -404,6 +435,13 @@
         height: 45px;
         justify-content: space-between;
         margin-left: 20px;
+    }
+    @media (max-width: 393px) {
+        width: 60%;
+        margin: 0 5px 0 5px;
+    }
+    @media (max-width: 360px) {
+        height: 38px;
     }
 }
 %open-soci-med {
@@ -448,6 +486,12 @@
     }
     @media (max-width: 414px) {
         font-size: 18px;
+    }
+    @media (max-width: 360px) {
+        font-size: 16px;
+    }
+    @media (max-width: 320px) {
+        font-size: 14px;
     }
 }
 %contact-ul-med {
@@ -573,15 +617,8 @@
 //Active-Header
 %active-med {
     @media (max-width: 1600px) {
-        position: sticky;
-        top: 0;
-        left: 0;
         height: 45px;
-        z-index: 500;
-        background: #F4F6F6;
         transition: all 0.3s;
-        display: flex;
-        flex-direction: column-reverse;
     }
 }
 %nav-box-act-med {
@@ -903,28 +940,6 @@
         font-size: 13px;
     }
 }
-%xazi-act-med {
-    @media (max-width: 1600px) {
-        width: 75%;
-        margin: 0 auto;
-    }
-    @media (max-width: 1440px) {
-        width: 84%;
-    }
-    @media (max-width: 1280px) {
-        width: 85%;
-    }
-    @media (max-width: 962px) {
-        width: 89%;
-        margin: 1px auto;
-    }
-}
-%head-flt-cont-act-med {
-    @media (max-width: 1600px) {
-        max-width: 1400px;
-        padding: 1px 0 0;
-    }
-}
 %head-flt-ul-act-med {
     @media (max-width: 1600px) {
         width: 90%;
@@ -1217,9 +1232,9 @@
         padding-top: 2px;
     }
     @media (max-width: 414px) {
-        width: 91%;
-        left: 30px;
-        margin-bottom: 20px;
+        width: 90%;
+        position: unset;
+        margin: 20px auto;
     }
 }
 %flt-cont-med {
@@ -1355,9 +1370,6 @@
         width: 100%;
         padding: 5px 0 0 0;
     }
-    @media (max-width: 414px) {
-        display: none;
-    }
 }
 %s2-flt-li-med {
     @media (max-width: 1600px) {
@@ -1399,7 +1411,8 @@
         height: 35px;
     }
     @media (max-width: 414px) {
-        display: block;
+        font-size: 15px;
+        height: 30px;
     }
 }
 %flt-li-box-med {
@@ -1636,9 +1649,6 @@
         height: 40px;
         padding: 2px 10px;
     }
-    @media (max-width: 414px) {
-        cursor: pointer;
-    }
 }
 %flt-ico-nm-2-med {
     @media (max-width: 1600px) {
@@ -1777,41 +1787,6 @@
 %cont-1-sm-h3-med {
     @media (max-width: 1366px) {
         font-size: 15px;
-    }
-}
-%open-sect-2-flt-med {
-    @media (max-width: 414px) {
-        display: block;
-        position: fixed;
-        top: 205px;
-        width: 85%;
-        height: 570px;
-        z-index: 500;
-        .flt-cont {
-            display: none;
-        }
-        .cont-1-img-text {
-            display: none;
-        }
-        .s2-flt-ul {
-            height: 530px;
-            .s2-flt-li {
-                font-size: 15px;
-                height: 32px;
-                .flt-li-box {
-                    max-width: 50px;
-                    .flt-li-img {
-                        height: 25px;
-                    }
-                }
-            }
-        }
-        .s2-flt-cont-2 {
-            display: none;
-        }
-    }
-    @media (max-width: 375px) {
-        top: 130px;
     }
 }
 //----------
