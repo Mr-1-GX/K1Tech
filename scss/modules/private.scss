@@ -456,9 +456,8 @@
     text-shadow: 0 0 $size-01 $color-03;
 }
 %sect-2-sm-size {
-    max-width: $sect-2-sm-wid;
-    width: $size-0-def;
-    height: $sect-2-sm-heig;
+    max-width: 1850px;
+    width: 100%;
 }
 %cont-1-sm-box-size {
     max-width: $cont-1-sm-box-wid;

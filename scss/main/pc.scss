@@ -212,7 +212,7 @@
     max-width: 1255px;
     width: 100%;
     height: 240px;
-    margin: 0 0 85px 575px;
+    margin: 0 auto;
     background-color: $color-01;
     @include d-flex (flex,space-between,center);
     flex-direction: column;

@@ -628,6 +628,9 @@
     @media (max-width: 1440px) {
         width: 85%;
     }
+    @media (max-width: 1366px) {
+        margin: 0 auto;
+    }
     @media (max-width: 1280px) {
         width: 85%;
     }
@@ -701,6 +704,9 @@
     }
     @media (max-width: 768px) {
         width: 99%;
+    }
+    @media (max-width: 600px) {
+        margin-right: 20px;
     }
     @media (max-width: 414px) {
         width: 98%;
@@ -840,66 +846,101 @@
 }
 %search-act-med {
     @media (max-width: 1600px) {
-        width: 600px;
+        width: 980px;
+        height: 35px;
+    }
+    @media (max-width: 1536px) {
+        width: 1040px;
     }
     @media (max-width: 1440px) {
-        width: 630px;
+        width: 1090px;
+    }
+    @media (max-width: 1366px) {
+        width: 1045px;
+    }
+    @media (max-width: 1280px) {
+        width: 990px;
     }
     @media (max-width: 1024px) {
-        width: 500px;
+        width: 820px;
     }
     @media (max-width: 962px) {
-        width: 470px;
+        width: 770px;
     }
     @media (max-width: 834px) {
-        width: 370px;
+        width: 640px;
     }
     @media (max-width: 810px) {
-        width: 390px;
+        width: 620px;
     }
     @media (max-width: 800px) {
-        width: 380px;
+        width: 610px;
     }
     @media (max-width: 768px) {
-        width: 330px;
+        width: 560px;
     }
     @media (max-width: 601px) {
-        width: 275px;
+        width: 420px;
     }
     @media (max-width: 414px) {
+        width: 270px;
         margin-bottom: 1px;
+    }
+    @media (max-width: 375px) {
+        width: 245px;
     }
 }
 %inp-search-act-med {
     @media (max-width: 1600px) {
-        width: 540px;
+        width: 910px;
+    }
+    @media (max-width: 1536px) {
+        width: 970px;
     }
     @media (max-width: 1440px) {
-        width: 570px;
+        width: 1020px;
+    }
+    @media (max-width: 1366px) {
+        width: 980px;
+    }
+    @media (max-width: 1280px) {
+        width: 925px;
     }
     @media (max-width: 1024px) {
-        width: 440px;
+        width: 755px;
     }
     @media (max-width: 962px) {
-        width: 420px;
+        width: 710px;
     }
     @media (max-width: 834px) {
-        width: 320px;
+        width: 580px;
     }
     @media (max-width: 810px) {
-        width: 340px;
+        width: 555px;
     }
     @media (max-width: 800px) {
-        width: 330px;
+        width: 545px;
     }
     @media (max-width: 768px) {
-        width: 280px;
+        width: 490px;
     }
     @media (max-width: 601px) {
-        width: 235px;
+        width: 350px;
+    }
+    @media (max-width: 414px) {
+        width: 210px;
+    }
+    @media (max-width: 375px) {
+        width: 180px;
     }
 }
 %srch-fa-act-med {
+    @media (max-width: 1600px) {
+        padding: 0 20px 5px;
+    }
+    @media (max-width: 834px) {
+        font-size: 25px;
+    }
     @media (max-width: 414px) {
         font-size: 25px;
     }
