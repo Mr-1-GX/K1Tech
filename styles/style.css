@@ -191,8 +191,7 @@ a {
   letter-spacing: 6px; }
 
 .sect-2 .sect-2-big .sect-2-flt .s2-flt-ul .s2-flt-li:hover {
-  font-size: 23px;
-  letter-spacing: 3px; }
+  background-color: #A9CCE3; }
 
 .sect-2-big .pc-sect-2-box .pc-1-list .pc-1-list-box .pc-1-img .pc-1-img-text .pc-flt-ico-nm .pc-ico-nm-h2:hover {
   font-size: 21px;
@@ -1788,8 +1787,7 @@ a {
   margin: 10px auto;
   text-align: center; }
   .k1-pc-text .k1-pc-p {
-    margin: 6px auto;
-    background-color: #ECF0F1; }
+    margin: 6px auto; }
 
 .pc-k1-spec {
   width: 100%;
