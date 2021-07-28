@@ -20,7 +20,7 @@
                 max-width: 1160px;
                 width: 100%;
                 background-color: $color-01;
-                @include d-flex (flex,space-between,center);
+                @include d-flex (flex,space-evenly,center);
                 @extend %pc-1-list-box-med;
                 .pc-1-img {
                     max-width: 320px;
