@@ -530,38 +530,34 @@
         }
         .cont-2-box {
             @extend %cont-2-box-size;
-            @extend %border-def;
             @include d-flex (flex,space-between,center);
             flex-direction: column;
             @extend %cont-2-box-med;
             .cont-2-text {
-                background-color: $color-010;
                 @extend %cont-2-text-size;
                 @include d-flex (flex,space-around,baseline);
                 flex-direction: column;
-                @extend %border-def;
                 @extend %cont-2-text-med;
                 .cont-2-img-box {
                     .cont-2-text-img {
                         width: $size-0-def;
-                        height: 340px;
+                        height: 260px;
                         @extend %cont-2-text-img-med;
                     }
                 }
             }
             .cont-2-p-box {
                 @extend %cont-2-p-box-size;
-                @include d-flex (flex,space-between,flex-end);
+                @include d-flex (flex,space-between,center);
                 flex-direction: column;
                 @extend %cont-2-p-box-med;
                 .cont-2-p {
-                    margin-left: 10px;
+                    margin-bottom: 5px;
                     @extend %cont-2-p-font;
-                    text-align: left;
                     @extend %cont-2-p-med;
                 }
                 .cont-2-cost {
-                    margin: 25px;
+                    margin: 15px 0 10px 200px;
                     @extend %cont-2-cost-med;
                     .cont-2-h4 {
                         @extend %cont-2-h4-font;
