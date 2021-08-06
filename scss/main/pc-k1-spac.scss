@@ -57,14 +57,12 @@
             width: 100%;
             @include d-flex (flex,space-between,center);
             flex-direction: column;
-            height: 960px;
-            @extend %pc-k1-img-list-med;
             .pc-k1-img-text {
-            max-width: 690px;
-            width: 100%;
-            @include d-flex (flex,space-between,center);
-            flex-direction: column;
-            @extend %pc-k1-img-text-med;
+                max-width: 690px;
+                width: 100%;
+                @include d-flex (flex,space-between,center);
+                flex-direction: column;
+                @extend %pc-k1-img-text-med;
                 .pc-k1-img-p {
                     @extend %pc-k1-img-p-fonts;
                     @extend %pc-k1-img-p-med;
@@ -173,15 +171,19 @@
                     width: 100%;
                     background-color: $color-01;
                     .pc-k1-img-li {
-                        height: 28px;
                         margin: 15px 0;
                         background-color: $color-010;
-                        @include d-flex (flex,space-between,center);
+                        @include d-flex (flex,space-between,flex-start);
                         @extend %pc-k1-img-li-font;
                         @extend %pc-k1-img-li-med;
                         .pc-k1-img-li-span {
                             @extend %pc-k1-img-li-span;
                             @extend %pc-k1-img-li-span-med;
+                            .pc-k1-img-tr {
+                                height: 25px;
+                                text-align: end;
+                                background-color: $color-010;
+                            }
                         }
                     }
                 }

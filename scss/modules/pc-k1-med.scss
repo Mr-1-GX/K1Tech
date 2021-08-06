@@ -1,6 +1,6 @@
 %k1-pc-p-med {
     @media (max-width: 1536px) {
-        font-size: 17px;
+        font-size: 15px;
     }
     @media (max-width: 962px) {
         font-size: 13px;
@@ -50,14 +50,6 @@
     }
     @media (max-width: 360px) {
         height: 270px;
-    }
-}
-%pc-k1-img-list-med {
-    @media (max-width: 1600px) {
-        height: 850px;
-    }
-    @media (max-width: 601px) {
-        height: 690px;
     }
 }
 %pc-k1-img-box-med {
@@ -245,18 +237,15 @@
 }
 %pc-k1-img-li-med {
     @media (max-width: 1600px) {
-        height: 25px;
         font-size: 18px;
         margin: 13px 0;
     }
     @media (max-width: 834px) {
         font-size: 15px;
-        height: 20px;
         margin: 11px 0;
     }
     @media (max-width: 414px) {
         font-size: 12px;
-        height: 18px;
         margin: 11px 0;
     }
     @media (max-width: 360px) {

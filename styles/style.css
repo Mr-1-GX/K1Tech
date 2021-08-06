@@ -1836,8 +1836,7 @@ a {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-direction: column;
-      height: 960px; }
+      flex-direction: column; }
       .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text {
         max-width: 690px;
         width: 100%;
@@ -1922,12 +1921,15 @@ a {
           width: 100%;
           background-color: #F4F6F6; }
           .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text .pc-k1-img-ul .pc-k1-img-li {
-            height: 28px;
             margin: 15px 0;
             background-color: #ECF0F1;
             display: flex;
             justify-content: space-between;
-            align-items: center; }
+            align-items: flex-start; }
+            .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text .pc-k1-img-ul .pc-k1-img-li .pc-k1-img-li-span .pc-k1-img-tr {
+              height: 25px;
+              text-align: end;
+              background-color: #ECF0F1; }
 
 @media (max-width: 1600px) {
   .sect-baner-s {
@@ -5403,7 +5405,7 @@ a {
 
 @media (max-width: 1536px) {
   .k1-pc-text .k1-pc-p {
-    font-size: 17px; } }
+    font-size: 15px; } }
 
 @media (max-width: 962px) {
   .k1-pc-text .k1-pc-p {
@@ -5460,14 +5462,6 @@ a {
 @media (max-width: 360px) {
   .pc-k1-spec .pc-k1-img-list-big {
     height: 270px; } }
-
-@media (max-width: 1600px) {
-  .pc-k1-spec .pc-k1-cont .pc-k1-img-list {
-    height: 850px; } }
-
-@media (max-width: 601px) {
-  .pc-k1-spec .pc-k1-cont .pc-k1-img-list {
-    height: 690px; } }
 
 @media (max-width: 1600px) {
   .pc-k1-spec .pc-k1-img-list-big .pc-k1-img-cont .pc-k1-img-box {
@@ -5674,20 +5668,17 @@ a {
 
 @media (max-width: 1600px) {
   .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text .pc-k1-img-ul .pc-k1-img-li {
-    height: 25px;
     font-size: 18px;
     margin: 13px 0; } }
 
 @media (max-width: 834px) {
   .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text .pc-k1-img-ul .pc-k1-img-li {
     font-size: 15px;
-    height: 20px;
     margin: 11px 0; } }
 
 @media (max-width: 414px) {
   .pc-k1-spec .pc-k1-cont .pc-k1-img-list .pc-k1-img-text .pc-k1-img-ul .pc-k1-img-li {
     font-size: 12px;
-    height: 18px;
     margin: 11px 0; } }
 
 @media (max-width: 360px) {
