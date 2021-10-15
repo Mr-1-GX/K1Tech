@@ -151,6 +151,10 @@
                    }
                 }
             }
+            .filer-box {
+                width: 100%;
+                height: 100%;
+            }
         }
         .burger-icon {
             display: none;
@@ -268,14 +272,27 @@
     flex-direction: column;
     @extend %open-head-size-act-med;
 }
+.slide-container {
+    .container {
+        @include d-flex (flex,space-between,center);
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+        .store-product {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        }
+    }
+}
 //----------
 //Section-1
 .sect-1 {
     @extend %sect-1-size;
-    position: relative;
+    position: static;
     @extend %sect-1-med;
     .sect-1-cont {
-        z-index: 2;
+        z-index: 1000;
         @extend %sect-1-cont-med;
         .sect-1-box {
             @extend %sect-1-box-size;
@@ -293,7 +310,7 @@
         }
     }
 }
-//Section-2
+//--------- Section-2 -------
 .sect-2 {
     @extend %sect-2-size;
     @include d-flex (flex,space-around,center);
@@ -303,7 +320,7 @@
     .pro-navi {
         @extend %pro-navi-def;
         @extend %border-def;
-        @include d-flex (flex,end,center);
+        @include d-flex (flex,flex-start,center);
         @extend %pro-navi-med;
         .pro-fa {
             @extend %pro-fa-def;
@@ -320,7 +337,9 @@
     }
     .sect-2-big {
         @extend %sect-2-big-size;
+        margin: 5px 0;
         @include d-flex (flex,space-around,flex-start);
+        flex-direction: column;
         @extend %sect-2-big-med;
         .sect-2-flt {
             max-width: 550px;
@@ -337,6 +356,7 @@
                 .flt-icon {
                     @extend %flt-icon-size;
                     @include d-flex (flex,space-between,center);
+                    cursor: pointer;
                     @extend %flt-icon-med;
                     .flt-icon-box {
                         width: 100%;
@@ -356,27 +376,118 @@
                         @extend %xazi;    
                     }
                 }
+                .flt-ico-nm-bar {
+                    @extend %flt-ico-nm-size;
+                    text-align: end;
+                    background: rgba(255, 255, 255, 0.5);
+                    backdrop-filter: blur(15px);
+                    visibility: hidden;
+                    border-radius: 5px;
+                    @extend %flt-ico-nm-2-med;
+                    .ico-nm-h2 {
+                        font-size: 25px;
+                        @extend %ico-nm-h2-font;
+                        @extend %ico-nm-h2-med;
+                    }
+                    .xazi {
+                        @extend %xazi;    
+                    }
+                }
             }
-            .s2-flt-ul {
-                @extend %s2-flt-ul-size;
-                @extend %s2-flt-ul-med;
-                .s2-flt-li {
-                    @extend %s2-flt-li-size;
-                    @extend %s2-flt-li-font;
-                    @extend %border-def;
-                    @extend %s2-flt-li-fe;
-                    @include d-flex (flex,space-between,center);
-                    @extend %s2-flt-li-med;
-                    .flt-li-box {
-                        @extend %flt-li-box-size;
-                        @extend %flt-li-box-med;
-                        margin: 10px;
-                        .flt-li-img {
-                            @extend %flt-li-img-size;
-                            @extend %flt-li-img-med;
+            //------- MENU FILTR  -----------
+            .sid-icon {
+                @include d-flex (flex,space-between,end);
+                flex-direction: column;
+                position: absolute;
+                top: 140px;
+                left: -12%;
+                width: 155px;
+                height: 690px;
+                i {
+                    color: $color-04;
+                    font-size: 30px;
+                    display: block;
+                    padding: 5px 10px;
+                    line-height: 50px;
+                    background: rgba(255, 255, 255, 0.5);
+                    backdrop-filter: blur(15px);
+                    border-radius: 50px;
+                    cursor: pointer;
+                    width: 50%;
+                    text-align: center;
+                    &:hover {
+                        color: $color-01;
+                        background: $color-02;
+                        transition: 0.3s ease;
+                    }
+                }
+            }
+            .side-bar {
+                position: absolute;
+                top: 80px;
+                left: -100%;
+                background: rgba(255, 255, 255, 0.5);
+                backdrop-filter: blur(15px);
+                width: 560px;
+                height: 75vh;
+                overflow-y: auto;
+                transition: 0.6s ease;
+                transition-property: left;
+                border-radius: 5px;
+                .close-btn {
+                    position: relative;
+                    color: $color-04;
+                    font-size: 30px;
+                    margin: 10px;
+                    cursor: pointer;
+                    transition: 0.6s ease;
+                    overflow: auto;
+                    transition-property: left;
+                    text-align: end;
+                    visibility: hidden;
+                }
+                .menu {
+                    width: 100%;
+                    margin-top: 10px;
+                    .itmes {
+                        position: relative;
+                        cursor: pointer;
+                        a {
+                            color: $color-04;
+                            font-size: 20px;
+                            display: block;
+                            padding: 2px 30px;
+                            line-height: 50px;
+                            &:hover {
+                                color: $color-01;
+                                background: $color-02;
+                                transition: 0.3s ease;
+                            }
+                            i {
+                                margin-right: 45px;
+                            }
+                            .dropdown {
+                                position: absolute;
+                                right: 0;
+                                margin: 20px;
+                                transition: 0.3s ease;
+                            }
+                        }
+                        .sub-menu {
+                            background: rgba(255, 255, 255, 0.1);
+                            display: none;
+                            a {
+                                padding-left: 80px;
+                            }
                         }
                     }
                 }
+            }
+            .bar-active {
+                left: -30px;
+            }
+            .rotate {
+                transform: rotate(90deg);
             }
         }
         .sect-2-box {
@@ -385,12 +496,12 @@
             flex-direction: column;
             @extend %sect-2-box-med;
             .cont-1-list {
-                @extend %cont-1-list-size;
+                width: 100%;
                 @include d-flex (flex,space-evenly,center);
                 @extend %cont-1-list-med;
                 .cont-1-list-box {
                     background-color: $color-01;
-                    @extend %cont-1-list-box-size;
+                    width: 100%;
                     @include d-flex (flex,space-between,center);
                     flex-direction: column;
                     @extend %cont-1-list-box-med;
@@ -463,6 +574,7 @@
     }
     .sect-2-sm {
         @extend %sect-2-sm-size;
+        margin-bottom: 30px;
         @include d-flex (flex,space-between,center);
         @extend %sect-2-sm-med;
         .cont-1-sm-box {
@@ -819,6 +931,45 @@
             @extend %sect-baner-img-box-med;
         }
     }
+}
+//-------- DEMO SECTION --------
+.demo-cont {
+    background: $color-02;
+    padding: 8px 32px;
+    border-radius: 8px 8px 0 0;
+    position: fixed;
+    left: 24px;
+    right: 24px;
+    bottom: -100%;
+    margin: 0 auto;
+    height: 300px;
+    transition: 400ms;
+    @extend %demo-cont-med;
+    P {
+        padding: 20px 60px;
+        margin: 16px 0;
+        color: $color-01;
+        font-size: 40px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 2px;
+        cursor: pointer;
+    }
+    button {
+        border: 0;
+        padding: 20px 60px;
+        margin: 16px 0;
+        background: $color-01;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        box-shadow: 0 -8px 16px $color-03;
+    }
+}
+.demo-cont.activ {
+    bottom: 0;
 }
 //Futer
 .foot-bg {

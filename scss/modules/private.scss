@@ -344,7 +344,6 @@
 %sect-2-big-size {
     max-width: 1850px;
     width: 100%;
-    margin: 35px 0;
 }
 %flt-icon-1-size {
     max-width: $flt-icon-1-wid;
@@ -357,7 +356,6 @@
 }
 %flt-ico-nm-size {
     width: 100%;
-    height: 65px;
     padding-top: 7px;
 }
 %ico-nm-h2-font {
@@ -369,6 +367,7 @@
     border-radius: $ico-nm-h2-rad;
     margin: $ico-nm-h2-mrg;
 }
+//--- filtr no need -----
 %s2-flt-ul-size {
     max-width: 500px;
     width: $size-0-def;
@@ -399,18 +398,9 @@
     height: $s2-flt-cont-2-heig;
 }
 %sect-2-box-size {
-    max-width: $sect-2-box-wid;
-    width: $size-0-def;
-    height: $sect-2-box-heig;
-}
-%cont-1-list-size {
-    max-width: $cont-1-list-wid;
-    width: $size-0-def;
-}
-%cont-1-list-box-size {
-    max-width: $cont-1-list-box-wid;
-    width: $size-0-def;
-    height: $cont-1-list-box-heig;
+    max-width: 1680px;
+    width: 100%;
+    margin: 0 auto;
 }
 %cont-1-img-size {
     max-width: $cont-1-img-wid;
@@ -427,7 +417,6 @@
 }
 %cont-1-img-text-size {
     width: 100%;
-    height: 70px;
     margin: 0 auto;
     padding: 10px 20px;
 }
